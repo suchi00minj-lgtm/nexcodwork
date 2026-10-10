@@ -1,0 +1,70 @@
+<title>Nexcod POS Ad Campaign</title>
+<meta name="description" content="Fifteen vertical ad videos for Nexcod POS, one per day, with captions and voiceover scripts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* Layout: a calendar strip of 15 day chips on top, then one row per day: phone-shaped video left, copy and script right. */
+:root{--bg:#f6f4f3;--paper:#fff;--ink:#1b1416;--muted:#5e5457;--line:#e5dedc;--brand:#c8161e;--navy:#0a1838;--orange:#ea580c;
+  --display:"Poppins",system-ui,sans-serif;--body:"Source Sans 3",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#131012;--paper:#1c1719;--ink:#f3eded;--muted:#b9aeb1;--line:#382e31;--brand:#ff5a60;--navy:#9fb3ff;--orange:#fb923c;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#131012;--paper:#1c1719;--ink:#f3eded;--muted:#b9aeb1;--line:#382e31;--brand:#ff5a60;--navy:#9fb3ff;--orange:#fb923c;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55}
+.page{max-width:1100px;margin:0 auto;padding-block:36px 100px;padding-inline:16px}
+header{border-bottom:3px solid var(--brand);padding-bottom:20px}
+.eyebrow{font-family:var(--display);font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--brand)}
+h1{font-family:var(--display);font-size:clamp(28px,5vw,42px);line-height:1.15;margin:.2em 0;text-wrap:balance}
+.lead{color:var(--muted);max-width:68ch;margin:0}
+.facts{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 0;padding:0;list-style:none}
+.facts li{font-size:14px;border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:3px 12px}
+nav.days{display:grid;grid-template-columns:repeat(15,minmax(0,1fr));gap:8px;margin:24px 0 8px}
+nav.days a{display:block;text-align:center;text-decoration:none;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:8px 2px;font-family:var(--display);font-weight:600;font-size:11.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+nav.days a span{display:block;font-size:22px;color:var(--brand);line-height:1.1}
+nav.days a:hover,nav.days a:focus-visible{border-color:var(--brand);outline:none}
+.day{display:grid;grid-template-columns:300px minmax(0,1fr);gap:28px;padding:28px 0;border-bottom:1px solid var(--line)}
+.vid video{width:100%;aspect-ratio:9/16;border-radius:18px;background:#0a1838;display:block;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.kick{font-family:var(--display);font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+h2{font-family:var(--display);font-size:26px;margin:.15em 0 .6em;text-wrap:balance}
+.lab{display:block;font-family:var(--display);font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+textarea{width:100%;font:inherit;font-size:15.5px;line-height:1.5;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:10px 12px;resize:vertical}
+.copy{margin-top:8px;font:inherit;font-weight:600;font-size:15px;color:#fff;background:var(--orange);border:0;border-radius:8px;padding:8px 14px;cursor:pointer}
+.copy:focus-visible{outline:3px solid var(--navy);outline-offset:2px}
+details{margin-top:16px;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:8px 14px}
+summary{cursor:pointer;font-weight:600}
+.script{padding-left:20px;margin:8px 0}
+.script li{margin:8px 0;font-size:15px}
+.script .vo{color:var(--muted)}
+.file{font-size:14px;color:var(--muted);margin:12px 0 0}
+code{font-size:13px;overflow-wrap:anywhere}
+.how{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-top:28px}
+.how h3{font-family:var(--display);font-size:18px;margin:0 0 6px}
+.how ul{margin:0;padding-left:20px}
+@media (max-width:900px){nav.days{grid-template-columns:repeat(5,minmax(0,1fr))}}
+@media (max-width:720px){.day{grid-template-columns:1fr}.vid{max-width:300px}}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+</style>
+<div class="page">
+<header>
+  <div class="eyebrow">Nexcod POS · Ad campaign</div>
+  <h1>15 days, 15 videos</h1>
+  <p class="lead">One vertical video a day, each about one problem a medical store owner knows well and how Nexcod POS solves it. Every screen shown is the real software (version 3.0.0). Voiceover in Hindi, on-screen text in Hinglish.</p>
+  <ul class="facts"><li>1080 × 1920, 30 fps, MP4</li><li>28–37 seconds each</li><li>Reels · Shorts · WhatsApp Status · Facebook</li><li>Ends on: 7 din free trial · nexcodpos.in</li></ul>
+</header>
+<nav class="days" aria-label="Days"><!--NAV--></nav>
+<div class="how"><h3>Posting plan</h3><ul>
+<li>Post one video a day, in order. Day 1 introduces the brand; day 15 closes with the price offer.</li>
+<li>Suggested times: Reels and Shorts around 1–2 PM, when counters are quiet; WhatsApp Status around 9 PM, after closing. Adjust to your page analytics.</li>
+<li>Pin day 1 and day 15 on the Instagram profile. Re-use day 15 as the paid-ad creative.</li>
+<li>The background music is original and royalty-free; a trending audio track can be added inside Instagram if wanted.</li>
+</ul></div>
+<!--ROWS-->
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(function(b){b.addEventListener('click',function(){
+  var t=document.getElementById(b.dataset.for);
+  function done(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy caption'},1600)}
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t.value).then(done,function(){t.focus();t.select();b.textContent='Selected, press Ctrl+C'})}
+  else{t.focus();t.select();b.textContent='Selected, press Ctrl+C'}
+})});
+</script>
