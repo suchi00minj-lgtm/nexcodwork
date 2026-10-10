@@ -3,75 +3,72 @@
 <meta name="description" content="Complete screen-by-screen guide to Nexcod POS v3.0.0, the pharmacy billing and inventory software.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
 <style>
 /* Layout: fixed contents rail on the left, one reading column on the right; figures sit full column width. */
 :root{
-  --bg:#f7f5f4; --paper:#ffffff; --ink:#1c1416; --muted:#5f5558; --line:#e6dfdd;
+  --bg:#ffffff; --paper:#ffffff; --ink:#1c1416; --muted:#5f5558; --line:#e6dfdd;
   --brand:#c8161e; --brand-deep:#8a0c12; --brand-soft:#fbe9ea; --navy:#0b1b3f;
   --ok:#137a3a; --warn:#a85a00; --kbd:#f1ecea;
   --display:"Poppins",system-ui,-apple-system,"Segoe UI",sans-serif;
-  --body:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --body:"Poppins",system-ui,-apple-system,"Segoe UI",sans-serif;
   --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
 }
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --bg:#141012; --paper:#1d181a; --ink:#f2ecea; --muted:#b8adb0; --line:#3a3033;
-  --brand:#ff5a5f; --brand-deep:#ff8a8d; --brand-soft:#3a1d20; --navy:#9fb3ff;
-  --ok:#5fd08a; --warn:#f0b35a; --kbd:#2b2427; color-scheme:dark}}
-:root[data-theme="dark"]{
-  --bg:#141012; --paper:#1d181a; --ink:#f2ecea; --muted:#b8adb0; --line:#3a3033;
-  --brand:#ff5a5f; --brand-deep:#ff8a8d; --brand-soft:#3a1d20; --navy:#9fb3ff;
-  --ok:#5fd08a; --warn:#f0b35a; --kbd:#2b2427; color-scheme:dark}
 *{box-sizing:border-box}
-body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;margin:0}
+html{color-scheme:light}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15.5px;line-height:1.75;font-weight:400;margin:0}
+b,strong{font-weight:500}
 a{color:var(--brand)}
 .shell{display:grid;grid-template-columns:290px minmax(0,1fr);min-height:100vh}
 nav.toc{position:sticky;top:env(safe-area-inset-top,0px);height:100vh;overflow:auto;background:var(--paper);border-right:1px solid var(--line);padding-block:20px;padding-inline:18px}
 .brandrow{display:flex;align-items:center;gap:10px;margin-bottom:14px}
 .brandrow img{width:38px;height:38px;border-radius:50%}
-.brandrow b{font-family:var(--display);font-size:18px;color:var(--ink)}
+.brandrow b{font-family:var(--display);font-size:17px;font-weight:600;color:var(--ink)}
 .brandrow b span{color:var(--brand)}
 #q{width:100%;padding:9px 11px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font:inherit;font-size:15px}
 #q:focus-visible{outline:2px solid var(--brand);outline-offset:1px}
-.toc h4{font-family:var(--display);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:18px 0 6px}
+.toc h4{font-family:var(--display);font-weight:500;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:18px 0 6px}
 .toc ol{list-style:none;margin:0;padding:0}
 .toc li a{display:block;padding:4px 8px;border-radius:6px;color:var(--ink);text-decoration:none;font-size:15px}
 .toc li a:hover,.toc li a:focus-visible{background:var(--brand-soft);color:var(--brand-deep);outline:none}
 main{padding-block:40px 120px;padding-inline:clamp(16px,5vw,64px);min-width:0}
 .col{max-width:860px}
 header.hero{border-bottom:3px solid var(--brand);padding-bottom:24px;margin-bottom:12px}
-.eyebrow{font-family:var(--display);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--brand);font-weight:600}
-h1{font-family:var(--display);font-size:clamp(30px,5vw,44px);line-height:1.15;margin:.2em 0 .3em;text-wrap:balance}
-h2{font-family:var(--display);font-size:26px;line-height:1.25;margin:2.2em 0 .5em;padding-top:.6em;border-top:1px solid var(--line);text-wrap:balance}
-h3{font-family:var(--display);font-size:19px;margin:1.6em 0 .4em;text-wrap:balance}
+.eyebrow{font-family:var(--display);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--brand);font-weight:500}
+h1{font-family:var(--display);font-weight:600;font-size:clamp(28px,5vw,40px);line-height:1.2;margin:.2em 0 .3em;text-wrap:balance}
+h2{font-family:var(--display);font-weight:600;font-size:24px;line-height:1.3;margin:2.2em 0 .5em;padding-top:.6em;border-top:1px solid var(--line);text-wrap:balance}
+h3{font-family:var(--display);font-weight:500;font-size:18px;margin:1.6em 0 .4em;text-wrap:balance}
 h2 .part{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--brand);margin-bottom:4px}
-.part-title{font-family:var(--display);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--paper);background:var(--brand-deep);display:inline-block;padding:4px 10px;border-radius:4px;margin-top:3em}
+.part-title{font-family:var(--display);font-weight:500;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--paper);background:var(--brand-deep);display:inline-block;padding:4px 10px;border-radius:4px;margin-top:3em}
 p,li{max-width:70ch}
-.lead{font-size:19px;color:var(--muted)}
+.lead{font-size:17px;font-weight:300;color:var(--muted)}
 .meta{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:14.5px;color:var(--muted)}
 .path{font-family:var(--mono);font-size:13.5px;background:var(--kbd);border:1px solid var(--line);border-radius:5px;padding:1px 6px;overflow-wrap:anywhere}
 kbd{font-family:var(--mono);font-size:13px;background:var(--kbd);border:1px solid var(--line);border-bottom-width:2px;border-radius:5px;padding:0 6px;white-space:nowrap}
 figure{margin:18px 0 26px;background:var(--paper);border:1px solid var(--line);border-radius:10px;overflow:hidden}
 figure img{display:block;width:100%;height:auto;cursor:zoom-in;background:#fff}
-figcaption{font-size:14.5px;color:var(--muted);padding:9px 14px;border-top:1px solid var(--line)}
+figcaption{font-size:14px;color:var(--muted);padding:10px 16px;border-top:1px solid var(--line)}
+ol.legend{margin:8px 0 2px;padding:0;list-style:none;counter-reset:l;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:6px 18px}
+ol.legend li{counter-increment:l;position:relative;padding-left:30px;font-size:13.5px;color:var(--ink);max-width:none}
+ol.legend li::before{content:counter(l);position:absolute;left:0;top:2px;width:21px;height:21px;border-radius:50%;background:#c8161e;color:#fff;font-size:11.5px;font-weight:500;display:grid;place-items:center}
 .tbl{overflow-x:auto;margin:14px 0 22px;border:1px solid var(--line);border-radius:10px;background:var(--paper)}
 table{border-collapse:collapse;width:100%;font-size:15px}
 th,td{text-align:left;padding:8px 12px;border-bottom:1px solid var(--line);vertical-align:top}
-th{font-family:var(--display);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600;background:var(--bg)}
+th{font-family:var(--display);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:500;background:#f7f7f9}
 tr:last-child td{border-bottom:0}
-td:first-child{font-weight:600;white-space:nowrap}
+td:first-child{font-weight:500;white-space:nowrap}
 td.wrap{white-space:normal}
 .note{border-left:4px solid var(--brand);background:var(--brand-soft);padding:10px 14px;border-radius:0 8px 8px 0;margin:16px 0}
 .note.ok{border-left-color:var(--ok)}
-.note b:first-child{font-family:var(--display);font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+.note b:first-child{font-family:var(--display);font-size:12px;font-weight:500;letter-spacing:.06em;text-transform:uppercase}
 ol.steps{counter-reset:s;list-style:none;padding:0}
 ol.steps>li{counter-increment:s;position:relative;padding-left:40px;margin:10px 0}
-ol.steps>li::before{content:counter(s);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;background:var(--brand);color:#fff;font-family:var(--display);font-size:13px;font-weight:600;display:grid;place-items:center}
+ol.steps>li::before{content:counter(s);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;background:var(--brand);color:#fff;font-family:var(--display);font-size:12.5px;font-weight:500;display:grid;place-items:center}
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 16px;padding:0;list-style:none}
 .chips li{font-size:14px;border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:2px 10px}
 .grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin:14px 0}
 .card{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:12px 14px;min-width:0}
-.card h4{font-family:var(--display);font-size:15px;margin:0 0 4px}
+.card h4{font-family:var(--display);font-size:15px;font-weight:500;margin:0 0 4px}
 .card p{margin:0;font-size:15px;color:var(--muted)}
 [hidden]{display:none!important}
 .nohit{display:none;color:var(--muted);font-style:italic}
@@ -324,7 +321,7 @@ ol.steps>li::before{content:counter(s);position:absolute;left:0;top:1px;width:26
 <section id="dashboard">
 <h2><span class="part">Menu: Dashboard</span>Dashboard</h2>
 <p>The first screen after login. It answers three questions at a glance: what needs attention, how the day is going, and where to go next.</p>
-<figure><img src="img/dashboard.webp" alt="Dashboard with quick-action buttons, alert strip, sales cards, recent bills and top products" loading="lazy"><figcaption>The full dashboard of the demo store.</figcaption></figure>
+<figure><img src="img/annotated/dashboard.webp" alt="Dashboard with quick-action buttons, alert strip, sales cards, recent bills and top products" loading="lazy"><figcaption>The full dashboard of the demo store.<ol class="legend"><li>Left menu: every section of the software, grouped (Sales, Purchase, Inventory, Masters, Reports, Accounts, Users &amp; Access, Settings).</li><li>Quick-action buttons: one click opens a screen. New Bill starts a bill.</li><li>Quick actions switch: shows or hides the coloured buttons.</li><li>Keyboard shortcuts, refresh and notifications.</li><li>Alert strip: near expiry, expired, low stock, out of stock, non-moving, money to collect and to pay. Click a tile for its list.</li><li>Pending collection (customers owe you) and pending payment (you owe suppliers).</li><li>Business cards: today&#x27;s sales, purchase, last 7 and 30 days, profit and stock value.</li><li>Recent bills with paid/due status; Top products of the last 30 days on the right.</li></ol></figcaption></figure>
 <h3>1 · Quick-action buttons</h3>
 <p>31 coloured buttons that open a screen directly. They can be hidden with the <b>Quick actions</b> switch in the top bar.</p>
 <ul class="chips">
@@ -357,7 +354,7 @@ ol.steps>li::before{content:counter(s);position:absolute;left:0;top:1px;width:26
 <section id="billing">
 <h2><span class="part">Menu: Sales › Billing · Shortcut: New Bill</span>Billing (POS)</h2>
 <p>The counter screen. A bill is made by finding the medicine, choosing the batch and quantity, adding the customer when needed, and saving with the payment mode.</p>
-<figure><img src="img/billing.webp" alt="Empty billing screen" loading="lazy"><figcaption>An empty bill. Nothing on the screen matters until a medicine is added.</figcaption></figure>
+<figure><img src="img/annotated/billing.webp" alt="Empty billing screen" loading="lazy"><figcaption>An empty bill. Nothing on the screen matters until a medicine is added.<ol class="legend"><li>Customer (F3): walk-in by default, or pick a saved customer. Patient (F4) and Doctor sit beside it.</li><li>Bill type: Retail or Wholesale (wholesale adds buyer GSTIN, place of supply, e-way bill).</li><li>Payment mode (F6): Cash, UPI, Card, Bank, Split or Credit.</li><li>Search medicine (F2): name, salt or barcode.</li><li>Phone Scanner: use a phone camera as the barcode scanner.</li><li>Keys: the list of billing shortcuts.</li><li>Footer: items, quantity, subtotal, discount, bill discount, GST and total.</li><li>Go &amp; Print Bill (F9): saves the bill, reduces stock and prints.</li></ol></figcaption></figure>
 <h3>Parts of the screen</h3>
 <div class="tbl"><table><thead><tr><th>Part</th><th>What it does</th></tr></thead><tbody>
 <tr><td>Bill tabs</td><td class="wrap">"New bill ×" and the <b>+</b> tab. Up to five bills can be open at once (for example while one customer fetches money). <kbd>F8</kbd> moves to the next bill, <kbd>Shift</kbd>+<kbd>F8</kbd> opens a new one.</td></tr>
@@ -389,7 +386,7 @@ ol.steps>li::before{content:counter(s);position:absolute;left:0;top:1px;width:26
 <li><b>Save and print.</b> Press <b>Go &amp; Print Bill</b> or <kbd>F9</kbd>. Stock comes off the chosen batch, the bill prints, and it goes to the customer on WhatsApp if the number is saved and WhatsApp is linked.</li>
 </ol>
 <figure><img src="img/billing-search.webp" alt="Find the medicine window showing Dololife 650 with batch, expiry and stock" loading="lazy"><figcaption>The Find the medicine window. The footer lists the keys: arrows to move, Enter to add, F2 new medicine, F1 cost, Esc to close.</figcaption></figure>
-<figure><img src="img/billing-items.webp" alt="A bill with four medicines, quantities, rates, GST and a total of 273 rupees" loading="lazy"><figcaption>A bill with four lines (not saved). Rates above MRP are flagged in red under the rate box.</figcaption></figure>
+<figure><img src="img/annotated/billing-items.webp" alt="A bill with four medicines, quantities, rates, GST and a total of 273 rupees" loading="lazy"><figcaption>A bill with four lines (not saved). Rates above MRP are flagged in red under the rate box.<ol class="legend"><li>Batch chosen for this line, with its expiry beside it.</li><li>Qty, pack box: full strips or packs.</li><li>Qty, loose box: single tablets. The line below shows the balance left.</li><li>A rate above MRP is flagged in red.</li><li>Hold parks this bill; Save as Estimate makes a quote; Clear empties the bill.</li><li>× removes the line (Ctrl+Del).</li><li>Totals update as lines are added.</li></ol></figcaption></figure>
 
 <h3>Loose tablets and strips</h3>
 <ul>
@@ -403,7 +400,7 @@ ol.steps>li::before{content:counter(s);position:absolute;left:0;top:1px;width:26
 <p>Use <kbd>←</kbd> <kbd>→</kbd> to move between the Customer, Patient and Doctor screens of this window, <kbd>F2</kbd> to add a new one, <kbd>F9</kbd> when done and <kbd>Esc</kbd> to close. If the customer has a credit limit, the counter shows what they would owe against it.</p>
 
 <h3>Payment <kbd>F6</kbd></h3>
-<figure><img src="img/billing-payment.webp" alt="Payment window with Cash, UPI, Card, Bank, Split and Credit" loading="lazy"><figcaption>The payment window.</figcaption></figure>
+<figure><img src="img/annotated/billing-payment.webp" alt="Payment window with Cash, UPI, Card, Bank, Split and Credit" loading="lazy"><figcaption>The payment window.<ol class="legend"><li>Payment modes: Cash, UPI, Card, Bank, Split (several modes) and Credit (due).</li><li>Credit puts the amount on the customer&#x27;s account.</li><li>Amount received. Full bill fills the whole amount.</li><li>Done (Enter) confirms the payment.</li></ol></figcaption></figure>
 <div class="tbl"><table><thead><tr><th>Mode</th><th>Use it when</th></tr></thead><tbody>
 <tr><td>Cash</td><td class="wrap">Paid in cash. Enter the amount received, or press <b>Full bill</b>.</td></tr>
 <tr><td>UPI / Card / Bank</td><td class="wrap">Paid digitally. If a UPI ID is set in Settings, every bill prints a Scan-and-Pay QR with the bill amount.</td></tr>
@@ -417,7 +414,7 @@ ol.steps>li::before{content:counter(s);position:absolute;left:0;top:1px;width:26
 
 <h3>Rate desk <kbd>F1</kbd>: what a medicine really cost</h3>
 <p>With a medicine on the bill, press <kbd>F1</kbd>. The rate desk shows who supplies it and what it really cost: MRP, last bought date, billed rate, scheme, discount, flat rate and flat rate plus GST; the purchase history bill by bill; and <b>What you can quote</b>: your cost, the rate on this bill, what you make, the break-even price and a rupee over. It also lists stock by batch.</p>
-<figure><img src="img/billing-rate-desk.webp" alt="Rate desk for Honitus syrup showing distributor cost, flat rate, break-even and margin" loading="lazy"><figcaption>The rate desk. Anything above the break-even figure earns money.</figcaption></figure>
+<figure><img src="img/annotated/billing-rate-desk.webp" alt="Rate desk for Honitus syrup showing distributor cost, flat rate, break-even and margin" loading="lazy"><figcaption>The rate desk. Anything above the break-even figure earns money.<ol class="legend"><li>Flat rate: what the medicine really cost after scheme and discount, per distributor.</li><li>Purchase history: every purchase with date, bill, batch and rates.</li><li>What you make at the rate on this bill.</li><li>Break-even: the lowest price that loses no money; a rupee over is shown too.</li></ol></figcaption></figure>
 
 <h3>Hold, estimates and challans</h3>
 <ul>
@@ -435,7 +432,7 @@ ol.steps>li::before{content:counter(s);position:absolute;left:0;top:1px;width:26
 <section id="invoices">
 <h2><span class="part">Menu: Sales › Invoices</span>Invoices</h2>
 <p>Every saved bill, with filters and totals.</p>
-<figure><img src="img/invoices.webp" alt="Invoices list with search, date range, status, doctor and payment mode filters" loading="lazy"><figcaption>The invoice list.</figcaption></figure>
+<figure><img src="img/annotated/invoices.webp" alt="Invoices list with search, date range, status, doctor and payment mode filters" loading="lazy"><figcaption>The invoice list.<ol class="legend"><li>Search by bill number, name, phone or e-mail; date range.</li><li>Filter by status (Paid, Partial, Due), doctor and payment mode.</li><li>Challans, Day by day totals, Print and Excel.</li><li>Status of each bill.</li><li>Send the bill on WhatsApp; it shows Sent once sent.</li><li>⋯ more actions; eye to view, arrow to download PDF.</li></ol></figcaption></figure>
 <ul>
 <li><b>Filters:</b> Search (bill number, name, phone or e-mail), From and To dates, Status (All, Paid, Partial, Due), Doctor, Payment mode (Cash, UPI, Card, Online, Credit / Due, Split). Press <b>Apply</b>.</li>
 <li><b>Buttons:</b> Challans (<kbd>Ctrl</kbd>+<kbd>L</kbd> shows challans), Day by day (totals per day), Print (a clean printed list), Excel (download), <b>+ New Bill</b>.</li>
@@ -486,7 +483,7 @@ ol.steps>li::before{content:counter(s);position:absolute;left:0;top:1px;width:26
 <figure><img src="img/purchases.webp" alt="Purchases list with filters and totals" loading="lazy"><figcaption>All purchase entries.</figcaption></figure>
 <p>Filters: Search (bill number, distributor or medicine), From, To, Distributor, Status (All, Paid, Part paid, Unpaid, Bill awaited, Goods awaited), Show (Bill-wise or Item-wise). Totals show purchases, total value and payable. <b>Edits</b> (<kbd>Ctrl</kbd>+<kbd>M</kbd>) shows which entries were edited. Each row has <b>Pay</b> to record a payment to the supplier.</p>
 <h3>A new purchase</h3>
-<figure><img src="img/purchase-entry.webp" alt="New purchase form" loading="lazy"><figcaption>New purchase. The orange line is the one being typed.</figcaption></figure>
+<figure><img src="img/annotated/purchase-entry.webp" alt="New purchase form" loading="lazy"><figcaption>New purchase. The orange line is the one being typed.<ol class="legend"><li>Distributor (Space/Enter to search, F2 to add new).</li><li>Rate on bill: Rate + GST, or Net rate including GST.</li><li>Scheme: Free qty extra, or Less on amount.</li><li>Import: fill the lines from Excel or a photo/PDF of the bill.</li><li>Save purchase (Alt+S).</li><li>Free column for scheme goods.</li><li>Total printed on the bill: the entry is checked against it.</li></ol></figcaption></figure>
 <div class="tbl"><table><thead><tr><th>Box</th><th>What it means</th></tr></thead><tbody>
 <tr><td>Distributor</td><td class="wrap">Choose first. Press Space or Enter to search, <kbd>F2</kbd> to add a new one. Their last bill sets how this one is read.</td></tr>
 <tr><td>Bill number, Bill date</td><td class="wrap">As printed on the distributor's bill.</td></tr>
@@ -516,7 +513,7 @@ ol.steps>li::before{content:counter(s);position:absolute;left:0;top:1px;width:26
 <p>Orders sent to suppliers. They never change stock; stock goes up only when the goods arrive and the order is received into a purchase entry.</p>
 <p>The list filters by Search, dates, Distributor and Status (Draft, Sent, Part received, Received, Cancelled), with totals for orders, order value and awaiting goods.</p>
 <h3>A new purchase order</h3>
-<figure><img src="img/purchase-order-new.webp" alt="New purchase order with suggestions from sales" loading="lazy"><figcaption>The software suggests what to order from the shop's own sales.</figcaption></figure>
+<figure><img src="img/annotated/purchase-order-new.webp" alt="New purchase order with suggestions from sales" loading="lazy"><figcaption>The software suggests what to order from the shop's own sales.<ol class="legend"><li>Suggested from your sales: what has run out or is below its alert level.</li><li>Why each medicine is suggested.</li><li>Suggested order quantity, editable.</li><li>Tick medicines and press Add ticked (or Select all).</li></ol></figcaption></figure>
 <ol class="steps">
 <li>Choose the distributor, order date and expected date.</li>
 <li>Review <b>Suggested from your sales</b>: each medicine shows why (Out of stock, Below your alert level, days of stock left), stock now, sold in 60 days, suggested order quantity and rate. Tick and press <b>Add ticked</b>, or <b>Select all</b>.</li>
@@ -557,7 +554,7 @@ ol.steps>li::before{content:counter(s);position:absolute;left:0;top:1px;width:26
 <section id="products">
 <h2><span class="part">Menu: Inventory › Products · Dashboard: Inventory</span>Products</h2>
 <p>The full stock list, page by page, edited like a spreadsheet.</p>
-<figure><img src="img/inventory.webp" alt="Products list with filters, tabs and editable columns" loading="lazy"><figcaption>Products and stock.</figcaption></figure>
+<figure><img src="img/annotated/inventory.webp" alt="Products list with filters, tabs and editable columns" loading="lazy"><figcaption>Products and stock.<ol class="legend"><li>Search by medicine name, barcode or batch.</li><li>Tabs: Near expiry, Low stock, No price, HSN missing, Low selling, Pack size.</li><li>Print, Excel download and Import from Excel.</li><li>+ Add Product opens the medicine form.</li><li>Pencil: edit the medicine. Prices can also be edited in the cells.</li><li>Stock in packs, e.g. 2 strips + 33 tabs after loose sales.</li></ol></figcaption></figure>
 <div class="tbl"><table><thead><tr><th>Control</th><th>What it does</th></tr></thead><tbody>
 <tr><td>Search</td><td class="wrap">Medicine name, barcode or batch, with a Product / other selector.</td></tr>
 <tr><td>Show</td><td class="wrap">All stock, Available stock, Expired stock.</td></tr>
@@ -579,7 +576,7 @@ ol.steps>li::before{content:counter(s);position:absolute;left:0;top:1px;width:26
 <div class="tbl"><table><thead><tr><th>Section</th><th>Fields and guidance</th></tr></thead><tbody>
 <tr><td>Medicine name</td><td class="wrap">Exactly as on the box; this is what is searched at the counter. <b>Global</b> (<kbd>F4</kbd>) searches the national medicine directory to fill details.</td></tr>
 <tr><td>Medicine</td><td class="wrap">Form (Tablet, Syrup…), Salt (e.g. Paracetamol 650 mg), Company, Schedule (None, H, H1, X). Schedule H/H1/X forces patient name, phone and doctor before a bill can be made.</td></tr>
-<tr><td>Pack</td><td class="wrap">Sold as (STRIP, BOTTLE, TUBE, BOX). Pieces in one pack (for loose selling): 10 for a strip of 10, blank for a bottle or tube. HSN (most medicines 3004). GST % (usually 5 or 12).</td></tr>
+<tr><td>Pack</td><td class="wrap">Sold as (STRIP, BOTTLE, TUBE, BOX). Pieces in one pack (for loose selling): 10 for a strip of 10, blank for a bottle or tube. HSN (most medicines 3004). GST %: since 22 September 2025 most medicines are 5%, and some life-saving drugs are nil-rated.</td></tr>
 <tr><td>Price, one pack</td><td class="wrap">MRP (printed price, never below the selling rate), Sale price (what you charge), Purchase rate (what you paid; never printed on a customer bill).</td></tr>
 <tr><td>Opening stock</td><td class="wrap">Batch no., Expiry (month and year), Quantity in full packs.</td></tr>
 </tbody></table></div>
@@ -655,7 +652,7 @@ ol.steps>li::before{content:counter(s);position:absolute;left:0;top:1px;width:26
 
 <section id="customers">
 <h2><span class="part">Menu: Masters › Customers</span>Customers</h2>
-<figure><img src="img/customers.webp" alt="Customer list with dues and collect controls" loading="lazy"><figcaption>Customers. A customer with dues has a quick Collect box.</figcaption></figure>
+<figure><img src="img/annotated/customers.webp" alt="Customer list with dues and collect controls" loading="lazy"><figcaption>Customers. A customer with dues has a quick Collect box.<ol class="legend"><li>Only Dues shows customers who owe money.</li><li>Type the amount and mode to collect a due.</li><li>Collect records the payment.</li><li>Bills, Ledger, Edit and Delete for each customer.</li><li>+ Add Customer, with credit limit and opening balance.</li></ol></figcaption></figure>
 <p>Columns: Name, Phone, Email, Total spent, Due. Search by name, phone or e-mail; <b>Only Dues</b> filters to customers who owe. For a customer with a due, type the amount, choose the mode (Cash, UPI, Card, Bank, Cheque) and press <b>Collect</b>. Row actions: Receive, <b>Bills</b> (all their invoices, filter by date, print, view each), <b>Ledger</b>, Edit, Delete.</p>
 <h3>Add Customer</h3>
 <p>Name (required), Phone, Email (for sending bills), Address, State (decides CGST/SGST vs IGST), GSTIN (optional), Gender, Age, <b>Credit limit</b>, Opening balance, Notes (internal).</p>
@@ -695,7 +692,7 @@ ol.steps>li::before{content:counter(s);position:absolute;left:0;top:1px;width:26
 <section id="reports">
 <h2><span class="part">Menu: Reports</span>Reports</h2>
 <p>There are 55 report views in six tabs (the Schedule Drug Register appears in three of them). Pick a report, set From and To, press <b>Apply</b>. Every report has <b>Download CSV</b> and <b>Print</b> (prints only the table with a proper header) and a link back to its group.</p>
-<figure><img src="img/reports-sales.webp" alt="Sales reports tab with Day-End Z-Report" loading="lazy"><figcaption>The Reports page, Sales tab, with the Day-End Z-Report below.</figcaption></figure>
+<figure><img src="img/annotated/reports-sales.webp" alt="Sales reports tab with Day-End Z-Report" loading="lazy"><figcaption>The Reports page, Sales tab, with the Day-End Z-Report below.<ol class="legend"><li>Six report groups: Sales, Drug Registers, Purchase, Stock, Account, GST.</li><li>Open a report, choose the dates and press Apply.</li><li>Day-End Z-Report: the day&#x27;s totals; print it to close the counter.</li><li>Cash collected, UPI/card/bank, credit, returns, expenses and net cash in drawer.</li></ol></figcaption></figure>
 <h3>Day-End Z-Report</h3>
 <p>Shown under every tab for today: Bills today, Total sales, Cash collected, UPI / Card / Bank, Credit (due) today, Sales returns, Expenses today and Net cash in drawer (estimate). <b>Print Z-Report</b> prints it for closing the counter.</p>
 
@@ -842,7 +839,7 @@ ol.steps>li::before{content:counter(s);position:absolute;left:0;top:1px;width:26
 <tr><td>Everything else</td><td class="wrap">Demand Register · Store Documents · Activity Log · Use the Android app</td></tr>
 </tbody></table></div>
 <p>Permissions apply on the website and on the phone at once. Switching off "Use the Android app" signs the person out of the app.</p>
-<figure><img src="img/staff-roles.webp" alt="Cashier role permissions" loading="lazy"><figcaption>The Cashier role and its switches.</figcaption></figure>
+<figure><img src="img/annotated/staff-roles.webp" alt="Cashier role permissions" loading="lazy"><figcaption>The Cashier role and its switches.<ol class="legend"><li>Built-in roles cannot be changed: Copy to my shop to edit.</li><li>Each switch allows one action, e.g. Make a bill.</li><li>Hide purchase prices from counter staff.</li><li>Choose which dashboard boxes the person sees.</li></ol></figcaption></figure>
 <h3>Attendance, working days, tasks</h3>
 <ul>
 <li><b>Attendance:</b> attendance waiting for approval and who is on shift today. Staff punch in from the Android app with a photo (Full or Half day); the day counts toward salary after the owner approves it. Shops can approve automatically.</li>
@@ -883,7 +880,7 @@ ol.steps>li::before{content:counter(s);position:absolute;left:0;top:1px;width:26
 <figure><img src="img/settings-shop.webp" alt="Store settings, shop details" loading="lazy"><figcaption>Shop details.</figcaption></figure>
 <figure><img src="img/settings-themes.webp" alt="Invoice themes" loading="lazy"><figcaption>Invoice themes with watermark and festival options.</figcaption></figure>
 <figure><img src="img/settings-bill.webp" alt="Bill design" loading="lazy"><figcaption>Bill design: drag blocks to arrange the printed bill.</figcaption></figure>
-<figure><img src="img/settings-rules.webp" alt="Counter rules" loading="lazy"><figcaption>Counter rules.</figcaption></figure>
+<figure><img src="img/annotated/settings-rules.webp" alt="Counter rules" loading="lazy"><figcaption>Counter rules.<ol class="legend"><li>Block billing of expired medicines.</li><li>Stop a bill past a customer&#x27;s credit limit.</li><li>Block billing more than you have in stock.</li><li>Selling prices include GST (MRP billing).</li></ol></figcaption></figure>
 <figure><img src="img/settings-devices.webp" alt="Printers and scanners" loading="lazy"><figcaption>Printers &amp; scanners.</figcaption></figure>
 <figure><img src="img/settings-sending.webp" alt="WhatsApp settings" loading="lazy"><figcaption>WhatsApp sending.</figcaption></figure>
 </section>
@@ -1039,6 +1036,7 @@ ol.steps>li::before{content:counter(s);position:absolute;left:0;top:1px;width:26
 <li><b>Nexcod WhatsApp:</b> in the demo store the WhatsApp settings show "Something went wrong with Nexcod WhatsApp. Bills are not going from it right now."</li>
 <li><b>Keyboard guide:</b> the How to Use page lists Alt+number shortcuts; the in-app Keys window on Billing lists only the billing keys.</li>
 <li><b>Menu names:</b> the How to Use guide refers to "More ›" menus (More › Settings, More › Activity Log, More › Plan) from the earlier top-menu layout; the new layout uses a left menu with Settings and Users &amp; Access groups.</li>
+<li><b>GST hint out of date:</b> the Add product form says GST is "usually 5 or 12 for medicine". Since 22 September 2025 most medicines are 5% (some life-saving drugs nil), so the hint and the demo data (12%) should be updated.</li>
 <li><b>Demo data:</b> the demo GSTIN is flagged by the Before You File check as not a real GSTIN, and some demo product names are test text. A cleaner demo store would make better screenshots for marketing.</li>
 </ul>
 </section>

@@ -1,0 +1,79 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://nexcodpos.in/#organization",
+      "name": "Nexcod POS",
+      "alternateName": ["Nexcod POS Pharmacy Billing Software", "NexcodPOS"],
+      "disambiguatingDescription": "Indian pharmacy billing and inventory software (nexcodpos.in). Not related to nexcod.com.",
+      "description": "Pharmacy billing and inventory software for medical stores and chemists in India.",
+      "url": "https://nexcodpos.in/",
+      "logo": {"@type": "ImageObject", "url": "https://nexcodpos.in/assets/logo.png", "width": 500, "height": 500},
+      "image": "https://nexcodpos.in/assets/og-image.png",
+      "email": "support@nexcodpos.in",
+      "founder": {"@id": "https://nexcodpos.in/#founder"},
+      "address": {"@type": "PostalAddress", "addressCountry": "IN"},
+      "areaServed": {"@type": "Country", "name": "India"},
+      "contactPoint": [
+        {"@type": "ContactPoint", "contactType": "customer support", "email": "support@nexcodpos.in", "telephone": "+91-7319833790", "areaServed": "IN", "availableLanguage": ["en", "hi"]},
+        {"@type": "ContactPoint", "contactType": "sales", "telephone": "+91-7281921783", "areaServed": "IN", "availableLanguage": ["en", "hi"]}
+      ],
+      "sameAs": [
+        "https://www.instagram.com/nexcodpos",
+        "https://play.google.com/store/apps/details?id=in.nexcodpos.app",
+        "REPLACE: https://www.linkedin.com/company/<nexcod-pos-page>",
+        "REPLACE: https://www.youtube.com/@<nexcodpos>",
+        "REPLACE: https://www.facebook.com/<nexcodpos>",
+        "REPLACE: https://x.com/<nexcodpos>",
+        "REPLACE: https://www.crunchbase.com/organization/<nexcod-pos>",
+        "REPLACE: https://www.wikidata.org/wiki/<Q-id, only after the item exists>"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://nexcodpos.in/#founder",
+      "name": "Krishav Kumar Barman",
+      "alternateName": ["Krishav Barman"],
+      "jobTitle": "CEO and Founder",
+      "description": "Krishav Kumar Barman is the CEO and founder of Nexcod POS, pharmacy billing and inventory software for medical stores in India. He wrote its first version for his father's pharmacy.",
+      "worksFor": {"@id": "https://nexcodpos.in/#organization"},
+      "knowsAbout": ["Pharmacy billing software", "Medical store management", "GST billing", "Inventory management", "SaaS for small businesses"],
+      "nationality": {"@type": "Country", "name": "India"},
+      "url": "https://nexcodpos.in/founder",
+      "image": "https://nexcodpos.in/assets/team/founder.jpg",
+      "sameAs": [
+        "https://www.linkedin.com/in/krishav-kumar-barman-82ab21410",
+        "REPLACE: https://x.com/<krishav handle>",
+        "REPLACE: https://www.instagram.com/<krishav personal handle>",
+        "REPLACE: https://www.youtube.com/@<krishav or nexcodpos>",
+        "REPLACE: https://www.crunchbase.com/person/<krishav-kumar-barman>",
+        "REPLACE: https://www.wikidata.org/wiki/<Q-id, only after the item exists>"
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://nexcodpos.in/#software",
+      "name": "Nexcod POS",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "Pharmacy billing and inventory software",
+      "operatingSystem": "Web browser, Android",
+      "softwareVersion": "3.0.0",
+      "inLanguage": ["en-IN", "hi-IN"],
+      "url": "https://nexcodpos.in/",
+      "downloadUrl": "https://play.google.com/store/apps/details?id=in.nexcodpos.app",
+      "publisher": {"@id": "https://nexcodpos.in/#organization"},
+      "author": {"@id": "https://nexcodpos.in/#organization"},
+      "featureList": ["GST and composition billing", "Batch and expiry tracking", "Loose tablet billing", "Schedule H, H1 and X registers", "Purchase entry from bill photo or Excel", "WhatsApp bills", "GSTR-1 and GSTR-3B reports", "Staff logins with permissions", "Android app"],
+      "screenshot": "REPLACE: https://nexcodpos.in/uploads/screenshots/<new v3 dashboard screenshot>.png",
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "INR",
+        "lowPrice": "399",
+        "highPrice": "3897",
+        "offerCount": "5",
+        "url": "https://nexcodpos.in/pricing"
+      }
+    }
+  ]
+}

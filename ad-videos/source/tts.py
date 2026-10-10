@@ -24,7 +24,7 @@ for v in V:
     t=0
     for s in v['scenes']:
         d=dur(s['vofile']); s['vodur']=round(d,3)
-        s['dur']=round(max(MIN[s['type']], d+0.55 + (0.5 if s['type']=='cta' else 0)),2)
+        s['dur']=round(max(MIN[s['type']], d+0.55 + (0.5 if s['type']=='cta' else 0) + (0.9 if s.get('notes') else 0)),2)
         s['start']=round(t,3); t+=s['dur']
     v['total']=round(t,2)
     print(v['id'],v['total'],[s['dur'] for s in v['scenes']])
