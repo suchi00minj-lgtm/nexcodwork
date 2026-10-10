@@ -11,7 +11,7 @@ const mode=process.argv[2]; const ids=(process.argv[3]||'').split(',').filter(Bo
   if(mode==='still'){ // one frame per scene at 75% for checking
     for(const [i,s] of v.scenes.entries()){
       await page.evaluate(([s,m])=>window.build(s,m),[s,{start:s.start,total:v.total,last:i===v.scenes.length-1}]);
-      await page.evaluate(t=>window.seek(t),s.dur*0.8);
+      await page.evaluate(t=>window.seek(t),s.dur*(+process.env.AT||0.8));
       await page.screenshot({path:`${DIR}/build/still_${v.id}_${i}.jpg`,type:'jpeg',quality:80});
     }
     console.log('still',v.id);continue;
