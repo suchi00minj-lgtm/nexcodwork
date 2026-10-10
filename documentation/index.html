@@ -1,0 +1,1072 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Nexcod POS User Manual</title>
+<meta name="description" content="Complete screen-by-screen guide to Nexcod POS v3.0.0, the pharmacy billing and inventory software.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+/* Layout: fixed contents rail on the left, one reading column on the right; figures sit full column width. */
+:root{
+  --bg:#f7f5f4; --paper:#ffffff; --ink:#1c1416; --muted:#5f5558; --line:#e6dfdd;
+  --brand:#c8161e; --brand-deep:#8a0c12; --brand-soft:#fbe9ea; --navy:#0b1b3f;
+  --ok:#137a3a; --warn:#a85a00; --kbd:#f1ecea;
+  --display:"Poppins",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --body:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#141012; --paper:#1d181a; --ink:#f2ecea; --muted:#b8adb0; --line:#3a3033;
+  --brand:#ff5a5f; --brand-deep:#ff8a8d; --brand-soft:#3a1d20; --navy:#9fb3ff;
+  --ok:#5fd08a; --warn:#f0b35a; --kbd:#2b2427; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#141012; --paper:#1d181a; --ink:#f2ecea; --muted:#b8adb0; --line:#3a3033;
+  --brand:#ff5a5f; --brand-deep:#ff8a8d; --brand-soft:#3a1d20; --navy:#9fb3ff;
+  --ok:#5fd08a; --warn:#f0b35a; --kbd:#2b2427; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;margin:0}
+a{color:var(--brand)}
+.shell{display:grid;grid-template-columns:290px minmax(0,1fr);min-height:100vh}
+nav.toc{position:sticky;top:env(safe-area-inset-top,0px);height:100vh;overflow:auto;background:var(--paper);border-right:1px solid var(--line);padding-block:20px;padding-inline:18px}
+.brandrow{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.brandrow img{width:38px;height:38px;border-radius:50%}
+.brandrow b{font-family:var(--display);font-size:18px;color:var(--ink)}
+.brandrow b span{color:var(--brand)}
+#q{width:100%;padding:9px 11px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font:inherit;font-size:15px}
+#q:focus-visible{outline:2px solid var(--brand);outline-offset:1px}
+.toc h4{font-family:var(--display);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:18px 0 6px}
+.toc ol{list-style:none;margin:0;padding:0}
+.toc li a{display:block;padding:4px 8px;border-radius:6px;color:var(--ink);text-decoration:none;font-size:15px}
+.toc li a:hover,.toc li a:focus-visible{background:var(--brand-soft);color:var(--brand-deep);outline:none}
+main{padding-block:40px 120px;padding-inline:clamp(16px,5vw,64px);min-width:0}
+.col{max-width:860px}
+header.hero{border-bottom:3px solid var(--brand);padding-bottom:24px;margin-bottom:12px}
+.eyebrow{font-family:var(--display);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--brand);font-weight:600}
+h1{font-family:var(--display);font-size:clamp(30px,5vw,44px);line-height:1.15;margin:.2em 0 .3em;text-wrap:balance}
+h2{font-family:var(--display);font-size:26px;line-height:1.25;margin:2.2em 0 .5em;padding-top:.6em;border-top:1px solid var(--line);text-wrap:balance}
+h3{font-family:var(--display);font-size:19px;margin:1.6em 0 .4em;text-wrap:balance}
+h2 .part{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--brand);margin-bottom:4px}
+.part-title{font-family:var(--display);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--paper);background:var(--brand-deep);display:inline-block;padding:4px 10px;border-radius:4px;margin-top:3em}
+p,li{max-width:70ch}
+.lead{font-size:19px;color:var(--muted)}
+.meta{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:14.5px;color:var(--muted)}
+.path{font-family:var(--mono);font-size:13.5px;background:var(--kbd);border:1px solid var(--line);border-radius:5px;padding:1px 6px;overflow-wrap:anywhere}
+kbd{font-family:var(--mono);font-size:13px;background:var(--kbd);border:1px solid var(--line);border-bottom-width:2px;border-radius:5px;padding:0 6px;white-space:nowrap}
+figure{margin:18px 0 26px;background:var(--paper);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+figure img{display:block;width:100%;height:auto;cursor:zoom-in;background:#fff}
+figcaption{font-size:14.5px;color:var(--muted);padding:9px 14px;border-top:1px solid var(--line)}
+.tbl{overflow-x:auto;margin:14px 0 22px;border:1px solid var(--line);border-radius:10px;background:var(--paper)}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{text-align:left;padding:8px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--display);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600;background:var(--bg)}
+tr:last-child td{border-bottom:0}
+td:first-child{font-weight:600;white-space:nowrap}
+td.wrap{white-space:normal}
+.note{border-left:4px solid var(--brand);background:var(--brand-soft);padding:10px 14px;border-radius:0 8px 8px 0;margin:16px 0}
+.note.ok{border-left-color:var(--ok)}
+.note b:first-child{font-family:var(--display);font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+ol.steps{counter-reset:s;list-style:none;padding:0}
+ol.steps>li{counter-increment:s;position:relative;padding-left:40px;margin:10px 0}
+ol.steps>li::before{content:counter(s);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;background:var(--brand);color:#fff;font-family:var(--display);font-size:13px;font-weight:600;display:grid;place-items:center}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 16px;padding:0;list-style:none}
+.chips li{font-size:14px;border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:2px 10px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin:14px 0}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:12px 14px;min-width:0}
+.card h4{font-family:var(--display);font-size:15px;margin:0 0 4px}
+.card p{margin:0;font-size:15px;color:var(--muted)}
+[hidden]{display:none!important}
+.nohit{display:none;color:var(--muted);font-style:italic}
+#lb{position:fixed;inset:0;background:rgba(10,6,8,.86);display:grid;place-items:center;padding:20px;z-index:50;cursor:zoom-out}
+#lb img{max-width:100%;max-height:100%;border-radius:6px;background:#fff}
+.menubtn{display:none}
+@media (max-width:900px){
+  .shell{grid-template-columns:1fr}
+  nav.toc{position:relative;height:auto;max-height:none;border-right:0;border-bottom:1px solid var(--line)}
+  nav.toc .lists{display:none}
+  nav.toc.open .lists{display:block}
+  .menubtn{display:inline-block;margin-top:10px;font:inherit;font-size:15px;padding:7px 12px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
+  td:first-child{white-space:normal}
+}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+@media print{nav.toc,.menubtn,#lb{display:none!important}.shell{display:block}main{padding:0}figure,table{break-inside:avoid}h2{break-before:page}}
+</style>
+</head><body>
+
+<div class="shell">
+<nav class="toc" id="toc" aria-label="Contents">
+  <div class="brandrow"><img src="img/logo.png" alt=""><b>Nexcod <span>POS</span> Manual</b></div>
+  <label for="q" class="eyebrow">Search this manual</label>
+  <input id="q" type="search" placeholder="e.g. loose, GSTR-1, expiry" autocomplete="off">
+  <button class="menubtn" id="menubtn" type="button" aria-expanded="false">Show contents</button>
+  <div class="lists">
+  <h4>Getting started</h4>
+  <ol>
+    <li><a href="#about">About this manual</a></li>
+    <li><a href="#what">What Nexcod POS is</a></li>
+    <li><a href="#plans">Plans and pricing</a></li>
+    <li><a href="#signup">Create an account</a></li>
+    <li><a href="#signin">Sign in</a></li>
+    <li><a href="#setup">First-time setup</a></li>
+    <li><a href="#layout">The screen and the menu</a></li>
+  </ol>
+  <h4>Selling</h4>
+  <ol>
+    <li><a href="#dashboard">Dashboard</a></li>
+    <li><a href="#billing">Billing (POS)</a></li>
+    <li><a href="#invoices">Invoices</a></li>
+    <li><a href="#estimates">Estimates</a></li>
+    <li><a href="#sales-returns">Sales Returns</a></li>
+    <li><a href="#demand">Demand Register</a></li>
+    <li><a href="#health">Health Readings</a></li>
+  </ol>
+  <h4>Buying</h4>
+  <ol>
+    <li><a href="#purchase-entry">Purchase Entry</a></li>
+    <li><a href="#purchase-orders">Purchase Orders</a></li>
+    <li><a href="#purchase-returns">Purchase Returns</a></li>
+    <li><a href="#low-stock">Low Stock (what to order)</a></li>
+    <li><a href="#suppliers">Suppliers</a></li>
+  </ol>
+  <h4>Stock and medicines</h4>
+  <ol>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#add-product">Adding a medicine</a></li>
+    <li><a href="#batch-stock">Batch Stock</a></li>
+    <li><a href="#stock-register">Stock Register</a></li>
+    <li><a href="#stock-adjustment">Stock Adjustment</a></li>
+    <li><a href="#stock-check">Stock Check</a></li>
+    <li><a href="#barcode-labels">Barcode Labels</a></li>
+    <li><a href="#medicine-list">Medicine List</a></li>
+    <li><a href="#schedule-check">Schedule Check</a></li>
+    <li><a href="#clean-up">Clean Up</a></li>
+  </ol>
+  <h4>Masters</h4>
+  <ol>
+    <li><a href="#customers">Customers</a></li>
+    <li><a href="#patients">Patients and Patient History</a></li>
+    <li><a href="#doctors">Doctors</a></li>
+    <li><a href="#brands">Brands, Categories, Units</a></li>
+  </ol>
+  <h4>Reports and accounts</h4>
+  <ol>
+    <li><a href="#reports">Reports (55 views)</a></li>
+    <li><a href="#books">Books</a></li>
+    <li><a href="#payments">Payments</a></li>
+    <li><a href="#expenses">Expenses</a></li>
+    <li><a href="#ledger">Party Ledger</a></li>
+  </ol>
+  <h4>Shop administration</h4>
+  <ol>
+    <li><a href="#staff">Staff, roles and attendance</a></li>
+    <li><a href="#devices">Devices and Activity Log</a></li>
+    <li><a href="#settings">Store Settings</a></li>
+    <li><a href="#documents">Shop Documents</a></li>
+    <li><a href="#plan">My Plan, Backup, Downloads</a></li>
+    <li><a href="#support">Help, Support and Reviews</a></li>
+  </ol>
+  <h4>Beyond the counter</h4>
+  <ol>
+    <li><a href="#android">Android app</a></li>
+    <li><a href="#website">Public website</a></li>
+    <li><a href="#find-my-bills">Find My Bills</a></li>
+  </ol>
+  <h4>Reference</h4>
+  <ol>
+    <li><a href="#shortcuts">Keyboard shortcuts</a></li>
+    <li><a href="#glossary">Glossary</a></li>
+    <li><a href="#faq">Common questions</a></li>
+    <li><a href="#review-notes">Notes for the product team</a></li>
+  </ol>
+  </div>
+</nav>
+
+<main id="main">
+<div class="col">
+
+<header class="hero" id="top">
+  <div class="eyebrow">User manual · Nexcod POS v3.0.0</div>
+  <h1>Nexcod POS, screen by screen</h1>
+  <p class="lead">Every page of the pharmacy billing and inventory software: what it is for, what each box and button does, and the steps to get a job done at the counter.</p>
+  <div class="meta"><span>Written from the live software, 10 October 2026</span><span>Demo store: Sharma Medical Store, Platinum plan</span><span>Website: nexcodpos.in</span></div>
+</header>
+<p class="nohit" id="nohit">Nothing in the manual matches that search. Try a shorter word.</p>
+
+<!-- ============ GETTING STARTED ============ -->
+<div class="part-title">Part 1 · Getting started</div>
+
+<section id="about">
+<h2>About this manual</h2>
+<p>This manual covers Nexcod POS version 3.0.0 as it runs in a web browser. Every screenshot was taken from the live software using a demo shop, "Sharma Medical Store". Customer phone numbers, e-mail addresses and IP addresses are blurred.</p>
+<p>The manual follows the left-hand menu of the software from top to bottom. Each section opens with the menu path (for example <span class="path">Sales › Billing</span>), then explains the screen, then gives the steps for the common jobs done on it.</p>
+<div class="note"><b>Tip</b><br>Most screens also have a short guided tour that appears the first time the screen is opened, and a round <b>?</b> button at the bottom right that opens help for that screen.</div>
+</section>
+
+<section id="what">
+<h2>What Nexcod POS is</h2>
+<p>Nexcod POS is cloud billing and stock software made for retail pharmacies, medical stores and chemists in India. It runs in a browser on a computer, laptop, tablet or phone, and there is an Android app on the same account and the same data.</p>
+<div class="grid2">
+  <div class="card"><h4>Billing built for a medicine counter</h4><p>Batch chosen at the counter, loose tablets billed from a strip, Schedule H/H1/X details asked for automatically, GST or composition bills.</p></div>
+  <div class="card"><h4>Stock that knows batch and expiry</h4><p>Every batch has its own expiry, MRP and purchase rate. Near-expiry and expired stock are listed separately, and expired batches can be blocked from sale.</p></div>
+  <div class="card"><h4>Purchases from the distributor bill</h4><p>Type the bill line by line, import it from Excel, or read it from a photo. Schemes, free goods and the bill total are checked.</p></div>
+  <div class="card"><h4>Books and GST without extra work</h4><p>Profit and loss, balance sheet, day book, GSTR-1 tables, GSTR-3B figures and a pre-filing check, all built from the bills already made.</p></div>
+</div>
+<p><b>Who it suits:</b> a retail pharmacy, medical store or chemist that bills over a counter and must keep batch, expiry and Schedule H records, with one shop or several and one person at the counter or a team. It also has an optional clinic module for shops that run a doctor's clinic.</p>
+<p><b>Who it does not suit (per the company):</b> a distributor or wholesaler needing C&amp;F and scheme-wise distribution, a hospital pharmacy that must sit inside a hospital information system, or a shop that wants a one-time purchase with no internet.</p>
+</section>
+
+<section id="plans">
+<h2>Plans and pricing</h2>
+<p>Every new account starts with a 7-day free trial with every feature, and no card is needed. After that, a paid plan is needed to keep making new bills. All data already entered stays in the account.</p>
+<div class="tbl"><table>
+<thead><tr><th>Plan</th><th>Period</th><th>Price</th><th>Works out to</th></tr></thead>
+<tbody>
+<tr><td>Free Trial</td><td>7 days</td><td>₹0</td><td class="wrap">Every feature, bills sent from Nexcod's WhatsApp</td></tr>
+<tr><td>Silver</td><td>3 months</td><td>₹399 <s>₹1,499</s></td><td>₹133 a month</td></tr>
+<tr><td>Gold</td><td>6 months</td><td>₹699 <s>₹2,499</s></td><td>₹117 a month</td></tr>
+<tr><td>Platinum</td><td>1 / 2 / 3 years</td><td>₹1,299 / ₹2,598 / ₹3,897</td><td>₹108 a month</td></tr>
+</tbody></table></div>
+<p>All paid plans include the same features: unlimited bills and products, bills on WhatsApp from the shop's own number or Nexcod's, the Android app, staff logins with attendance and salary, every bill design with no Nexcod branding, purchase, return, profit and GST reports, and priority e-mail and phone support. The plans differ only in how long they run.</p>
+<ul>
+<li><b>Nothing renews on its own.</b> No card is stored and nothing is charged again unless the shop pays for another period.</li>
+<li><b>Paying early loses nothing.</b> Time bought while a plan is running is added after its end date.</li>
+<li><b>Payment is by UPI</b> from the <span class="path">Settings › My Plan</span> page inside the software.</li>
+<li><b>Refund:</b> a full refund can be asked for within 7 days of paying for the first paid plan of a store, with the payment's UTR reference.</li>
+</ul>
+<figure><img src="img/web-pricing.webp" alt="Pricing page on nexcodpos.in showing Free Trial, Silver, Gold and Platinum plans" loading="lazy"><figcaption>The pricing page on nexcodpos.in.</figcaption></figure>
+</section>
+
+<section id="signup">
+<h2>Create an account</h2>
+<p>Open <b>nexcodpos.in</b> and press <b>Try Nexcod POS Free</b> or <b>Start free trial</b>. This opens <span class="path">myaccount.nexcodpos.in/signup</span>. Sign-up has two steps. <b>Continue with Google</b> is also offered.</p>
+<figure><img src="img/web-signup.webp" alt="Create account form, step 1" loading="lazy"><figcaption>Step 1 of sign-up: the account.</figcaption></figure>
+<h3>Step 1 · Account</h3>
+<div class="tbl"><table><thead><tr><th>Field</th><th>What to enter</th></tr></thead><tbody>
+<tr><td>Full name</td><td class="wrap">The owner's name.</td></tr>
+<tr><td>Email + Verify</td><td class="wrap">Press <b>Verify</b>. A 6-digit code is e-mailed. Type it into the six boxes. The email shows "Verified" when done. <b>Resend OTP</b> sends a new code.</td></tr>
+<tr><td>Mobile number</td><td class="wrap">10-digit Indian mobile number (+91 is fixed).</td></tr>
+<tr><td>Password</td><td class="wrap">At least 8 characters. The eye icon shows what was typed.</td></tr>
+</tbody></table></div>
+<p>The button reads <b>Verify email first</b> until the e-mail is verified, then it moves to step 2.</p>
+<h3>Step 2 · Shop</h3>
+<div class="tbl"><table><thead><tr><th>Field</th><th>What to enter</th></tr></thead><tbody>
+<tr><td>Shop name</td><td class="wrap">As it should print on bills, e.g. "Sharma Medical Store".</td></tr>
+<tr><td>Address</td><td class="wrap">Shop number, street, area.</td></tr>
+<tr><td>State, District</td><td class="wrap">Pick the state first; the district list fills in for that state. The state decides CGST/SGST vs IGST on bills.</td></tr>
+<tr><td>City or town, Pin code</td><td class="wrap">Six-digit pin code.</td></tr>
+<tr><td>Quick check</td><td class="wrap">Answer the small sum shown (a check that a person is signing up).</td></tr>
+<tr><td>Terms</td><td class="wrap">Tick to agree to the Terms and Privacy Policy, then press <b>Create account</b>.</td></tr>
+</tbody></table></div>
+</section>
+
+<section id="signin">
+<h2>Sign in</h2>
+<p>Open <span class="path">myaccount.nexcodpos.in</span> or press <b>Login</b> on the website.</p>
+<figure><img src="img/web-login.webp" alt="Sign in page with Email and Mobile tabs" loading="lazy"><figcaption>The sign-in page.</figcaption></figure>
+<ul>
+<li><b>Email tab:</b> enter the e-mail and password, then press <b>Sign in</b>.</li>
+<li><b>Mobile tab:</b> currently shows "Mobile sign-in is not available right now. Please use Email."</li>
+<li><b>Forgot password?</b> starts a password reset by e-mail.</li>
+<li><b>Continue with Google</b> signs in with a Google account.</li>
+<li>If two-step login is switched on (Settings › Security), a code is e-mailed at every login.</li>
+</ul>
+<p>After signing in, the software opens the <a href="#dashboard">Dashboard</a>.</p>
+</section>
+
+<section id="setup">
+<h2>First-time setup</h2>
+<p>Do these once, in this order, before the first real bill.</p>
+<ol class="steps">
+<li><b>Shop details.</b> <span class="path">Settings › Store Settings › Shop details</span>: logo, shop name, phone, e-mail, GSTIN, GST type (Regular, Composition or Unregistered), drug licence number, bill number prefix, UPI ID (prints a Scan-and-Pay QR on every bill) and address. Press <b>Save</b>.</li>
+<li><b>Bill look and printer.</b> Choose an invoice theme and paper size (A4, A5, 80 mm, 58 mm and more) under <b>Invoice Themes</b> and <b>Bill design</b>. Connect the bill printer and barcode scanner under <b>Printers &amp; Scanners</b>.</li>
+<li><b>Counter rules.</b> Decide whether expired medicines, no-price lines, over-stock bills and over-credit-limit bills are blocked, and whether selling prices include GST (MRP billing).</li>
+<li><b>Opening stock.</b> Add medicines one by one with <span class="path">Inventory › Products › + Add Product</span>, or bring in a list with <b>Import</b> (Excel). Or enter the last distributor bills through <a href="#purchase-entry">Purchase Entry</a>, which creates stock and batches together.</li>
+<li><b>Masters.</b> Add suppliers, regular customers (with credit limits if needed) and doctors.</li>
+<li><b>WhatsApp.</b> Link the shop's WhatsApp number under <span class="path">Settings › WhatsApp &amp; API</span> so bills go to customers automatically.</li>
+<li><b>Staff.</b> Add counter staff under <span class="path">Users &amp; Access › Multi-user</span> and give each a role.</li>
+<li><b>Make a bill.</b> Press <b>New Bill</b> on the dashboard.</li>
+</ol>
+</section>
+
+<section id="layout">
+<h2>The screen and the menu</h2>
+<p>Every page has the same frame: a red menu down the left and a red top bar.</p>
+<h3>Top bar</h3>
+<div class="tbl"><table><thead><tr><th>Item</th><th>What it does</th></tr></thead><tbody>
+<tr><td>Shop name and city</td><td class="wrap">The shop you are working in, with its logo. Clicking it returns to the dashboard.</td></tr>
+<tr><td>Plan badge</td><td class="wrap">Shows the current plan (for example PLATINUM). Opens My Plan.</td></tr>
+<tr><td>Quick actions switch</td><td class="wrap">On the dashboard only. Shows or hides the grid of coloured quick-action buttons.</td></tr>
+<tr><td>Date and clock</td><td class="wrap">Today's date and the live time.</td></tr>
+<tr><td>Keyboard icon</td><td class="wrap">Opens the list of keyboard shortcuts for the screen.</td></tr>
+<tr><td>Refresh icon</td><td class="wrap">Reloads the latest data (useful when another counter has billed).</td></tr>
+<tr><td>Bell</td><td class="wrap">Notifications: low stock, expiry, attendance and similar alerts.</td></tr>
+<tr><td>Up-arrow button</td><td class="wrap">Collapses the top area to give the page more room.</td></tr>
+</tbody></table></div>
+<h3>Left menu</h3>
+<p>The ☰ icon beside "Nexcod POS" collapses the menu. Groups with an arrow open to show their pages.</p>
+<div class="tbl"><table><thead><tr><th>Menu group</th><th>Pages inside</th></tr></thead><tbody>
+<tr><td>Dashboard</td><td class="wrap">The home screen.</td></tr>
+<tr><td>Sales</td><td class="wrap">Billing · Invoices · Estimates · Sales Returns · Demand Register · Health Readings</td></tr>
+<tr><td>Purchase</td><td class="wrap">Purchase Entry · Purchase Orders · Purchase Returns · Low Stock</td></tr>
+<tr><td>Suppliers</td><td class="wrap">The supplier list.</td></tr>
+<tr><td>Inventory</td><td class="wrap">Products · Batch Stock · Stock Register · Stock Adjustment · Stock Check · Barcode Labels · Medicine List · Schedule Check · Clean Up</td></tr>
+<tr><td>Masters</td><td class="wrap">Customers · Patients · Patient History · Doctors · Brands · Categories · Units</td></tr>
+<tr><td>Reports</td><td class="wrap">Sales · Purchase · Stock · GST · Account Reports · Drug Registers</td></tr>
+<tr><td>Accounts</td><td class="wrap">Books · Payments · Expenses · Ledger</td></tr>
+<tr><td>Users &amp; Access</td><td class="wrap">Multi-user · Devices · Activity Log</td></tr>
+<tr><td>Settings</td><td class="wrap">Store Settings · Shop Documents · My Plan · WhatsApp &amp; API · Backup · Downloads</td></tr>
+<tr><td>Bottom links</td><td class="wrap">How to Use · Learn · Support · Write a Review · Sign Out</td></tr>
+</tbody></table></div>
+<p>The menu colours, icon or plain style and screen brightness can be changed under <span class="path">Settings › Store Settings › Interface</span>.</p>
+</section>
+
+<!-- ============ SELLING ============ -->
+<div class="part-title">Part 2 · Selling</div>
+
+<section id="dashboard">
+<h2><span class="part">Menu: Dashboard</span>Dashboard</h2>
+<p>The first screen after login. It answers three questions at a glance: what needs attention, how the day is going, and where to go next.</p>
+<figure><img src="img/dashboard.webp" alt="Dashboard with quick-action buttons, alert strip, sales cards, recent bills and top products" loading="lazy"><figcaption>The full dashboard of the demo store.</figcaption></figure>
+<h3>1 · Quick-action buttons</h3>
+<p>31 coloured buttons that open a screen directly. They can be hidden with the <b>Quick actions</b> switch in the top bar.</p>
+<ul class="chips">
+<li>New Bill</li><li>Mobile App</li><li>Schedule Check</li><li>Add Purchase</li><li>Purchase Order</li><li>Stock Check (count)</li><li>Books</li><li>Add Payment</li><li>Add Product</li><li>Add Customer</li><li>Reports</li><li>Inventory</li><li>Invoices</li><li>Sales Return</li><li>Expenses</li><li>Party Ledger</li><li>Demand Register</li><li>Customer Reports</li><li>Purchase Return</li><li>Suppliers</li><li>Stock Register</li><li>Stock Adjustment</li><li>Barcode Labels</li><li>Doctors</li><li>Patients</li><li>Customers</li><li>Staff Logins</li><li>Settings</li><li>WhatsApp</li><li>Backup</li><li>Support</li>
+</ul>
+<p><b>Mobile App</b> shows a link to install the Android app from Google Play. <b>Stock Check (1)</b> shows how many medicines have stock figures that disagree (see <a href="#stock-check">Stock Check</a>).</p>
+<h3>2 · Alert strip</h3>
+<p>Seven tiles. Each opens the list behind it.</p>
+<div class="tbl"><table><thead><tr><th>Tile</th><th>Meaning</th><th>Opens</th></tr></thead><tbody>
+<tr><td>Nearby expiry (90d)</td><td class="wrap">Batches that expire in the next 90 days</td><td class="wrap">Near-Expiry Stock report</td></tr>
+<tr><td>Expired batches</td><td class="wrap">Batches already past expiry</td><td class="wrap">Stock Register › Expired Stock</td></tr>
+<tr><td>Low stock alert</td><td class="wrap">Medicines at or below their alert level</td><td class="wrap">Products, Low stock filter</td></tr>
+<tr><td>Out of stock</td><td class="wrap">Medicines with zero stock</td><td class="wrap">Out of Stock report</td></tr>
+<tr><td>Non-moving items</td><td class="wrap">Medicines with no sale in the period</td><td class="wrap">Non-Moving Stock report</td></tr>
+<tr><td>Pending collection</td><td class="wrap">Money customers owe the shop</td><td class="wrap">Customer Outstanding report</td></tr>
+<tr><td>Pending payment</td><td class="wrap">Money the shop owes suppliers</td><td class="wrap">Supplier Payables report</td></tr>
+</tbody></table></div>
+<h3>3 · Business cards</h3>
+<p>Today's Sales (with number of bills), Today's Purchase, Total Purchase, Last 7 Days, Last 30 Days, Total Sales, Today's Profit (net of returns and discounts), Profit (30 Days), Net Profit, Stock Value (at purchase cost and at MRP), Customers, Products (with low and near-expiry counts) and Dues. Each card opens its report.</p>
+<h3>4 · Lists at the bottom</h3>
+<ul>
+<li><b>Recent Bills:</b> latest invoices with customer, total, Paid/Due status and how long ago. <b>View all</b> opens Invoices.</li>
+<li><b>Top Products (30d):</b> best sellers with quantity and revenue.</li>
+<li><b>Outstanding Dues:</b> total receivable, with <b>View customer dues</b>.</li>
+<li><b>Software active time:</b> how long the software was in use today, or on a chosen date.</li>
+</ul>
+<p>Which boxes a staff member sees on the dashboard is set per person in their role (Dashboard boxes permissions).</p>
+</section>
+
+<section id="billing">
+<h2><span class="part">Menu: Sales › Billing · Shortcut: New Bill</span>Billing (POS)</h2>
+<p>The counter screen. A bill is made by finding the medicine, choosing the batch and quantity, adding the customer when needed, and saving with the payment mode.</p>
+<figure><img src="img/billing.webp" alt="Empty billing screen" loading="lazy"><figcaption>An empty bill. Nothing on the screen matters until a medicine is added.</figcaption></figure>
+<h3>Parts of the screen</h3>
+<div class="tbl"><table><thead><tr><th>Part</th><th>What it does</th></tr></thead><tbody>
+<tr><td>Bill tabs</td><td class="wrap">"New bill ×" and the <b>+</b> tab. Up to five bills can be open at once (for example while one customer fetches money). <kbd>F8</kbd> moves to the next bill, <kbd>Shift</kbd>+<kbd>F8</kbd> opens a new one.</td></tr>
+<tr><td>Counter Bill</td><td class="wrap">On by default for quick walk-in counter billing.</td></tr>
+<tr><td>Customer <kbd>F3</kbd></td><td class="wrap">"Walk-in" unless a customer is chosen. Opens the customer window.</td></tr>
+<tr><td>Patient <kbd>F4</kbd></td><td class="wrap">The patient the medicine is for (needed for Schedule H/H1/X).</td></tr>
+<tr><td>Doctor</td><td class="wrap">The prescribing doctor.</td></tr>
+<tr><td>Bill type</td><td class="wrap"><b>Retail</b> or <b>Wholesale</b> (see below).</td></tr>
+<tr><td>Bill No <kbd>Ctrl</kbd>+<kbd>L</kbd></td><td class="wrap">The next number, e.g. INV-00076. <kbd>Ctrl</kbd>+<kbd>L</kbd> switches between a bill and a challan.</td></tr>
+<tr><td>Bill date</td><td class="wrap">Today by default.</td></tr>
+<tr><td>Payment <kbd>F6</kbd></td><td class="wrap">Payment mode and amount (Cash by default).</td></tr>
+<tr><td>Search medicine <kbd>F2</kbd></td><td class="wrap">Name, brand, salt/composition or barcode.</td></tr>
+<tr><td>Phone Scanner</td><td class="wrap">Pairs a phone camera as the barcode scanner.</td></tr>
+<tr><td>Find Invoice</td><td class="wrap">Opens a saved bill.</td></tr>
+<tr><td>New Bill / Hold / Save as Estimate / Clear</td><td class="wrap">Start a new bill, park this one, save it as a price quote, or empty it (asks "Clear this bill?" first).</td></tr>
+<tr><td>Keys</td><td class="wrap">Shows the billing shortcuts.</td></tr>
+<tr><td>Bill lines</td><td class="wrap">#, Product, Batch, Expiry, Unit, Pack, Qty (pack / loose), MRP, Rate, Dis%, Dis ₹, GST%, Amount, and × to remove.</td></tr>
+<tr><td>Footer</td><td class="wrap">Items, Qty, Subtotal, Discount, <b>Bill discount ₹</b>, GST, <b>Total</b>, Remark, and <b>Go &amp; Print Bill <kbd>F9</kbd></b>.</td></tr>
+</tbody></table></div>
+
+<h3>Make a bill, step by step</h3>
+<ol class="steps">
+<li><b>Find the medicine.</b> Type two or three letters, or scan the barcode. The <b>Find the medicine</b> window lists matches with composition, pack, units per pack, unit, batch, expiry, stock, rack, purchase rate, margin and MRP. Use <kbd>↑</kbd> <kbd>↓</kbd> and <kbd>Enter</kbd>. <kbd>F2</kbd> here adds a new medicine without leaving the bill.</li>
+<li><b>Pick the batch.</b> If the medicine has more than one batch, a box opens listing each batch with its expiry, quantity left and its own MRP. Pick the batch in your hand. With only one batch, it is added directly.</li>
+<li><b>Enter the quantity.</b> The Qty column has two boxes: full packs and loose pieces. Giving one strip and five tablets from a strip of 10? Enter 1 and 5. Below the boxes the screen shows the balance left, e.g. "bal 1 strip + 33 tabs".</li>
+<li><b>Check rate and discount.</b> Change the rate, Dis% or Dis ₹ on any line if needed. A rate above MRP is flagged in red ("above MRP").</li>
+<li><b>Customer details (optional).</b> Leave it as walk-in, or press <kbd>F3</kbd> to choose a customer, patient and doctor. For a Schedule H, H1 or X medicine the bill asks for the patient's name, mobile number and doctor before it will save.</li>
+<li><b>Payment.</b> Press <kbd>F6</kbd>, choose the mode and the amount received; the balance due is worked out.</li>
+<li><b>Save and print.</b> Press <b>Go &amp; Print Bill</b> or <kbd>F9</kbd>. Stock comes off the chosen batch, the bill prints, and it goes to the customer on WhatsApp if the number is saved and WhatsApp is linked.</li>
+</ol>
+<figure><img src="img/billing-search.webp" alt="Find the medicine window showing Dololife 650 with batch, expiry and stock" loading="lazy"><figcaption>The Find the medicine window. The footer lists the keys: arrows to move, Enter to add, F2 new medicine, F1 cost, Esc to close.</figcaption></figure>
+<figure><img src="img/billing-items.webp" alt="A bill with four medicines, quantities, rates, GST and a total of 273 rupees" loading="lazy"><figcaption>A bill with four lines (not saved). Rates above MRP are flagged in red under the rate box.</figcaption></figure>
+
+<h3>Loose tablets and strips</h3>
+<ul>
+<li>Prices are always for the <b>full pack</b> (one strip, one bottle). The per-tablet price is worked out from the pack price and the "units per pack" of the medicine.</li>
+<li>Stock is counted in packs. Selling 5 tablets from a strip of 15 reduces stock by 0.33 of a strip. A stock of "2 strips + 33 tabs" is correct, not an error.</li>
+<li>A medicine whose tablets-per-strip is missing can only be sold as a whole pack until it is filled in (see the Pack size tab in <a href="#products">Products</a>).</li>
+</ul>
+
+<h3>Customer window <kbd>F3</kbd></h3>
+<figure><img src="img/billing-customer.webp" alt="Customer window listing a matching customer with mobile, address, bills and due" loading="lazy"><figcaption>Type a name or phone. Each match shows mobile, address, number of bills and amount due.</figcaption></figure>
+<p>Use <kbd>←</kbd> <kbd>→</kbd> to move between the Customer, Patient and Doctor screens of this window, <kbd>F2</kbd> to add a new one, <kbd>F9</kbd> when done and <kbd>Esc</kbd> to close. If the customer has a credit limit, the counter shows what they would owe against it.</p>
+
+<h3>Payment <kbd>F6</kbd></h3>
+<figure><img src="img/billing-payment.webp" alt="Payment window with Cash, UPI, Card, Bank, Split and Credit" loading="lazy"><figcaption>The payment window.</figcaption></figure>
+<div class="tbl"><table><thead><tr><th>Mode</th><th>Use it when</th></tr></thead><tbody>
+<tr><td>Cash</td><td class="wrap">Paid in cash. Enter the amount received, or press <b>Full bill</b>.</td></tr>
+<tr><td>UPI / Card / Bank</td><td class="wrap">Paid digitally. If a UPI ID is set in Settings, every bill prints a Scan-and-Pay QR with the bill amount.</td></tr>
+<tr><td>Split</td><td class="wrap">Part cash, part UPI, part card. The split is recorded, not rounded into one mode.</td></tr>
+<tr><td>Credit</td><td class="wrap">Bill on credit (due). The amount goes onto the customer's account to be collected later.</td></tr>
+</tbody></table></div>
+
+<h3>Retail and wholesale bills</h3>
+<p>Switch <b>Bill type</b> to <b>Wholesale</b> for a sale to another business. A wholesale tax invoice adds Buyer GSTIN, Place of supply, Buyer drug licence no., E-way bill no. and Vehicle / transport, and a Free quantity column. The buyer (customer) must be chosen first. Trade rates set on medicines take over from counter prices.</p>
+<figure><img src="img/billing-wholesale.webp" alt="Wholesale bill fields: buyer GSTIN, place of supply, drug licence, e-way bill, vehicle" loading="lazy"><figcaption>Wholesale mode, with the reminder to choose the buyer.</figcaption></figure>
+
+<h3>Rate desk <kbd>F1</kbd>: what a medicine really cost</h3>
+<p>With a medicine on the bill, press <kbd>F1</kbd>. The rate desk shows who supplies it and what it really cost: MRP, last bought date, billed rate, scheme, discount, flat rate and flat rate plus GST; the purchase history bill by bill; and <b>What you can quote</b>: your cost, the rate on this bill, what you make, the break-even price and a rupee over. It also lists stock by batch.</p>
+<figure><img src="img/billing-rate-desk.webp" alt="Rate desk for Honitus syrup showing distributor cost, flat rate, break-even and margin" loading="lazy"><figcaption>The rate desk. Anything above the break-even figure earns money.</figcaption></figure>
+
+<h3>Hold, estimates and challans</h3>
+<ul>
+<li><b>Hold</b> parks the bill so the next customer can be served; reopen it from its tab.</li>
+<li><b>Save as Estimate</b> saves the cart as a price quote. No stock moves and no bill number is used. Convert it later from <a href="#estimates">Estimates</a>.</li>
+<li><b>Challan</b>: <kbd>Ctrl</kbd>+<kbd>L</kbd> on Billing makes a delivery challan instead of a bill.</li>
+</ul>
+
+<h3>Billing shortcuts</h3>
+<figure><img src="img/billing-keys.webp" alt="Keyboard shortcuts window for billing" loading="lazy"><figcaption>Press Keys (or ?) for this list.</figcaption></figure>
+<p>See the full list in <a href="#shortcuts">Keyboard shortcuts</a>.</p>
+<div class="note"><b>Counter rules that affect billing</b><br>Settings › Store Settings › Counter rules can block expired medicines, lines with no price, bills over the stock you have, and credit bills past a customer's limit. It also decides whether selling prices include GST (MRP billing).</div>
+</section>
+
+<section id="invoices">
+<h2><span class="part">Menu: Sales › Invoices</span>Invoices</h2>
+<p>Every saved bill, with filters and totals.</p>
+<figure><img src="img/invoices.webp" alt="Invoices list with search, date range, status, doctor and payment mode filters" loading="lazy"><figcaption>The invoice list.</figcaption></figure>
+<ul>
+<li><b>Filters:</b> Search (bill number, name, phone or e-mail), From and To dates, Status (All, Paid, Partial, Due), Doctor, Payment mode (Cash, UPI, Card, Online, Credit / Due, Split). Press <b>Apply</b>.</li>
+<li><b>Buttons:</b> Challans (<kbd>Ctrl</kbd>+<kbd>L</kbd> shows challans), Day by day (totals per day), Print (a clean printed list), Excel (download), <b>+ New Bill</b>.</li>
+<li><b>Totals:</b> number of bills, total sales and outstanding due for the filter.</li>
+<li><b>Columns:</b> S.No, Invoice #, Date, Customer, Items, Total, Paid, Due, Status, Created by, Actions.</li>
+<li><b>Actions on a bill:</b> view (eye), download PDF, send on WhatsApp (shows "Sent" once sent), and the ⋯ menu for more (edit, delete, mark paid, e-mail, depending on permissions).</li>
+</ul>
+</section>
+
+<section id="estimates">
+<h2><span class="part">Menu: Sales › Estimates</span>Estimates</h2>
+<p>A price given to a customer before there is a bill. Build the cart on the billing screen as usual and press <b>Save as Estimate</b> instead of Go &amp; Print Bill. Nothing is sold and no stock moves until it is converted to a bill.</p>
+<p>Filters: All, Open, Converted to bill, Cancelled. Search by estimate number or customer. <b>+ New estimate at the counter</b> opens Billing.</p>
+<figure><img src="img/estimates.webp" alt="Estimates page" loading="lazy"><figcaption>Estimates (none yet in the demo store).</figcaption></figure>
+</section>
+
+<section id="sales-returns">
+<h2><span class="part">Menu: Sales › Sales Returns</span>Sales Returns</h2>
+<p>Take back goods a customer bought. The page shows total returns and return value, with a search by customer or bill number.</p>
+<ol class="steps">
+<li>Press <b>+ New Return</b>. Find the invoice by bill number, name or mobile and dates, then press <b>Return this</b>.</li>
+<li>Tick the items and enter the return quantity. You can never return more than is left on the bill; a fully returned bill shows FULLY RETURNED.</li>
+<li>Save. Stock goes back onto the batch it came from and a credit note is raised. If the customer had paid, the amount becomes store credit for their next bill.</li>
+</ol>
+<figure><img src="img/sales-returns.webp" alt="Select an invoice to return" loading="lazy"><figcaption>Choosing the invoice to return.</figcaption></figure>
+</section>
+
+<section id="demand">
+<h2><span class="part">Menu: Sales › Demand Register</span>Demand Register</h2>
+<p>When a customer asks for something the shop does not have, note it here so the next order includes it and the customer can be called back.</p>
+<p><b>+ Record Demand</b> fields: Drug name (required), Quantity, Date, Customer name, Phone (for callback), Notes. Each entry moves through the statuses <b>Pending, Ordered, Arrived, Delivered, Cancelled</b>, which are also the filters.</p>
+<figure><img src="img/demand-register.webp" alt="Customer demand register with status filters and record form" loading="lazy"><figcaption>The demand register.</figcaption></figure>
+</section>
+
+<section id="health">
+<h2><span class="part">Menu: Sales › Health Readings · Dashboard: Customer Reports</span>Health Readings</h2>
+<p>For shops that check sugar or blood pressure at the counter. <b>+ Record Reading</b>: Test type (Sugar, Blood Pressure, Other), Reading (e.g. 180 mg/dL or 120/80 mmHg), State for sugar (Fasting, Post-meal, Random), Customer name, Phone, Notes. Filter by All, Sugar, Blood Pressure or Other.</p>
+<figure><img src="img/health-readings.webp" alt="Customer readings page for sugar and BP" loading="lazy"><figcaption>Customer readings (sugar / BP).</figcaption></figure>
+</section>
+
+<!-- ============ BUYING ============ -->
+<div class="part-title">Part 3 · Buying</div>
+
+<section id="purchase-entry">
+<h2><span class="part">Menu: Purchase › Purchase Entry · Dashboard: Add Purchase</span>Purchase Entry</h2>
+<p>Enter the distributor's bill. Every line adds stock and creates the batch, so billing later picks the right expiry and MRP by itself.</p>
+<h3>The purchase list</h3>
+<figure><img src="img/purchases.webp" alt="Purchases list with filters and totals" loading="lazy"><figcaption>All purchase entries.</figcaption></figure>
+<p>Filters: Search (bill number, distributor or medicine), From, To, Distributor, Status (All, Paid, Part paid, Unpaid, Bill awaited, Goods awaited), Show (Bill-wise or Item-wise). Totals show purchases, total value and payable. <b>Edits</b> (<kbd>Ctrl</kbd>+<kbd>M</kbd>) shows which entries were edited. Each row has <b>Pay</b> to record a payment to the supplier.</p>
+<h3>A new purchase</h3>
+<figure><img src="img/purchase-entry.webp" alt="New purchase form" loading="lazy"><figcaption>New purchase. The orange line is the one being typed.</figcaption></figure>
+<div class="tbl"><table><thead><tr><th>Box</th><th>What it means</th></tr></thead><tbody>
+<tr><td>Distributor</td><td class="wrap">Choose first. Press Space or Enter to search, <kbd>F2</kbd> to add a new one. Their last bill sets how this one is read.</td></tr>
+<tr><td>Bill number, Bill date</td><td class="wrap">As printed on the distributor's bill.</td></tr>
+<tr><td>Payment due, Received on</td><td class="wrap">When payment is due, and when the goods arrived.</td></tr>
+<tr><td>Rate on bill</td><td class="wrap"><b>Rate + GST</b> (GST in its own column) or <b>Net rate (incl. GST)</b>. Read it off the paper.</td></tr>
+<tr><td>Scheme</td><td class="wrap"><b>Free qty extra</b> (most distributors: the bill charges Qty × Rate and free goods come on top) or <b>Less on amount</b> (the scheme also comes off the money).</td></tr>
+<tr><td>Received</td><td class="wrap"><b>Goods + bill</b>, <b>Goods, bill later</b>, or <b>Bill, goods later</b>.</td></tr>
+<tr><td>Payment</td><td class="wrap">How it is paid (or credit). A setting can start every entry on Credit.</td></tr>
+<tr><td>Line columns</td><td class="wrap">Medicine, Pack, Batch, Expiry, Qty, Free, MRP, Rate, Scheme, Sch %, Disc %, GST %, Margin, Amount. Lines are coloured Expired, Expiring or Thin margin. <b>Columns</b> chooses which show.</td></tr>
+<tr><td>Totals</td><td class="wrap">Goods, Bill discount (₹ or %), Taxable, GST, Net amount.</td></tr>
+<tr><td>Total printed on the bill</td><td class="wrap">Type the distributor's total. The entry is checked against it; a few paise of rounding is carried as round off, anything bigger is a line to look at.</td></tr>
+<tr><td>Remarks, Round off, Bill copy</td><td class="wrap">Notes, rounding to the rupee, and attaching the bill PDF or photo (up to 12 MB).</td></tr>
+</tbody></table></div>
+<ol class="steps">
+<li>Choose the distributor and type the bill number and date.</li>
+<li>Answer <b>Rate on bill</b> and <b>Scheme</b> from the paper. If these are wrong, every line is wrong by the same amount.</li>
+<li>On the orange line type the medicine and pick it, then fill across with <kbd>Enter</kbd>. The last <kbd>Enter</kbd> adds the line and a fresh orange line waits. <b>+ New medicine</b> opens the full item form without leaving the bill.</li>
+<li>Put free goods in <b>Free</b>. Their cost is spread over all the strips, so a free strip never shows as pure profit.</li>
+<li>Type the <b>Total printed on the bill</b> and fix any line the check points to. Never force a total with a discount.</li>
+<li>Press <b>Save purchase</b> (<kbd>Alt</kbd>+<kbd>S</kbd>). Stock and batches are created.</li>
+</ol>
+<div class="note ok"><b>Import instead of typing</b><br><b>Import</b> fills the lines from an Excel sheet or from a photo or PDF of the bill. Nothing is saved until every line is checked and Save is pressed.</div>
+</section>
+
+<section id="purchase-orders">
+<h2><span class="part">Menu: Purchase › Purchase Orders · Dashboard: Purchase Order</span>Purchase Orders</h2>
+<p>Orders sent to suppliers. They never change stock; stock goes up only when the goods arrive and the order is received into a purchase entry.</p>
+<p>The list filters by Search, dates, Distributor and Status (Draft, Sent, Part received, Received, Cancelled), with totals for orders, order value and awaiting goods.</p>
+<h3>A new purchase order</h3>
+<figure><img src="img/purchase-order-new.webp" alt="New purchase order with suggestions from sales" loading="lazy"><figcaption>The software suggests what to order from the shop's own sales.</figcaption></figure>
+<ol class="steps">
+<li>Choose the distributor, order date and expected date.</li>
+<li>Review <b>Suggested from your sales</b>: each medicine shows why (Out of stock, Below your alert level, days of stock left), stock now, sold in 60 days, suggested order quantity and rate. Tick and press <b>Add ticked</b>, or <b>Select all</b>.</li>
+<li>Adjust the lines under <b>On this order</b> (Qty, Rate, Disc %, GST %) and add a note for the distributor.</li>
+<li>Press <b>Save as draft</b> or <b>Save &amp; mark as sent</b>.</li>
+</ol>
+</section>
+
+<section id="purchase-returns">
+<h2><span class="part">Menu: Purchase › Purchase Returns</span>Purchase Returns</h2>
+<p>Return goods to a distributor. A debit note is raised and the amount comes off what the shop owes. The list filters by supplier and reason.</p>
+<figure><img src="img/purchase-return-new.webp" alt="New purchase return form" loading="lazy"><figcaption>New purchase return.</figcaption></figure>
+<ol class="steps">
+<li>Press <b>+ New Return</b>. Enter the purchase invoice or PO number and press <b>Load data</b> to fill the lines, or pick the supplier and add rows by hand.</li>
+<li>Set Purchase invoice no., Return date and Reason: Expiry, Damaged Product, Wrong Product, Excess Stock or Other.</li>
+<li>Delete the rows not being returned (partial return). Each row has Product, Brand, Batch, Qty (packs), Rate, Amount.</li>
+<li>Press <b>Save Return (reduce stock)</b>. A second return of the same bill is blocked so stock is never reduced twice.</li>
+</ol>
+</section>
+
+<section id="low-stock">
+<h2><span class="part">Menu: Purchase › Low Stock</span>Low Stock: what to order</h2>
+<p>A printable order sheet of every medicine at or below its alert level, grouped by supplier with the supplier's phone. Columns: Medicine, Brand, Pack, In stock, Alert at, Sold 60 days, Last rate. Filter by supplier, then <b>Print</b> or <b>Save as PDF</b>, or go to Purchase Orders.</p>
+<figure><img src="img/low-stock.webp" alt="Low stock order sheet grouped by supplier" loading="lazy"><figcaption>Low stock, what to order.</figcaption></figure>
+</section>
+
+<section id="suppliers">
+<h2><span class="part">Menu: Suppliers</span>Suppliers</h2>
+<figure><img src="img/suppliers.webp" alt="Supplier list with purchases, paid, returned and payable" loading="lazy"><figcaption>The supplier list.</figcaption></figure>
+<p>Columns: Supplier, Contact, Mobile, GSTIN, Purchases, Paid, Returned, Payable (worked out from the bills, payments and returns, not a stored figure). Filter All, With dues, No dues. Row actions: <b>Pay</b>, <b>Ledger</b>, View, Edit, Delete.</p>
+<p><b>+ Add Supplier</b> fields: Distributor's bill (GST or Non-GST), GSTIN, Supplier name, State, District, Contact person, Mobile, Email, Drug licence no, Address, Opening balance (₹ payable) and its date.</p>
+<figure><img src="img/supplier-add.webp" alt="Add supplier form" loading="lazy"><figcaption>Adding a supplier.</figcaption></figure>
+</section>
+
+<!-- ============ STOCK ============ -->
+<div class="part-title">Part 4 · Stock and medicines</div>
+
+<section id="products">
+<h2><span class="part">Menu: Inventory › Products · Dashboard: Inventory</span>Products</h2>
+<p>The full stock list, page by page, edited like a spreadsheet.</p>
+<figure><img src="img/inventory.webp" alt="Products list with filters, tabs and editable columns" loading="lazy"><figcaption>Products and stock.</figcaption></figure>
+<div class="tbl"><table><thead><tr><th>Control</th><th>What it does</th></tr></thead><tbody>
+<tr><td>Search</td><td class="wrap">Medicine name, barcode or batch, with a Product / other selector.</td></tr>
+<tr><td>Show</td><td class="wrap">All stock, Available stock, Expired stock.</td></tr>
+<tr><td>Schedule filter</td><td class="wrap">All schedules, Needs prescription, Schedule H1, Schedule not set (with counts).</td></tr>
+<tr><td>Tabs</td><td class="wrap">All · Near expiry · Low stock · No price · HSN missing · Low selling · Pack size (each with a count).</td></tr>
+<tr><td>Print, Excel, Import</td><td class="wrap">Print the list, download it, or import products from Excel (download the sample first).</td></tr>
+<tr><td>Loose selling</td><td class="wrap">Sets which medicines may be sold as loose tablets.</td></tr>
+<tr><td>+ Add Product</td><td class="wrap">Opens the Add product form (see next section).</td></tr>
+<tr><td>Stock value</td><td class="wrap">Total at purchase cost and at MRP.</td></tr>
+<tr><td>Comfortable / Compact</td><td class="wrap">Row spacing.</td></tr>
+</tbody></table></div>
+<p><b>Columns:</b> S.No, Product (with Sch H / H1 tag, composition and an edit pencil), Short name, Rack, Batch (with batch count), HSN, Expiry, MRP per pack, Sale rate per pack, Purchase net cost per pack, GST%, Stock (e.g. "2 strips + 33 tabs"), Value, Actions. MRP, rates and GST can be edited in the cells. Tick rows for bulk edit or delete.</p>
+<div class="note"><b>Rules that keep stock right</b><br>Prices are for the full pack, never one tablet. Stock is counted in strips or packs, not tablets. The <b>Pack size</b> tab lists medicines whose tablets-per-strip is missing; until it is filled they can only be sold whole.</div>
+</section>
+
+<section id="add-product">
+<h2><span class="part">Inventory › Products › + Add Product · Dashboard: Add Product</span>Adding a medicine</h2>
+<figure><img src="img/product-add.webp" alt="Add product form with Medicine, Pack, Price and Opening stock sections" loading="lazy"><figcaption>The Add product form.</figcaption></figure>
+<div class="tbl"><table><thead><tr><th>Section</th><th>Fields and guidance</th></tr></thead><tbody>
+<tr><td>Medicine name</td><td class="wrap">Exactly as on the box; this is what is searched at the counter. <b>Global</b> (<kbd>F4</kbd>) searches the national medicine directory to fill details.</td></tr>
+<tr><td>Medicine</td><td class="wrap">Form (Tablet, Syrup…), Salt (e.g. Paracetamol 650 mg), Company, Schedule (None, H, H1, X). Schedule H/H1/X forces patient name, phone and doctor before a bill can be made.</td></tr>
+<tr><td>Pack</td><td class="wrap">Sold as (STRIP, BOTTLE, TUBE, BOX). Pieces in one pack (for loose selling): 10 for a strip of 10, blank for a bottle or tube. HSN (most medicines 3004). GST % (usually 5 or 12).</td></tr>
+<tr><td>Price, one pack</td><td class="wrap">MRP (printed price, never below the selling rate), Sale price (what you charge), Purchase rate (what you paid; never printed on a customer bill).</td></tr>
+<tr><td>Opening stock</td><td class="wrap">Batch no., Expiry (month and year), Quantity in full packs.</td></tr>
+</tbody></table></div>
+<p>Buttons: Cancel, <b>Save and add another</b>, <b>Save product</b>. The same form opens from Purchase Entry with <b>+ New medicine</b>. Low-stock alert level and units of measure can be set on the product too.</p>
+</section>
+
+<section id="batch-stock">
+<h2><span class="part">Menu: Inventory › Batch Stock</span>Batch Stock</h2>
+<p>Every batch on its own line, which the normal product list adds together. Use it before returning goods to a supplier, since a credit note needs the batch number and expiry.</p>
+<p>Views: In stock, Expiring 90 days, Expired, All. Search by medicine or batch number and filter by supplier. Totals: batches, units on the shelf, value at cost and at MRP. Columns: Medicine, Pack, Batch No, Expiry, Qty, Net cost per pack (ex-GST), MRP, Sale price, Supplier, Purchase bill, Value, with Edit and Delete. <b>+ Add batch</b> and <b>Download Excel</b> are at the top.</p>
+<figure><img src="img/batch-stock.webp" alt="Batch-wise stock" loading="lazy"><figcaption>Batch-wise stock.</figcaption></figure>
+</section>
+
+<section id="stock-register">
+<h2><span class="part">Menu: Inventory › Stock Register</span>Stock Register</h2>
+<p>Every movement of every medicine: sold, purchased, returned, adjusted, opening stock.</p>
+<ul>
+<li><b>Item Ledger:</b> Date/time, Product, Movement, Ref (bill or entry number), In, Out, Balance (in packs) and By whom. Filter by product and dates; download CSV.</li>
+<li><b>Batch-wise Register:</b> the same by batch, with supplier, purchased-on date and PO number.</li>
+<li><b>Expired Stock:</b> expired batches with supplier and bill number.</li>
+<li><b>Stock Adjustment:</b> link to corrections.</li>
+</ul>
+<figure><img src="img/stock-register.webp" alt="Stock register item ledger" loading="lazy"><figcaption>Item ledger.</figcaption></figure>
+</section>
+
+<section id="stock-adjustment">
+<h2><span class="part">Menu: Inventory › Stock Adjustment</span>Stock Adjustment</h2>
+<p>Correct a quantity by hand with the reason recorded.</p>
+<ol class="steps">
+<li>Set the date and choose a reason: Physical counting correction, Damaged goods, Expiry write-off, Theft or loss, Opening stock entry, or Other. Add notes if useful.</li>
+<li>For each row choose the product and (optionally) the batch. The current stock in packs is shown. Enter the change, e.g. +10 or −5.</li>
+<li><b>+ Add Row</b> for more lines, then <b>Save Adjustment</b>. Every change is logged.</li>
+</ol>
+<figure><img src="img/stock-adjustment.webp" alt="New stock adjustment form" loading="lazy"><figcaption>New stock adjustment.</figcaption></figure>
+</section>
+
+<section id="stock-check">
+<h2><span class="part">Menu: Inventory › Stock Check</span>Stock Check</h2>
+<p>Each medicine's quantity is kept in two places: a total on the product and the batches under it. This page lists medicines where the two disagree, so the true quantity is unclear.</p>
+<p>Columns: Medicine, Product says, Batches say, Gap, History, Which is right? For each row choose <b>Batches</b> or <b>Product</b>, or count the shelf, type the counted figure and press <b>Set</b>. The chosen figure is written to both places and recorded.</p>
+<figure><img src="img/stock-check.webp" alt="Stock check, where the stock figures disagree" loading="lazy"><figcaption>Stock check.</figcaption></figure>
+<p>Do this for fast-moving items every month. A wrong stock figure quietly becomes a wrong profit figure.</p>
+</section>
+
+<section id="barcode-labels">
+<h2><span class="part">Menu: Inventory › Barcode Labels</span>Barcode Labels</h2>
+<p>Print stick-on labels for shelves. Search a product or batch, tick the batches, set how many labels each, and press <b>Print Labels</b>. Columns: Product, Batch, Expiry, MRP, Stock, Labels. Each label carries the store name, product, batch, expiry and MRP with a barcode; scanning it at Billing finds the product and batch.</p>
+<figure><img src="img/barcode-labels.webp" alt="Barcode label printing" loading="lazy"><figcaption>Barcode label printing.</figcaption></figure>
+</section>
+
+<section id="medicine-list">
+<h2><span class="part">Menu: Inventory › Medicine List</span>Medicine List (directory)</h2>
+<p>A reference list of about 2.5 lakh Indian medicines (253,973 listed), separate from the shop's own stock. Search by brand, composition (salt) or maker; two words narrow it ("augmentin 625" finds one medicine).</p>
+<p>Options: show 25/50/100, Available only, With side effects, Filter by maker, CAPITALS (also on bills). Columns: Medicine, Composition, Maker, Pack, Price, with <b>+ Add</b> to copy a medicine into stock and <b>Details</b>.</p>
+<figure><img src="img/medicine-list.webp" alt="Medicine directory" loading="lazy"><figcaption>Medicine directory.</figcaption></figure>
+</section>
+
+<section id="schedule-check">
+<h2><span class="part">Menu: Inventory › Schedule Check · Dashboard: Schedule Check</span>Schedule Check</h2>
+<p>Billing asks for the patient's name, mobile number and doctor only for products marked H, H1 or X. This page finds products that should be marked but are not, by reading the molecule in the name or composition and, for a bare brand, looking it up in the national medicine directory.</p>
+<p>It shows counts (products, already marked, found untagged, not recognised) and the untagged list grouped by schedule with "Recognised from". Untick anything you disagree with and press <b>Apply to ticked products</b>. It only fills blanks; a schedule set by hand is never changed.</p>
+<figure><img src="img/schedule-check.webp" alt="Schedule check results" loading="lazy"><figcaption>Schedule check.</figcaption></figure>
+</section>
+
+<section id="clean-up">
+<h2><span class="part">Menu: Inventory › Clean Up</span>Clean Up</h2>
+<p>Tidies the product list. Tabs: <b>Zero stock</b>, <b>Entered twice</b> (duplicate products) and <b>Suppliers twice</b>. Columns: Medicine, Brand, Code, Stock, MRP, Ever sold. Medicines never sold are ticked for you; a medicine that was sold is switched off rather than deleted. Press <b>Remove ticked</b>.</p>
+<figure><img src="img/clean-up.webp" alt="Clean up page" loading="lazy"><figcaption>Clean up.</figcaption></figure>
+</section>
+
+<!-- ============ MASTERS ============ -->
+<div class="part-title">Part 5 · Masters</div>
+
+<section id="customers">
+<h2><span class="part">Menu: Masters › Customers</span>Customers</h2>
+<figure><img src="img/customers.webp" alt="Customer list with dues and collect controls" loading="lazy"><figcaption>Customers. A customer with dues has a quick Collect box.</figcaption></figure>
+<p>Columns: Name, Phone, Email, Total spent, Due. Search by name, phone or e-mail; <b>Only Dues</b> filters to customers who owe. For a customer with a due, type the amount, choose the mode (Cash, UPI, Card, Bank, Cheque) and press <b>Collect</b>. Row actions: Receive, <b>Bills</b> (all their invoices, filter by date, print, view each), <b>Ledger</b>, Edit, Delete.</p>
+<h3>Add Customer</h3>
+<p>Name (required), Phone, Email (for sending bills), Address, State (decides CGST/SGST vs IGST), GSTIN (optional), Gender, Age, <b>Credit limit</b>, Opening balance, Notes (internal).</p>
+<div class="note"><b>Credit limit</b><br>Blank means no limit, 0 means cash only. The counter warns when a bill would take the customer past the limit; with the counter rule switched on, the bill is stopped until payment is taken. A customer at the limit can still buy for cash.</div>
+<figure><img src="img/customer-add.webp" alt="Add customer form" loading="lazy"><figcaption>Adding a customer.</figcaption></figure>
+</section>
+
+<section id="patients">
+<h2><span class="part">Menu: Masters › Patients · Patient History</span>Patients and Patient History</h2>
+<p><b>Patient Master</b> keeps patient records used on bills and for Schedule H/H1 registers. Filters: gender, city, blood group, sort; <b>Export</b> and <b>Import</b>. <b>+ Add Patient</b>: Title, Patient name, Relation (S/o, W/o, D/o, C/o) and father/husband name, Phone, Date of birth or Age, Gender, Blood group, Email, Aadhaar number, Address, City, Allergies, Past medical history, Notes.</p>
+<figure><img src="img/patients-add.webp" alt="Add patient form" loading="lazy"><figcaption>Adding a patient.</figcaption></figure>
+<p><b>Patient History</b> finds a patient by name, patient ID, phone, address or father's name and opens their visits, vitals, prescriptions, bills and certificates (the clinic records appear when the clinic module is on).</p>
+</section>
+
+<section id="doctors">
+<h2><span class="part">Menu: Masters › Doctors</span>Doctors</h2>
+<p>Columns: Doctor, Reg no, Specialization, Clinic, Phone, Consultation fee, Prescriptions, Rx value, with Bills, Edit and Delete. <b>Doctor-wise Report</b> opens their sales.</p>
+<p><b>+ Add Doctor</b>: Doctor name, Consultation fee, Qualification, Registration no, Phone, Specialization, Clinic / hospital, Email, Address, <b>Commission %</b> and Charged on (Bill value or Profit). Leave commission at 0 if none is paid; it feeds the Doctor Commission report.</p>
+<figure><img src="img/doctor-add.webp" alt="Add doctor form" loading="lazy"><figcaption>Adding a doctor.</figcaption></figure>
+</section>
+
+<section id="brands">
+<h2><span class="part">Menu: Masters › Brands · Categories · Units</span>Brands, Categories and Units</h2>
+<h3>Brands</h3>
+<p>The company list (Cipla, Sun, Mankind…) so each medicine is filed under the right maker. Shows total brands, branded products and stock value, with Brand Analytics. Columns: Brand, Manufacturer, Products, Stock qty, Stock value. <b>+ Add Brand</b>: brand name and manufacturer.</p>
+<figure><img src="img/brands.webp" alt="Brands list" loading="lazy"><figcaption>Brands.</figcaption></figure>
+<h3>Drug Categories</h3>
+<p>Categories and their schedule type, which marks a medicine as Schedule H or H1. <b>Add default set</b> fills a standard list; <b>+ Add Category</b> adds one.</p>
+<h3>Units of Measure</h3>
+<p>A medicine can be counted at up to three levels: a Box holds strips, a Strip holds tablets. Set the primary unit to the biggest packing you buy, then name the smaller ones and how many go into one. The list (Ampoule, Bottle, Box, Capsule, GM, Kit, ML, Packet, Piece, Respule, Sachet, Strip, Tablet, Tube, Vial…) is what the unit dropdowns offer. A unit in use cannot be deleted; <b>Switch off</b> it instead. Renaming a unit changes it on every medicine.</p>
+<figure><img src="img/units.webp" alt="Units of measure" loading="lazy"><figcaption>Units of measure.</figcaption></figure>
+</section>
+
+<!-- ============ REPORTS ============ -->
+<div class="part-title">Part 6 · Reports and accounts</div>
+
+<section id="reports">
+<h2><span class="part">Menu: Reports</span>Reports</h2>
+<p>There are 55 report views in six tabs (the Schedule Drug Register appears in three of them). Pick a report, set From and To, press <b>Apply</b>. Every report has <b>Download CSV</b> and <b>Print</b> (prints only the table with a proper header) and a link back to its group.</p>
+<figure><img src="img/reports-sales.webp" alt="Sales reports tab with Day-End Z-Report" loading="lazy"><figcaption>The Reports page, Sales tab, with the Day-End Z-Report below.</figcaption></figure>
+<h3>Day-End Z-Report</h3>
+<p>Shown under every tab for today: Bills today, Total sales, Cash collected, UPI / Card / Bank, Credit (due) today, Sales returns, Expenses today and Net cash in drawer (estimate). <b>Print Z-Report</b> prints it for closing the counter.</p>
+
+<h3>Sales reports (11)</h3>
+<div class="tbl"><table><thead><tr><th>Report</th><th>What it shows</th></tr></thead><tbody>
+<tr><td>Doctor Commission</td><td class="wrap">Per doctor: bills, sales, profit, rate %, charged on, commission due.</td></tr>
+<tr><td>Sales Register</td><td class="wrap">Every bill: invoice, date, time, customer, doctor, created by, mode, status, taxable, GST, total, paid, due.</td></tr>
+<tr><td>Sales Register (with Items)</td><td class="wrap">Every bill line: item, HSN, qty (packs), rate, GST %, taxable, GST amount, total.</td></tr>
+<tr><td>Sales Return Register</td><td class="wrap">Every sales return.</td></tr>
+<tr><td>Sales Return (with Items)</td><td class="wrap">Sales returns line by line.</td></tr>
+<tr><td>Doctor-wise Sales</td><td class="wrap">Prescriptions, taxable, GST and sales value per doctor.</td></tr>
+<tr><td>Product-wise Sales</td><td class="wrap">Qty sold, bills, average rate, taxable, GST, total per product.</td></tr>
+<tr><td>Product Sales: Bill by Bill</td><td class="wrap">Each sale of each medicine with batch, expiry, qty, rate, discount, GST.</td></tr>
+<tr><td>Refill Due: regular customers</td><td class="wrap">Regular customers whose medicines are due to be bought again.</td></tr>
+<tr><td>Sales by Payment Mode</td><td class="wrap">Bills, sales, collected and due per payment mode.</td></tr>
+<tr><td>Schedule Drug Register (H, H1, X)</td><td class="wrap">The scheduled-drug register (see Drug Registers).</td></tr>
+</tbody></table></div>
+<figure><img src="img/report-sales-register.webp" alt="Sales register report" loading="lazy"><figcaption>An example report: Sales Register.</figcaption></figure>
+
+<h3>Purchase reports (6)</h3>
+<div class="tbl"><table><thead><tr><th>Report</th><th>What it shows</th></tr></thead><tbody>
+<tr><td>Purchase Register</td><td class="wrap">Every purchase bill.</td></tr>
+<tr><td>Purchase Register (with Items)</td><td class="wrap">Every purchase line.</td></tr>
+<tr><td>Product Purchase: Bill by Bill</td><td class="wrap">Each purchase of each medicine.</td></tr>
+<tr><td>Supplier-wise Purchase Summary</td><td class="wrap">Totals per supplier.</td></tr>
+<tr><td>Purchase Return Register</td><td class="wrap">Every purchase return.</td></tr>
+<tr><td>Purchase Abstract (Monthly)</td><td class="wrap">Purchases month by month.</td></tr>
+</tbody></table></div>
+
+<h3>Stock reports (12)</h3>
+<div class="tbl"><table><thead><tr><th>Report</th><th>What it shows</th></tr></thead><tbody>
+<tr><td>Rack-wise Stock</td><td class="wrap">Stock by rack: product, brand, stock (strips + loose and packs), MRP, expiry, value.</td></tr>
+<tr><td>Stock Register (Current)</td><td class="wrap">Current stock with composition, brand, category, unit, rack, purchase/sale rate, MRP, value.</td></tr>
+<tr><td>Stock Unit Audit</td><td class="wrap">Finds wrong quantities caused by pack and unit mistakes.</td></tr>
+<tr><td>Schedule Drug Register (H, H1, X)</td><td class="wrap">Scheduled-drug sales register.</td></tr>
+<tr><td>Near-Expiry Stock (next 90 days)</td><td class="wrap">Batch, expiry, days left, qty, rate, value at risk, supplier, purchased on, PO and bill no.</td></tr>
+<tr><td>Expired Stock</td><td class="wrap">Expired batches.</td></tr>
+<tr><td>Fast Moving Stock</td><td class="wrap">Best sellers: qty sold, bills, sales value, current stock.</td></tr>
+<tr><td>Non-Moving Stock</td><td class="wrap">No sale in the range, with blocked value.</td></tr>
+<tr><td>Out of Stock</td><td class="wrap">Zero-stock medicines.</td></tr>
+<tr><td>Low Stock (below alert level)</td><td class="wrap">Stock, alert level, unit and supplier to reorder from.</td></tr>
+<tr><td>Rack-wise Stock (summary)</td><td class="wrap">Medicines, quantity and value per rack.</td></tr>
+<tr><td>Stock Transaction (Movements)</td><td class="wrap">Every stock movement with in, out and balance.</td></tr>
+</tbody></table></div>
+
+<h3>GST reports (10)</h3>
+<div class="tbl"><table><thead><tr><th>Report</th><th>What it shows</th></tr></thead><tbody>
+<tr><td>GSTR-1 · B2C Small (Table 7)</td><td class="wrap">Place of supply, intra/inter-state, rate, bills, taxable value, CGST, SGST, IGST.</td></tr>
+<tr><td>GSTR-1 · B2B invoice-wise (Table 4)</td><td class="wrap">Bills to GST-registered buyers.</td></tr>
+<tr><td>GSTR-1 · HSN Summary (Table 12)</td><td class="wrap">HSN, description, UQC, qty, rate, taxable value and tax.</td></tr>
+<tr><td>GSTR-1 · Credit Notes (Table 9B)</td><td class="wrap">Sales returns as credit notes.</td></tr>
+<tr><td>GSTR-1 · Documents Issued (Table 13)</td><td class="wrap">Invoice and credit-note series from/to, total and missing numbers.</td></tr>
+<tr><td>Before You File</td><td class="wrap">Checks what the GST portal will refuse (e.g. own GSTIN not valid, sales without HSN), with a verdict and what to do.</td></tr>
+<tr><td>GSTR-3B Summary</td><td class="wrap">Outward supplies, credit notes, net outward, input tax credit and tax liability.</td></tr>
+<tr><td>Purchase / ITC Register (rate-wise)</td><td class="wrap">Input tax credit from purchases.</td></tr>
+<tr><td>HSN-wise Purchase (Inward)</td><td class="wrap">Purchases by HSN.</td></tr>
+<tr><td>Outward Summary (rate-wise)</td><td class="wrap">All sales by GST rate.</td></tr>
+</tbody></table></div>
+<figure><img src="img/report-gst-filecheck.webp" alt="Before you file GST check" loading="lazy"><figcaption>Before You File, the pre-filing check. The return itself is filed on the GST portal.</figcaption></figure>
+
+<h3>Account reports (12)</h3>
+<div class="tbl"><table><thead><tr><th>Report</th><th>What it shows</th></tr></thead><tbody>
+<tr><td>Profit: Product-wise</td><td class="wrap">Qty sold, revenue (excl. GST), purchase cost, profit, margin %.</td></tr>
+<tr><td>Profit: Day-wise</td><td class="wrap">Per day: bills, revenue, cost, gross profit, bill discounts, net profit.</td></tr>
+<tr><td>Profit: Bill-wise</td><td class="wrap">Per invoice: bill total, purchase cost, profit.</td></tr>
+<tr><td>Cash Book</td><td class="wrap">Cash in and out.</td></tr>
+<tr><td>Day Close (Daily Cash Summary)</td><td class="wrap">Per day: bills, sales, cash, UPI/card/bank, receipts, paid out, expenses, net cash in drawer.</td></tr>
+<tr><td>Bank / UPI / Card Transactions</td><td class="wrap">Digital money in and out.</td></tr>
+<tr><td>Expense Report</td><td class="wrap">Expenses by category.</td></tr>
+<tr><td>Customer Outstanding</td><td class="wrap">What each customer owes.</td></tr>
+<tr><td>Supplier Payables</td><td class="wrap">What is owed to each supplier.</td></tr>
+<tr><td>Credit Notes (Sales Returns)</td><td class="wrap">All credit notes.</td></tr>
+<tr><td>Debit Notes (Purchase Returns)</td><td class="wrap">All debit notes.</td></tr>
+<tr><td>Profit &amp; Loss Summary</td><td class="wrap">Gross sales, returns, net sales, cost of goods, gross profit, expenses, net profit. It warns when sale lines have no purchase price (profit shown higher).</td></tr>
+</tbody></table></div>
+
+<h3>Drug registers (4)</h3>
+<p>Schedule Drug Register (H, H1, X), Schedule H1 Register, Schedule H Register and Schedule X Register. Columns: Date, Time, Bill no, Patient, Patient address, Mobile, Prescriber, Regn. no, Prescriber address, Medicine, Schedule, Mfr/Brand, Batch, Expiry, Qty supplied, Dispensed by. Filled from the bills as they are made, ready to show an inspector.</p>
+<figure><img src="img/reports-registers.webp" alt="Drug registers tab" loading="lazy"><figcaption>Drug registers.</figcaption></figure>
+</section>
+
+<section id="books">
+<h2><span class="part">Menu: Accounts › Books · Dashboard: Books</span>Books</h2>
+<p>Double-entry books built from the bills, purchases and payments already recorded. No separate accounting entry is needed.</p>
+<figure><img src="img/books.webp" alt="Books summary" loading="lazy"><figcaption>Books, Summary tab.</figcaption></figure>
+<div class="tbl"><table><thead><tr><th>Tab</th><th>What it holds</th></tr></thead><tbody>
+<tr><td>Summary</td><td class="wrap">Cash in hand, Bank &amp; UPI, Stock on shelf, Customers owe you, You owe suppliers, Profit this month; this month's sales, cost and profit; GST collected, paid and payable. <b>Books closed up to</b> + <b>Close books</b> locks a period.</td></tr>
+<tr><td>Profit &amp; Loss</td><td class="wrap">Income vs costs and expenses, net profit. Periods: Today, This month, Last month, This year, Everything, or From–To.</td></tr>
+<tr><td>Balance Sheet</td><td class="wrap">What the business owns vs what it owes and the owner's stake, as at a date.</td></tr>
+<tr><td>Cash Book</td><td class="wrap">Every cash movement with running balance.</td></tr>
+<tr><td>Bank &amp; Cash</td><td class="wrap">Cash in hand, bank and UPI accounts with balances, Statement, Edit details, Reconcile. <b>Add a bank account</b>: name, bank, account number, IFSC.</td></tr>
+<tr><td>Reconcile</td><td class="wrap">Match book entries to the bank statement with bank dates; shows balance as per books vs bank.</td></tr>
+<tr><td>Outstanding</td><td class="wrap">Customers who owe and suppliers owed, by age: 0–30, 31–60, 61–90, over 90 days.</td></tr>
+<tr><td>GST</td><td class="wrap">Output tax, input credit and payable, with links to the filing check and GSTR tables.</td></tr>
+<tr><td>Day Book</td><td class="wrap">All vouchers by kind (sales, purchases, receipts, payments, contra, journal, returns, expenses, opening). <b>Export to Tally</b>.</td></tr>
+<tr><td>Trial Balance</td><td class="wrap">Debit and credit of every ledger, as at a date.</td></tr>
+<tr><td>Vouchers</td><td class="wrap">Manual Receipt, Payment, Contra and Journal vouchers (for drawings, loans and similar).</td></tr>
+<tr><td>Chart of Accounts</td><td class="wrap">All ledgers (Cash in Hand, Bank, UPI/Wallet, Receivable, Stock, GST Input Credit, Payable, GST Payable, Sales, Round Off, Cost of Goods Sold, Stock Written Off…) with opening balances.</td></tr>
+</tbody></table></div>
+<figure><img src="img/books-pl.webp" alt="Profit and loss in Books" loading="lazy"><figcaption>Profit &amp; Loss, with the warning that profit is shown higher when a sale has no purchase price.</figcaption></figure>
+</section>
+
+<section id="payments">
+<h2><span class="part">Menu: Accounts › Payments · Dashboard: Add Payment</span>Payments</h2>
+<p><b>Payment In (Receive)</b> records money from customers; <b>Payment Out (Pay)</b> records money to suppliers. A payment is numbered as a voucher, allocated to the oldest outstanding bills, updates the ledger and can be reversed.</p>
+<p><b>+ New Voucher</b> fields: Party type (Customer, Supplier, Other), the party (dues are shown beside the name), Amount, Date, Mode (Cash, UPI, Card, Bank transfer, Cheque, or Split), Ref / UTR / cheque no, Bank / account, Notes. <b>Open Ledger</b> jumps to the party ledger.</p>
+<figure><img src="img/payment-in.webp" alt="Receive payment voucher form" loading="lazy"><figcaption>Receiving a payment.</figcaption></figure>
+</section>
+
+<section id="expenses">
+<h2><span class="part">Menu: Accounts › Expenses</span>Expenses</h2>
+<p>Rent, electricity, salaries and the rest, so profit is what is left after them. The page shows total expense for the range, entries and the top category, with a <b>Report</b> button.</p>
+<p><b>+ Add Expense</b>: Date, Amount, Category (Rent, Electricity, Salary, Transport, Internet/Phone, Stationery, Maintenance, Tea/Refreshment, Bank Charges, Licence/Renewal, Misc), Paid to, Payment mode (Cash, UPI, Card, Bank Transfer), Notes.</p>
+<figure><img src="img/expense-add.webp" alt="Add expense form" loading="lazy"><figcaption>Adding an expense.</figcaption></figure>
+</section>
+
+<section id="ledger">
+<h2><span class="part">Menu: Accounts › Ledger · Dashboard: Party Ledger</span>Party Ledger</h2>
+<p>A full statement for any customer or supplier, or any account ledger. Choose Party type (Customer or Supplier) and the party, <i>or</i> a ledger (Cash in Hand, Bank, Sales…), set From and To and press <b>View Ledger</b>. Every bill, return and payment appears with a running balance.</p>
+</section>
+
+<!-- ============ ADMIN ============ -->
+<div class="part-title">Part 7 · Shop administration</div>
+
+<section id="staff">
+<h2><span class="part">Menu: Users &amp; Access › Multi-user · Dashboard: Staff Logins</span>Staff, roles and attendance</h2>
+<p>Each counter person signs in as themselves and every bill records who made it. The page shows how many staff logins are used (10 in the demo plan).</p>
+<figure><img src="img/staff.webp" alt="Staff page" loading="lazy"><figcaption>Staff with its five tabs.</figcaption></figure>
+<h3>Add staff</h3>
+<p>Name, Login e-mail, Phone, Counter no., Monthly salary, Password, Role (Cashier, Manager, Supervisor or a custom role), Bank details for salary (bank, account number, IFSC, UPI ID), Working hours (shop's timing or own timing) and Weekly off. Press <b>Create and email the login</b>. A 6-digit code goes to the staff member's e-mail; the login works only after the code is entered, so a mistyped e-mail cannot reach the shop.</p>
+<figure><img src="img/staff-add.webp" alt="Add staff form" loading="lazy"><figcaption>Adding a staff member.</figcaption></figure>
+<h3>Roles and permissions</h3>
+<p>Three ready-made roles come with the software: <b>Cashier</b> (sells and takes returns, cannot see cost; 26 of 55 switches), <b>Supervisor</b> (a cashier who may also discount, correct a bill and count stock; 32 of 55) and <b>Manager</b> (runs the shop day to day; 53 of 55). Ready-made roles cannot be changed; <b>Copy</b> one to make your own, or press <b>New role</b>.</p>
+<div class="tbl"><table><thead><tr><th>Group</th><th>Switches</th></tr></thead><tbody>
+<tr><td>Selling</td><td class="wrap">Make a bill · Give a discount · Edit a saved bill · Delete a bill · Take a sales return · Make an estimate · Send a bill on WhatsApp/e-mail · See the bill list · See everyone's bills, not only their own</td></tr>
+<tr><td>Stock &amp; medicines</td><td class="wrap">Open Products &amp; Stock · Add or change a medicine · Delete a medicine · See purchase price and cost · Stock Adjustment · Stock Check · Stock Registers · Print barcode labels</td></tr>
+<tr><td>Purchase</td><td class="wrap">See purchase entries · Record · Edit · Delete a purchase entry · Purchase returns · Purchase orders · Suppliers</td></tr>
+<tr><td>Money</td><td class="wrap">Payment In · Payment Out · Expenses · Party Ledger · Books &amp; Reports (accounting)</td></tr>
+<tr><td>Customers &amp; doctors</td><td class="wrap">See customers · Add or change a customer · See what customers owe · Doctors · Patients</td></tr>
+<tr><td>Clinic</td><td class="wrap">The day's queue · Record a consultation, vitals, complaint · Write or change the prescription · Bill a visit · Change services and rates</td></tr>
+<tr><td>Reports</td><td class="wrap">Sales · Purchase · Stock · GST · Profit reports</td></tr>
+<tr><td>Dashboard boxes</td><td class="wrap">Today's sales · Profit · Stock value · Money owed · Expiry and low-stock boxes · Quick-action buttons</td></tr>
+<tr><td>Shop settings</td><td class="wrap">Change shop settings</td></tr>
+<tr><td>Everything else</td><td class="wrap">Demand Register · Store Documents · Activity Log · Use the Android app</td></tr>
+</tbody></table></div>
+<p>Permissions apply on the website and on the phone at once. Switching off "Use the Android app" signs the person out of the app.</p>
+<figure><img src="img/staff-roles.webp" alt="Cashier role permissions" loading="lazy"><figcaption>The Cashier role and its switches.</figcaption></figure>
+<h3>Attendance, working days, tasks</h3>
+<ul>
+<li><b>Attendance:</b> attendance waiting for approval and who is on shift today. Staff punch in from the Android app with a photo (Full or Half day); the day counts toward salary after the owner approves it. Shops can approve automatically.</li>
+<li><b>Working days:</b> working days in the month (e.g. October 2026: 31 days less 4 Sundays = 27) and each person's monthly salary, per-day and half-day rate.</li>
+<li><b>Tasks:</b> work assigned to staff.</li>
+<li>Salary is earned per present day; bonus and deduction can be added against a month; payslips show attendance, earnings and payments.</li>
+</ul>
+<p>Shop timing, grace minutes, auto-approval, reminders, the shop's location and allowed distance, and a registered shop computer for staff without phones are set in <span class="path">Settings › Store Settings › Staff and attendance</span>.</p>
+</section>
+
+<section id="devices">
+<h2><span class="part">Menu: Users &amp; Access › Devices · Activity Log</span>Devices and Activity Log</h2>
+<p><b>Devices</b> lists every signed-in browser or phone: kind, device (e.g. Chrome on Windows), person, IP, signed in, last active. <b>Log out</b> a single device, or <b>Log out all other devices</b>.</p>
+<figure><img src="img/devices.webp" alt="Devices page" loading="lazy"><figcaption>Devices (IP addresses blurred).</figcaption></figure>
+<p><b>Activity Log</b> records what was done, by whom and when: logins, bills created, edited or deleted, prices changed, stock adjusted, customers added, WhatsApp sent, data exports and more. Filter by activity type and dates. Owners see the whole store; a staff member sees only their own work.</p>
+<figure><img src="img/activity-log.webp" alt="Activity log" loading="lazy"><figcaption>Activity log.</figcaption></figure>
+</section>
+
+<section id="settings">
+<h2><span class="part">Menu: Settings › Store Settings · Dashboard: Settings</span>Store Settings</h2>
+<p>Fourteen sections, listed down the left of the page. Each has its own <b>Save</b>.</p>
+<div class="tbl"><table><thead><tr><th>Section</th><th>What is set there</th></tr></thead><tbody>
+<tr><td>Shop details</td><td class="wrap">Logo (PNG/JPG/WebP up to 1 MB), shop name, business type, phone (verified; changeable once WhatsApp is connected), e-mail, GSTIN, GST type (Regular, Composition, Unregistered; the last two print without GST columns), jurisdiction, drug licence no., bill number prefix, UPI ID (prints a Scan-and-Pay QR with the amount), your own QR with a label, signature image, address.</td></tr>
+<tr><td>Invoice Themes</td><td class="wrap">Classic GST, Modern, Pharmacy Pro (new colour designs) and Classic Grid, Dashed, Ruled Ledger (black and white). Colour, watermark (None, Shop logo, Shop name, ORIGINAL, PAID, own text), festival greeting (Diwali, Eid, Holi, Christmas and 15 more). Preview at A4, A5, 80 mm, 58 mm.</td></tr>
+<tr><td>Printers &amp; Scanners</td><td class="wrap">Bill printer through the print window, USB, Bluetooth or COM port; roll 80/58 mm; cut after bill; open cash drawer on cash bills; test print. Barcode scanner: USB, wireless, Bluetooth, COM, phone camera. Cash drawer and label printer. Saved per computer.</td></tr>
+<tr><td>Bill design</td><td class="wrap">Drag the bill's blocks into order (shop header, invoice details, customer strip, medicines table, totals, GST summary, Schedule H note, amount in words, terms and signature, QR codes, closing line) and save named layouts. Choose bill columns, paper size (58, 72, 76, 80 mm, A4, A5, Letter, Legal), margin and billing screen colour (white or yellow).</td></tr>
+<tr><td>Counter rules</td><td class="wrap">Block expired medicines · Block billing at no price · Stop a bill past a customer's credit limit · Block billing more than stock · Open the customer window on every new bill · Always show Edited marks on purchases · New purchase starts on Credit · Always show Challans in Invoices · Selling prices include GST (MRP billing).</td></tr>
+<tr><td>Billing screen</td><td class="wrap">Bill tabs (up to five bills, <kbd>F8</kbd> / <kbd>Shift</kbd>+<kbd>F8</kbd>), margin in medicine search (staff see it only with cost permission), customer's old due on the payment and the bill.</td></tr>
+<tr><td>Account and backup</td><td class="wrap">Your login (name, e-mail, phone). <b>Download my data</b>: products, bills, customers, stock and payments in one ZIP of Excel files. <b>Google Drive backup</b>: weekly copies to your own Drive, Back up now, Disconnect.</td></tr>
+<tr><td>WhatsApp</td><td class="wrap">Send bills from my WhatsApp (linked number) or from Nexcod WhatsApp. Bills go automatically; edit the message using {shop} {bill_no} {amount} {date} {customer} {link}.</td></tr>
+<tr><td>Staff and attendance</td><td class="wrap">Opening and closing time, grace minutes, auto-approve, reminders, shop location and allowed distance, register the shop computer for attendance.</td></tr>
+<tr><td>Security</td><td class="wrap">Change password. Two-step login (e-mail code at every login). <b>Start again</b>: clears all bills, purchases, medicines and parties after an e-mailed code, keeping login, settings and plan (a safety copy is taken first).</td></tr>
+<tr><td>Bill branding</td><td class="wrap">The small "Generated by Nexcod POS" line; removed on paid plans.</td></tr>
+<tr><td>Clinic</td><td class="wrap">Run a clinic from this shop: appointments, vitals and prescriptions that print with the doctor's name and registration number. Turning it off hides the screens and keeps the records.</td></tr>
+<tr><td>Interface</td><td class="wrap">Screen brightness (Normal, Bright, Brightest), icon or plain menu, menu colours.</td></tr>
+<tr><td>About</td><td class="wrap">Version (Nexcod POS v3.0.0) and copyright.</td></tr>
+</tbody></table></div>
+<figure><img src="img/settings-shop.webp" alt="Store settings, shop details" loading="lazy"><figcaption>Shop details.</figcaption></figure>
+<figure><img src="img/settings-themes.webp" alt="Invoice themes" loading="lazy"><figcaption>Invoice themes with watermark and festival options.</figcaption></figure>
+<figure><img src="img/settings-bill.webp" alt="Bill design" loading="lazy"><figcaption>Bill design: drag blocks to arrange the printed bill.</figcaption></figure>
+<figure><img src="img/settings-rules.webp" alt="Counter rules" loading="lazy"><figcaption>Counter rules.</figcaption></figure>
+<figure><img src="img/settings-devices.webp" alt="Printers and scanners" loading="lazy"><figcaption>Printers &amp; scanners.</figcaption></figure>
+<figure><img src="img/settings-sending.webp" alt="WhatsApp settings" loading="lazy"><figcaption>WhatsApp sending.</figcaption></figure>
+</section>
+
+<section id="documents">
+<h2><span class="part">Menu: Settings › Shop Documents</span>Shop Documents</h2>
+<p>Licences and certificates kept safely, with a warning before they expire. <b>Upload Document</b>: Title, Type (Drug Licence retail or wholesale, GST Certificate, Shop &amp; Establishment, FSSAI Licence, Pharmacist Registration, Rent Agreement, Fire NOC, Trade Licence, Other), Expiry date (for the renewal alert), File (PDF/JPG/PNG up to 8 MB), Notes. A drug licence that lapses closes a shop; this page stops that from happening quietly.</p>
+<figure><img src="img/shop-documents.webp" alt="Store documents" loading="lazy"><figcaption>Store documents.</figcaption></figure>
+</section>
+
+<section id="plan">
+<h2><span class="part">Menu: Settings › My Plan · Backup · Downloads</span>My Plan, Backup and Downloads</h2>
+<p><b>My Plan</b> shows the current plan and end date (for example "Platinum, 1 Year. Ends on 01 Oct 2027, in 356 days"), the licence key with Copy, what the plan includes, the plan cards to buy or renew by UPI, and the payment history (date, plan, amount, method, status, reference).</p>
+<figure><img src="img/my-plan.webp" alt="My plan page" loading="lazy"><figcaption>My Plan.</figcaption></figure>
+<p><b>Backup</b> downloads all the shop's data. Weekly Google Drive backup is set under Account and backup. <b>WhatsApp &amp; API</b> opens the WhatsApp section of settings.</p>
+<p><b>Downloads</b> shows the apps: Android (Get it on Google Play) and Windows (shown as "Coming soon" at the time of writing).</p>
+</section>
+
+<section id="support">
+<h2><span class="part">Menu: Support · How to Use · Learn · Write a Review</span>Help, Support and Reviews</h2>
+<ul>
+<li><b>How to Use</b> opens the written guide for every screen; <b>Learn</b> has the short video tutorials and guides.</li>
+<li><b>Support</b>: your tickets (All, Closed, with View). <b>New Support Request</b>: Subject, Category (Technical issue, Billing/payment, Subscription, Feature request, Other), Priority (Low, Medium, High, Urgent), description, and up to 5 attachments of 8 MB (paste a screenshot with <kbd>Ctrl</kbd>+<kbd>V</kbd>). Replies usually come within 24 hours.</li>
+<li><b>Need help right now?</b> WhatsApp +91 72819 21783 or e-mail support@nexcodpos.in.</li>
+<li><b>Request a call back</b>: choose the registered or another number, what it is about and the best time to call.</li>
+<li><b>Write a Review</b>: a rating out of five and a few lines; it is printed beside the shop's name and city only.</li>
+</ul>
+<figure><img src="img/support.webp" alt="Support page" loading="lazy"><figcaption>Support tickets and the call-back form.</figcaption></figure>
+</section>
+
+<!-- ============ BEYOND ============ -->
+<div class="part-title">Part 8 · Beyond the counter</div>
+
+<section id="android">
+<h2>Android app</h2>
+<p>The Nexcod POS app (Google Play: in.nexcodpos.app) works on the same account and data. Described from the company's guide:</p>
+<ul>
+<li><b>Sign in with a code</b> sent on WhatsApp or e-mail; no password to remember. <b>Use Scanner Only</b> turns the phone into the counter's barcode scanner without logging in.</li>
+<li><b>Bill from the phone</b>: make a bill, pick a batch, take a payment against dues, add a product.</li>
+<li><b>Home</b>: takings, bills, profit, what you are owed and owe, and a week of sales.</li>
+<li><b>Stock</b>: Low, Out, Expiring and Expired filters with counts, showing the batch that expires first.</li>
+<li><b>Customers</b>: who owes and since when, with a full ledger.</li>
+<li><b>Books</b>: profit for today, this month or the year, cash and bank, P&amp;L, Balance Sheet and Day Book.</li>
+<li><b>Staff attendance</b> with a photo, owner approval, and owner controls for staff.</li>
+<li><b>WhatsApp</b> any bill; notifications for stock alerts, attendance and salary.</li>
+</ul>
+</section>
+
+<section id="website">
+<h2>Public website (nexcodpos.in)</h2>
+<figure><img src="img/web-home.webp" alt="nexcodpos.in home page" loading="lazy"><figcaption>The home page.</figcaption></figure>
+<div class="tbl"><table><thead><tr><th>Page</th><th>Purpose</th></tr></thead><tbody>
+<tr><td>Home</td><td class="wrap">Headline, start free trial, screen carousel, pricing, common questions.</td></tr>
+<tr><td>Features</td><td class="wrap">Every feature grouped by the work of a medical store.</td></tr>
+<tr><td>Screenshots</td><td class="wrap">The real screens.</td></tr>
+<tr><td>Pricing</td><td class="wrap">Plans and payment questions.</td></tr>
+<tr><td>Reviews</td><td class="wrap">Video and written reviews from pharmacies.</td></tr>
+<tr><td>About, Founder, Team, Careers</td><td class="wrap">Company story (founder Krishav Kumar Barman), team and open roles.</td></tr>
+<tr><td>How to Use, Video Guides</td><td class="wrap">Step-by-step written guide and tutorials.</td></tr>
+<tr><td>Find My Bills</td><td class="wrap">For a pharmacy's customers to see their own bills.</td></tr>
+<tr><td>Contact</td><td class="wrap">WhatsApp/Call sales +91 72819 21783, Support +91 73198 33790, support@nexcodpos.in, message form.</td></tr>
+<tr><td>Privacy, Terms, Refund</td><td class="wrap">Legal policies (DPDP Act 2023, 7-day refund on the first paid plan).</td></tr>
+</tbody></table></div>
+<figure><img src="img/web-contact.webp" alt="Contact page" loading="lazy"><figcaption>The contact page.</figcaption></figure>
+</section>
+
+<section id="find-my-bills">
+<h2>Find My Bills (for a shop's customers)</h2>
+<p>Customers of any pharmacy using Nexcod POS can see and download their own bills at <span class="path">nexcodpos.in/find-my-bills</span>.</p>
+<ol class="steps">
+<li>Enter the e-mail address given at the shop and press <b>Send me a code</b>.</li>
+<li>Type the 6-digit code e-mailed (it works once, for a few minutes).</li>
+<li>Open, print or save any of the bills.</li>
+</ol>
+<figure><img src="img/web-find-my-bills.webp" alt="Find my bills page" loading="lazy"><figcaption>Find My Bills.</figcaption></figure>
+</section>
+
+<!-- ============ REFERENCE ============ -->
+<div class="part-title">Part 9 · Reference</div>
+
+<section id="shortcuts">
+<h2>Keyboard shortcuts</h2>
+<h3>Billing screen</h3>
+<div class="tbl"><table><thead><tr><th>Keys</th><th>Action</th></tr></thead><tbody>
+<tr><td><kbd>F2</kbd></td><td>Search medicine (inside search: add a new medicine)</td></tr>
+<tr><td><kbd>F3</kbd></td><td>Customer → patient → doctor window</td></tr>
+<tr><td><kbd>F4</kbd></td><td>Patient</td></tr>
+<tr><td><kbd>F6</kbd></td><td>Payment</td></tr>
+<tr><td><kbd>F9</kbd></td><td>Go &amp; print bill</td></tr>
+<tr><td><kbd>F1</kbd></td><td>Rate desk: what the medicine cost</td></tr>
+<tr><td><kbd>F8</kbd> / <kbd>Shift</kbd>+<kbd>F8</kbd></td><td>Next bill tab / new bill tab</td></tr>
+<tr><td><kbd>Ctrl</kbd>+<kbd>L</kbd></td><td>Challan or bill</td></tr>
+<tr><td><kbd>Enter</kbd></td><td>Qty → rate → discount → GST → next medicine</td></tr>
+<tr><td><kbd>Ctrl</kbd>+<kbd>Del</kbd></td><td>Remove the line</td></tr>
+<tr><td>Customer window</td><td><kbd>Enter</kbd> choose · <kbd>←</kbd> <kbd>→</kbd> customer/patient/doctor · <kbd>F2</kbd> new · <kbd>F9</kbd> done · <kbd>Esc</kbd> close</td></tr>
+</tbody></table></div>
+<h3>Anywhere (from the company guide)</h3>
+<div class="tbl"><table><thead><tr><th>Keys</th><th>Action</th></tr></thead><tbody>
+<tr><td><kbd>Alt</kbd>+<kbd>1</kbd>…<kbd>9</kbd></td><td class="wrap">Dashboard, Billing, Inventory, Invoices, Customers, Purchase Entry, Suppliers, Reports, Books</td></tr>
+<tr><td><kbd>Alt</kbd>+letter</td><td class="wrap"><kbd>B</kbd> Billing, <kbd>I</kbd> Inventory, <kbd>C</kbd> Customers, <kbd>R</kbd> Reports, <kbd>U</kbd> Suppliers</td></tr>
+<tr><td><kbd>/</kbd></td><td>Jump to the search box</td></tr>
+<tr><td><kbd>Alt</kbd>+<kbd>N</kbd> / <kbd>S</kbd> / <kbd>P</kbd></td><td>New/Add · Save · Print</td></tr>
+<tr><td><kbd>?</kbd> · <kbd>Esc</kbd></td><td>Show the shortcut list · close it</td></tr>
+<tr><td><kbd>Ctrl</kbd>+<kbd>M</kbd></td><td>Purchases: show edited entries</td></tr>
+</tbody></table></div>
+</section>
+
+<section id="glossary">
+<h2>Glossary</h2>
+<div class="tbl"><table><thead><tr><th>Term</th><th>Meaning</th></tr></thead><tbody>
+<tr><td>Batch</td><td class="wrap">One lot of a medicine from the maker, with its own number, expiry and printed MRP.</td></tr>
+<tr><td>MRP</td><td class="wrap">Maximum retail price printed on the pack. The selling rate cannot go above it.</td></tr>
+<tr><td>Pack / units per pack</td><td class="wrap">How the medicine is sold (1x10 strip) and how many tablets one pack holds; used for loose sales.</td></tr>
+<tr><td>Loose sale</td><td class="wrap">Selling part of a strip; priced from the pack's MRP.</td></tr>
+<tr><td>Scheme / free goods</td><td class="wrap">Extra quantity from a distributor, e.g. 10+1. Its cost is spread over all units.</td></tr>
+<tr><td>Flat rate</td><td class="wrap">The real cost per unit after scheme and discount.</td></tr>
+<tr><td>HSN</td><td class="wrap">The GST product code (most medicines 3004).</td></tr>
+<tr><td>GSTIN</td><td class="wrap">15-character GST registration number.</td></tr>
+<tr><td>Composition scheme</td><td class="wrap">A GST scheme where the shop charges no GST and issues a Bill of Supply.</td></tr>
+<tr><td>B2B / B2CS</td><td class="wrap">Sales to registered businesses / to consumers (small), as GSTR-1 groups them.</td></tr>
+<tr><td>Schedule H / H1 / X</td><td class="wrap">Prescription-only drug schedules. H1 and X need a register with patient, doctor and quantity.</td></tr>
+<tr><td>Credit note / debit note</td><td class="wrap">Document for a sales return / a purchase return.</td></tr>
+<tr><td>Challan</td><td class="wrap">A delivery note without a tax invoice.</td></tr>
+<tr><td>Z-Report</td><td class="wrap">The day-end summary used to close the counter.</td></tr>
+<tr><td>Estimate</td><td class="wrap">A price quote that moves no stock until converted to a bill.</td></tr>
+</tbody></table></div>
+</section>
+
+<section id="faq">
+<h2>Common questions</h2>
+<h3>Does it work without installing anything?</h3>
+<p>Yes. It runs in a browser on a phone, tablet or computer. There is also an Android app.</p>
+<h3>Can more than one person bill at once?</h3>
+<p>Yes. Each person has their own login and every bill records who made it. New bill numbers are taken under a lock, so two counters cannot get the same number.</p>
+<h3>Does it file my GST return?</h3>
+<p>It produces the figures: GSTR-1 tables, GSTR-3B summary and a pre-filing check. The return is filed on the GST portal.</p>
+<h3>Can I sell loose tablets?</h3>
+<p>Yes. Enter the pieces in the loose box on the bill line. The price comes from the pack price and the stock reduces by the fraction sold.</p>
+<h3>What happens when the trial ends?</h3>
+<p>New bills need a paid plan; everything already entered stays in the account.</p>
+<h3>How do I keep a copy of my data?</h3>
+<p>Settings › Store Settings › Account and backup: Download my data (ZIP of Excel files) any time, and connect Google Drive for weekly backups.</p>
+<h3>A customer lost a bill. What can they do?</h3>
+<p>Send it again from Invoices on WhatsApp, or ask them to use nexcodpos.in/find-my-bills with the e-mail saved on their bill.</p>
+</section>
+
+<section id="review-notes">
+<h2>Notes for the product team</h2>
+<p>Points noticed while writing this manual from the live software. They are listed so the website, guide and software can be kept in step.</p>
+<ul>
+<li><b>Windows app:</b> the website and FAQ describe a Windows app that bills offline; the in-app Downloads page shows Windows as "Coming soon".</li>
+<li><b>Mobile sign-in:</b> the Mobile tab on the sign-in page says it is not available right now.</li>
+<li><b>Nexcod WhatsApp:</b> in the demo store the WhatsApp settings show "Something went wrong with Nexcod WhatsApp. Bills are not going from it right now."</li>
+<li><b>Keyboard guide:</b> the How to Use page lists Alt+number shortcuts; the in-app Keys window on Billing lists only the billing keys.</li>
+<li><b>Menu names:</b> the How to Use guide refers to "More ›" menus (More › Settings, More › Activity Log, More › Plan) from the earlier top-menu layout; the new layout uses a left menu with Settings and Users &amp; Access groups.</li>
+<li><b>Demo data:</b> the demo GSTIN is flagged by the Before You File check as not a real GSTIN, and some demo product names are test text. A cleaner demo store would make better screenshots for marketing.</li>
+</ul>
+</section>
+
+</div>
+</main>
+</div>
+<div id="lb" hidden><img alt=""></div>
+
+<script>
+(function(){
+  var q=document.getElementById('q'), secs=[].slice.call(document.querySelectorAll('main section')), nohit=document.getElementById('nohit');
+  var parts=[].slice.call(document.querySelectorAll('.part-title'));
+  q.addEventListener('input',function(){
+    var v=q.value.trim().toLowerCase(), any=false;
+    secs.forEach(function(s){var hit=!v||s.textContent.toLowerCase().indexOf(v)>-1;s.hidden=!hit;if(hit)any=true;});
+    parts.forEach(function(p){p.hidden=!!v;});
+    nohit.style.display=any?'none':'block';
+  });
+  var lb=document.getElementById('lb'), lbi=lb.querySelector('img');
+  document.querySelectorAll('figure img').forEach(function(img){
+    img.addEventListener('click',function(){lbi.src=img.src;lbi.alt=img.alt;lb.hidden=false;});
+  });
+  lb.addEventListener('click',function(){lb.hidden=true;});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.hidden=true;});
+  var mb=document.getElementById('menubtn'), toc=document.getElementById('toc');
+  mb.addEventListener('click',function(){var o=toc.classList.toggle('open');mb.setAttribute('aria-expanded',o);mb.textContent=o?'Hide contents':'Show contents';});
+  toc.querySelectorAll('.lists a').forEach(function(a){a.addEventListener('click',function(){if(window.innerWidth<=900){toc.classList.remove('open');mb.textContent='Show contents';}});});
+})();
+</script>
+</body></html>
