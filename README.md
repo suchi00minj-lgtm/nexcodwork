@@ -9,6 +9,7 @@ Material made from the live Nexcod POS software (v3.0.0, demo store "Sharma Medi
 | `documentation/` | Screen-by-screen user manual. Open `index.html` in a browser, or share `Nexcod-POS-User-Manual.pdf` (95 pages). Screenshots are in `documentation/img/`; customer phone numbers, e-mails and IP addresses are blurred. |
 | `ad-videos/` | 15 vertical ad videos (1080×1920, Hindi voiceover), one per day, in `ad-videos/videos/`. `index.html` shows them with ready-to-copy captions; `captions.md` has the same captions and the voiceover scripts. |
 | `ad-videos/source/` | Everything needed to edit and re-render the videos: scene scripts (`campaign.py`), the animation template, the renderer and the audio mixer. |
+| `seo/` | Researched SEO and founder-brand plan (`index.html`), ready-to-paste JSON-LD (`jsonld/`), suggested meta tags (`meta-tags.csv`) and a 24-piece content calendar (`content-calendar.csv`). |
 
 ## Re-rendering a video
 

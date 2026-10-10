@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "REPLACE: article title (max 110 characters)",
+  "description": "REPLACE: one-sentence summary",
+  "image": "REPLACE: https://nexcodpos.in/blog/<slug>/cover.png",
+  "datePublished": "REPLACE: 2026-10-20",
+  "dateModified": "REPLACE: 2026-10-20",
+  "inLanguage": "REPLACE: en-IN or hi-IN",
+  "author": {"@id": "https://nexcodpos.in/#founder"},
+  "publisher": {"@id": "https://nexcodpos.in/#organization"},
+  "mainEntityOfPage": "REPLACE: https://nexcodpos.in/blog/<slug>"
+}

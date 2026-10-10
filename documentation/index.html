@@ -576,7 +576,7 @@ ol.steps>li::before{content:counter(s);position:absolute;left:0;top:1px;width:26
 <div class="tbl"><table><thead><tr><th>Section</th><th>Fields and guidance</th></tr></thead><tbody>
 <tr><td>Medicine name</td><td class="wrap">Exactly as on the box; this is what is searched at the counter. <b>Global</b> (<kbd>F4</kbd>) searches the national medicine directory to fill details.</td></tr>
 <tr><td>Medicine</td><td class="wrap">Form (Tablet, Syrup…), Salt (e.g. Paracetamol 650 mg), Company, Schedule (None, H, H1, X). Schedule H/H1/X forces patient name, phone and doctor before a bill can be made.</td></tr>
-<tr><td>Pack</td><td class="wrap">Sold as (STRIP, BOTTLE, TUBE, BOX). Pieces in one pack (for loose selling): 10 for a strip of 10, blank for a bottle or tube. HSN (most medicines 3004). GST % (usually 5 or 12).</td></tr>
+<tr><td>Pack</td><td class="wrap">Sold as (STRIP, BOTTLE, TUBE, BOX). Pieces in one pack (for loose selling): 10 for a strip of 10, blank for a bottle or tube. HSN (most medicines 3004). GST %: since 22 September 2025 most medicines are 5%, and some life-saving drugs are nil-rated.</td></tr>
 <tr><td>Price, one pack</td><td class="wrap">MRP (printed price, never below the selling rate), Sale price (what you charge), Purchase rate (what you paid; never printed on a customer bill).</td></tr>
 <tr><td>Opening stock</td><td class="wrap">Batch no., Expiry (month and year), Quantity in full packs.</td></tr>
 </tbody></table></div>
@@ -1036,6 +1036,7 @@ ol.steps>li::before{content:counter(s);position:absolute;left:0;top:1px;width:26
 <li><b>Nexcod WhatsApp:</b> in the demo store the WhatsApp settings show "Something went wrong with Nexcod WhatsApp. Bills are not going from it right now."</li>
 <li><b>Keyboard guide:</b> the How to Use page lists Alt+number shortcuts; the in-app Keys window on Billing lists only the billing keys.</li>
 <li><b>Menu names:</b> the How to Use guide refers to "More ›" menus (More › Settings, More › Activity Log, More › Plan) from the earlier top-menu layout; the new layout uses a left menu with Settings and Users &amp; Access groups.</li>
+<li><b>GST hint out of date:</b> the Add product form says GST is "usually 5 or 12 for medicine". Since 22 September 2025 most medicines are 5% (some life-saving drugs nil), so the hint and the demo data (12%) should be updated.</li>
 <li><b>Demo data:</b> the demo GSTIN is flagged by the Before You File check as not a real GSTIN, and some demo product names are test text. A cleaner demo store would make better screenshots for marketing.</li>
 </ul>
 </section>

@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "@id": "https://nexcodpos.in/founder#profile",
+  "url": "https://nexcodpos.in/founder",
+  "name": "Krishav Kumar Barman, CEO and Founder of Nexcod POS",
+  "dateModified": "REPLACE: YYYY-MM-DD of last update",
+  "mainEntity": {"@id": "https://nexcodpos.in/#founder"},
+  "about": {"@id": "https://nexcodpos.in/#founder"},
+  "isPartOf": {"@id": "https://nexcodpos.in/#website"}
+}
