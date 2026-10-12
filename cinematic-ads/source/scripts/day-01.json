@@ -1,0 +1,620 @@
+{
+  "id": "01",
+  "slug": "bahi-khata-papa-ka-pehla-bill",
+  "style": "cinematic mini-movie (family drama)",
+  "title": "Bahi-Khata: Papa ka Pehla Bill",
+  "problem": "Haath ke bahi-khata se billing: rush mein lambi line, thakaan mein galat total, aur kis batch ki dawa kisko gayi, kab expire hogi, iska koi record nahi.",
+  "audience": "Family-run medical stores in north Indian towns still billing by hand (bahi, bill book, calculator); owners 45-70 and their tech-savvy sons/daughters 22-35; Hindi-speaking.",
+  "store": "Sharma Medical Store",
+  "music": [
+    {
+      "at_shot": 0,
+      "mood": "emotional"
+    },
+    {
+      "at_shot": 1,
+      "mood": "tension"
+    },
+    {
+      "at_shot": 6,
+      "mood": "emotional"
+    },
+    {
+      "at_shot": 10,
+      "mood": "inspiring"
+    }
+  ],
+  "cast": [
+    "papa",
+    "aman",
+    "aunty",
+    "uncle",
+    "narrator"
+  ],
+  "dramatization": true,
+  "shots": [
+    {
+      "type": "card",
+      "card": "title",
+      "data": {
+        "lines": [
+          "BAHI-KHATA"
+        ],
+        "sub": "Ek dukaan. Do peedhiyaan. Ek counter."
+      },
+      "lines": [
+        {
+          "who": "papa",
+          "hi": "चालीस साल, एक बही... एक पैसे की गलती नहीं।",
+          "sub": "Chaalis saal, ek bahi... ek paise ki galti nahi.",
+          "emotion": "confident"
+        }
+      ],
+      "hold": 0.1,
+      "transition": "dip_black"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "day",
+      "title": "Somvaar, subah 10:40",
+      "place": [
+        {
+          "who": "papa",
+          "spot": "counter_mid",
+          "face": "left"
+        },
+        {
+          "who": "aman",
+          "spot": "counter_right",
+          "face": "left"
+        },
+        {
+          "who": "aunty",
+          "spot": "cust_left",
+          "face": "right"
+        },
+        {
+          "who": "uncle",
+          "spot": "cust_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "wide",
+        "move": "handheld"
+      },
+      "lines": [
+        {
+          "who": "uncle",
+          "hi": "शर्मा जी, ज़रा जल्दी!",
+          "sub": "Sharma ji, zara jaldi!",
+          "emotion": "worried",
+          "gesture": "point"
+        },
+        {
+          "who": "papa",
+          "hi": "हिसाब में जल्दबाज़ी नहीं, भाई साहब।",
+          "sub": "Hisaab mein jaldbaazi nahi, bhai sahab.",
+          "emotion": "confident",
+          "gesture": "nod"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "crowd",
+          "at": 0.0
+        },
+        {
+          "name": "door_bell",
+          "at": 0.3
+        },
+        {
+          "name": "paper",
+          "at": 2.6
+        }
+      ],
+      "hold": 0.1,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "counter_closeup",
+      "time": "day",
+      "place": [],
+      "camera": {
+        "frame": "insert",
+        "move": "push_in"
+      },
+      "lines": [],
+      "sfx": [
+        {
+          "name": "paper",
+          "at": 0.1
+        },
+        {
+          "name": "clock_tick",
+          "at": 0.4
+        }
+      ],
+      "hold": 1.5,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "day",
+      "place": [
+        {
+          "who": "papa",
+          "spot": "counter_mid",
+          "face": "left"
+        },
+        {
+          "who": "aunty",
+          "spot": "cust_left",
+          "face": "right"
+        }
+      ],
+      "camera": {
+        "frame": "close:papa",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "papa",
+          "hi": "दो सौ चालीस, पचहत्तर... हुए तीन सौ पच्चीस।",
+          "sub": "240, 75... hue 325.",
+          "emotion": "thinking",
+          "gesture": "think"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "clock_tick",
+          "at": 0.0
+        }
+      ],
+      "hold": 0.2,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "day",
+      "place": [
+        {
+          "who": "papa",
+          "spot": "counter_mid",
+          "face": "left"
+        },
+        {
+          "who": "aunty",
+          "spot": "cust_left",
+          "face": "right"
+        }
+      ],
+      "camera": {
+        "frame": "two:aunty,papa",
+        "move": "static"
+      },
+      "lines": [
+        {
+          "who": "aunty",
+          "hi": "तीन सौ पंद्रह, भाई साहब।",
+          "sub": "315, bhai sahab.",
+          "emotion": "neutral",
+          "gesture": "point"
+        },
+        {
+          "who": "papa",
+          "hi": "...माफ़ कीजिए, बहन जी।",
+          "sub": "...Maaf kijiye, behen ji.",
+          "emotion": "sad",
+          "gesture": "namaste"
+        }
+      ],
+      "hold": 0.5,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "day",
+      "place": [
+        {
+          "who": "papa",
+          "spot": "counter_mid",
+          "face": "left"
+        },
+        {
+          "who": "aman",
+          "spot": "counter_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "close:aman",
+        "move": "static"
+      },
+      "lines": [],
+      "sfx": [
+        {
+          "name": "crowd",
+          "at": 0.0
+        }
+      ],
+      "hold": 1.5,
+      "transition": "dip_black"
+    },
+    {
+      "type": "scene",
+      "set": "store_front",
+      "time": "night",
+      "rain": true,
+      "title": "Raat 9:40 baje",
+      "place": [],
+      "camera": {
+        "frame": "wide",
+        "move": "static"
+      },
+      "lines": [],
+      "sfx": [
+        {
+          "name": "rain",
+          "at": 0.0
+        },
+        {
+          "name": "scooter",
+          "at": 0.8
+        }
+      ],
+      "hold": 1.5,
+      "transition": "fade"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "night",
+      "place": [
+        {
+          "who": "papa",
+          "spot": "counter_mid",
+          "face": "right"
+        },
+        {
+          "who": "aman",
+          "spot": "counter_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "two:papa,aman",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "papa",
+          "hi": "एक गलती से दुकान नहीं डूबती।",
+          "sub": "Ek galti se dukaan nahi doobti.",
+          "emotion": "neutral",
+          "gesture": "arms_crossed"
+        },
+        {
+          "who": "aman",
+          "hi": "दुकान नहीं, पापा... आप थकने लगे हो।",
+          "sub": "Dukaan nahi, Papa... aap thakne lage ho.",
+          "emotion": "worried",
+          "gesture": "idle"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "rain",
+          "at": 0.0
+        },
+        {
+          "name": "clock_tick",
+          "at": 0.5
+        }
+      ],
+      "hold": 0.2,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "night",
+      "place": [
+        {
+          "who": "papa",
+          "spot": "counter_mid",
+          "face": "right"
+        },
+        {
+          "who": "aman",
+          "spot": "counter_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "close:papa",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "aman",
+          "hi": "सुबह वाला सिरप... कौन सा बैच? एक्सपायरी कब?",
+          "sub": "Subah wala syrup... kaunsa batch? Expiry kab?",
+          "emotion": "thinking",
+          "gesture": "point"
+        }
+      ],
+      "hold": 0.9,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "night",
+      "place": [
+        {
+          "who": "papa",
+          "spot": "counter_mid",
+          "face": "right"
+        },
+        {
+          "who": "aman",
+          "spot": "counter_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "two:papa,aman",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "papa",
+          "hi": "ये कंप्यूटर अपने बस का नहीं, बेटा।",
+          "sub": "Ye computer apne bas ka nahi, beta.",
+          "emotion": "sad",
+          "gesture": "shake_head"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "keyboard",
+          "at": 3.5
+        }
+      ],
+      "hold": 0.5,
+      "transition": "cut"
+    },
+    {
+      "type": "screen",
+      "img": "billing-search",
+      "zoom": [
+        "search_list",
+        "search_list_r"
+      ],
+      "notes": [
+        {
+          "target": "search_box",
+          "text": "Naam ke 3-4 akshar"
+        },
+        {
+          "target": "stock_col",
+          "text": "Batch, expiry, stock"
+        }
+      ],
+      "lines": [
+        {
+          "who": "aman",
+          "hi": "देखो — तीन-चार अक्षर... बैच, एक्सपायरी, स्टॉक सामने।",
+          "sub": "Dekho — teen-chaar akshar... batch, expiry, stock saamne.",
+          "emotion": "confident"
+        }
+      ],
+      "hold": 0.3
+    },
+    {
+      "type": "screen",
+      "img": "billing-items",
+      "zoom": [
+        "bill_lines",
+        "bill_total"
+      ],
+      "notes": [
+        {
+          "target": "batch",
+          "text": "Har line ka batch"
+        },
+        {
+          "target": "total",
+          "text": "Total khud judta hai"
+        }
+      ],
+      "lines": [
+        {
+          "who": "aman",
+          "hi": "हर बिल में बैच दर्ज... टोटल ये जोड़ेगा।",
+          "sub": "Har bill mein batch darj... total ye jodega.",
+          "emotion": "confident"
+        },
+        {
+          "who": "aman",
+          "hi": "आपका काम — ग्राहक।",
+          "sub": "Aapka kaam — grahak.",
+          "emotion": "happy"
+        }
+      ],
+      "hold": 0.2
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "night",
+      "place": [
+        {
+          "who": "papa",
+          "spot": "counter_mid",
+          "face": "right"
+        },
+        {
+          "who": "aman",
+          "spot": "counter_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "close:papa",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "papa",
+          "hi": "हम्म... फिर से दिखाना, धीरे-धीरे।",
+          "sub": "Hmm... phir se dikhana, dheere-dheere.",
+          "emotion": "happy",
+          "gesture": "nod"
+        }
+      ],
+      "hold": 0.5,
+      "transition": "dip_black"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "day",
+      "title": "Agli subah",
+      "place": [
+        {
+          "who": "papa",
+          "spot": "counter_right",
+          "face": "left"
+        },
+        {
+          "who": "aman",
+          "spot": "counter_left",
+          "face": "right"
+        }
+      ],
+      "camera": {
+        "frame": "two:papa,aman",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "aman",
+          "hi": "पापा? आज बही नहीं?",
+          "sub": "Papa? Aaj bahi nahi?",
+          "emotion": "surprised",
+          "gesture": "point"
+        },
+        {
+          "who": "papa",
+          "hi": "बही को अब आराम करने दो। चालीस साल बहुत हुए।",
+          "sub": "Bahi ko ab aaraam karne do. Chaalis saal bahut hue.",
+          "emotion": "happy",
+          "gesture": "type"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "keyboard",
+          "at": 0.3
+        }
+      ],
+      "hold": 0.3,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "day",
+      "place": [
+        {
+          "who": "papa",
+          "spot": "counter_right",
+          "face": "right"
+        },
+        {
+          "who": "aunty",
+          "spot": "cust_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "two:papa,aunty",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "aunty",
+          "hi": "अरे वाह, शर्मा जी!",
+          "sub": "Arre waah, Sharma ji!",
+          "emotion": "surprised",
+          "gesture": "point"
+        },
+        {
+          "who": "papa",
+          "hi": "जोड़ ये लगाता है... बातें हम करेंगे।",
+          "sub": "Jod ye lagata hai... baatein hum karenge.",
+          "emotion": "happy",
+          "gesture": "give"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "door_bell",
+          "at": 0.0
+        },
+        {
+          "name": "keyboard",
+          "at": 0.6
+        },
+        {
+          "name": "printer",
+          "at": 2.6
+        },
+        {
+          "name": "cash_register",
+          "at": 7.5
+        }
+      ],
+      "hold": 0.5,
+      "transition": "fade"
+    },
+    {
+      "type": "endcard",
+      "lines": [
+        {
+          "who": "narrator",
+          "hi": "नेक्सकॉड पीओएस। सात दिन फ़्री ट्रायल।",
+          "sub": "Nexcod POS. 7 din free trial."
+        }
+      ]
+    }
+  ],
+  "ads": {
+    "google_headlines": [
+      "Bahi-Khata Se Billing Tak",
+      "Medical Store Billing App",
+      "Har Bill Pe Batch Aur Expiry",
+      "Total Khud Jud Jaata Hai",
+      "Bahi Ko Ab Aaram Do",
+      "7 Din Free Trial, No Card",
+      "Made In India Pharmacy POS",
+      "Platinum Plan ₹1,299/Saal"
+    ],
+    "google_descriptions": [
+      "Pharmacy billing jisme har line ka batch, expiry aur MRP. GST billing. 7 din free trial.",
+      "F2 se dawa dhoondo, F9 se bill print. Browser aur Android app. Made in India.",
+      "Near-expiry, low stock alerts aur Day-End Z-report. No auto-renew, UPI se payment."
+    ],
+    "meta_primary_text": "Chaalis saal se bahi-khata. Rush mein ek galat total. Phir bete ne counter pe Nexcod POS dikhaya: har dawa apne batch aur expiry ke saath bill mein, total khud judta hai, F9 se bill print. Medical store ki billing aur stock ek jagah. 7 din free trial, card nahi chahiye.",
+    "meta_headline": "Bahi-Khata se Nexcod POS tak",
+    "cta": "Start Free Trial"
+  }
+}

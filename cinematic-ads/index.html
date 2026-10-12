@@ -1,0 +1,1074 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nexcod POS Film Calendar</title>
+<meta name="description" content="Fifteen cinematic ad films for Nexcod POS, one per day, ready for Google Ads and Meta Ads, with ad copy, captions and targeting notes.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+/* White theme, Poppins at 400 with 500/600 only for headings; red brand accents; hand-drawn arrow notes explain what to do. */
+:root{--bg:#fff;--ink:#17141a;--muted:#5f5a63;--line:#e7e3e6;--soft:#f7f6f8;--brand:#c8161e;--orange:#ea580c;--green:#1e9e62;--blue:#2454c8}
+html{color-scheme:light;scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Poppins,system-ui,sans-serif;font-size:15.5px;line-height:1.65;font-weight:400}
+b,strong{font-weight:500}
+a{color:var(--brand)}
+.page{max-width:1180px;margin:0 auto;padding:36px 16px 120px}
+header{border-bottom:3px solid var(--brand);padding-bottom:22px}
+.eyebrow{font-size:12px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--brand)}
+h1{font-weight:600;font-size:clamp(30px,5vw,46px);line-height:1.1;margin:.2em 0 .3em;letter-spacing:-.01em}
+.lead{color:var(--muted);max-width:72ch;margin:0}
+.facts{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 0;padding:0;list-style:none}
+.facts li{font-size:13.5px;border:1px solid var(--line);border-radius:999px;padding:3px 12px;background:#fff}
+.start{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin:22px 0 0}
+.start label{font-weight:500}
+.start input{font:inherit;border:1px solid var(--line);border-radius:10px;padding:6px 10px;color:var(--ink);background:#fff}
+.start .hint{margin:0}
+nav.days{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin:26px 0 10px}
+nav.days a{display:flex;flex-direction:column;text-decoration:none;color:var(--ink);border:1px solid var(--line);border-radius:12px;padding:10px 12px;background:#fff;min-width:0}
+nav.days a b{font-size:24px;font-weight:600;color:var(--brand);line-height:1.1}
+nav.days a span{font-size:13px;color:var(--muted)}
+nav.days a i{font-style:normal;font-size:12.5px;line-height:1.35;margin-top:2px;overflow-wrap:anywhere}
+nav.days a:hover,nav.days a:focus-visible{border-color:var(--brand);outline:none}
+.ann{display:flex;align-items:flex-start;gap:8px;color:var(--brand);font-size:13.5px;line-height:1.4;margin:4px 0 10px}
+.ann svg{flex:none;width:46px;height:24px;fill:none;stroke:var(--brand);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.guide{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:28px 0 8px}
+.card{border:1px solid var(--line);border-radius:14px;padding:16px 18px;background:#fff}
+.card h3{font-size:17px;font-weight:500;margin:0 0 6px}
+.card ul{margin:0;padding-left:18px}
+.card li{margin:4px 0;font-size:14.5px}
+.pf{display:inline-block;font-size:12px;font-weight:500;letter-spacing:.06em;border-radius:6px;padding:1px 8px;color:#fff;margin-right:6px}
+.pf.g{background:var(--blue)}.pf.m{background:#1877f2}
+.day{padding:34px 0;border-bottom:1px solid var(--line);scroll-margin-top:10px}
+.day-head{display:flex;gap:16px;align-items:center;margin-bottom:16px}
+.num{flex:none;width:68px;height:68px;border-radius:16px;background:linear-gradient(135deg,var(--brand),var(--orange));color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:28px;font-weight:600;line-height:1}
+.num span{font-size:11px;font-weight:400;letter-spacing:.12em;text-transform:uppercase;margin-bottom:3px}
+.kick{margin:0;font-size:13px;color:var(--muted);letter-spacing:.02em}
+h2{font-size:clamp(22px,3vw,28px);font-weight:600;margin:.1em 0 0;line-height:1.2}
+.day-body{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:28px;align-items:start}
+.tabs{display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap}
+.tabs button{font:inherit;font-size:13.5px;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:999px;padding:5px 12px;cursor:pointer}
+.tabs button.on{border-color:var(--brand);color:var(--brand);background:#fff5f5}
+.player{position:sticky;top:16px}
+.screen video{display:block;width:100%;border-radius:14px;background:#0d0f14;box-shadow:0 18px 40px rgba(23,20,26,.16)}
+.screen.asp-16x9 video{aspect-ratio:16/9}
+.screen.asp-9x16{max-width:340px}
+.screen.asp-9x16 video{aspect-ratio:9/16}
+.dl{font-size:14px;color:var(--muted);margin:10px 0 0}
+.hint{font-size:13.5px;color:var(--muted);margin:6px 0 0}
+.flag{font-size:14px;border-left:3px solid var(--orange);background:#fff8f2;padding:8px 12px;border-radius:6px;margin:10px 0 0}
+.lab{display:block;font-size:11.5px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:12px 0 4px}
+.prob p{margin:0;font-size:16px}
+.prob{border-left:3px solid var(--brand);padding-left:14px}
+.two{display:grid;grid-template-columns:1.4fr 1fr;gap:16px}
+.small{font-size:14px;margin:0}
+.cast{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.cast li{font-size:12.5px;border:1px solid var(--line);border-radius:999px;padding:1px 10px;background:var(--soft)}
+details.ads{border:1px solid var(--line);border-radius:12px;padding:10px 14px;margin-top:14px;background:#fff}
+details.ads summary{cursor:pointer;font-weight:500}
+.list{list-style:none;margin:0;padding:0}
+.list li{display:flex;justify-content:space-between;gap:12px;border-bottom:1px dashed var(--line);padding:4px 0;font-size:14.5px}
+.cnt{flex:none;font-size:12px;color:var(--green)}.cnt.over{color:var(--brand)}
+.cp-h{display:flex;justify-content:space-between;align-items:baseline}
+.cp-row{display:flex;gap:10px;align-items:flex-start}
+.cp-t{flex:1;margin:0;font-size:14.5px;background:var(--soft);border-radius:8px;padding:8px 10px}
+.copy{font:inherit;font-size:13.5px;font-weight:500;color:#fff;background:var(--orange);border:0;border-radius:8px;padding:6px 12px;cursor:pointer}
+.copy.wide{margin-top:12px}
+.copy:focus-visible,.tabs button:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+.cta{margin-top:6px}
+.script{padding-left:20px;margin:8px 0 0}
+.script li{margin:6px 0;font-size:14.5px}
+.script .who{font-weight:500}
+.script .hi{display:block;color:var(--muted);font-size:13.5px}
+footer{margin-top:40px;font-size:14px;color:var(--muted)}
+footer ul{padding-left:18px}
+@media (max-width:960px){.player{position:static}.day-body{grid-template-columns:1fr}.guide{grid-template-columns:1fr}}
+@media (max-width:620px){nav.days{grid-template-columns:repeat(3,minmax(0,1fr))}.two{grid-template-columns:1fr}.cp-row{flex-direction:column}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style></head>
+<body><div class="page">
+<header>
+  <div class="eyebrow">Nexcod POS · Cinematic ad calendar</div>
+  <h1>15 days, 15 short films</h1>
+  <p class="lead">Each film follows one real problem at a medical store counter, with a cast of characters, a story and a clear ending: how Nexcod POS solves it. Every film comes in two formats, with Google Ads and Meta Ads copy ready to paste.</p>
+  <ul class="facts"><li>16:9 · 1920×1080 and 9:16 · 1080×1920</li><li>24 fps · H.264 + AAC · −14 LUFS</li><li>0:39 to 1:34 each · 14 min in total</li><li>Hindi dialogue, Hinglish subtitles burned in</li><li>Every film is marked “Dramatization”</li></ul>
+  <div class="start"><label for="startDate">Campaign start date</label><input type="date" id="startDate" value="2026-10-12">
+    <p class="hint">Change it and every day below shows its real date.</p></div>
+</header>
+<nav class="days" aria-label="Days"><a href="#day-01"><b>1</b><span class="date" data-off="0" data-short="1"></span><i>cinematic mini-movie</i></a><a href="#day-02"><b>2</b><span class="date" data-off="1" data-short="1"></span><i>comedy sketch</i></a><a href="#day-03"><b>3</b><span class="date" data-off="2" data-short="1"></span><i>thriller with countdown</i></a><a href="#day-04"><b>4</b><span class="date" data-off="3" data-short="1"></span><i>documentary</i></a><a href="#day-05"><b>5</b><span class="date" data-off="4" data-short="1"></span><i>TV news parody</i></a><a href="#day-06"><b>6</b><span class="date" data-off="5" data-short="1"></span><i>split-screen before vs after</i></a><a href="#day-07"><b>7</b><span class="date" data-off="6" data-short="1"></span><i>phone/chat POV story</i></a><a href="#day-08"><b>8</b><span class="date" data-off="7" data-short="1"></span><i>crime-thriller</i></a><a href="#day-09"><b>9</b><span class="date" data-off="8" data-short="1"></span><i>emotional family short film</i></a><a href="#day-10"><b>10</b><span class="date" data-off="9" data-short="1"></span><i>whiteboard-style explainer with kinetic type</i></a><a href="#day-11"><b>11</b><span class="date" data-off="10" data-short="1"></span><i>quiz</i></a><a href="#day-12"><b>12</b><span class="date" data-off="11" data-short="1"></span><i>night and rain cinematic drama</i></a><a href="#day-13"><b>13</b><span class="date" data-off="12" data-short="1"></span><i>light comedy-drama</i></a><a href="#day-14"><b>14</b><span class="date" data-off="13" data-short="1"></span><i>festival rush musical montage</i></a><a href="#day-15"><b>15</b><span class="date" data-off="14" data-short="1"></span><i>brand manifesto film + offer</i></a></nav>
+<div class="guide">
+  <div class="card"><h3><span class="pf g">Google</span> How to run</h3><ul>
+    <li>Upload the 16:9 files to the brand YouTube channel (unlisted is fine), then use them in a Video or Demand Gen campaign.</li>
+    <li>Search campaign: use each day's headlines and descriptions as one responsive search ad. The file <a href="google-ads-rsa.csv" download>google-ads-rsa.csv</a> has them all.</li>
+    <li>Keywords: medical store billing software, pharmacy billing software, chemist billing software, medical shop software, GST billing for medical store, pharmacy inventory software, medicine expiry software.</li>
+    <li>Negative keywords: job, course, salary, near me, online medicine, crack, pdf.</li>
+  </ul></div>
+  <div class="card"><h3><span class="pf m">Meta</span> How to run</h3><ul>
+    <li>Use the 9:16 file for Reels and Stories and the 16:9 file for Feed and in-stream. Upload both in one ad and let Advantage+ placements choose.</li>
+    <li>Goal: Leads through WhatsApp (72819 21783) or traffic to nexcodpos.in. All copy is in <a href="meta-ads.csv" download>meta-ads.csv</a>.</li>
+    <li>Audience: India, ages 25–60. Suggest the interests pharmacy, pharmacist, chemist, retail and small business, and start with the Hindi-speaking states.</li>
+    <li>Upload the matching .srt file so captions also work with the sound off.</li>
+  </ul></div>
+  <div class="card"><h3>Budget and testing</h3><ul>
+    <li>Week 1: ₹500–₹1,000 a day per platform. Each day's new film runs next to the films already live.</li>
+    <li>After 7 days, keep the 3 films with the lowest cost per trial sign-up or WhatsApp chat, and pause the rest.</li>
+    <li>Day 15 is the offer film. Keep it running after the campaign as the remarketing ad for site visitors.</li>
+    <li>Prices and claims match nexcodpos.in: 7-day free trial, ₹1,299 a year, no auto-renew. Update the copy if the prices change.</li>
+  </ul></div>
+</div>
+
+<section class="day" id="day-01" data-day="1">
+  <div class="day-head">
+    <div class="num"><span>Day</span>1</div>
+    <div>
+      <p class="kick"><span class="date" data-off="0"></span> · cinematic mini-movie (family drama) · 1:34</p>
+      <h2>Bahi-Khata: Papa ka Pehla Bill</h2>
+    </div>
+  </div>
+  <div class="day-body">
+    <div class="player">
+      <div class="tabs" role="group" aria-label="Video format">
+        <button type="button" class="on" data-asp="16x9" aria-pressed="true">16:9 · YouTube, Google</button>
+        <button type="button" data-asp="9x16" aria-pressed="false">9:16 · Reels, Stories, Shorts</button>
+      </div>
+      <div class="screen asp-16x9">
+        <video controls preload="none" playsinline poster="posters/day-01-16x9.jpg" data-base="videos/day-01-" data-poster="posters/day-01-">
+          <source src="videos/day-01-16x9.mp4" type="video/mp4">
+        </video>
+      </div>
+      <p class="dl">Download: <a href="videos/day-01-16x9.mp4" download>16:9 MP4</a> · <a href="videos/day-01-9x16.mp4" download>9:16 MP4</a> ·
+        <a href="captions/day-01.hinglish.srt" download>captions (Hinglish)</a> · <a href="captions/day-01.hi.srt" download>captions (हिंदी)</a></p>
+      <p class="hint">Over 60 seconds. Best for YouTube in-stream and the Facebook feed. For Stories, choose a shorter film or let Ads Manager cut it into cards.</p>
+    </div>
+    <div class="info">
+      <div class="prob"><span class="lab">Problem it solves</span><p>Haath ke bahi-khata se billing: rush mein lambi line, thakaan mein galat total, aur kis batch ki dawa kisko gayi, kab expire hogi, iska koi record nahi.</p></div>
+      <div class="two">
+        <div><span class="lab">Who it is for</span><p class="small">Family-run medical stores in north Indian towns still billing by hand (bahi, bill book, calculator); owners 45-70 and their tech-savvy sons/daughters 22-35; Hindi-speaking.</p></div>
+        <div><span class="lab">Cast</span><ul class="cast"><li>Papa ji · father</li><li>Aman · son</li><li>Aunty ji · customer</li><li>Chacha ji · customer</li><li>Narrator (voice)</li></ul></div>
+      </div>
+      <details class="ads" open>
+        <summary><span class="pf g">Google Ads</span> Responsive search ad + YouTube video</summary>
+        <div class="ann"><svg viewBox="0 0 60 30" aria-hidden="true"><path d="M2 26 C 18 24, 34 18, 52 6" /><path d="M42 5 L53 5 L49 15" /></svg>
+          Paste these into one ad group. Google mixes the headlines itself.</div>
+        <span class="lab">Headlines (max 30 characters)</span><ul class="list"><li><span>Bahi-Khata Se Billing Tak</span><span class="cnt">25/30</span></li><li><span>Medical Store Billing App</span><span class="cnt">25/30</span></li><li><span>Har Bill Pe Batch Aur Expiry</span><span class="cnt">28/30</span></li><li><span>Total Khud Jud Jaata Hai</span><span class="cnt">24/30</span></li><li><span>Bahi Ko Ab Aaram Do</span><span class="cnt">19/30</span></li><li><span>7 Din Free Trial, No Card</span><span class="cnt">25/30</span></li><li><span>Made In India Pharmacy POS</span><span class="cnt">26/30</span></li><li><span>Platinum Plan ₹1,299/Saal</span><span class="cnt">25/30</span></li></ul>
+        <span class="lab">Descriptions (max 90 characters)</span><ul class="list"><li><span>Pharmacy billing jisme har line ka batch, expiry aur MRP. GST billing. 7 din free trial.</span><span class="cnt">88/90</span></li><li><span>F2 se dawa dhoondo, F9 se bill print. Browser aur Android app. Made in India.</span><span class="cnt">77/90</span></li><li><span>Near-expiry, low stock alerts aur Day-End Z-report. No auto-renew, UPI se payment.</span><span class="cnt">82/90</span></li></ul>
+        <button class="copy wide" type="button" data-copy="Bahi-Khata Se Billing Tak
+Medical Store Billing App
+Har Bill Pe Batch Aur Expiry
+Total Khud Jud Jaata Hai
+Bahi Ko Ab Aaram Do
+7 Din Free Trial, No Card
+Made In India Pharmacy POS
+Platinum Plan ₹1,299/Saal
+
+Pharmacy billing jisme har line ka batch, expiry aur MRP. GST billing. 7 din free trial.
+F2 se dawa dhoondo, F9 se bill print. Browser aur Android app. Made in India.
+Near-expiry, low stock alerts aur Day-End Z-report. No auto-renew, UPI se payment.">Copy all Google copy</button>
+      </details>
+      <details class="ads" open>
+        <summary><span class="pf m">Meta Ads</span> Facebook + Instagram</summary>
+        <div class="cp"><div class="cp-h"><span class="lab">Primary text</span><span class="cnt">270/280</span></div><div class="cp-row"><p class="cp-t">Chaalis saal se bahi-khata. Rush mein ek galat total. Phir bete ne counter pe Nexcod POS dikhaya: har dawa apne batch aur expiry ke saath bill mein, total khud judta hai, F9 se bill print. Medical store ki billing aur stock ek jagah. 7 din free trial, card nahi chahiye.</p><button class="copy" type="button" data-copy="Chaalis saal se bahi-khata. Rush mein ek galat total. Phir bete ne counter pe Nexcod POS dikhaya: har dawa apne batch aur expiry ke saath bill mein, total khud judta hai, F9 se bill print. Medical store ki billing aur stock ek jagah. 7 din free trial, card nahi chahiye." aria-label="Copy Primary text">Copy</button></div><p class="hint">About the first 125 characters show before “See more”, so the hook is at the start.</p></div>
+        <div class="cp"><div class="cp-h"><span class="lab">Headline</span><span class="cnt">28/40</span></div><div class="cp-row"><p class="cp-t">Bahi-Khata se Nexcod POS tak</p><button class="copy" type="button" data-copy="Bahi-Khata se Nexcod POS tak" aria-label="Copy Headline">Copy</button></div></div>
+        <p class="small cta"><span class="lab">Call to action button</span>Start Free Trial → nexcodpos.in, or “Send WhatsApp message” → 72819 21783</p>
+      </details>
+      <details class="ads">
+        <summary>Full dialogue (19 lines)</summary>
+        <ol class="script"><li><span class="who">Papa ji</span> Chaalis saal, ek bahi... ek paise ki galti nahi.<span class="hi" lang="hi">चालीस साल, एक बही... एक पैसे की गलती नहीं।</span></li><li><span class="who">Chacha ji</span> Sharma ji, zara jaldi!<span class="hi" lang="hi">शर्मा जी, ज़रा जल्दी!</span></li><li><span class="who">Papa ji</span> Hisaab mein jaldbaazi nahi, bhai sahab.<span class="hi" lang="hi">हिसाब में जल्दबाज़ी नहीं, भाई साहब।</span></li><li><span class="who">Papa ji</span> 240, 75... hue 325.<span class="hi" lang="hi">दो सौ चालीस, पचहत्तर... हुए तीन सौ पच्चीस।</span></li><li><span class="who">Aunty ji</span> 315, bhai sahab.<span class="hi" lang="hi">तीन सौ पंद्रह, भाई साहब।</span></li><li><span class="who">Papa ji</span> ...Maaf kijiye, behen ji.<span class="hi" lang="hi">...माफ़ कीजिए, बहन जी।</span></li><li><span class="who">Papa ji</span> Ek galti se dukaan nahi doobti.<span class="hi" lang="hi">एक गलती से दुकान नहीं डूबती।</span></li><li><span class="who">Aman</span> Dukaan nahi, Papa... aap thakne lage ho.<span class="hi" lang="hi">दुकान नहीं, पापा... आप थकने लगे हो।</span></li><li><span class="who">Aman</span> Subah wala syrup... kaunsa batch? Expiry kab?<span class="hi" lang="hi">सुबह वाला सिरप... कौन सा बैच? एक्सपायरी कब?</span></li><li><span class="who">Papa ji</span> Ye computer apne bas ka nahi, beta.<span class="hi" lang="hi">ये कंप्यूटर अपने बस का नहीं, बेटा।</span></li><li><span class="who">Aman</span> Dekho — teen-chaar akshar... batch, expiry, stock saamne.<span class="hi" lang="hi">देखो — तीन-चार अक्षर... बैच, एक्सपायरी, स्टॉक सामने।</span></li><li><span class="who">Aman</span> Har bill mein batch darj... total ye jodega.<span class="hi" lang="hi">हर बिल में बैच दर्ज... टोटल ये जोड़ेगा।</span></li><li><span class="who">Aman</span> Aapka kaam — grahak.<span class="hi" lang="hi">आपका काम — ग्राहक।</span></li><li><span class="who">Papa ji</span> Hmm... phir se dikhana, dheere-dheere.<span class="hi" lang="hi">हम्म... फिर से दिखाना, धीरे-धीरे।</span></li><li><span class="who">Aman</span> Papa? Aaj bahi nahi?<span class="hi" lang="hi">पापा? आज बही नहीं?</span></li><li><span class="who">Papa ji</span> Bahi ko ab aaraam karne do. Chaalis saal bahut hue.<span class="hi" lang="hi">बही को अब आराम करने दो। चालीस साल बहुत हुए।</span></li><li><span class="who">Aunty ji</span> Arre waah, Sharma ji!<span class="hi" lang="hi">अरे वाह, शर्मा जी!</span></li><li><span class="who">Papa ji</span> Jod ye lagata hai... baatein hum karenge.<span class="hi" lang="hi">जोड़ ये लगाता है... बातें हम करेंगे।</span></li><li><span class="who">Narrator (voice)</span> Nexcod POS. 7 din free trial.<span class="hi" lang="hi">नेक्सकॉड पीओएस। सात दिन फ़्री ट्रायल।</span></li></ol>
+      </details>
+    </div>
+  </div>
+</section>
+<section class="day" id="day-02" data-day="2">
+  <div class="day-head">
+    <div class="num"><span>Day</span>2</div>
+    <div>
+      <p class="kick"><span class="date" data-off="1"></span> · comedy sketch · 0:44</p>
+      <h2>Chaar goli, chauntees rupaye?!</h2>
+    </div>
+  </div>
+  <div class="day-body">
+    <div class="player">
+      <div class="tabs" role="group" aria-label="Video format">
+        <button type="button" class="on" data-asp="16x9" aria-pressed="true">16:9 · YouTube, Google</button>
+        <button type="button" data-asp="9x16" aria-pressed="false">9:16 · Reels, Stories, Shorts</button>
+      </div>
+      <div class="screen asp-16x9">
+        <video controls preload="none" playsinline poster="posters/day-02-16x9.jpg" data-base="videos/day-02-" data-poster="posters/day-02-">
+          <source src="videos/day-02-16x9.mp4" type="video/mp4">
+        </video>
+      </div>
+      <p class="dl">Download: <a href="videos/day-02-16x9.mp4" download>16:9 MP4</a> · <a href="videos/day-02-9x16.mp4" download>9:16 MP4</a> ·
+        <a href="captions/day-02.hinglish.srt" download>captions (Hinglish)</a> · <a href="captions/day-02.hi.srt" download>captions (हिंदी)</a></p>
+      
+    </div>
+    <div class="info">
+      <div class="prob"><span class="lab">Problem it solves</span><p>Patte se khuli goli bechte waqt counter staff per-goli daam galat jodta hai, har baar alag rate banta hai aur customer se bahas hoti hai.</p></div>
+      <div class="two">
+        <div><span class="lab">Who it is for</span><p class="small">Medical store owners and pharmacists in India (25-60) who sell loose tablets from strips and rely on staff doing mental maths or a calculator at the counter</p></div>
+        <div><span class="lab">Cast</span><ul class="cast"><li>Raju · counter staff</li><li>Aunty ji · customer</li><li>Rakesh ji · owner</li><li>Narrator (voice)</li></ul></div>
+      </div>
+      <details class="ads" open>
+        <summary><span class="pf g">Google Ads</span> Responsive search ad + YouTube video</summary>
+        <div class="ann"><svg viewBox="0 0 60 30" aria-hidden="true"><path d="M2 26 C 18 24, 34 18, 52 6" /><path d="M42 5 L53 5 L49 15" /></svg>
+          Paste these into one ad group. Google mixes the headlines itself.</div>
+        <span class="lab">Headlines (max 30 characters)</span><ul class="list"><li><span>Khuli Goli Ka Sahi Daam</span><span class="cnt">23/30</span></li><li><span>Loose Goli, Strip MRP Se</span><span class="cnt">24/30</span></li><li><span>Counter Pe Hisaab Ki Bahas?</span><span class="cnt">27/30</span></li><li><span>Nexcod POS Pharmacy Billing</span><span class="cnt">27/30</span></li><li><span>Medical Store Billing App</span><span class="cnt">25/30</span></li><li><span>7 Din Free Trial, No Card</span><span class="cnt">25/30</span></li><li><span>Saal Ka Plan ₹1,299 Mein</span><span class="cnt">24/30</span></li></ul>
+        <span class="lab">Descriptions (max 90 characters)</span><ul class="list"><li><span>Patta aur khuli goli alag daalo, daam strip MRP se apne aap banta hai. Calculator nahi.</span><span class="cnt">87/90</span></li><li><span>GST billing, batch-expiry aur loose goli billing ek jagah. 7 din free, card nahi chahiye.</span><span class="cnt">89/90</span></li><li><span>Browser aur Android app. ₹399/3 mahine se plans, UPI se payment, koi auto-renew nahi.</span><span class="cnt">85/90</span></li></ul>
+        <button class="copy wide" type="button" data-copy="Khuli Goli Ka Sahi Daam
+Loose Goli, Strip MRP Se
+Counter Pe Hisaab Ki Bahas?
+Nexcod POS Pharmacy Billing
+Medical Store Billing App
+7 Din Free Trial, No Card
+Saal Ka Plan ₹1,299 Mein
+
+Patta aur khuli goli alag daalo, daam strip MRP se apne aap banta hai. Calculator nahi.
+GST billing, batch-expiry aur loose goli billing ek jagah. 7 din free, card nahi chahiye.
+Browser aur Android app. ₹399/3 mahine se plans, UPI se payment, koi auto-renew nahi.">Copy all Google copy</button>
+      </details>
+      <details class="ads" open>
+        <summary><span class="pf m">Meta Ads</span> Facebook + Instagram</summary>
+        <div class="cp"><div class="cp-h"><span class="lab">Primary text</span><span class="cnt">249/280</span></div><div class="cp-row"><p class="cp-t">Chaar goli ka daam ₹34?! Patte se khuli goli bechte waqt galat hisaab matlab customer se bahas aur toota bharosa. Nexcod POS mein patta ek khaane mein, khuli goli doosre mein, daam strip MRP se apne aap. 7 din free trial, koi card nahi. nexcodpos.in</p><button class="copy" type="button" data-copy="Chaar goli ka daam ₹34?! Patte se khuli goli bechte waqt galat hisaab matlab customer se bahas aur toota bharosa. Nexcod POS mein patta ek khaane mein, khuli goli doosre mein, daam strip MRP se apne aap. 7 din free trial, koi card nahi. nexcodpos.in" aria-label="Copy Primary text">Copy</button></div><p class="hint">About the first 125 characters show before “See more”, so the hook is at the start.</p></div>
+        <div class="cp"><div class="cp-h"><span class="lab">Headline</span><span class="cnt">32/40</span></div><div class="cp-row"><p class="cp-t">Khuli goli, sahi daam. Har baar.</p><button class="copy" type="button" data-copy="Khuli goli, sahi daam. Har baar." aria-label="Copy Headline">Copy</button></div></div>
+        <p class="small cta"><span class="lab">Call to action button</span>Start Free Trial → nexcodpos.in, or “Send WhatsApp message” → 72819 21783</p>
+      </details>
+      <details class="ads">
+        <summary>Full dialogue (11 lines)</summary>
+        <ol class="script"><li><span class="who">Raju</span> 35 ka patta, 4 goli... 34!<span class="hi" lang="hi">पैंतीस का पत्ता, चार गोली... चौंतीस!</span></li><li><span class="who">Aunty ji</span> 34?! Baaki 6 goli 1 rupaye mein?<span class="hi" lang="hi">चौंतीस?! बाकी छह गोली एक रुपये में?</span></li><li><span class="who">Raju</span> Saadhe teen guna chaar... 41?<span class="hi" lang="hi">साढ़े तीन गुणा चार... इकतालीस?</span></li><li><span class="who">Aunty ji</span> Har baar naya rate! Share bazaar hai kya?<span class="hi" lang="hi">हर बार नया रेट! शेयर बाज़ार है क्या?</span></li><li><span class="who">Rakesh ji</span> Raju, ginti daalo, hisaab system karega.<span class="hi" lang="hi">राजू, गिनती डालो, हिसाब सिस्टम करेगा।</span></li><li><span class="who">Rakesh ji</span> Khuli goli alag, daam patte ki MRP se.<span class="hi" lang="hi">खुली गोली अलग, दाम पत्ते की एमआरपी से।</span></li><li><span class="who">Raju</span> 14 rupaye, aunty ji.<span class="hi" lang="hi">चौदह रुपये, आंटी जी।</span></li><li><span class="who">Raju</span> Hisaab toh main bhi kar leta...<span class="hi" lang="hi">हिसाब तो मैं भी कर लेता...</span></li><li><span class="who">Aunty ji</span> Haan beta, chauntees mein!<span class="hi" lang="hi">हाँ बेटा, चौंतीस में!</span></li><li><span class="who">Raju</span> ...System zindabad.<span class="hi" lang="hi">...सिस्टम ज़िंदाबाद।</span></li><li><span class="who">Narrator (voice)</span> Khuli goli, sahi daam. Nexcod POS.<span class="hi" lang="hi">खुली गोली, सही दाम। नेक्सकोड पीओएस।</span></li></ol>
+      </details>
+    </div>
+  </div>
+</section>
+<section class="day" id="day-03" data-day="3">
+  <div class="day-head">
+    <div class="num"><span>Day</span>3</div>
+    <div>
+      <p class="kick"><span class="date" data-off="2"></span> · thriller with countdown · 0:59</p>
+      <h2>Das Minute: Inspector Aa Rahe Hain</h2>
+    </div>
+  </div>
+  <div class="day-body">
+    <div class="player">
+      <div class="tabs" role="group" aria-label="Video format">
+        <button type="button" class="on" data-asp="16x9" aria-pressed="true">16:9 · YouTube, Google</button>
+        <button type="button" data-asp="9x16" aria-pressed="false">9:16 · Reels, Stories, Shorts</button>
+      </div>
+      <div class="screen asp-16x9">
+        <video controls preload="none" playsinline poster="posters/day-03-16x9.jpg" data-base="videos/day-03-" data-poster="posters/day-03-">
+          <source src="videos/day-03-16x9.mp4" type="video/mp4">
+        </video>
+      </div>
+      <p class="dl">Download: <a href="videos/day-03-16x9.mp4" download>16:9 MP4</a> · <a href="videos/day-03-9x16.mp4" download>9:16 MP4</a> ·
+        <a href="captions/day-03.hinglish.srt" download>captions (Hinglish)</a> · <a href="captions/day-03.hi.srt" download>captions (हिंदी)</a></p>
+      
+    </div>
+    <div class="info">
+      <div class="prob"><span class="lab">Problem it solves</span><p>Drug inspector achanak aate hain, aur rush ke dino mein haath ka Schedule H1 register adhoora reh jaata hai: kaunsi H1 dawa, kis mareez ko, kis doctor ki parchi pe.</p></div>
+      <div class="two">
+        <div><span class="lab">Who it is for</span><p class="small">Medical store owners, licence holders and pharmacists in Indian towns (30-60) who still keep Schedule H/H1 registers by hand and worry about inspections; Hindi-speaking.</p></div>
+        <div><span class="lab">Cast</span><ul class="cast"><li>Raju · counter staff</li><li>Rakesh ji · owner</li><li>Sunita · co-owner</li><li>Drug inspector</li><li>Narrator (voice)</li></ul></div>
+      </div>
+      <details class="ads" open>
+        <summary><span class="pf g">Google Ads</span> Responsive search ad + YouTube video</summary>
+        <div class="ann"><svg viewBox="0 0 60 30" aria-hidden="true"><path d="M2 26 C 18 24, 34 18, 52 6" /><path d="M42 5 L53 5 L49 15" /></svg>
+          Paste these into one ad group. Google mixes the headlines itself.</div>
+        <span class="lab">Headlines (max 30 characters)</span><ul class="list"><li><span>H1 Register Ab Bill Se</span><span class="cnt">22/30</span></li><li><span>Schedule H/H1/X Register</span><span class="cnt">24/30</span></li><li><span>Drug Register Har Bill Se</span><span class="cnt">25/30</span></li><li><span>Register Haath Se Kyun Likhein</span><span class="cnt">30/30</span></li><li><span>Pharmacy Billing Software</span><span class="cnt">25/30</span></li><li><span>7 Din Free Trial, Card Nahi</span><span class="cnt">27/30</span></li><li><span>Made In India Pharmacy POS</span><span class="cnt">26/30</span></li><li><span>₹1,299/Saal, No Auto-Renew</span><span class="cnt">26/30</span></li></ul>
+        <span class="lab">Descriptions (max 90 characters)</span><ul class="list"><li><span>Schedule H, H1 aur X register har bill se bharta hai. Panne dhoondhne ki zaroorat nahi.</span><span class="cnt">87/90</span></li><li><span>Schedule check se dawaon par H/H1/X tag. GST billing, batch aur expiry. 7 din free.</span><span class="cnt">83/90</span></li><li><span>Medical store billing aur stock ek jagah. Browser aur Android app. UPI se payment.</span><span class="cnt">82/90</span></li></ul>
+        <button class="copy wide" type="button" data-copy="H1 Register Ab Bill Se
+Schedule H/H1/X Register
+Drug Register Har Bill Se
+Register Haath Se Kyun Likhein
+Pharmacy Billing Software
+7 Din Free Trial, Card Nahi
+Made In India Pharmacy POS
+₹1,299/Saal, No Auto-Renew
+
+Schedule H, H1 aur X register har bill se bharta hai. Panne dhoondhne ki zaroorat nahi.
+Schedule check se dawaon par H/H1/X tag. GST billing, batch aur expiry. 7 din free.
+Medical store billing aur stock ek jagah. Browser aur Android app. UPI se payment.">Copy all Google copy</button>
+      </details>
+      <details class="ads" open>
+        <summary><span class="pf m">Meta Ads</span> Facebook + Instagram</summary>
+        <div class="cp"><div class="cp-h"><span class="lab">Primary text</span><span class="cnt">242/280</span></div><div class="cp-row"><p class="cp-t">Inspector das minute door, aur H1 register ke panne khaali? Nexcod POS mein Schedule H/H1/X register har bill se bharta hai: mareez, doctor, dawa, taareekh-waar. Billing, stock aur drug registers ek jagah. 7 din free trial, card nahi chahiye.</p><button class="copy" type="button" data-copy="Inspector das minute door, aur H1 register ke panne khaali? Nexcod POS mein Schedule H/H1/X register har bill se bharta hai: mareez, doctor, dawa, taareekh-waar. Billing, stock aur drug registers ek jagah. 7 din free trial, card nahi chahiye." aria-label="Copy Primary text">Copy</button></div><p class="hint">About the first 125 characters show before “See more”, so the hook is at the start.</p></div>
+        <div class="cp"><div class="cp-h"><span class="lab">Headline</span><span class="cnt">24/40</span></div><div class="cp-row"><p class="cp-t">H1 Register, Har Bill Se</p><button class="copy" type="button" data-copy="H1 Register, Har Bill Se" aria-label="Copy Headline">Copy</button></div></div>
+        <p class="small cta"><span class="lab">Call to action button</span>Start Free Trial → nexcodpos.in, or “Send WhatsApp message” → 72819 21783</p>
+      </details>
+      <details class="ads">
+        <summary>Full dialogue (13 lines)</summary>
+        <ol class="script"><li><span class="who">Raju</span> Bhaiya! Drug inspector — bagal wali dukaan mein!<span class="hi" lang="hi">भैया! ड्रग इंस्पेक्टर — बगल वाली दुकान में!</span></li><li><span class="who">Rakesh ji</span> H1 register! Mangalvaar se panne khaali!<span class="hi" lang="hi">एच-वन रजिस्टर! मंगलवार से पन्ने खाली!</span></li><li><span class="who">Rakesh ji</span> Das minute hain, Sunita!<span class="hi" lang="hi">दस मिनट हैं, सुनीता!</span></li><li><span class="who">Sunita</span> Ghabraiye mat.<span class="hi" lang="hi">घबराइए मत।</span></li><li><span class="who">Drug inspector</span> Namaste. H1 register dikhaiye.<span class="hi" lang="hi">नमस्ते। एच-वन रजिस्टर दिखाइए।</span></li><li><span class="who">Sunita</span> Ji sir, ye raha.<span class="hi" lang="hi">जी सर, ये रहा।</span></li><li><span class="who">Sunita</span> Har H1 bill se bharta hai — mareez, doctor, dawa.<span class="hi" lang="hi">हर एच-वन बिल से भरता है — मरीज़, डॉक्टर, दवा।</span></li><li><span class="who">Sunita</span> Schedule wali har dawa pe pehle se tag.<span class="hi" lang="hi">शेड्यूल वाली हर दवा पे पहले से टैग।</span></li><li><span class="who">Drug inspector</span> Parchiyon ki copy?<span class="hi" lang="hi">पर्चियों की कॉपी?</span></li><li><span class="who">Sunita</span> Is file mein, bill number ke saath.<span class="hi" lang="hi">इस फ़ाइल में, बिल नंबर के साथ।</span></li><li><span class="who">Drug inspector</span> Record saaf hai. Aise hi rakhiye.<span class="hi" lang="hi">रिकॉर्ड साफ़ है। ऐसे ही रखिए।</span></li><li><span class="who">Rakesh ji</span> Uff... das minute the ya das saal!<span class="hi" lang="hi">उफ़्फ़... दस मिनट थे या दस साल!</span></li><li><span class="who">Narrator (voice)</span> Schedule register, har bill se. Nexcod POS.<span class="hi" lang="hi">शेड्यूल रजिस्टर, हर बिल से। नेक्सकॉड पीओएस।</span></li></ol>
+      </details>
+    </div>
+  </div>
+</section>
+<section class="day" id="day-04" data-day="4">
+  <div class="day-head">
+    <div class="num"><span>Day</span>4</div>
+    <div>
+      <p class="kick"><span class="date" data-off="3"></span> · documentary / interview (dramatized) · 0:57</p>
+      <h2>Jo Dawa Kabhi Biki Hi Nahi</h2>
+    </div>
+  </div>
+  <div class="day-body">
+    <div class="player">
+      <div class="tabs" role="group" aria-label="Video format">
+        <button type="button" class="on" data-asp="16x9" aria-pressed="true">16:9 · YouTube, Google</button>
+        <button type="button" data-asp="9x16" aria-pressed="false">9:16 · Reels, Stories, Shorts</button>
+      </div>
+      <div class="screen asp-16x9">
+        <video controls preload="none" playsinline poster="posters/day-04-16x9.jpg" data-base="videos/day-04-" data-poster="posters/day-04-">
+          <source src="videos/day-04-16x9.mp4" type="video/mp4">
+        </video>
+      </div>
+      <p class="dl">Download: <a href="videos/day-04-16x9.mp4" download>16:9 MP4</a> · <a href="videos/day-04-9x16.mp4" download>9:16 MP4</a> ·
+        <a href="captions/day-04.hinglish.srt" download>captions (Hinglish)</a> · <a href="captions/day-04.hi.srt" download>captions (हिंदी)</a></p>
+      
+    </div>
+    <div class="info">
+      <div class="prob"><span class="lab">Problem it solves</span><p>Expired stock ka nuksaan chupchaap hota hai: kaunsa batch kab expire hoga kisi ko yaad nahi rehta, aur dawa bikne se pehle hi bekaar ho jaati hai.</p></div>
+      <div class="two">
+        <div><span class="lab">Who it is for</span><p class="small">Medical store owners and pharmacists (25-55) in Indian towns and cities with large shelf stock and regular near-expiry write-offs; single stores and small chains; Hindi-speaking.</p></div>
+        <div><span class="lab">Cast</span><ul class="cast"><li>Pooja · assistant</li><li>Raju · counter staff</li><li>Rakesh ji · owner</li><li>Narrator (voice)</li></ul></div>
+      </div>
+      <details class="ads" open>
+        <summary><span class="pf g">Google Ads</span> Responsive search ad + YouTube video</summary>
+        <div class="ann"><svg viewBox="0 0 60 30" aria-hidden="true"><path d="M2 26 C 18 24, 34 18, 52 6" /><path d="M42 5 L53 5 L49 15" /></svg>
+          Paste these into one ad group. Google mixes the headlines itself.</div>
+        <span class="lab">Headlines (max 30 characters)</span><ul class="list"><li><span>Expiry Se Pehle Alert Paao</span><span class="cnt">26/30</span></li><li><span>Near-Expiry Report Batch-Wise</span><span class="cnt">29/30</span></li><li><span>Dawa Shelf Pe Expire Na Ho</span><span class="cnt">26/30</span></li><li><span>Expired Batch Bill Mein Band</span><span class="cnt">28/30</span></li><li><span>Pharmacy Billing + Stock App</span><span class="cnt">28/30</span></li><li><span>7 Din Free Trial, No Card</span><span class="cnt">25/30</span></li><li><span>Made In India Pharmacy POS</span><span class="cnt">26/30</span></li><li><span>₹1,299/Saal, No Auto-Renew</span><span class="cnt">26/30</span></li></ul>
+        <span class="lab">Descriptions (max 90 characters)</span><ul class="list"><li><span>Dashboard pe near-expiry, low stock aur out-of-stock alert. Sab pehli nazar mein.</span><span class="cnt">81/90</span></li><li><span>Near-expiry report: kaunsa batch, kitne din baaki, kitna paisa daav pe. Ek jagah.</span><span class="cnt">81/90</span></li><li><span>Expired batch ki billing block karo. Browser + Android app. 7 din free trial, no card.</span><span class="cnt">86/90</span></li></ul>
+        <button class="copy wide" type="button" data-copy="Expiry Se Pehle Alert Paao
+Near-Expiry Report Batch-Wise
+Dawa Shelf Pe Expire Na Ho
+Expired Batch Bill Mein Band
+Pharmacy Billing + Stock App
+7 Din Free Trial, No Card
+Made In India Pharmacy POS
+₹1,299/Saal, No Auto-Renew
+
+Dashboard pe near-expiry, low stock aur out-of-stock alert. Sab pehli nazar mein.
+Near-expiry report: kaunsa batch, kitne din baaki, kitna paisa daav pe. Ek jagah.
+Expired batch ki billing block karo. Browser + Android app. 7 din free trial, no card.">Copy all Google copy</button>
+      </details>
+      <details class="ads" open>
+        <summary><span class="pf m">Meta Ads</span> Facebook + Instagram</summary>
+        <div class="cp"><div class="cp-h"><span class="lab">Primary text</span><span class="cnt">276/280</span></div><div class="cp-row"><p class="cp-t">Kai baar sabse bada nuksaan chori se nahi, shelf pe hota hai: dawa padi-padi chupchaap expire ho jaati hai. Nexcod POS dashboard pe near-expiry alert deta hai, aur report mein dikhata hai kaunsa batch, kitne din baaki, kitna paisa daav pe. 7 din free trial, card nahi chahiye.</p><button class="copy" type="button" data-copy="Kai baar sabse bada nuksaan chori se nahi, shelf pe hota hai: dawa padi-padi chupchaap expire ho jaati hai. Nexcod POS dashboard pe near-expiry alert deta hai, aur report mein dikhata hai kaunsa batch, kitne din baaki, kitna paisa daav pe. 7 din free trial, card nahi chahiye." aria-label="Copy Primary text">Copy</button></div><p class="hint">About the first 125 characters show before “See more”, so the hook is at the start.</p></div>
+        <div class="cp"><div class="cp-h"><span class="lab">Headline</span><span class="cnt">38/40</span></div><div class="cp-row"><p class="cp-t">Expiry ka nuksaan, ab pehle se dikhega</p><button class="copy" type="button" data-copy="Expiry ka nuksaan, ab pehle se dikhega" aria-label="Copy Headline">Copy</button></div></div>
+        <p class="small cta"><span class="lab">Call to action button</span>Start Free Trial → nexcodpos.in, or “Send WhatsApp message” → 72819 21783</p>
+      </details>
+      <details class="ads">
+        <summary>Full dialogue (16 lines)</summary>
+        <ol class="script"><li><span class="who">Raju</span> Bhaiya, poora dabba expire!<span class="hi" lang="hi">भैया, पूरा डिब्बा एक्सपायर!</span></li><li><span class="who">Rakesh ji</span> Phir se?!<span class="hi" lang="hi">फिर से?!</span></li><li><span class="who">Narrator (voice)</span> Sabse bada nuksaan?<span class="hi" lang="hi">सबसे बड़ा नुकसान?</span></li><li><span class="who">Pooja</span> Chori nahi... shelf par.<span class="hi" lang="hi">चोरी नहीं... शेल्फ़ पर।</span></li><li><span class="who">Pooja</span> Dawa chupchaap expire hoti rahi.<span class="hi" lang="hi">दवा चुपचाप एक्सपायर होती रही।</span></li><li><span class="who">Narrator (voice)</span> Kitni?<span class="hi" lang="hi">कितनी?</span></li><li><span class="who">Pooja</span> Kabhi gina hi nahi.<span class="hi" lang="hi">कभी गिना ही नहीं।</span></li><li><span class="who">Narrator (voice)</span> Sochiye... mahine ke ₹500, saal ke ₹6,000.<span class="hi" lang="hi">सोचिए... महीने के पाँच सौ, साल के छह हज़ार।</span></li><li><span class="who">Pooja</span> Ab subah sabse pehle... ye.<span class="hi" lang="hi">अब सुबह सबसे पहले... ये।</span></li><li><span class="who">Pooja</span> Expiry, low stock — pehli nazar mein.<span class="hi" lang="hi">एक्सपायरी, लो स्टॉक — पहली नज़र में।</span></li><li><span class="who">Pooja</span> Kaunsa batch, kitne din, kitna paisa — sab saamne.<span class="hi" lang="hi">कौन-सा बैच, कितने दिन, कितना पैसा — सब सामने।</span></li><li><span class="who">Pooja</span> Raju, ye batch aage rakho.<span class="hi" lang="hi">राजू, ये बैच आगे रखो।</span></li><li><span class="who">Raju</span> Ji, Didi!<span class="hi" lang="hi">जी, दीदी!</span></li><li><span class="who">Narrator (voice)</span> Aur ab?<span class="hi" lang="hi">और अब?</span></li><li><span class="who">Pooja</span> Ab dabbe khulte hain... bikne ke liye.<span class="hi" lang="hi">अब डिब्बे खुलते हैं... बिकने के लिए।</span></li><li><span class="who">Narrator (voice)</span> Expiry se pehle alert. Nexcod POS.<span class="hi" lang="hi">एक्सपायरी से पहले अलर्ट। नेक्सकॉड पीओएस।</span></li></ol>
+      </details>
+    </div>
+  </div>
+</section>
+<section class="day" id="day-05" data-day="5">
+  <div class="day-head">
+    <div class="num"><span>Day</span>5</div>
+    <div>
+      <p class="kick"><span class="date" data-off="4"></span> · TV news parody · 0:54</p>
+      <h2>Breaking News: Sharma ji ki Neend aur GST 5%</h2>
+    </div>
+  </div>
+  <div class="day-body">
+    <div class="player">
+      <div class="tabs" role="group" aria-label="Video format">
+        <button type="button" class="on" data-asp="16x9" aria-pressed="true">16:9 · YouTube, Google</button>
+        <button type="button" data-asp="9x16" aria-pressed="false">9:16 · Reels, Stories, Shorts</button>
+      </div>
+      <div class="screen asp-16x9">
+        <video controls preload="none" playsinline poster="posters/day-05-16x9.jpg" data-base="videos/day-05-" data-poster="posters/day-05-">
+          <source src="videos/day-05-16x9.mp4" type="video/mp4">
+        </video>
+      </div>
+      <p class="dl">Download: <a href="videos/day-05-16x9.mp4" download>16:9 MP4</a> · <a href="videos/day-05-9x16.mp4" download>9:16 MP4</a> ·
+        <a href="captions/day-05.hinglish.srt" download>captions (Hinglish)</a> · <a href="captions/day-05.hi.srt" download>captions (हिंदी)</a></p>
+      
+    </div>
+    <div class="info">
+      <div class="prob"><span class="lab">Problem it solves</span><p>22 Sep 2025 se zyaadatar dawaon pe GST 5% hai; rate badalne ke baad dukaandaar ko darr rehta hai ki return mein HSN chhoot gaya ya lautayi dawa ka credit note galat gaya, aur galti filing ke baad hi pakdi jaayegi.</p></div>
+      <div class="two">
+        <div><span class="lab">Who it is for</span><p class="small">GST-registered medical store owners (30-60) and the family member or accountant who files their GSTR-1/3B; small towns and cities of north India; Hindi-speaking; interest in GST, pharmacy business, accounting.</p></div>
+        <div><span class="lab">Cast</span><ul class="cast"><li>News anchor</li><li>Rakesh ji · owner</li><li>Aman · son</li><li>Narrator (voice)</li></ul></div>
+      </div>
+      <details class="ads" open>
+        <summary><span class="pf g">Google Ads</span> Responsive search ad + YouTube video</summary>
+        <div class="ann"><svg viewBox="0 0 60 30" aria-hidden="true"><path d="M2 26 C 18 24, 34 18, 52 6" /><path d="M42 5 L53 5 L49 15" /></svg>
+          Paste these into one ad group. Google mixes the headlines itself.</div>
+        <span class="lab">Headlines (max 30 characters)</span><ul class="list"><li><span>Zyaadatar Dawa Pe GST Ab 5%</span><span class="cnt">27/30</span></li><li><span>22 Sep 2025 Se Naya GST Rate</span><span class="cnt">28/30</span></li><li><span>GST Return Se Pehle Check</span><span class="cnt">25/30</span></li><li><span>GSTR-1 Tables, Bills Se</span><span class="cnt">23/30</span></li><li><span>HSN Summary Taiyaar</span><span class="cnt">19/30</span></li><li><span>Before You File Check</span><span class="cnt">21/30</span></li><li><span>Pharmacy GST Reports</span><span class="cnt">20/30</span></li><li><span>7 Din Free Trial, Card Nahi</span><span class="cnt">27/30</span></li></ul>
+        <span class="lab">Descriptions (max 90 characters)</span><ul class="list"><li><span>22 Sep 2025 se zyaadatar dawaon pe GST 5%. GSTR-1 tables aur 3B summary bills se.</span><span class="cnt">81/90</span></li><li><span>File se pehle check: HSN, credit note, GSTIN. Kahan galti hai, kya karna hai.</span><span class="cnt">77/90</span></li><li><span>Medical store billing aur stock software. Browser + Android. 7 din free, card nahi.</span><span class="cnt">83/90</span></li></ul>
+        <button class="copy wide" type="button" data-copy="Zyaadatar Dawa Pe GST Ab 5%
+22 Sep 2025 Se Naya GST Rate
+GST Return Se Pehle Check
+GSTR-1 Tables, Bills Se
+HSN Summary Taiyaar
+Before You File Check
+Pharmacy GST Reports
+7 Din Free Trial, Card Nahi
+
+22 Sep 2025 se zyaadatar dawaon pe GST 5%. GSTR-1 tables aur 3B summary bills se.
+File se pehle check: HSN, credit note, GSTIN. Kahan galti hai, kya karna hai.
+Medical store billing aur stock software. Browser + Android. 7 din free, card nahi.">Copy all Google copy</button>
+      </details>
+      <details class="ads" open>
+        <summary><span class="pf m">Meta Ads</span> Facebook + Instagram</summary>
+        <div class="cp"><div class="cp-h"><span class="lab">Primary text</span><span class="cnt">278/280</span></div><div class="cp-row"><p class="cp-t">Breaking (parody): 22 Sep 2025 se zyaadatar dawaon pe GST 5% hai, aur Sharma ji ki neend gayab! HSN gaya ya nahi? Lautayi dawa ka credit note? Nexcod POS mein GSTR-1 tables, GSTR-3B summary aur &#x27;Before You File&#x27; check: jo portal refuse karega, woh pehle dikhe. 7 din free trial.</p><button class="copy" type="button" data-copy="Breaking (parody): 22 Sep 2025 se zyaadatar dawaon pe GST 5% hai, aur Sharma ji ki neend gayab! HSN gaya ya nahi? Lautayi dawa ka credit note? Nexcod POS mein GSTR-1 tables, GSTR-3B summary aur &#x27;Before You File&#x27; check: jo portal refuse karega, woh pehle dikhe. 7 din free trial." aria-label="Copy Primary text">Copy</button></div><p class="hint">About the first 125 characters show before “See more”, so the hook is at the start.</p></div>
+        <div class="cp"><div class="cp-h"><span class="lab">Headline</span><span class="cnt">35/40</span></div><div class="cp-row"><p class="cp-t">GST badla? File se pehle check karo</p><button class="copy" type="button" data-copy="GST badla? File se pehle check karo" aria-label="Copy Headline">Copy</button></div></div>
+        <p class="small cta"><span class="lab">Call to action button</span>Start Free Trial → nexcodpos.in, or “Send WhatsApp message” → 72819 21783</p>
+      </details>
+      <details class="ads">
+        <summary>Full dialogue (10 lines)</summary>
+        <ol class="script"><li><span class="who">News anchor</span> Breaking! Sharma ji ki neend gayab!<span class="hi" lang="hi">ब्रेकिंग! शर्मा जी की नींद ग़ायब!</span></li><li><span class="who">News anchor</span> 22 Sep 2025 se, zyaadatar dawa pe GST 5 percent.<span class="hi" lang="hi">बाईस सितंबर पच्चीस से, ज़्यादातर दवा पे जीएसटी पाँच परसेंट।</span></li><li><span class="who">Rakesh ji</span> Return? HSN? Lauti dawa ka credit note?<span class="hi" lang="hi">रिटर्न? एचएसएन? लौटी दवा का क्रेडिट नोट?</span></li><li><span class="who">Aman</span> Papa, calculator rakho. Report kholo.<span class="hi" lang="hi">पापा, कैलकुलेटर रखो। रिपोर्ट खोलो।</span></li><li><span class="who">Rakesh ji</span> Report se neend aayegi?<span class="hi" lang="hi">रिपोर्ट से नींद आएगी?</span></li><li><span class="who">Aman</span> GSTR-1, HSN summary, 3B — sab bills se.<span class="hi" lang="hi">जीएसटीआर-वन, एचएसएन समरी, थ्री-बी — सब बिलों से।</span></li><li><span class="who">Aman</span> File se pehle ye check — galti kahan, karna kya hai.<span class="hi" lang="hi">फ़ाइल से पहले ये चेक — ग़लती कहाँ, करना क्या है।</span></li><li><span class="who">Rakesh ji</span> Bas? Teen raat bekaar jaaga?<span class="hi" lang="hi">बस? तीन रात बेकार जागा?</span></li><li><span class="who">News anchor</span> Sharma ji so gaye. Aap bhi, file se pehle jaanchiye.<span class="hi" lang="hi">शर्मा जी सो गए। आप भी, फ़ाइल से पहले जाँचिए।</span></li><li><span class="who">Narrator (voice)</span> GST badla? Ghabraiye nahi, jaanchiye. Nexcod POS.<span class="hi" lang="hi">जीएसटी बदला? घबराइए नहीं, जाँचिए। नेक्सकॉड पीओएस।</span></li></ol>
+      </details>
+    </div>
+  </div>
+</section>
+<section class="day" id="day-06" data-day="6">
+  <div class="day-head">
+    <div class="num"><span>Day</span>6</div>
+    <div>
+      <p class="kick"><span class="date" data-off="5"></span> · split-screen before vs after · 0:40</p>
+      <h2>Shaam 7 Baje: Pehle vs Ab</h2>
+    </div>
+  </div>
+  <div class="day-body">
+    <div class="player">
+      <div class="tabs" role="group" aria-label="Video format">
+        <button type="button" class="on" data-asp="16x9" aria-pressed="true">16:9 · YouTube, Google</button>
+        <button type="button" data-asp="9x16" aria-pressed="false">9:16 · Reels, Stories, Shorts</button>
+      </div>
+      <div class="screen asp-16x9">
+        <video controls preload="none" playsinline poster="posters/day-06-16x9.jpg" data-base="videos/day-06-" data-poster="posters/day-06-">
+          <source src="videos/day-06-16x9.mp4" type="video/mp4">
+        </video>
+      </div>
+      <p class="dl">Download: <a href="videos/day-06-16x9.mp4" download>16:9 MP4</a> · <a href="videos/day-06-9x16.mp4" download>9:16 MP4</a> ·
+        <a href="captions/day-06.hinglish.srt" download>captions (Hinglish)</a> · <a href="captions/day-06.hi.srt" download>captions (हिंदी)</a></p>
+      
+    </div>
+    <div class="info">
+      <div class="prob"><span class="lab">Problem it solves</span><p>Shaam ke rush mein &#x27;dawa hai ya nahi&#x27; dekhne ke liye rack khangaalna aur calculator pe total lagana billing slow karta hai; line lambi hoti hai aur grahak bina dawa liye laut jaata hai.</p></div>
+      <div class="two">
+        <div><span class="lab">Who it is for</span><p class="small">Busy medical store owners and counter staff in towns and cities with an evening rush; 22-55; Hindi-speaking north India.</p></div>
+        <div><span class="lab">Cast</span><ul class="cast"><li>Rakesh ji · owner</li><li>Raju · counter staff</li><li>Young mother</li><li>Chacha ji · customer</li><li>Narrator (voice)</li></ul></div>
+      </div>
+      <details class="ads" open>
+        <summary><span class="pf g">Google Ads</span> Responsive search ad + YouTube video</summary>
+        <div class="ann"><svg viewBox="0 0 60 30" aria-hidden="true"><path d="M2 26 C 18 24, 34 18, 52 6" /><path d="M42 5 L53 5 L49 15" /></svg>
+          Paste these into one ad group. Google mixes the headlines itself.</div>
+        <span class="lab">Headlines (max 30 characters)</span><ul class="list"><li><span>Rush Hour? Billing Ready</span><span class="cnt">24/30</span></li><li><span>F2 Se Dawa, F9 Se Bill</span><span class="cnt">22/30</span></li><li><span>Medical Store Billing App</span><span class="cnt">25/30</span></li><li><span>Stock Aur Batch Ek Nazar Mein</span><span class="cnt">29/30</span></li><li><span>Total Khud Judta Hai</span><span class="cnt">20/30</span></li><li><span>5 Bill Tak Ek Saath Open</span><span class="cnt">24/30</span></li><li><span>7 Din Free Trial, No Card</span><span class="cnt">25/30</span></li><li><span>₹1,299/Saal, No Auto-Renew</span><span class="cnt">26/30</span></li></ul>
+        <span class="lab">Descriptions (max 90 characters)</span><ul class="list"><li><span>F2 dabao, naam likho: dawa stock, batch aur expiry ke saath saamne. F9 se bill print.</span><span class="cnt">85/90</span></li><li><span>Ek saath 5 bill tak open, phone camera se barcode scan. GST billing. Browser + Android.</span><span class="cnt">87/90</span></li><li><span>Pharmacy billing aur stock ek jagah. Made in India. Plans ₹399 se, UPI se payment.</span><span class="cnt">82/90</span></li></ul>
+        <button class="copy wide" type="button" data-copy="Rush Hour? Billing Ready
+F2 Se Dawa, F9 Se Bill
+Medical Store Billing App
+Stock Aur Batch Ek Nazar Mein
+Total Khud Judta Hai
+5 Bill Tak Ek Saath Open
+7 Din Free Trial, No Card
+₹1,299/Saal, No Auto-Renew
+
+F2 dabao, naam likho: dawa stock, batch aur expiry ke saath saamne. F9 se bill print.
+Ek saath 5 bill tak open, phone camera se barcode scan. GST billing. Browser + Android.
+Pharmacy billing aur stock ek jagah. Made in India. Plans ₹399 se, UPI se payment.">Copy all Google copy</button>
+      </details>
+      <details class="ads" open>
+        <summary><span class="pf m">Meta Ads</span> Facebook + Instagram</summary>
+        <div class="cp"><div class="cp-h"><span class="lab">Primary text</span><span class="cnt">264/280</span></div><div class="cp-row"><p class="cp-t">Shaam 7 baje, wahi bheed. Pehle: dawa hai ya nahi, rack mein dhoondo, calculator pe total, aur grahak laut gaya. Ab: F2 dabao, naam likho, stock aur batch saamne. Total khud, F9 se bill print. Nexcod POS, medical store ke liye. 7 din free trial, card nahi chahiye.</p><button class="copy" type="button" data-copy="Shaam 7 baje, wahi bheed. Pehle: dawa hai ya nahi, rack mein dhoondo, calculator pe total, aur grahak laut gaya. Ab: F2 dabao, naam likho, stock aur batch saamne. Total khud, F9 se bill print. Nexcod POS, medical store ke liye. 7 din free trial, card nahi chahiye." aria-label="Copy Primary text">Copy</button></div><p class="hint">About the first 125 characters show before “See more”, so the hook is at the start.</p></div>
+        <div class="cp"><div class="cp-h"><span class="lab">Headline</span><span class="cnt">30/40</span></div><div class="cp-row"><p class="cp-t">Shaam ki bheed? Counter ready.</p><button class="copy" type="button" data-copy="Shaam ki bheed? Counter ready." aria-label="Copy Headline">Copy</button></div></div>
+        <p class="small cta"><span class="lab">Call to action button</span>Start Free Trial → nexcodpos.in, or “Send WhatsApp message” → 72819 21783</p>
+      </details>
+      <details class="ads">
+        <summary>Full dialogue (11 lines)</summary>
+        <ol class="script"><li><span class="who">Chacha ji</span> Rehne do! Kahin aur se le loonga.<span class="hi" lang="hi">रहने दो! कहीं और से ले लूँगा।</span></li><li><span class="who">Raju</span> Hai bhi ya khatam? Dekhta hoon...<span class="hi" lang="hi">है भी या ख़त्म? देखता हूँ...</span></li><li><span class="who">Young mother</span> Bhaiya, bachcha tuition pe hai...<span class="hi" lang="hi">भैया, बच्चा ट्यूशन पे है...</span></li><li><span class="who">Rakesh ji</span> Jod raha hoon...<span class="hi" lang="hi">जोड़ रहा हूँ...</span></li><li><span class="who">Narrator (voice)</span> Wahi bheed... farak sirf billing ka.<span class="hi" lang="hi">वही भीड़... फ़र्क़ सिर्फ़ बिलिंग का।</span></li><li><span class="who">Rakesh ji</span> Agla!<span class="hi" lang="hi">अगला!</span></li><li><span class="who">Raju</span> Naam likho — stock saamne.<span class="hi" lang="hi">नाम लिखो — स्टॉक सामने।</span></li><li><span class="who">Rakesh ji</span> Batch ke saath expiry... aur total khud.<span class="hi" lang="hi">बैच के साथ एक्सपायरी... और टोटल ख़ुद।</span></li><li><span class="who">Young mother</span> Ho bhi gaya?<span class="hi" lang="hi">हो भी गया?</span></li><li><span class="who">Rakesh ji</span> F9, aur bill haath mein.<span class="hi" lang="hi">एफ़-नाइन, और बिल हाथ में।</span></li><li><span class="who">Narrator (voice)</span> Nexcod POS — 7 din free, card nahi chahiye.<span class="hi" lang="hi">नेक्सकॉड पीओएस — सात दिन फ़्री, कार्ड नहीं चाहिए।</span></li></ol>
+      </details>
+    </div>
+  </div>
+</section>
+<section class="day" id="day-07" data-day="7">
+  <div class="day-head">
+    <div class="num"><span>Day</span>7</div>
+    <div>
+      <p class="kick"><span class="date" data-off="6"></span> · phone/chat POV story · 0:40</p>
+      <h2>Bill ki naav ban gayi!</h2>
+    </div>
+  </div>
+  <div class="day-body">
+    <div class="player">
+      <div class="tabs" role="group" aria-label="Video format">
+        <button type="button" class="on" data-asp="16x9" aria-pressed="true">16:9 · YouTube, Google</button>
+        <button type="button" data-asp="9x16" aria-pressed="false">9:16 · Reels, Stories, Shorts</button>
+      </div>
+      <div class="screen asp-16x9">
+        <video controls preload="none" playsinline poster="posters/day-07-16x9.jpg" data-base="videos/day-07-" data-poster="posters/day-07-">
+          <source src="videos/day-07-16x9.mp4" type="video/mp4">
+        </video>
+      </div>
+      <p class="dl">Download: <a href="videos/day-07-16x9.mp4" download>16:9 MP4</a> · <a href="videos/day-07-9x16.mp4" download>9:16 MP4</a> ·
+        <a href="captions/day-07.hinglish.srt" download>captions (Hinglish)</a> · <a href="captions/day-07.hi.srt" download>captions (हिंदी)</a></p>
+      
+    </div>
+    <div class="info">
+      <div class="prob"><span class="lab">Problem it solves</span><p>Customer ka kaagaz ka bill kho gaya jo office reimbursement claim ke liye chahiye; dukaan ko bill-book palatne aur duplicate chhaapne mein waqt aur kaagaz dono barbaad hote hain.</p></div>
+      <div class="two">
+        <div><span class="lab">Who it is for</span><p class="small">Medical store owners and pharmacists in India who still use carbon bill books or reprint duplicate bills, and want to send bills on WhatsApp; ages 25-55</p></div>
+        <div><span class="lab">Cast</span><ul class="cast"><li>Young mother</li><li>Child</li><li>Rakesh ji · owner</li><li>Aman · son</li><li>Narrator (voice)</li></ul></div>
+      </div>
+      <details class="ads" open>
+        <summary><span class="pf g">Google Ads</span> Responsive search ad + YouTube video</summary>
+        <div class="ann"><svg viewBox="0 0 60 30" aria-hidden="true"><path d="M2 26 C 18 24, 34 18, 52 6" /><path d="M42 5 L53 5 L49 15" /></svg>
+          Paste these into one ad group. Google mixes the headlines itself.</div>
+        <span class="lab">Headlines (max 30 characters)</span><ul class="list"><li><span>Bill Kho Gaya? WhatsApp Karo</span><span class="cnt">28/30</span></li><li><span>Bill PDF Grahak Ke WhatsApp Pe</span><span class="cnt">30/30</span></li><li><span>Na Bill-Book, Na Photocopy</span><span class="cnt">26/30</span></li><li><span>WhatsApp Bill Apne Number Se</span><span class="cnt">28/30</span></li><li><span>Nexcod POS Pharmacy Software</span><span class="cnt">28/30</span></li><li><span>7 Din Free Trial, No Card</span><span class="cnt">25/30</span></li></ul>
+        <span class="lab">Descriptions (max 90 characters)</span><ul class="list"><li><span>Grahak ka purana bill invoice list se seedha uske WhatsApp pe bhejo, dukaan ke number se.</span><span class="cnt">89/90</span></li><li><span>Na bill-book palatna, na duplicate chhaapna. Bill WhatsApp ya e-mail pe.</span><span class="cnt">72/90</span></li><li><span>Grahak nexcodpos.in/find-my-bills pe apne bill khud dekh sakte hain. 7 din free trial.</span><span class="cnt">86/90</span></li></ul>
+        <button class="copy wide" type="button" data-copy="Bill Kho Gaya? WhatsApp Karo
+Bill PDF Grahak Ke WhatsApp Pe
+Na Bill-Book, Na Photocopy
+WhatsApp Bill Apne Number Se
+Nexcod POS Pharmacy Software
+7 Din Free Trial, No Card
+
+Grahak ka purana bill invoice list se seedha uske WhatsApp pe bhejo, dukaan ke number se.
+Na bill-book palatna, na duplicate chhaapna. Bill WhatsApp ya e-mail pe.
+Grahak nexcodpos.in/find-my-bills pe apne bill khud dekh sakte hain. 7 din free trial.">Copy all Google copy</button>
+      </details>
+      <details class="ads" open>
+        <summary><span class="pf m">Meta Ads</span> Facebook + Instagram</summary>
+        <div class="cp"><div class="cp-h"><span class="lab">Primary text</span><span class="cnt">269/280</span></div><div class="cp-row"><p class="cp-t">Bachche ne dawai ke bill ki naav bana di... aur kal office claim! Nexcod POS mein purana bill invoice list mein rehta hai. WhatsApp button dabao, PDF seedha grahak ke phone pe, dukaan ke apne number se. Na bill-book palatna, na photocopy. 7 din free trial. nexcodpos.in</p><button class="copy" type="button" data-copy="Bachche ne dawai ke bill ki naav bana di... aur kal office claim! Nexcod POS mein purana bill invoice list mein rehta hai. WhatsApp button dabao, PDF seedha grahak ke phone pe, dukaan ke apne number se. Na bill-book palatna, na photocopy. 7 din free trial. nexcodpos.in" aria-label="Copy Primary text">Copy</button></div><p class="hint">About the first 125 characters show before “See more”, so the hook is at the start.</p></div>
+        <div class="cp"><div class="cp-h"><span class="lab">Headline</span><span class="cnt">34/40</span></div><div class="cp-row"><p class="cp-t">Purana bill? Dhoondho nahi, bhejo.</p><button class="copy" type="button" data-copy="Purana bill? Dhoondho nahi, bhejo." aria-label="Copy Headline">Copy</button></div></div>
+        <p class="small cta"><span class="lab">Call to action button</span>Start Free Trial → nexcodpos.in, or “Send WhatsApp message” → 72819 21783</p>
+      </details>
+      <details class="ads">
+        <summary>Full dialogue (11 lines)</summary>
+        <ol class="script"><li><span class="who">Young mother</span> Mera dawai ka bill... naav ban gaya?!<span class="hi" lang="hi">मेरा दवाई का बिल... नाव बन गया?!</span></li><li><span class="who">Child</span> Aur doob bhi gayi, mummy.<span class="hi" lang="hi">और डूब भी गई, मम्मी।</span></li><li><span class="who">Young mother</span> Kal office mein claim jama karna hai!<span class="hi" lang="hi">कल ऑफ़िस में क्लेम जमा करना है!</span></li><li><span class="who">Rakesh ji</span> Purana bill? Bill-book palto, photocopy...<span class="hi" lang="hi">पुराना बिल? बिल-बुक पलटो, फ़ोटोकॉपी...</span></li><li><span class="who">Aman</span> Papa, bas naam daalo.<span class="hi" lang="hi">पापा, बस नाम डालो।</span></li><li><span class="who">Aman</span> Ek click... seedha WhatsApp.<span class="hi" lang="hi">एक क्लिक... सीधा व्हाट्सऐप।</span></li><li><span class="who">Young mother</span> Arre waah! Bill ki PDF aa gayi!<span class="hi" lang="hi">अरे वाह! बिल की पीडीएफ़ आ गई!</span></li><li><span class="who">Child</span> Toh nayi naav bana loon?<span class="hi" lang="hi">तो नई नाव बना लूँ?</span></li><li><span class="who">Young mother</span> Haan... akhbaar se!<span class="hi" lang="hi">हाँ... अख़बार से!</span></li><li><span class="who">Narrator (voice)</span> Grahak apne bill khud bhi dekhein.<span class="hi" lang="hi">ग्राहक अपने बिल ख़ुद भी देखें।</span></li><li><span class="who">Narrator (voice)</span> Bill dhoondho nahi, bhejo. Nexcod POS.<span class="hi" lang="hi">बिल ढूँढो नहीं, भेजो। नेक्सकोड पीओएस।</span></li></ol>
+      </details>
+    </div>
+  </div>
+</section>
+<section class="day" id="day-08" data-day="8">
+  <div class="day-head">
+    <div class="num"><span>Day</span>8</div>
+    <div>
+      <p class="kick"><span class="date" data-off="7"></span> · crime-thriller / whodunit · 0:59</p>
+      <h2>Ek Password Ka Raaz</h2>
+    </div>
+  </div>
+  <div class="day-body">
+    <div class="player">
+      <div class="tabs" role="group" aria-label="Video format">
+        <button type="button" class="on" data-asp="16x9" aria-pressed="true">16:9 · YouTube, Google</button>
+        <button type="button" data-asp="9x16" aria-pressed="false">9:16 · Reels, Stories, Shorts</button>
+      </div>
+      <div class="screen asp-16x9">
+        <video controls preload="none" playsinline poster="posters/day-08-16x9.jpg" data-base="videos/day-08-" data-poster="posters/day-08-">
+          <source src="videos/day-08-16x9.mp4" type="video/mp4">
+        </video>
+      </div>
+      <p class="dl">Download: <a href="videos/day-08-16x9.mp4" download>16:9 MP4</a> · <a href="videos/day-08-9x16.mp4" download>9:16 MP4</a> ·
+        <a href="captions/day-08.hinglish.srt" download>captions (Hinglish)</a> · <a href="captions/day-08.hi.srt" download>captions (हिंदी)</a></p>
+      
+    </div>
+    <div class="info">
+      <div class="prob"><span class="lab">Problem it solves</span><p>Sab staff ek hi login se bill banate hain: discount badhta hai, stock ghatta hai, aur owner bata nahi sakta ki kisne kya badla, to shak sab par jaata hai.</p></div>
+      <div class="two">
+        <div><span class="lab">Who it is for</span><p class="small">Medical store owners (32-60) with 2-6 counter staff, and their sons/daughters who run the shop software; worried about unexplained discounts and stock mismatch; Hindi-speaking north and central India.</p></div>
+        <div><span class="lab">Cast</span><ul class="cast"><li>Rakesh ji · owner</li><li>Aman · son</li><li>Pooja · assistant</li><li>Raju · counter staff</li><li>Narrator (voice)</li></ul></div>
+      </div>
+      <details class="ads" open>
+        <summary><span class="pf g">Google Ads</span> Responsive search ad + YouTube video</summary>
+        <div class="ann"><svg viewBox="0 0 60 30" aria-hidden="true"><path d="M2 26 C 18 24, 34 18, 52 6" /><path d="M42 5 L53 5 L49 15" /></svg>
+          Paste these into one ad group. Google mixes the headlines itself.</div>
+        <span class="lab">Headlines (max 30 characters)</span><ul class="list"><li><span>Discount Kisne Diya?</span><span class="cnt">20/30</span></li><li><span>Har Staff Ki Apni Login</span><span class="cnt">23/30</span></li><li><span>55 Permission Switches</span><span class="cnt">22/30</span></li><li><span>Cost Price Staff Se Chhupayein</span><span class="cnt">30/30</span></li><li><span>Shak Nahi, Saaf Hisaab</span><span class="cnt">22/30</span></li><li><span>Pharmacy Billing Software</span><span class="cnt">25/30</span></li><li><span>7 Din Free Trial, Card Nahi</span><span class="cnt">27/30</span></li><li><span>Made In India Pharmacy POS</span><span class="cnt">26/30</span></li></ul>
+        <span class="lab">Descriptions (max 90 characters)</span><ul class="list"><li><span>Staff logins, 55 permission switches: kaun bill banaye, kaun discount de, aap tay karein.</span><span class="cnt">89/90</span></li><li><span>Cashier ko cost price na dikhe. Photo attendance aur salary bhi. 7 din free trial.</span><span class="cnt">82/90</span></li><li><span>Medical store billing, stock aur staff ek jagah. Browser aur Android app. ₹1,299/saal.</span><span class="cnt">86/90</span></li></ul>
+        <button class="copy wide" type="button" data-copy="Discount Kisne Diya?
+Har Staff Ki Apni Login
+55 Permission Switches
+Cost Price Staff Se Chhupayein
+Shak Nahi, Saaf Hisaab
+Pharmacy Billing Software
+7 Din Free Trial, Card Nahi
+Made In India Pharmacy POS
+
+Staff logins, 55 permission switches: kaun bill banaye, kaun discount de, aap tay karein.
+Cashier ko cost price na dikhe. Photo attendance aur salary bhi. 7 din free trial.
+Medical store billing, stock aur staff ek jagah. Browser aur Android app. ₹1,299/saal.">Copy all Google copy</button>
+      </details>
+      <details class="ads" open>
+        <summary><span class="pf m">Meta Ads</span> Facebook + Instagram</summary>
+        <div class="cp"><div class="cp-h"><span class="lab">Primary text</span><span class="cnt">267/280</span></div><div class="cp-row"><p class="cp-t">Discount badh raha tha, stock ghat raha tha, aur sab ek hi login se kaam kar rahe the. Galti kisi ki nahi thi, ek password ki thi. Nexcod POS mein har staff ki apni login aur 55 permission switches: kaun discount de, kaun cost dekhe, aap tay karein. 7 din free trial.</p><button class="copy" type="button" data-copy="Discount badh raha tha, stock ghat raha tha, aur sab ek hi login se kaam kar rahe the. Galti kisi ki nahi thi, ek password ki thi. Nexcod POS mein har staff ki apni login aur 55 permission switches: kaun discount de, kaun cost dekhe, aap tay karein. 7 din free trial." aria-label="Copy Primary text">Copy</button></div><p class="hint">About the first 125 characters show before “See more”, so the hook is at the start.</p></div>
+        <div class="cp"><div class="cp-h"><span class="lab">Headline</span><span class="cnt">23/40</span></div><div class="cp-row"><p class="cp-t">Har Staff Ki Apni Login</p><button class="copy" type="button" data-copy="Har Staff Ki Apni Login" aria-label="Copy Headline">Copy</button></div></div>
+        <p class="small cta"><span class="lab">Call to action button</span>Start Free Trial → nexcodpos.in, or “Send WhatsApp message” → 72819 21783</p>
+      </details>
+      <details class="ads">
+        <summary>Full dialogue (13 lines)</summary>
+        <ol class="script"><li><span class="who">Rakesh ji</span> ₹2,300 ka discount... kisne diya?<span class="hi" lang="hi">तेईस सौ का डिस्काउंट... किसने दिया?</span></li><li><span class="who">Aman</span> Kiski login se bane ye bill?<span class="hi" lang="hi">किसकी लॉगिन से बने ये बिल?</span></li><li><span class="who">Rakesh ji</span> Ek hi login hai — koi bhi ho sakta hai.<span class="hi" lang="hi">एक ही लॉगिन है — कोई भी हो सकता है।</span></li><li><span class="who">Rakesh ji</span> Kisi pe ilzaam nahi — bas samajhna hai.<span class="hi" lang="hi">किसी पे इल्ज़ाम नहीं — बस समझना है।</span></li><li><span class="who">Pooja</span> Bhaiya, chhe patte toote the — maine stock se ghataaye.<span class="hi" lang="hi">भैया, छह पत्ते टूटे थे — मैंने स्टॉक से घटाए।</span></li><li><span class="who">Raju</span> Discount maine diya... aapne kaha tha na, das kam.<span class="hi" lang="hi">डिस्काउंट मैंने दिया... आपने कहा था ना, दस कम।</span></li><li><span class="who">Rakesh ji</span> Das rupaye, Raju... das percent nahi!<span class="hi" lang="hi">दस रुपये, राजू... दस परसेंट नहीं!</span></li><li><span class="who">Raju</span> Oh!<span class="hi" lang="hi">ओह!</span></li><li><span class="who">Aman</span> Galti kisi ki nahi, Papa — ek hi password ki hai.<span class="hi" lang="hi">गलती किसी की नहीं, पापा — एक ही पासवर्ड की है।</span></li><li><span class="who">Aman</span> Har staff ki apni login. 55 switch — kaun kya kare.<span class="hi" lang="hi">हर स्टाफ़ की अपनी लॉगिन। पचपन स्विच — कौन क्या करे।</span></li><li><span class="who">Aman</span> Aur activity log — kisne, kab, kya.<span class="hi" lang="hi">और एक्टिविटी लॉग — किसने, कब, क्या।</span></li><li><span class="who">Raju</span> Apni login, apna naam. Discount? Poochh ke!<span class="hi" lang="hi">अपनी लॉगिन, अपना नाम। डिस्काउंट? पूछ के!</span></li><li><span class="who">Narrator (voice)</span> Shak ki jagah, seedha hisaab. Nexcod POS.<span class="hi" lang="hi">शक की जगह, सीधा हिसाब। नेक्सकॉड पीओएस।</span></li></ol>
+      </details>
+    </div>
+  </div>
+</section>
+<section class="day" id="day-09" data-day="9">
+  <div class="day-head">
+    <div class="num"><span>Day</span>9</div>
+    <div>
+      <p class="kick"><span class="date" data-off="8"></span> · emotional family short film · 1:25</p>
+      <h2>Hisaab Machine Ka, Waqt Pari Ka</h2>
+    </div>
+  </div>
+  <div class="day-body">
+    <div class="player">
+      <div class="tabs" role="group" aria-label="Video format">
+        <button type="button" class="on" data-asp="16x9" aria-pressed="true">16:9 · YouTube, Google</button>
+        <button type="button" data-asp="9x16" aria-pressed="false">9:16 · Reels, Stories, Shorts</button>
+      </div>
+      <div class="screen asp-16x9">
+        <video controls preload="none" playsinline poster="posters/day-09-16x9.jpg" data-base="videos/day-09-" data-poster="posters/day-09-">
+          <source src="videos/day-09-16x9.mp4" type="video/mp4">
+        </video>
+      </div>
+      <p class="dl">Download: <a href="videos/day-09-16x9.mp4" download>16:9 MP4</a> · <a href="videos/day-09-9x16.mp4" download>9:16 MP4</a> ·
+        <a href="captions/day-09.hinglish.srt" download>captions (Hinglish)</a> · <a href="captions/day-09.hi.srt" download>captions (हिंदी)</a></p>
+      <p class="hint">Over 60 seconds. Best for YouTube in-stream and the Facebook feed. For Stories, choose a shorter film or let Ads Manager cut it into cards.</p>
+    </div>
+    <div class="info">
+      <div class="prob"><span class="lab">Problem it solves</span><p>Din band karne ka cash aur hisaab haath se milane mein ghante lagte hain; dukaan wala raat der tak counter pe atka rehta hai aur parivaar ke khaas pal chhoot jaate hain.</p></div>
+      <div class="two">
+        <div><span class="lab">Who it is for</span><p class="small">Medical store owners (35-55) with families, running the counter themselves and closing cash and accounts by hand every night; north Indian towns; Hindi-speaking; also their spouses who co-run the shop.</p></div>
+        <div><span class="lab">Cast</span><ul class="cast"><li>Rakesh ji · owner</li><li>Raju · counter staff</li><li>Child</li><li>Sunita · co-owner</li><li>Narrator (voice)</li></ul></div>
+      </div>
+      <details class="ads" open>
+        <summary><span class="pf g">Google Ads</span> Responsive search ad + YouTube video</summary>
+        <div class="ann"><svg viewBox="0 0 60 30" aria-hidden="true"><path d="M2 26 C 18 24, 34 18, 52 6" /><path d="M42 5 L53 5 L49 15" /></svg>
+          Paste these into one ad group. Google mixes the headlines itself.</div>
+        <span class="lab">Headlines (max 30 characters)</span><ul class="list"><li><span>Day-End Hisaab, Minuton Mein</span><span class="cnt">28/30</span></li><li><span>Z-Report: Cash, UPI, Udhaar</span><span class="cnt">27/30</span></li><li><span>Raat Ka Hisaab, Jaldi Khatam</span><span class="cnt">28/30</span></li><li><span>P&amp;L Ek Nazar Mein</span><span class="cnt">17/30</span></li><li><span>Medical Store Billing App</span><span class="cnt">25/30</span></li><li><span>Ghar Time Pe Pahuncho</span><span class="cnt">21/30</span></li><li><span>7 Din Free Trial, No Card</span><span class="cnt">25/30</span></li><li><span>Made In India Pharmacy POS</span><span class="cnt">26/30</span></li></ul>
+        <span class="lab">Descriptions (max 90 characters)</span><ul class="list"><li><span>Day-End Z-report mein cash, UPI aur udhaar alag-alag. P&amp;L aur Tally export bhi.</span><span class="cnt">79/90</span></li><li><span>Din bhar ke bill Nexcod POS mein, toh raat ka hisaab bhi wahi. Browser + Android app.</span><span class="cnt">85/90</span></li><li><span>Plans ₹1,299/saal (≈₹108/mahina). No auto-renew, UPI se payment. 7 din free trial.</span><span class="cnt">82/90</span></li></ul>
+        <button class="copy wide" type="button" data-copy="Day-End Hisaab, Minuton Mein
+Z-Report: Cash, UPI, Udhaar
+Raat Ka Hisaab, Jaldi Khatam
+P&amp;L Ek Nazar Mein
+Medical Store Billing App
+Ghar Time Pe Pahuncho
+7 Din Free Trial, No Card
+Made In India Pharmacy POS
+
+Day-End Z-report mein cash, UPI aur udhaar alag-alag. P&amp;L aur Tally export bhi.
+Din bhar ke bill Nexcod POS mein, toh raat ka hisaab bhi wahi. Browser + Android app.
+Plans ₹1,299/saal (≈₹108/mahina). No auto-renew, UPI se payment. 7 din free trial.">Copy all Google copy</button>
+      </details>
+      <details class="ads" open>
+        <summary><span class="pf m">Meta Ads</span> Facebook + Instagram</summary>
+        <div class="cp"><div class="cp-h"><span class="lab">Primary text</span><span class="cnt">279/280</span></div><div class="cp-row"><p class="cp-t">Har raat ghanto ka hisaab, aur ghar pe koi intezaar karta reh jaata hai. Nexcod POS mein din bhar ke bill bante hain, toh Day-End Z-report cash, UPI aur udhaar alag-alag dikha deta hai, aur P&amp;L ek nazar mein. Hisaab machine ka, waqt apnon ka. 7 din free trial, card nahi chahiye.</p><button class="copy" type="button" data-copy="Har raat ghanto ka hisaab, aur ghar pe koi intezaar karta reh jaata hai. Nexcod POS mein din bhar ke bill bante hain, toh Day-End Z-report cash, UPI aur udhaar alag-alag dikha deta hai, aur P&amp;L ek nazar mein. Hisaab machine ka, waqt apnon ka. 7 din free trial, card nahi chahiye." aria-label="Copy Primary text">Copy</button></div><p class="hint">About the first 125 characters show before “See more”, so the hook is at the start.</p></div>
+        <div class="cp"><div class="cp-h"><span class="lab">Headline</span><span class="cnt">32/40</span></div><div class="cp-row"><p class="cp-t">Hisaab machine ka, waqt apnon ka</p><button class="copy" type="button" data-copy="Hisaab machine ka, waqt apnon ka" aria-label="Copy Headline">Copy</button></div></div>
+        <p class="small cta"><span class="lab">Call to action button</span>Start Free Trial → nexcodpos.in, or “Send WhatsApp message” → 72819 21783</p>
+      </details>
+      <details class="ads">
+        <summary>Full dialogue (21 lines)</summary>
+        <ol class="script"><li><span class="who">Rakesh ji</span> 3,820... nahi. Phir se.<span class="hi" lang="hi">अड़तीस सौ बीस... नहीं। फिर से।</span></li><li><span class="who">Raju</span> Bhaiya, phone... teesri baar!<span class="hi" lang="hi">भैया, फ़ोन... तीसरी बार!</span></li><li><span class="who">Rakesh ji</span> Bas, hisaab mil jaaye.<span class="hi" lang="hi">बस, हिसाब मिल जाए।</span></li><li><span class="who">Rakesh ji</span> Pari? Beta... Papa aa gaye.<span class="hi" lang="hi">परी? बेटा... पापा आ गए।</span></li><li><span class="who">Child</span> Function khatam, Papa.<span class="hi" lang="hi">फ़ंक्शन खत्म, पापा।</span></li><li><span class="who">Child</span> Maine stage se aapko bahut dhoondha.<span class="hi" lang="hi">मैंने स्टेज से आपको बहुत ढूँढा।</span></li><li><span class="who">Sunita</span> Roz ka yahi hisaab hai, ji.<span class="hi" lang="hi">रोज़ का यही हिसाब है, जी।</span></li><li><span class="who">Sunita</span> Raat ka hisaab ab ye jodega.<span class="hi" lang="hi">रात का हिसाब अब ये जोड़ेगा।</span></li><li><span class="who">Rakesh ji</span> Aur main?<span class="hi" lang="hi">और मैं?</span></li><li><span class="who">Sunita</span> Aap... time pe ghar aaoge.<span class="hi" lang="hi">आप... टाइम पे घर आओगे।</span></li><li><span class="who">Rakesh ji</span> Saadhe aath baje, Pari ka Annual Day.<span class="hi" lang="hi">साढ़े आठ बजे, परी का एनुअल डे।</span></li><li><span class="who">Rakesh ji</span> Cash, UPI, udhaar — apne-aap alag-alag.<span class="hi" lang="hi">कैश, यूपीआई, उधार — अपने-आप अलग-अलग।</span></li><li><span class="who">Rakesh ji</span> Aur munafa bhi... bina calculator.<span class="hi" lang="hi">और मुनाफ़ा भी... बिना कैलकुलेटर।</span></li><li><span class="who">Rakesh ji</span> Cash bhi mil gaya!<span class="hi" lang="hi">कैश भी मिल गया!</span></li><li><span class="who">Raju</span> 8:12... bhaago, Bhaiya!<span class="hi" lang="hi">आठ बजकर बारह... भागो, भैया!</span></li><li><span class="who">Rakesh ji</span> Shutter tu gira dena!<span class="hi" lang="hi">शटर तू गिरा देना!</span></li><li><span class="who">Rakesh ji</span> Pari! Chalo... aage wali seat hamari!<span class="hi" lang="hi">परी! चलो... आगे वाली सीट हमारी!</span></li><li><span class="who">Child</span> Papa! Aap time pe aa gaye!<span class="hi" lang="hi">पापा! आप टाइम पे आ गए!</span></li><li><span class="who">Sunita</span> Aaj itni jaldi?<span class="hi" lang="hi">आज इतनी जल्दी?</span></li><li><span class="who">Rakesh ji</span> Hisaab machine ka... waqt Pari ka.<span class="hi" lang="hi">हिसाब मशीन का... वक़्त परी का।</span></li><li><span class="who">Narrator (voice)</span> Din ka hisaab, minuton mein. Nexcod POS.<span class="hi" lang="hi">दिन का हिसाब, मिनटों में। नेक्सकॉड पीओएस।</span></li></ol>
+      </details>
+    </div>
+  </div>
+</section>
+<section class="day" id="day-10" data-day="10">
+  <div class="day-head">
+    <div class="num"><span>Day</span>10</div>
+    <div>
+      <p class="kick"><span class="date" data-off="9"></span> · whiteboard-style explainer with kinetic type · 0:52</p>
+      <h2>Chaar Panne ka Bill: Purchase Entry, Samjhaayi Gayi</h2>
+    </div>
+  </div>
+  <div class="day-body">
+    <div class="player">
+      <div class="tabs" role="group" aria-label="Video format">
+        <button type="button" class="on" data-asp="16x9" aria-pressed="true">16:9 · YouTube, Google</button>
+        <button type="button" data-asp="9x16" aria-pressed="false">9:16 · Reels, Stories, Shorts</button>
+      </div>
+      <div class="screen asp-16x9">
+        <video controls preload="none" playsinline poster="posters/day-10-16x9.jpg" data-base="videos/day-10-" data-poster="posters/day-10-">
+          <source src="videos/day-10-16x9.mp4" type="video/mp4">
+        </video>
+      </div>
+      <p class="dl">Download: <a href="videos/day-10-16x9.mp4" download>16:9 MP4</a> · <a href="videos/day-10-9x16.mp4" download>9:16 MP4</a> ·
+        <a href="captions/day-10.hinglish.srt" download>captions (Hinglish)</a> · <a href="captions/day-10.hi.srt" download>captions (हिंदी)</a></p>
+      
+    </div>
+    <div class="info">
+      <div class="prob"><span class="lab">Problem it solves</span><p>Distributor ke lambe bill ki har line (batch, expiry, MRP, rate) haath se type karne mein ghante lagte hain, aur 10+1 jaisi scheme ka free maal galat chadh jaaye to har item ki cost aur bechne ka rate galat ho jaata hai.</p></div>
+      <div class="two">
+        <div><span class="lab">Who it is for</span><p class="small">Medical store owners, pharmacists and staff who enter distributor purchase bills (weekly 20-100 line bills, scheme/free goods); small towns and cities of north India; Hindi-speaking; 22-55.</p></div>
+        <div><span class="lab">Cast</span><ul class="cast"><li>Distributor rep</li><li>Pooja · assistant</li><li>Narrator (voice)</li></ul></div>
+      </div>
+      <details class="ads" open>
+        <summary><span class="pf g">Google Ads</span> Responsive search ad + YouTube video</summary>
+        <div class="ann"><svg viewBox="0 0 60 30" aria-hidden="true"><path d="M2 26 C 18 24, 34 18, 52 6" /><path d="M42 5 L53 5 L49 15" /></svg>
+          Paste these into one ad group. Google mixes the headlines itself.</div>
+        <span class="lab">Headlines (max 30 characters)</span><ul class="list"><li><span>Lamba Bill, Chhoti Entry</span><span class="cnt">24/30</span></li><li><span>Purchase Bill Excel Se Import</span><span class="cnt">29/30</span></li><li><span>Bill Ki Photo Se Entry</span><span class="cnt">22/30</span></li><li><span>10+1 Scheme Ka Sahi Hisaab</span><span class="cnt">26/30</span></li><li><span>Free Maal Alag, Cost Saaf</span><span class="cnt">25/30</span></li><li><span>Medical Store Stock Software</span><span class="cnt">28/30</span></li><li><span>Type Kam, Jaanch Zyada</span><span class="cnt">22/30</span></li><li><span>7 Din Free Trial, Card Nahi</span><span class="cnt">27/30</span></li></ul>
+        <span class="lab">Descriptions (max 90 characters)</span><ul class="list"><li><span>Distributor ka bill Excel se import karo ya bill ki photo se. Har line batch, expiry, MRP.</span><span class="cnt">90/90</span></li><li><span>Scheme: free qty ya kam amount. Free maal alag khaane mein, cost ka hisaab saaf.</span><span class="cnt">80/90</span></li><li><span>Pharmacy billing aur stock, browser + Android app. 7 din free trial, auto-renew nahi.</span><span class="cnt">85/90</span></li></ul>
+        <button class="copy wide" type="button" data-copy="Lamba Bill, Chhoti Entry
+Purchase Bill Excel Se Import
+Bill Ki Photo Se Entry
+10+1 Scheme Ka Sahi Hisaab
+Free Maal Alag, Cost Saaf
+Medical Store Stock Software
+Type Kam, Jaanch Zyada
+7 Din Free Trial, Card Nahi
+
+Distributor ka bill Excel se import karo ya bill ki photo se. Har line batch, expiry, MRP.
+Scheme: free qty ya kam amount. Free maal alag khaane mein, cost ka hisaab saaf.
+Pharmacy billing aur stock, browser + Android app. 7 din free trial, auto-renew nahi.">Copy all Google copy</button>
+      </details>
+      <details class="ads" open>
+        <summary><span class="pf m">Meta Ads</span> Facebook + Instagram</summary>
+        <div class="cp"><div class="cp-h"><span class="lab">Primary text</span><span class="cnt">271/280</span></div><div class="cp-row"><p class="cp-t">Chaar panne ka distributor bill, 86 lines, upar se 10+1 scheme... aur dukaan bhi chalani hai. Nexcod POS mein purchase entry Excel se import karo ya bill ki photo se. Scheme chuno: free maal alag khaane mein, cost ka hisaab saaf. Type kam, jaanch zyada. 7 din free trial.</p><button class="copy" type="button" data-copy="Chaar panne ka distributor bill, 86 lines, upar se 10+1 scheme... aur dukaan bhi chalani hai. Nexcod POS mein purchase entry Excel se import karo ya bill ki photo se. Scheme chuno: free maal alag khaane mein, cost ka hisaab saaf. Type kam, jaanch zyada. 7 din free trial." aria-label="Copy Primary text">Copy</button></div><p class="hint">About the first 125 characters show before “See more”, so the hook is at the start.</p></div>
+        <div class="cp"><div class="cp-h"><span class="lab">Headline</span><span class="cnt">35/40</span></div><div class="cp-row"><p class="cp-t">Distributor bill: type nahi, import</p><button class="copy" type="button" data-copy="Distributor bill: type nahi, import" aria-label="Copy Headline">Copy</button></div></div>
+        <p class="small cta"><span class="lab">Call to action button</span>Start Free Trial → nexcodpos.in, or “Send WhatsApp message” → 72819 21783</p>
+      </details>
+      <details class="ads">
+        <summary>Full dialogue (11 lines)</summary>
+        <ol class="script"><li><span class="who">Distributor rep</span> Pooja ji, bill... chaar panne ka!<span class="hi" lang="hi">पूजा जी, बिल... चार पन्ने का!</span></li><li><span class="who">Pooja</span> 86 lines... ek-ek type?<span class="hi" lang="hi">छियासी लाइनें... एक-एक टाइप?</span></li><li><span class="who">Distributor rep</span> Aur haan, 10 pe 1 free scheme bhi!<span class="hi" lang="hi">और हाँ, दस पे एक फ़्री स्कीम भी!</span></li><li><span class="who">Narrator (voice)</span> Galat chadha, toh cost galat... rate galat.<span class="hi" lang="hi">ग़लत चढ़ा, तो कॉस्ट ग़लत... रेट ग़लत।</span></li><li><span class="who">Pooja</span> Rukiye — Excel hai?<span class="hi" lang="hi">रुकिए — एक्सेल है?</span></li><li><span class="who">Narrator (voice)</span> Import — Excel se, ya bill ki photo se.<span class="hi" lang="hi">इम्पोर्ट — एक्सेल से, या बिल की फ़ोटो से।</span></li><li><span class="who">Pooja</span> Scheme chuni — free maal alag, cost saaf.<span class="hi" lang="hi">स्कीम चुनी — फ़्री माल अलग, कॉस्ट साफ़।</span></li><li><span class="who">Narrator (voice)</span> Type kam. Jaanch zyada.<span class="hi" lang="hi">टाइप कम। जाँच ज़्यादा।</span></li><li><span class="who">Pooja</span> Ho gaya.<span class="hi" lang="hi">हो गया।</span></li><li><span class="who">Distributor rep</span> Itni jaldi? Agla paanch panne ka laaoon?<span class="hi" lang="hi">इतनी जल्दी? अगला पाँच पन्ने का लाऊँ?</span></li><li><span class="who">Narrator (voice)</span> Lamba bill, chhoti entry. Nexcod POS.<span class="hi" lang="hi">लंबा बिल, छोटी एंट्री। नेक्सकॉड पीओएस।</span></li></ol>
+      </details>
+    </div>
+  </div>
+</section>
+<section class="day" id="day-11" data-day="11">
+  <div class="day-head">
+    <div class="num"><span>Day</span>11</div>
+    <div>
+      <p class="kick"><span class="date" data-off="10"></span> · quiz / challenge · 0:39</p>
+      <h2>Quiz: Ek Strip Ki Asli Cost Kitni?</h2>
+    </div>
+  </div>
+  <div class="day-body">
+    <div class="player">
+      <div class="tabs" role="group" aria-label="Video format">
+        <button type="button" class="on" data-asp="16x9" aria-pressed="true">16:9 · YouTube, Google</button>
+        <button type="button" data-asp="9x16" aria-pressed="false">9:16 · Reels, Stories, Shorts</button>
+      </div>
+      <div class="screen asp-16x9">
+        <video controls preload="none" playsinline poster="posters/day-11-16x9.jpg" data-base="videos/day-11-" data-poster="posters/day-11-">
+          <source src="videos/day-11-16x9.mp4" type="video/mp4">
+        </video>
+      </div>
+      <p class="dl">Download: <a href="videos/day-11-16x9.mp4" download>16:9 MP4</a> · <a href="videos/day-11-9x16.mp4" download>9:16 MP4</a> ·
+        <a href="captions/day-11.hinglish.srt" download>captions (Hinglish)</a> · <a href="captions/day-11.hi.srt" download>captions (हिंदी)</a></p>
+      
+    </div>
+    <div class="info">
+      <div class="prob"><span class="lab">Problem it solves</span><p>Scheme (free maal) aur discount ke baad ek strip ya bottle ki asli cost malik ko yaad nahi rehti, isliye thok ya regular grahak ko galat rate bol dete hain: zyada bolo to grahak jaata hai, kam bolo to munafa.</p></div>
+      <div class="two">
+        <div><span class="lab">Who it is for</span><p class="small">Medical store owners and pharmacists who buy on distributor schemes and give bulk or regular-customer rates; 25-60; Hindi-speaking north India.</p></div>
+        <div><span class="lab">Cast</span><ul class="cast"><li>Sunita · co-owner</li><li>Chacha ji · customer</li><li>Narrator (voice)</li></ul></div>
+      </div>
+      <details class="ads" open>
+        <summary><span class="pf g">Google Ads</span> Responsive search ad + YouTube video</summary>
+        <div class="ann"><svg viewBox="0 0 60 30" aria-hidden="true"><path d="M2 26 C 18 24, 34 18, 52 6" /><path d="M42 5 L53 5 L49 15" /></svg>
+          Paste these into one ad group. Google mixes the headlines itself.</div>
+        <span class="lab">Headlines (max 30 characters)</span><ul class="list"><li><span>Ek Strip Ki Asli Cost Kitni?</span><span class="cnt">28/30</span></li><li><span>F1 Dabao, Asli Cost Dekho</span><span class="cnt">25/30</span></li><li><span>Flat Rate Aur Break-Even</span><span class="cnt">24/30</span></li><li><span>Scheme Ke Baad Ka Asli Rate</span><span class="cnt">27/30</span></li><li><span>Thok Rate Ab Hisaab Se</span><span class="cnt">22/30</span></li><li><span>Pharmacy Billing Software</span><span class="cnt">25/30</span></li><li><span>7 Din Free Trial, No Card</span><span class="cnt">25/30</span></li><li><span>₹1,299/Saal (≈₹108/Mahina)</span><span class="cnt">26/30</span></li></ul>
+        <span class="lab">Descriptions (max 90 characters)</span><ul class="list"><li><span>F1 rate desk: scheme aur discount ke baad flat rate aur break-even, counter pe hi.</span><span class="cnt">82/90</span></li><li><span>Purchase mein scheme aur free goods entry. GST billing, batch aur expiry. 7 din free.</span><span class="cnt">85/90</span></li><li><span>Browser + Android app. ₹1,299/saal (≈₹108/mahina). No auto-renew. UPI se payment.</span><span class="cnt">81/90</span></li></ul>
+        <button class="copy wide" type="button" data-copy="Ek Strip Ki Asli Cost Kitni?
+F1 Dabao, Asli Cost Dekho
+Flat Rate Aur Break-Even
+Scheme Ke Baad Ka Asli Rate
+Thok Rate Ab Hisaab Se
+Pharmacy Billing Software
+7 Din Free Trial, No Card
+₹1,299/Saal (≈₹108/Mahina)
+
+F1 rate desk: scheme aur discount ke baad flat rate aur break-even, counter pe hi.
+Purchase mein scheme aur free goods entry. GST billing, batch aur expiry. 7 din free.
+Browser + Android app. ₹1,299/saal (≈₹108/mahina). No auto-renew. UPI se payment.">Copy all Google copy</button>
+      </details>
+      <details class="ads" open>
+        <summary><span class="pf m">Meta Ads</span> Facebook + Instagram</summary>
+        <div class="cp"><div class="cp-h"><span class="lab">Primary text</span><span class="cnt">273/280</span></div><div class="cp-row"><p class="cp-t">Medical store challenge: rate ₹100 ki strip, scheme 10+1 free, upar se 2% discount. Ek strip ki asli cost kitni? Jawab video mein. Counter pe har dawa ka yeh hisaab mushkil hai. Nexcod POS mein F1 dabao: flat rate aur break-even saamne. 7 din free trial, card nahi chahiye.</p><button class="copy" type="button" data-copy="Medical store challenge: rate ₹100 ki strip, scheme 10+1 free, upar se 2% discount. Ek strip ki asli cost kitni? Jawab video mein. Counter pe har dawa ka yeh hisaab mushkil hai. Nexcod POS mein F1 dabao: flat rate aur break-even saamne. 7 din free trial, card nahi chahiye." aria-label="Copy Primary text">Copy</button></div><p class="hint">About the first 125 characters show before “See more”, so the hook is at the start.</p></div>
+        <div class="cp"><div class="cp-h"><span class="lab">Headline</span><span class="cnt">31/40</span></div><div class="cp-row"><p class="cp-t">Asli cost jaano, sahi rate bolo</p><button class="copy" type="button" data-copy="Asli cost jaano, sahi rate bolo" aria-label="Copy Headline">Copy</button></div></div>
+        <p class="small cta"><span class="lab">Call to action button</span>Start Free Trial → nexcodpos.in, or “Send WhatsApp message” → 72819 21783</p>
+      </details>
+      <details class="ads">
+        <summary>Full dialogue (8 lines)</summary>
+        <ol class="script"><li><span class="who">Chacha ji</span> Ashram ke liye das bottle. Thok ka rate?<span class="hi" lang="hi">आश्रम के लिए दस बोतल। थोक का रेट?</span></li><li><span class="who">Sunita</span> MRP 121... par scheme thi kya?<span class="hi" lang="hi">एमआरपी एक सौ इक्कीस... पर स्कीम थी क्या?</span></li><li><span class="who">Narrator (voice)</span> Rukiye! Pehle aap bataiye.<span class="hi" lang="hi">रुकिए! पहले आप बताइए।</span></li><li><span class="who">Narrator (voice)</span> Zyada bola to grahak gaya, kam bola to munafa.<span class="hi" lang="hi">ज़्यादा बोला तो ग्राहक गया, कम बोला तो मुनाफ़ा।</span></li><li><span class="who">Sunita</span> F1... asli cost 96.<span class="hi" lang="hi">एफ़-वन... असली कॉस्ट छियानवे।</span></li><li><span class="who">Sunita</span> 110 ki ek, uncle ji.<span class="hi" lang="hi">एक सौ दस की एक, अंकल जी।</span></li><li><span class="who">Chacha ji</span> Badhiya! Pack kar do.<span class="hi" lang="hi">बढ़िया! पैक कर दो।</span></li><li><span class="who">Narrator (voice)</span> Nexcod POS — rate andaaze se nahi, hisaab se.<span class="hi" lang="hi">नेक्सकॉड पीओएस — रेट अंदाज़े से नहीं, हिसाब से।</span></li></ol>
+      </details>
+    </div>
+  </div>
+</section>
+<section class="day" id="day-12" data-day="12">
+  <div class="day-head">
+    <div class="num"><span>Day</span>12</div>
+    <div>
+      <p class="kick"><span class="date" data-off="11"></span> · night and rain cinematic drama · 1:03</p>
+      <h2>Baarish ki woh raat</h2>
+    </div>
+  </div>
+  <div class="day-body">
+    <div class="player">
+      <div class="tabs" role="group" aria-label="Video format">
+        <button type="button" class="on" data-asp="16x9" aria-pressed="true">16:9 · YouTube, Google</button>
+        <button type="button" data-asp="9x16" aria-pressed="false">9:16 · Reels, Stories, Shorts</button>
+      </div>
+      <div class="screen asp-16x9">
+        <video controls preload="none" playsinline poster="posters/day-12-16x9.jpg" data-base="videos/day-12-" data-poster="posters/day-12-">
+          <source src="videos/day-12-16x9.mp4" type="video/mp4">
+        </video>
+      </div>
+      <p class="dl">Download: <a href="videos/day-12-16x9.mp4" download>16:9 MP4</a> · <a href="videos/day-12-9x16.mp4" download>9:16 MP4</a> ·
+        <a href="captions/day-12.hinglish.srt" download>captions (Hinglish)</a> · <a href="captions/day-12.hi.srt" download>captions (हिंदी)</a></p>
+      <p class="hint">Over 60 seconds. Best for YouTube in-stream and the Facebook feed. For Stories, choose a shorter film or let Ads Manager cut it into cards.</p>
+    </div>
+    <div class="info">
+      <div class="prob"><span class="lab">Problem it solves</span><p>Roz bikne wali dawai ka stock chupchaap khatam ho gaya kyunki order yaad ke bharose hota tha; raat ko ek maa ko khaali haath lautna pada aur dukaan ka bharosa toota.</p></div>
+      <div class="two">
+        <div><span class="lab">Who it is for</span><p class="small">Medical store owners and pharmacists in India (28-60) who track stock by memory or a notebook and lose customers to stock-outs of fast-moving medicines</p></div>
+        <div><span class="lab">Cast</span><ul class="cast"><li>Young mother</li><li>Child</li><li>Sunita · co-owner</li><li>Rakesh ji · owner</li><li>Narrator (voice)</li></ul></div>
+      </div>
+      <details class="ads" open>
+        <summary><span class="pf g">Google Ads</span> Responsive search ad + YouTube video</summary>
+        <div class="ann"><svg viewBox="0 0 60 30" aria-hidden="true"><path d="M2 26 C 18 24, 34 18, 52 6" /><path d="M42 5 L53 5 L49 15" /></svg>
+          Paste these into one ad group. Google mixes the headlines itself.</div>
+        <span class="lab">Headlines (max 30 characters)</span><ul class="list"><li><span>Stock Khatam? Pehle Hi Alert</span><span class="cnt">28/30</span></li><li><span>Low Stock Alert Dashboard Pe</span><span class="cnt">28/30</span></li><li><span>Out of Stock Ka Alert</span><span class="cnt">21/30</span></li><li><span>Grahak Khaali Haath Na Jaaye</span><span class="cnt">28/30</span></li><li><span>Nexcod POS Medical Store App</span><span class="cnt">28/30</span></li><li><span>7 Din Free Trial, No Card</span><span class="cnt">25/30</span></li><li><span>Browser + Android App</span><span class="cnt">21/30</span></li></ul>
+        <span class="lab">Descriptions (max 90 characters)</span><ul class="list"><li><span>Low stock aur out-of-stock alert seedha dashboard pe. Order yaad ke bharose nahi.</span><span class="cnt">81/90</span></li><li><span>Pharmacy billing aur stock ek jagah. Browser aur Android app. Made in India.</span><span class="cnt">76/90</span></li><li><span>7 din free trial, koi card nahi. ₹399/3 mahine se plans, UPI se payment.</span><span class="cnt">72/90</span></li></ul>
+        <button class="copy wide" type="button" data-copy="Stock Khatam? Pehle Hi Alert
+Low Stock Alert Dashboard Pe
+Out of Stock Ka Alert
+Grahak Khaali Haath Na Jaaye
+Nexcod POS Medical Store App
+7 Din Free Trial, No Card
+Browser + Android App
+
+Low stock aur out-of-stock alert seedha dashboard pe. Order yaad ke bharose nahi.
+Pharmacy billing aur stock ek jagah. Browser aur Android app. Made in India.
+7 din free trial, koi card nahi. ₹399/3 mahine se plans, UPI se payment.">Copy all Google copy</button>
+      </details>
+      <details class="ads" open>
+        <summary><span class="pf m">Meta Ads</span> Facebook + Instagram</summary>
+        <div class="cp"><div class="cp-h"><span class="lab">Primary text</span><span class="cnt">268/280</span></div><div class="cp-row"><p class="cp-t">Raat 9:40, baarish, aur ek maa ke haath mein parchi... &#x27;Yeh toh khatam hai.&#x27; Nexcod POS dashboard pe low stock aur out-of-stock alert pehle se dikhta hai, taaki order yaad ke bharose na ho aur grahak khaali haath na laute. 7 din free trial, koi card nahi. nexcodpos.in</p><button class="copy" type="button" data-copy="Raat 9:40, baarish, aur ek maa ke haath mein parchi... &#x27;Yeh toh khatam hai.&#x27; Nexcod POS dashboard pe low stock aur out-of-stock alert pehle se dikhta hai, taaki order yaad ke bharose na ho aur grahak khaali haath na laute. 7 din free trial, koi card nahi. nexcodpos.in" aria-label="Copy Primary text">Copy</button></div><p class="hint">About the first 125 characters show before “See more”, so the hook is at the start.</p></div>
+        <div class="cp"><div class="cp-h"><span class="lab">Headline</span><span class="cnt">32/40</span></div><div class="cp-row"><p class="cp-t">Stock khatam hone se pehle jaano</p><button class="copy" type="button" data-copy="Stock khatam hone se pehle jaano" aria-label="Copy Headline">Copy</button></div></div>
+        <p class="small cta"><span class="lab">Call to action button</span>Start Free Trial → nexcodpos.in, or “Send WhatsApp message” → 72819 21783</p>
+      </details>
+      <details class="ads">
+        <summary>Full dialogue (17 lines)</summary>
+        <ol class="script"><li><span class="who">Young mother</span> Rukiye! Shutter mat giraiye... please!<span class="hi" lang="hi">रुकिए! शटर मत गिराइए... प्लीज़!</span></li><li><span class="who">Young mother</span> Bachche ka syrup... doctor ne likha hai.<span class="hi" lang="hi">बच्चे का सिरप... डॉक्टर ने लिखा है।</span></li><li><span class="who">Sunita</span> Yeh toh... khatam hai.<span class="hi" lang="hi">ये तो... ख़त्म है।</span></li><li><span class="who">Young mother</span> Hamesha toh yahin milta tha.<span class="hi" lang="hi">हमेशा तो यहीं मिलता था।</span></li><li><span class="who">Child</span> Mummy, ab kahan jaayenge?<span class="hi" lang="hi">मम्मी, अब कहाँ जाएँगे?</span></li><li><span class="who">Sunita</span> Maaf kijiye... kal tak mangwa doongi!<span class="hi" lang="hi">माफ़ कीजिए... कल तक मँगवा दूँगी!</span></li><li><span class="who">Rakesh ji</span> Raat bhar soyi nahi?<span class="hi" lang="hi">रात भर सोई नहीं?</span></li><li><span class="who">Sunita</span> Woh maa khaali haath laut gayi.<span class="hi" lang="hi">वो माँ ख़ाली हाथ लौट गई।</span></li><li><span class="who">Rakesh ji</span> Yaad ke bharose order? Dashboard dekho.<span class="hi" lang="hi">याद के भरोसे ऑर्डर? डैशबोर्ड देखो।</span></li><li><span class="who">Sunita</span> Yeh toh pehle se bata raha tha!<span class="hi" lang="hi">ये तो पहले से बता रहा था!</span></li><li><span class="who">Rakesh ji</span> Bikri dekhkar, order ki list taiyaar.<span class="hi" lang="hi">बिक्री देखकर, ऑर्डर की लिस्ट तैयार।</span></li><li><span class="who">Sunita</span> Supplier ko abhi bhejti hoon.<span class="hi" lang="hi">सप्लायर को अभी भेजती हूँ।</span></li><li><span class="who">Young mother</span> Didi... aaya?<span class="hi" lang="hi">दीदी... आया?</span></li><li><span class="who">Sunita</span> Aapke liye alag rakha tha.<span class="hi" lang="hi">आपके लिए अलग रखा था।</span></li><li><span class="who">Young mother</span> Aapko yaad tha!<span class="hi" lang="hi">आपको याद था!</span></li><li><span class="who">Child</span> Thank you, aunty!<span class="hi" lang="hi">थैंक यू, आंटी!</span></li><li><span class="who">Narrator (voice)</span> Stock khatam hone se pehle alert. Nexcod POS.<span class="hi" lang="hi">स्टॉक ख़त्म होने से पहले अलर्ट। नेक्सकोड पीओएस।</span></li></ol>
+      </details>
+    </div>
+  </div>
+</section>
+<section class="day" id="day-13" data-day="13">
+  <div class="day-head">
+    <div class="num"><span>Day</span>13</div>
+    <div>
+      <p class="kick"><span class="date" data-off="12"></span> · light comedy-drama · 0:50</p>
+      <h2>Kal De Dunga!</h2>
+    </div>
+  </div>
+  <div class="day-body">
+    <div class="player">
+      <div class="tabs" role="group" aria-label="Video format">
+        <button type="button" class="on" data-asp="16x9" aria-pressed="true">16:9 · YouTube, Google</button>
+        <button type="button" data-asp="9x16" aria-pressed="false">9:16 · Reels, Stories, Shorts</button>
+      </div>
+      <div class="screen asp-16x9">
+        <video controls preload="none" playsinline poster="posters/day-13-16x9.jpg" data-base="videos/day-13-" data-poster="posters/day-13-">
+          <source src="videos/day-13-16x9.mp4" type="video/mp4">
+        </video>
+      </div>
+      <p class="dl">Download: <a href="videos/day-13-16x9.mp4" download>16:9 MP4</a> · <a href="videos/day-13-9x16.mp4" download>9:16 MP4</a> ·
+        <a href="captions/day-13.hinglish.srt" download>captions (Hinglish)</a> · <a href="captions/day-13.hi.srt" download>captions (हिंदी)</a></p>
+      
+    </div>
+    <div class="info">
+      <div class="prob"><span class="lab">Problem it solves</span><p>Udhaar ek copy mein likha jaata hai: 340 aur 840 ek jaise dikhte hain, purani baaki bhool jaati hai, aur purane grahak se paise maangna ajeeb lagta hai.</p></div>
+      <div class="two">
+        <div><span class="lab">Who it is for</span><p class="small">Neighbourhood medical store owners in small towns (35-65) who give udhaar to regular customers and track it in a notebook; Hindi-speaking north India.</p></div>
+        <div><span class="lab">Cast</span><ul class="cast"><li>Chacha ji · customer</li><li>Rakesh ji · owner</li><li>Sunita · co-owner</li><li>Narrator (voice)</li></ul></div>
+      </div>
+      <details class="ads" open>
+        <summary><span class="pf g">Google Ads</span> Responsive search ad + YouTube video</summary>
+        <div class="ann"><svg viewBox="0 0 60 30" aria-hidden="true"><path d="M2 26 C 18 24, 34 18, 52 6" /><path d="M42 5 L53 5 L49 15" /></svg>
+          Paste these into one ad group. Google mixes the headlines itself.</div>
+        <span class="lab">Headlines (max 30 characters)</span><ul class="list"><li><span>Udhaar Ka Hisaab, Copy Nahi</span><span class="cnt">27/30</span></li><li><span>Har Grahak Ki Credit Limit</span><span class="cnt">26/30</span></li><li><span>Kiska Kitna Baaki, Ek Nazar</span><span class="cnt">27/30</span></li><li><span>Kab Se Baaki: 30-60-90 Din</span><span class="cnt">26/30</span></li><li><span>Dues Wahin Collect Karein</span><span class="cnt">25/30</span></li><li><span>Pharmacy Billing Software</span><span class="cnt">25/30</span></li><li><span>7 Din Free Trial, Card Nahi</span><span class="cnt">27/30</span></li></ul>
+        <span class="lab">Descriptions (max 90 characters)</span><ul class="list"><li><span>Customer credit limit, dues collection aur party ledger. Udhaar ki copy ki zaroorat nahi.</span><span class="cnt">89/90</span></li><li><span>Kiska kitna baaki aur kab se, outstanding report mein saaf. 7 din free trial, card nahi.</span><span class="cnt">88/90</span></li><li><span>GST billing, batch-expiry aur stock alerts bhi. Browser aur Android app. Made in India.</span><span class="cnt">87/90</span></li></ul>
+        <button class="copy wide" type="button" data-copy="Udhaar Ka Hisaab, Copy Nahi
+Har Grahak Ki Credit Limit
+Kiska Kitna Baaki, Ek Nazar
+Kab Se Baaki: 30-60-90 Din
+Dues Wahin Collect Karein
+Pharmacy Billing Software
+7 Din Free Trial, Card Nahi
+
+Customer credit limit, dues collection aur party ledger. Udhaar ki copy ki zaroorat nahi.
+Kiska kitna baaki aur kab se, outstanding report mein saaf. 7 din free trial, card nahi.
+GST billing, batch-expiry aur stock alerts bhi. Browser aur Android app. Made in India.">Copy all Google copy</button>
+      </details>
+      <details class="ads" open>
+        <summary><span class="pf m">Meta Ads</span> Facebook + Instagram</summary>
+        <div class="cp"><div class="cp-h"><span class="lab">Primary text</span><span class="cnt">265/280</span></div><div class="cp-row"><p class="cp-t">&quot;Kal de dunga!&quot; Har dukaan mein ek chacha ji hain, aur ek udhaar ki copy jisme 340 aur 840 ek jaise dikhte hain. Nexcod POS mein har grahak ki credit limit, kiska kitna baaki aur kab se, sab saamne. Paise aaye toh wahin collect. 7 din free trial, card nahi chahiye.</p><button class="copy" type="button" data-copy="&quot;Kal de dunga!&quot; Har dukaan mein ek chacha ji hain, aur ek udhaar ki copy jisme 340 aur 840 ek jaise dikhte hain. Nexcod POS mein har grahak ki credit limit, kiska kitna baaki aur kab se, sab saamne. Paise aaye toh wahin collect. 7 din free trial, card nahi chahiye." aria-label="Copy Primary text">Copy</button></div><p class="hint">About the first 125 characters show before “See more”, so the hook is at the start.</p></div>
+        <div class="cp"><div class="cp-h"><span class="lab">Headline</span><span class="cnt">28/40</span></div><div class="cp-row"><p class="cp-t">Udhaar Do, Hisaab Mat Bhoolo</p><button class="copy" type="button" data-copy="Udhaar Do, Hisaab Mat Bhoolo" aria-label="Copy Headline">Copy</button></div></div>
+        <p class="small cta"><span class="lab">Call to action button</span>Start Free Trial → nexcodpos.in, or “Send WhatsApp message” → 72819 21783</p>
+      </details>
+      <details class="ads">
+        <summary>Full dialogue (12 lines)</summary>
+        <ol class="script"><li><span class="who">Chacha ji</span> Sharma ji, likh lijiye... kal de dunga!<span class="hi" lang="hi">शर्मा जी, लिख लीजिए... कल दे दूँगा!</span></li><li><span class="who">Chacha ji</span> Kal de dunga!<span class="hi" lang="hi">कल दे दूँगा!</span></li><li><span class="who">Rakesh ji</span> Ye &#x27;kal&#x27;... aata kab hai?<span class="hi" lang="hi">ये &#x27;कल&#x27;... आता कब है?</span></li><li><span class="who">Rakesh ji</span> 340 ya 840? Maangoon kaise?<span class="hi" lang="hi">तीन सौ चालीस या आठ सौ चालीस? माँगूँ कैसे?</span></li><li><span class="who">Sunita</span> Hisaab saaf ho, toh bura kaun maanega?<span class="hi" lang="hi">हिसाब साफ़ हो, तो बुरा कौन मानेगा?</span></li><li><span class="who">Sunita</span> Har grahak ki udhaar limit tay.<span class="hi" lang="hi">हर ग्राहक की उधार लिमिट तय।</span></li><li><span class="who">Sunita</span> Kiska kitna baaki, ek nazar mein.<span class="hi" lang="hi">किसका कितना बाकी, एक नज़र में।</span></li><li><span class="who">Rakesh ji</span> Aur kab se — 30, 60, 90 din!<span class="hi" lang="hi">और कब से — तीस, साठ, नब्बे दिन!</span></li><li><span class="who">Chacha ji</span> Likh lijiye, kal—<span class="hi" lang="hi">लिख लीजिए, कल—</span></li><li><span class="who">Rakesh ji</span> Chacha ji, ₹340 — saat tareekh se.<span class="hi" lang="hi">चाचा जी, तीन सौ चालीस — सात तारीख़ से।</span></li><li><span class="who">Chacha ji</span> Arre waah! Paise aaj, chai kal!<span class="hi" lang="hi">अरे वाह! पैसे आज, चाय कल!</span></li><li><span class="who">Narrator (voice)</span> Udhaar ka hisaab, bina jhijhak. Nexcod POS.<span class="hi" lang="hi">उधार का हिसाब, बिना झिझक। नेक्सकॉड पीओएस।</span></li></ol>
+      </details>
+    </div>
+  </div>
+</section>
+<section class="day" id="day-14" data-day="14">
+  <div class="day-head">
+    <div class="num"><span>Day</span>14</div>
+    <div>
+      <p class="kick"><span class="date" data-off="13"></span> · festival rush musical montage · 0:45</p>
+      <h2>Dhanteras Rush: Sabka Bill, Saath-Saath</h2>
+    </div>
+  </div>
+  <div class="day-body">
+    <div class="player">
+      <div class="tabs" role="group" aria-label="Video format">
+        <button type="button" class="on" data-asp="16x9" aria-pressed="true">16:9 · YouTube, Google</button>
+        <button type="button" data-asp="9x16" aria-pressed="false">9:16 · Reels, Stories, Shorts</button>
+      </div>
+      <div class="screen asp-16x9">
+        <video controls preload="none" playsinline poster="posters/day-14-16x9.jpg" data-base="videos/day-14-" data-poster="posters/day-14-">
+          <source src="videos/day-14-16x9.mp4" type="video/mp4">
+        </video>
+      </div>
+      <p class="dl">Download: <a href="videos/day-14-16x9.mp4" download>16:9 MP4</a> · <a href="videos/day-14-9x16.mp4" download>9:16 MP4</a> ·
+        <a href="captions/day-14.hinglish.srt" download>captions (Hinglish)</a> · <a href="captions/day-14.hi.srt" download>captions (हिंदी)</a></p>
+      <p class="flag">Festival film. Dhanteras is on Friday, 6 Nov 2026, and Diwali on Sunday, 8 Nov. Run it again from 1–6 Nov, when the rush is real.</p>
+    </div>
+    <div class="info">
+      <div class="prob"><span class="lab">Problem it solves</span><p>Diwali/festival ki shaam ek saath bahut saare grahak counter pe aa jaate hain; ek bill atakta hai toh poori line ruk jaati hai aur grahak naraz hote hain.</p></div>
+      <div class="two">
+        <div><span class="lab">Who it is for</span><p class="small">Busy medical stores in markets and colonies that see festival-evening rushes (Dhanteras, Diwali, Chhath, Eid); owners 28-55 and counter staff; Hindi-speaking; Meta Reels and YouTube in the festive season.</p></div>
+        <div><span class="lab">Cast</span><ul class="cast"><li>Raju · counter staff</li><li>Pooja · assistant</li><li>Aunty ji · customer</li><li>Chacha ji · customer</li><li>Young mother</li><li>Narrator (voice)</li></ul></div>
+      </div>
+      <details class="ads" open>
+        <summary><span class="pf g">Google Ads</span> Responsive search ad + YouTube video</summary>
+        <div class="ann"><svg viewBox="0 0 60 30" aria-hidden="true"><path d="M2 26 C 18 24, 34 18, 52 6" /><path d="M42 5 L53 5 L49 15" /></svg>
+          Paste these into one ad group. Google mixes the headlines itself.</div>
+        <span class="lab">Headlines (max 30 characters)</span><ul class="list"><li><span>Diwali Rush? Billing Tez!</span><span class="cnt">25/30</span></li><li><span>F2 Se Dawa, F9 Se Bill</span><span class="cnt">22/30</span></li><li><span>5 Bill Ek Saath Khule</span><span class="cnt">21/30</span></li><li><span>WhatsApp Pe Seedha Bill</span><span class="cnt">23/30</span></li><li><span>Festive Rush Ke Liye Taiyaar</span><span class="cnt">28/30</span></li><li><span>Pharmacy POS, Made In India</span><span class="cnt">27/30</span></li><li><span>7 Din Free Trial, No Card</span><span class="cnt">25/30</span></li><li><span>₹1,299/Saal, No Auto-Renew</span><span class="cnt">26/30</span></li></ul>
+        <span class="lab">Descriptions (max 90 characters)</span><ul class="list"><li><span>Ek bill ruka? Doosra kholo. 5 bill tak ek saath. F2 se dawa, F9 se bill print.</span><span class="cnt">78/90</span></li><li><span>Dukaan ke apne number se WhatsApp bill. GST billing, batch aur expiry ke saath.</span><span class="cnt">79/90</span></li><li><span>Browser + Android app. 7 din free trial, card nahi chahiye. Platinum ₹1,299/saal.</span><span class="cnt">81/90</span></li></ul>
+        <button class="copy wide" type="button" data-copy="Diwali Rush? Billing Tez!
+F2 Se Dawa, F9 Se Bill
+5 Bill Ek Saath Khule
+WhatsApp Pe Seedha Bill
+Festive Rush Ke Liye Taiyaar
+Pharmacy POS, Made In India
+7 Din Free Trial, No Card
+₹1,299/Saal, No Auto-Renew
+
+Ek bill ruka? Doosra kholo. 5 bill tak ek saath. F2 se dawa, F9 se bill print.
+Dukaan ke apne number se WhatsApp bill. GST billing, batch aur expiry ke saath.
+Browser + Android app. 7 din free trial, card nahi chahiye. Platinum ₹1,299/saal.">Copy all Google copy</button>
+      </details>
+      <details class="ads" open>
+        <summary><span class="pf m">Meta Ads</span> Facebook + Instagram</summary>
+        <div class="cp"><div class="cp-h"><span class="lab">Primary text</span><span class="cnt">255/280</span></div><div class="cp-row"><p class="cp-t">Dhanteras ki shaam, aadha mohalla ek saath counter pe! Nexcod POS mein F2 se dawa, F9 se bill, aur ek bill ruka toh doosra kholo: 5 bill tak ek saath. Bill seedha WhatsApp pe, dukaan ke apne number se. Shubh Deepawali! 7 din free trial, card nahi chahiye.</p><button class="copy" type="button" data-copy="Dhanteras ki shaam, aadha mohalla ek saath counter pe! Nexcod POS mein F2 se dawa, F9 se bill, aur ek bill ruka toh doosra kholo: 5 bill tak ek saath. Bill seedha WhatsApp pe, dukaan ke apne number se. Shubh Deepawali! 7 din free trial, card nahi chahiye." aria-label="Copy Primary text">Copy</button></div><p class="hint">About the first 125 characters show before “See more”, so the hook is at the start.</p></div>
+        <div class="cp"><div class="cp-h"><span class="lab">Headline</span><span class="cnt">35/40</span></div><div class="cp-row"><p class="cp-t">Raunak aapki, raftaar Nexcod POS ki</p><button class="copy" type="button" data-copy="Raunak aapki, raftaar Nexcod POS ki" aria-label="Copy Headline">Copy</button></div></div>
+        <p class="small cta"><span class="lab">Call to action button</span>Start Free Trial → nexcodpos.in, or “Send WhatsApp message” → 72819 21783</p>
+      </details>
+      <details class="ads">
+        <summary>Full dialogue (13 lines)</summary>
+        <ol class="script"><li><span class="who">Raju</span> Didi! Aadha mohalla aa gaya!<span class="hi" lang="hi">दीदी! आधा मोहल्ला आ गया!</span></li><li><span class="who">Aunty ji</span> Beta, jaldi!<span class="hi" lang="hi">बेटा, जल्दी!</span></li><li><span class="who">Chacha ji</span> Pehle mera!<span class="hi" lang="hi">पहले मेरा!</span></li><li><span class="who">Pooja</span> Sabka bill, saath-saath!<span class="hi" lang="hi">सबका बिल, साथ-साथ!</span></li><li><span class="who">Pooja</span> F2, dawa. F9, bill.<span class="hi" lang="hi">एफ़-टू, दवा। एफ़-नाइन, बिल।</span></li><li><span class="who">Aunty ji</span> Jeeti raho, beta!<span class="hi" lang="hi">जीती रहो, बेटा!</span></li><li><span class="who">Young mother</span> Arre! Purse gaadi mein!<span class="hi" lang="hi">अरे! पर्स गाड़ी में!</span></li><li><span class="who">Pooja</span> Jaaiye, bill khula hai.<span class="hi" lang="hi">जाइए, बिल खुला है।</span></li><li><span class="who">Chacha ji</span> Bill phone pe bhej do!<span class="hi" lang="hi">बिल फ़ोन पे भेज दो!</span></li><li><span class="who">Raju</span> Bhej diya — dukaan ke number se!<span class="hi" lang="hi">भेज दिया — दुकान के नंबर से!</span></li><li><span class="who">Young mother</span> Aa gayi!<span class="hi" lang="hi">आ गई!</span></li><li><span class="who">Pooja</span> Bill taiyaar — Happy Diwali!<span class="hi" lang="hi">बिल तैयार — हैप्पी दिवाली!</span></li><li><span class="who">Narrator (voice)</span> Raunak aapki, raftaar hamari. Shubh Deepawali!<span class="hi" lang="hi">रौनक आपकी, रफ़्तार हमारी। शुभ दीपावली!</span></li></ol>
+      </details>
+    </div>
+  </div>
+</section>
+<section class="day" id="day-15" data-day="15">
+  <div class="day-head">
+    <div class="num"><span>Day</span>15</div>
+    <div>
+      <p class="kick"><span class="date" data-off="14"></span> · brand manifesto film + offer · 1:20</p>
+      <h2>Ek Counter Se: Chhoti Dukaan ka Software</h2>
+    </div>
+  </div>
+  <div class="day-body">
+    <div class="player">
+      <div class="tabs" role="group" aria-label="Video format">
+        <button type="button" class="on" data-asp="16x9" aria-pressed="true">16:9 · YouTube, Google</button>
+        <button type="button" data-asp="9x16" aria-pressed="false">9:16 · Reels, Stories, Shorts</button>
+      </div>
+      <div class="screen asp-16x9">
+        <video controls preload="none" playsinline poster="posters/day-15-16x9.jpg" data-base="videos/day-15-" data-poster="posters/day-15-">
+          <source src="videos/day-15-16x9.mp4" type="video/mp4">
+        </video>
+      </div>
+      <p class="dl">Download: <a href="videos/day-15-16x9.mp4" download>16:9 MP4</a> · <a href="videos/day-15-9x16.mp4" download>9:16 MP4</a> ·
+        <a href="captions/day-15.hinglish.srt" download>captions (Hinglish)</a> · <a href="captions/day-15.hi.srt" download>captions (हिंदी)</a></p>
+      <p class="hint">Over 60 seconds. Best for YouTube in-stream and the Facebook feed. For Stories, choose a shorter film or let Ads Manager cut it into cards.</p>
+    </div>
+    <div class="info">
+      <div class="prob"><span class="lab">Problem it solves</span><p>Chhoti medical store ko lagta raha ki achha pharmacy software ya toh bahut mehenga hai ya itna mushkil ki chalaya hi na jaaye; isliye dukaan bahi, calculator aur yaaddaasht ke bharose chalti rahi.</p></div>
+      <div class="two">
+        <div><span class="lab">Who it is for</span><p class="small">Small and family-run medical stores across India (single counter, 1-4 staff) that have not adopted software because of cost or complexity; owners 30-65 and their family; Hindi-speaking; retarget viewers of the earlier campaign films.</p></div>
+        <div><span class="lab">Cast</span><ul class="cast"><li>Rakesh ji · owner</li><li>Papa ji · father</li><li>Aman · son</li><li>Sunita · co-owner</li><li>Raju · counter staff</li><li>Pooja · assistant</li><li>Aunty ji · customer</li><li>Chacha ji · customer</li><li>Young mother</li><li>Child</li><li>Narrator (voice)</li></ul></div>
+      </div>
+      <details class="ads" open>
+        <summary><span class="pf g">Google Ads</span> Responsive search ad + YouTube video</summary>
+        <div class="ann"><svg viewBox="0 0 60 30" aria-hidden="true"><path d="M2 26 C 18 24, 34 18, 52 6" /><path d="M42 5 L53 5 L49 15" /></svg>
+          Paste these into one ad group. Google mixes the headlines itself.</div>
+        <span class="lab">Headlines (max 30 characters)</span><ul class="list"><li><span>Chhoti Dukaan, Poora Software</span><span class="cnt">29/30</span></li><li><span>Ek Counter Se Shuru Hua</span><span class="cnt">23/30</span></li><li><span>Platinum ₹1,299/Saal</span><span class="cnt">20/30</span></li><li><span>Lagbhag ₹108 Mahina</span><span class="cnt">19/30</span></li><li><span>7 Din Free. Auto-Renew Nahi</span><span class="cnt">27/30</span></li><li><span>Made In India Pharmacy POS</span><span class="cnt">26/30</span></li><li><span>24 Rajya Aur UT Mein</span><span class="cnt">20/30</span></li><li><span>Pehle Chalao, Phir Lo</span><span class="cnt">21/30</span></li></ul>
+        <span class="lab">Descriptions (max 90 characters)</span><ul class="list"><li><span>Pharmacy billing aur stock software. Platinum ₹1,299/saal. 7 din free trial, card nahi.</span><span class="cnt">87/90</span></li><li><span>Batch, expiry, udhaar, GST — ek jagah. Browser aur Android app. Made in India.</span><span class="cnt">78/90</span></li><li><span>Auto-renew nahi, UPI se payment. 24 rajyon aur UT mein istemaal. nexcodpos.in</span><span class="cnt">77/90</span></li></ul>
+        <button class="copy wide" type="button" data-copy="Chhoti Dukaan, Poora Software
+Ek Counter Se Shuru Hua
+Platinum ₹1,299/Saal
+Lagbhag ₹108 Mahina
+7 Din Free. Auto-Renew Nahi
+Made In India Pharmacy POS
+24 Rajya Aur UT Mein
+Pehle Chalao, Phir Lo
+
+Pharmacy billing aur stock software. Platinum ₹1,299/saal. 7 din free trial, card nahi.
+Batch, expiry, udhaar, GST — ek jagah. Browser aur Android app. Made in India.
+Auto-renew nahi, UPI se payment. 24 rajyon aur UT mein istemaal. nexcodpos.in">Copy all Google copy</button>
+      </details>
+      <details class="ads" open>
+        <summary><span class="pf m">Meta Ads</span> Facebook + Instagram</summary>
+        <div class="cp"><div class="cp-h"><span class="lab">Primary text</span><span class="cnt">279/280</span></div><div class="cp-row"><p class="cp-t">Kehte the chhoti dukaan ko software ki kya zaroorat. Software ya toh mehenga tha, ya uljha hua. Nexcod POS ek pharmacy ke counter se shuru hua: batch, expiry, udhaar, GST, sab counter ki zubaan mein. Made in India, 24 rajyon aur UT mein. ₹1,299/saal. 7 din free, auto-renew nahi.</p><button class="copy" type="button" data-copy="Kehte the chhoti dukaan ko software ki kya zaroorat. Software ya toh mehenga tha, ya uljha hua. Nexcod POS ek pharmacy ke counter se shuru hua: batch, expiry, udhaar, GST, sab counter ki zubaan mein. Made in India, 24 rajyon aur UT mein. ₹1,299/saal. 7 din free, auto-renew nahi." aria-label="Copy Primary text">Copy</button></div><p class="hint">About the first 125 characters show before “See more”, so the hook is at the start.</p></div>
+        <div class="cp"><div class="cp-h"><span class="lab">Headline</span><span class="cnt">33/40</span></div><div class="cp-row"><p class="cp-t">Aapke counter ke naap ka software</p><button class="copy" type="button" data-copy="Aapke counter ke naap ka software" aria-label="Copy Headline">Copy</button></div></div>
+        <p class="small cta"><span class="lab">Call to action button</span>Start Free Trial → nexcodpos.in, or “Send WhatsApp message” → 72819 21783</p>
+      </details>
+      <details class="ads">
+        <summary>Full dialogue (17 lines)</summary>
+        <ol class="script"><li><span class="who">Narrator (voice)</span> Kehte hain — chhoti dukaan ko software ki kya zaroorat?<span class="hi" lang="hi">कहते हैं — छोटी दुकान को सॉफ़्टवेयर की क्या ज़रूरत?</span></li><li><span class="who">Narrator (voice)</span> Jisne chaalis saal, bahi mein paai-paai jodi...<span class="hi" lang="hi">जिसने चालीस साल, बही में पाई-पाई जोड़ी...</span></li><li><span class="who">Narrator (voice)</span> Jo khuli goli ka daam bhi imaandaari se gine...<span class="hi" lang="hi">जो खुली गोली का दाम भी ईमानदारी से गिने...</span></li><li><span class="who">Narrator (voice)</span> Jo shutter giraate hue bhi, ek maa ke liye ruk jaaye...<span class="hi" lang="hi">जो शटर गिराते हुए भी, एक माँ के लिए रुक जाए...</span></li><li><span class="who">Narrator (voice)</span> Jo udhaar bhi de... aur rishta bhi nibhaaye...<span class="hi" lang="hi">जो उधार भी दे... और रिश्ता भी निभाए...</span></li><li><span class="who">Narrator (voice)</span> Uske liye software... mehenga tha, ya uljha.<span class="hi" lang="hi">उसके लिए सॉफ़्टवेयर... महँगा था, या उलझा।</span></li><li><span class="who">Rakesh ji</span> Humare jaisi dukaan ke liye... koi banata bhi hai?<span class="hi" lang="hi">हमारे जैसी दुकान के लिए... कोई बनाता भी है?</span></li><li><span class="who">Narrator (voice)</span> Nexcod POS — ek pharmacy counter se shuru hua.<span class="hi" lang="hi">नेक्सकॉड पीओएस — एक फ़ार्मेसी काउंटर से शुरू हुआ।</span></li><li><span class="who">Narrator (voice)</span> Isliye ye counter ki zubaan bolta hai.<span class="hi" lang="hi">इसलिए ये काउंटर की ज़ुबान बोलता है।</span></li><li><span class="who">Narrator (voice)</span> Expiry, stock, udhaar — roz ka jhanjhat, ek jagah.<span class="hi" lang="hi">एक्सपायरी, स्टॉक, उधार — रोज़ का झंझट, एक जगह।</span></li><li><span class="who">Papa ji</span> Arre! Ye toh apne bas ka nikla.<span class="hi" lang="hi">अरे! ये तो अपने बस का निकला।</span></li><li><span class="who">Narrator (voice)</span> Bharat mein bana. Aaj 24 rajyon aur UT mein.<span class="hi" lang="hi">भारत में बना। आज चौबीस राज्यों और यूटी में।</span></li><li><span class="who">Narrator (voice)</span> ₹1,299 saal ka — lagbhag ₹108 mahina.<span class="hi" lang="hi">बारह सौ निन्यानवे साल का — लगभग एक सौ आठ महीना।</span></li><li><span class="who">Narrator (voice)</span> 7 din free trial. Card nahi, auto-renew nahi.<span class="hi" lang="hi">सात दिन फ़्री ट्रायल। कार्ड नहीं, ऑटो-रिन्यू नहीं।</span></li><li><span class="who">Narrator (voice)</span> Daave hum nahi karenge.<span class="hi" lang="hi">दावे हम नहीं करेंगे।</span></li><li><span class="who">Narrator (voice)</span> Chala kar khud dekhiye.<span class="hi" lang="hi">चलाकर ख़ुद देखिए।</span></li><li><span class="who">Narrator (voice)</span> Nexcod POS — aapke counter ke naap ka.<span class="hi" lang="hi">नेक्सकॉड पीओएस — आपके काउंटर के नाप का।</span></li></ol>
+      </details>
+    </div>
+  </div>
+</section>
+<footer>
+  <p><b>Files in this folder</b></p>
+  <ul>
+    <li><code>videos/day-XX-16x9.mp4</code> and <code>videos/day-XX-9x16.mp4</code>: the films.</li>
+    <li><code>captions/day-XX.hinglish.srt</code> and <code>day-XX.hi.srt</code>: caption files for YouTube and Meta.</li>
+    <li><a href="google-ads-rsa.csv" download>google-ads-rsa.csv</a>, <a href="meta-ads.csv" download>meta-ads.csv</a>, <a href="calendar.csv" download>calendar.csv</a>: the copy and the plan as spreadsheets.</li>
+  </ul>
+  <p>All characters, stores and situations are fictional dramatizations. Voices are synthetic. Screens shown are the real Nexcod POS software (v3.0.0) with sample data.</p>
+</footer>
+</div>
+<script>
+(function(){
+  var input=document.getElementById('startDate');
+  try{var saved=localStorage.getItem('nx-start');if(saved)input.value=saved;}catch(e){}
+  var W=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],M=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  function paint(){
+    var p=(input.value||'2026-10-12').split('-'),base=new Date(+p[0],+p[1]-1,+p[2]);
+    document.querySelectorAll('.date').forEach(function(el){
+      var d=new Date(base.getFullYear(),base.getMonth(),base.getDate()+(+el.dataset.off));
+      el.textContent=el.dataset.short?(W[d.getDay()]+' '+d.getDate()+' '+M[d.getMonth()]):(W[d.getDay()]+', '+d.getDate()+' '+M[d.getMonth()]+' '+d.getFullYear());
+    });
+  }
+  input.addEventListener('change',function(){try{localStorage.setItem('nx-start',input.value);}catch(e){}paint();});
+  paint();
+  document.querySelectorAll('.player').forEach(function(pl){
+    var v=pl.querySelector('video'),scr=pl.querySelector('.screen');
+    pl.querySelectorAll('.tabs button').forEach(function(b){
+      b.addEventListener('click',function(){
+        pl.querySelectorAll('.tabs button').forEach(function(x){x.classList.remove('on');x.setAttribute('aria-pressed','false');});
+        b.classList.add('on');b.setAttribute('aria-pressed','true');
+        var a=b.dataset.asp;scr.className='screen asp-'+a;
+        v.pause();v.setAttribute('poster',v.dataset.poster+a+'.jpg');
+        v.querySelector('source').src=v.dataset.base+a+'.mp4';v.load();
+      });
+    });
+  });
+  document.querySelectorAll('.copy').forEach(function(b){
+    b.addEventListener('click',function(){
+      var t=b.dataset.copy,done=function(){var o=b.textContent;b.textContent='Copied';setTimeout(function(){b.textContent=o;},1400);};
+      if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(done,function(){fallback(t);done();});}else{fallback(t);done();}
+    });
+  });
+  function fallback(t){var a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();try{document.execCommand('copy');}catch(e){}a.remove();}
+})();
+</script>
+</body></html>

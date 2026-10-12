@@ -1,0 +1,293 @@
+{
+  "id": "05",
+  "slug": "breaking-news-gst-5-percent-sharma-ji-ki-neend",
+  "style": "TV news parody",
+  "title": "Breaking News: Sharma ji ki Neend aur GST 5%",
+  "problem": "22 Sep 2025 se zyaadatar dawaon pe GST 5% hai; rate badalne ke baad dukaandaar ko darr rehta hai ki return mein HSN chhoot gaya ya lautayi dawa ka credit note galat gaya, aur galti filing ke baad hi pakdi jaayegi.",
+  "audience": "GST-registered medical store owners (30-60) and the family member or accountant who files their GSTR-1/3B; small towns and cities of north India; Hindi-speaking; interest in GST, pharmacy business, accounting.",
+  "store": "Sharma Medical Store",
+  "music": [
+    {
+      "at_shot": 0,
+      "mood": "news"
+    },
+    {
+      "at_shot": 1,
+      "mood": "tension"
+    },
+    {
+      "at_shot": 2,
+      "mood": "comedy"
+    },
+    {
+      "at_shot": 3,
+      "mood": "upbeat"
+    },
+    {
+      "at_shot": 6,
+      "mood": "news"
+    }
+  ],
+  "cast": [
+    "anchor",
+    "rakesh",
+    "aman",
+    "narrator"
+  ],
+  "dramatization": true,
+  "shots": [
+    {
+      "type": "card",
+      "card": "news",
+      "data": {
+        "headline": "Zyaadatar dawaon pe GST ab 5%",
+        "ticker": "Lagu: 22 September 2025 se  •  Sharma Medical Store se LIVE  •  Sutron ke mutaabik calculator se baatcheet jaari  •  Chai teesri baar thandi"
+      },
+      "lines": [
+        {
+          "who": "anchor",
+          "hi": "ब्रेकिंग! शर्मा जी की नींद ग़ायब!",
+          "sub": "Breaking! Sharma ji ki neend gayab!",
+          "emotion": "surprised",
+          "gesture": "point"
+        },
+        {
+          "who": "anchor",
+          "hi": "बाईस सितंबर पच्चीस से, ज़्यादातर दवा पे जीएसटी पाँच परसेंट।",
+          "sub": "22 Sep 2025 se, zyaadatar dawa pe GST 5 percent.",
+          "emotion": "confident",
+          "gesture": "nod"
+        }
+      ],
+      "hold": 0.1,
+      "transition": "whip"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "night",
+      "title": "LIVE · Sharma Medical Store",
+      "place": [
+        {
+          "who": "rakesh",
+          "spot": "counter_mid",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "wide",
+        "move": "handheld"
+      },
+      "lines": [
+        {
+          "who": "rakesh",
+          "hi": "रिटर्न? एचएसएन? लौटी दवा का क्रेडिट नोट?",
+          "sub": "Return? HSN? Lauti dawa ka credit note?",
+          "emotion": "worried",
+          "gesture": "hands_on_head"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "clock_tick",
+          "at": 0.0
+        },
+        {
+          "name": "heartbeat",
+          "at": 0.6
+        }
+      ],
+      "hold": 0.2,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "night",
+      "place": [
+        {
+          "who": "rakesh",
+          "spot": "counter_mid",
+          "face": "right"
+        },
+        {
+          "who": "aman",
+          "spot": "counter_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "two:rakesh,aman",
+        "move": "static"
+      },
+      "actions": [
+        {
+          "who": "aman",
+          "do": "enter_right",
+          "at": 0.0
+        }
+      ],
+      "lines": [
+        {
+          "who": "aman",
+          "hi": "पापा, कैलकुलेटर रखो। रिपोर्ट खोलो।",
+          "sub": "Papa, calculator rakho. Report kholo.",
+          "emotion": "confident",
+          "gesture": "point"
+        },
+        {
+          "who": "rakesh",
+          "hi": "रिपोर्ट से नींद आएगी?",
+          "sub": "Report se neend aayegi?",
+          "emotion": "worried",
+          "gesture": "shrug"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "keyboard",
+          "at": 5.0
+        }
+      ],
+      "hold": 0.1,
+      "transition": "cut"
+    },
+    {
+      "type": "screen",
+      "img": "reports-gst",
+      "zoom": [
+        "gst_grid",
+        "gst_grid_r"
+      ],
+      "notes": [
+        {
+          "target": "gstr1",
+          "text": "GSTR-1 ki tables"
+        },
+        {
+          "target": "gstr3b",
+          "text": "3B summary"
+        }
+      ],
+      "head": "GST Reports",
+      "lines": [
+        {
+          "who": "aman",
+          "hi": "जीएसटीआर-वन, एचएसएन समरी, थ्री-बी — सब बिलों से।",
+          "sub": "GSTR-1, HSN summary, 3B — sab bills se.",
+          "emotion": "confident"
+        }
+      ],
+      "hold": 0.3
+    },
+    {
+      "type": "screen",
+      "img": "gst-filecheck",
+      "zoom": [
+        "gst_check",
+        "gst_check_r"
+      ],
+      "notes": [
+        {
+          "target": "fix_this",
+          "text": "Galti yahan"
+        },
+        {
+          "target": "what_to_do",
+          "text": "Kya karna hai"
+        }
+      ],
+      "head": "Before You File",
+      "lines": [
+        {
+          "who": "aman",
+          "hi": "फ़ाइल से पहले ये चेक — ग़लती कहाँ, करना क्या है।",
+          "sub": "File se pehle ye check — galti kahan, karna kya hai.",
+          "emotion": "confident"
+        }
+      ],
+      "hold": 0.3
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "night",
+      "place": [
+        {
+          "who": "rakesh",
+          "spot": "counter_mid",
+          "face": "right"
+        },
+        {
+          "who": "aman",
+          "spot": "counter_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "close:rakesh",
+        "move": "static"
+      },
+      "lines": [
+        {
+          "who": "rakesh",
+          "hi": "बस? तीन रात बेकार जागा?",
+          "sub": "Bas? Teen raat bekaar jaaga?",
+          "emotion": "relieved",
+          "gesture": "facepalm"
+        }
+      ],
+      "hold": 0.5,
+      "transition": "flash"
+    },
+    {
+      "type": "card",
+      "card": "news",
+      "data": {
+        "headline": "Sharma ji ne chain ki neend li",
+        "ticker": "Nexcod POS  •  GSTR-1 tables  •  GSTR-3B summary  •  Before You File check  •  7 din free trial"
+      },
+      "lines": [
+        {
+          "who": "anchor",
+          "hi": "शर्मा जी सो गए। आप भी, फ़ाइल से पहले जाँचिए।",
+          "sub": "Sharma ji so gaye. Aap bhi, file se pehle jaanchiye.",
+          "emotion": "happy",
+          "gesture": "nod"
+        }
+      ],
+      "hold": 0.1,
+      "transition": "fade"
+    },
+    {
+      "type": "endcard",
+      "lines": [
+        {
+          "who": "narrator",
+          "hi": "जीएसटी बदला? घबराइए नहीं, जाँचिए। नेक्सकॉड पीओएस।",
+          "sub": "GST badla? Ghabraiye nahi, jaanchiye. Nexcod POS."
+        }
+      ]
+    }
+  ],
+  "ads": {
+    "google_headlines": [
+      "Zyaadatar Dawa Pe GST Ab 5%",
+      "22 Sep 2025 Se Naya GST Rate",
+      "GST Return Se Pehle Check",
+      "GSTR-1 Tables, Bills Se",
+      "HSN Summary Taiyaar",
+      "Before You File Check",
+      "Pharmacy GST Reports",
+      "7 Din Free Trial, Card Nahi"
+    ],
+    "google_descriptions": [
+      "22 Sep 2025 se zyaadatar dawaon pe GST 5%. GSTR-1 tables aur 3B summary bills se.",
+      "File se pehle check: HSN, credit note, GSTIN. Kahan galti hai, kya karna hai.",
+      "Medical store billing aur stock software. Browser + Android. 7 din free, card nahi."
+    ],
+    "meta_primary_text": "Breaking (parody): 22 Sep 2025 se zyaadatar dawaon pe GST 5% hai, aur Sharma ji ki neend gayab! HSN gaya ya nahi? Lautayi dawa ka credit note? Nexcod POS mein GSTR-1 tables, GSTR-3B summary aur 'Before You File' check: jo portal refuse karega, woh pehle dikhe. 7 din free trial.",
+    "meta_headline": "GST badla? File se pehle check karo",
+    "cta": "Start Free Trial"
+  }
+}

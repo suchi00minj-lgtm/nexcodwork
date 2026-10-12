@@ -1,0 +1,63 @@
+1
+00:00:00,528 --> 00:00:02,877
+Bhaiya, poora dabba expire!
+
+2
+00:00:03,998 --> 00:00:04,558
+Phir se?!
+
+3
+00:00:08,402 --> 00:00:09,873
+Sabse bada nuksaan?
+
+4
+00:00:10,117 --> 00:00:11,829
+Chori nahi... shelf par.
+
+5
+00:00:14,835 --> 00:00:16,943
+Dawa chupchaap expire hoti rahi.
+
+6
+00:00:17,273 --> 00:00:17,836
+Kitni?
+
+7
+00:00:18,100 --> 00:00:19,335
+Kabhi gina hi nahi.
+
+8
+00:00:20,677 --> 00:00:25,099
+Sochiye... mahine ke ₹500, saal ke ₹6,000.
+
+9
+00:00:26,255 --> 00:00:28,445
+Ab subah sabse pehle... ye.
+
+10
+00:00:31,029 --> 00:00:34,081
+Expiry, low stock — pehli nazar mein.
+
+11
+00:00:36,772 --> 00:00:40,982
+Kaunsa batch, kitne din, kitna paisa — sab saamne.
+
+12
+00:00:42,149 --> 00:00:44,167
+Raju, ye batch aage rakho.
+
+13
+00:00:44,452 --> 00:00:45,906
+Ji, Didi!
+
+14
+00:00:47,036 --> 00:00:47,718
+Aur ab?
+
+15
+00:00:47,969 --> 00:00:50,686
+Ab dabbe khulte hain... bikne ke liye.
+
+16
+00:00:52,573 --> 00:00:56,763
+Expiry se pehle alert. Nexcod POS.

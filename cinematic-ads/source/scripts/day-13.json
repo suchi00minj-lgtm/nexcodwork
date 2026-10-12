@@ -1,0 +1,415 @@
+{
+  "id": "13",
+  "slug": "kal-de-dunga-udhaar-hisaab",
+  "style": "light comedy-drama",
+  "title": "Kal De Dunga!",
+  "problem": "Udhaar ek copy mein likha jaata hai: 340 aur 840 ek jaise dikhte hain, purani baaki bhool jaati hai, aur purane grahak se paise maangna ajeeb lagta hai.",
+  "audience": "Neighbourhood medical store owners in small towns (35-65) who give udhaar to regular customers and track it in a notebook; Hindi-speaking north India.",
+  "store": "Sharma Medical Store",
+  "music": [
+    {
+      "at_shot": 0,
+      "mood": "comedy"
+    },
+    {
+      "at_shot": 3,
+      "mood": "calm"
+    },
+    {
+      "at_shot": 4,
+      "mood": "upbeat"
+    },
+    {
+      "at_shot": 7,
+      "mood": "comedy"
+    }
+  ],
+  "cast": [
+    "uncle",
+    "rakesh",
+    "sunita",
+    "narrator"
+  ],
+  "dramatization": true,
+  "shots": [
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "day",
+      "title": "Somvaar",
+      "place": [
+        {
+          "who": "uncle",
+          "spot": "cust_left",
+          "face": "right"
+        },
+        {
+          "who": "rakesh",
+          "spot": "counter_mid",
+          "face": "left"
+        },
+        {
+          "who": "sunita",
+          "spot": "counter_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "two:uncle,rakesh",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "uncle",
+          "hi": "शर्मा जी, लिख लीजिए... कल दे दूँगा!",
+          "sub": "Sharma ji, likh lijiye... kal de dunga!",
+          "emotion": "happy",
+          "gesture": "wave"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "paper",
+          "at": 2.6
+        }
+      ],
+      "hold": 0.0,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "day",
+      "title": "Mangalvaar",
+      "place": [
+        {
+          "who": "uncle",
+          "spot": "cust_left",
+          "face": "right"
+        },
+        {
+          "who": "rakesh",
+          "spot": "counter_mid",
+          "face": "left"
+        },
+        {
+          "who": "sunita",
+          "spot": "counter_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "medium:uncle",
+        "move": "static"
+      },
+      "lines": [
+        {
+          "who": "uncle",
+          "hi": "कल दे दूँगा!",
+          "sub": "Kal de dunga!",
+          "emotion": "happy",
+          "gesture": "thumbs_up"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "door_bell",
+          "at": 0.0
+        },
+        {
+          "name": "paper",
+          "at": 1.2
+        }
+      ],
+      "hold": 0.0,
+      "transition": "whip"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "day",
+      "place": [
+        {
+          "who": "uncle",
+          "spot": "cust_left",
+          "face": "right"
+        },
+        {
+          "who": "rakesh",
+          "spot": "counter_mid",
+          "face": "left"
+        },
+        {
+          "who": "sunita",
+          "spot": "counter_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "close:rakesh",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "rakesh",
+          "hi": "ये 'कल'... आता कब है?",
+          "sub": "Ye 'kal'... aata kab hai?",
+          "emotion": "thinking",
+          "gesture": "think"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "clock_tick",
+          "at": 0.2
+        }
+      ],
+      "hold": 0.0,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "night",
+      "title": "Mahine ki aakhri raat",
+      "place": [
+        {
+          "who": "rakesh",
+          "spot": "counter_mid",
+          "face": "right"
+        },
+        {
+          "who": "sunita",
+          "spot": "counter_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "two:rakesh,sunita",
+        "move": "static"
+      },
+      "lines": [
+        {
+          "who": "rakesh",
+          "hi": "तीन सौ चालीस या आठ सौ चालीस? माँगूँ कैसे?",
+          "sub": "340 ya 840? Maangoon kaise?",
+          "emotion": "worried",
+          "gesture": "think"
+        },
+        {
+          "who": "sunita",
+          "hi": "हिसाब साफ़ हो, तो बुरा कौन मानेगा?",
+          "sub": "Hisaab saaf ho, toh bura kaun maanega?",
+          "emotion": "confident",
+          "gesture": "nod"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "paper",
+          "at": 0.1
+        },
+        {
+          "name": "clock_tick",
+          "at": 0.6
+        },
+        {
+          "name": "keyboard",
+          "at": 7.5
+        }
+      ],
+      "hold": 0.0,
+      "transition": "dip_black"
+    },
+    {
+      "type": "screen",
+      "img": "customer-add",
+      "zoom": [
+        "cust_add"
+      ],
+      "notes": [
+        {
+          "target": "credit_limit",
+          "text": "Udhaar ki seema"
+        }
+      ],
+      "lines": [
+        {
+          "who": "sunita",
+          "hi": "हर ग्राहक की उधार लिमिट तय।",
+          "sub": "Har grahak ki udhaar limit tay."
+        }
+      ],
+      "hold": 0.1
+    },
+    {
+      "type": "screen",
+      "img": "customers",
+      "zoom": [
+        "cust"
+      ],
+      "notes": [
+        {
+          "target": "due_amount",
+          "text": "Kitna baaki"
+        },
+        {
+          "target": "collect",
+          "text": "Paise aaye, wahin jama"
+        }
+      ],
+      "lines": [
+        {
+          "who": "sunita",
+          "hi": "किसका कितना बाकी, एक नज़र में।",
+          "sub": "Kiska kitna baaki, ek nazar mein."
+        }
+      ],
+      "hold": 0.1
+    },
+    {
+      "type": "screen",
+      "img": "outstanding",
+      "zoom": [
+        "outst"
+      ],
+      "notes": [
+        {
+          "target": "since_when",
+          "text": "Kab se baaki"
+        }
+      ],
+      "lines": [
+        {
+          "who": "rakesh",
+          "hi": "और कब से — तीस, साठ, नब्बे दिन!",
+          "sub": "Aur kab se — 30, 60, 90 din!"
+        }
+      ],
+      "hold": 0.1
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "day",
+      "title": "Agla Somvaar",
+      "place": [
+        {
+          "who": "uncle",
+          "spot": "cust_left",
+          "face": "right"
+        },
+        {
+          "who": "rakesh",
+          "spot": "counter_mid",
+          "face": "left"
+        },
+        {
+          "who": "sunita",
+          "spot": "counter_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "two:uncle,rakesh",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "uncle",
+          "hi": "लिख लीजिए, कल—",
+          "sub": "Likh lijiye, kal—",
+          "emotion": "happy",
+          "gesture": "wave"
+        },
+        {
+          "who": "rakesh",
+          "hi": "चाचा जी, तीन सौ चालीस — सात तारीख़ से।",
+          "sub": "Chacha ji, ₹340 — saat tareekh se.",
+          "emotion": "happy",
+          "gesture": "point"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "door_bell",
+          "at": 0.0
+        }
+      ],
+      "hold": 0.1,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "day",
+      "place": [
+        {
+          "who": "uncle",
+          "spot": "cust_left",
+          "face": "right"
+        },
+        {
+          "who": "rakesh",
+          "spot": "counter_mid",
+          "face": "left"
+        },
+        {
+          "who": "sunita",
+          "spot": "counter_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "close:uncle",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "uncle",
+          "hi": "अरे वाह! पैसे आज, चाय कल!",
+          "sub": "Arre waah! Paise aaj, chai kal!",
+          "emotion": "happy",
+          "gesture": "count_cash"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "cash_register",
+          "at": 1.8
+        }
+      ],
+      "hold": 0.2,
+      "transition": "fade"
+    },
+    {
+      "type": "endcard",
+      "lines": [
+        {
+          "who": "narrator",
+          "hi": "उधार का हिसाब, बिना झिझक। नेक्सकॉड पीओएस।",
+          "sub": "Udhaar ka hisaab, bina jhijhak. Nexcod POS."
+        }
+      ]
+    }
+  ],
+  "ads": {
+    "google_headlines": [
+      "Udhaar Ka Hisaab, Copy Nahi",
+      "Har Grahak Ki Credit Limit",
+      "Kiska Kitna Baaki, Ek Nazar",
+      "Kab Se Baaki: 30-60-90 Din",
+      "Dues Wahin Collect Karein",
+      "Pharmacy Billing Software",
+      "7 Din Free Trial, Card Nahi"
+    ],
+    "google_descriptions": [
+      "Customer credit limit, dues collection aur party ledger. Udhaar ki copy ki zaroorat nahi.",
+      "Kiska kitna baaki aur kab se, outstanding report mein saaf. 7 din free trial, card nahi.",
+      "GST billing, batch-expiry aur stock alerts bhi. Browser aur Android app. Made in India."
+    ],
+    "meta_primary_text": "\"Kal de dunga!\" Har dukaan mein ek chacha ji hain, aur ek udhaar ki copy jisme 340 aur 840 ek jaise dikhte hain. Nexcod POS mein har grahak ki credit limit, kiska kitna baaki aur kab se, sab saamne. Paise aaye toh wahin collect. 7 din free trial, card nahi chahiye.",
+    "meta_headline": "Udhaar Do, Hisaab Mat Bhoolo",
+    "cta": "Start Free Trial"
+  }
+}

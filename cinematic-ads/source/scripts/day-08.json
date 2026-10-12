@@ -1,0 +1,497 @@
+{
+  "id": "08",
+  "slug": "ek-password-ka-raaz",
+  "style": "crime-thriller / whodunit",
+  "title": "Ek Password Ka Raaz",
+  "problem": "Sab staff ek hi login se bill banate hain: discount badhta hai, stock ghatta hai, aur owner bata nahi sakta ki kisne kya badla, to shak sab par jaata hai.",
+  "audience": "Medical store owners (32-60) with 2-6 counter staff, and their sons/daughters who run the shop software; worried about unexplained discounts and stock mismatch; Hindi-speaking north and central India.",
+  "store": "Sharma Medical Store",
+  "music": [
+    {
+      "at_shot": 0,
+      "mood": "suspense"
+    },
+    {
+      "at_shot": 2,
+      "mood": "tension"
+    },
+    {
+      "at_shot": 7,
+      "mood": "emotional"
+    },
+    {
+      "at_shot": 8,
+      "mood": "inspiring"
+    },
+    {
+      "at_shot": 9,
+      "mood": "upbeat"
+    }
+  ],
+  "cast": [
+    "rakesh",
+    "aman",
+    "pooja",
+    "raju",
+    "narrator"
+  ],
+  "dramatization": true,
+  "shots": [
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "night",
+      "title": "Raat 10:20",
+      "place": [
+        {
+          "who": "rakesh",
+          "spot": "counter_mid",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "close:rakesh",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "rakesh",
+          "hi": "तेईस सौ का डिस्काउंट... किसने दिया?",
+          "sub": "₹2,300 ka discount... kisne diya?",
+          "emotion": "thinking",
+          "gesture": "think"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "clock_tick",
+          "at": 0.0
+        },
+        {
+          "name": "heartbeat",
+          "at": 1.6
+        }
+      ],
+      "hold": 0.2,
+      "transition": "cut"
+    },
+    {
+      "type": "card",
+      "card": "kinetic",
+      "data": {
+        "lines": [
+          "Discount: ₹2,300",
+          "Stock: 6 patte kam",
+          "Naam: kisi ka nahi"
+        ]
+      },
+      "lines": [],
+      "hold": 1.8,
+      "transition": "flash"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "night",
+      "place": [
+        {
+          "who": "rakesh",
+          "spot": "counter_mid",
+          "face": "left"
+        },
+        {
+          "who": "aman",
+          "spot": "counter_right",
+          "face": "left"
+        },
+        {
+          "who": "raju",
+          "spot": "cust_left",
+          "face": "right"
+        },
+        {
+          "who": "pooja",
+          "spot": "cust_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "wide",
+        "move": "handheld"
+      },
+      "lines": [
+        {
+          "who": "aman",
+          "hi": "किसकी लॉगिन से बने ये बिल?",
+          "sub": "Kiski login se bane ye bill?",
+          "emotion": "thinking",
+          "gesture": "point"
+        },
+        {
+          "who": "rakesh",
+          "hi": "एक ही लॉगिन है — कोई भी हो सकता है।",
+          "sub": "Ek hi login hai — koi bhi ho sakta hai.",
+          "emotion": "worried",
+          "gesture": "shrug"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "clock_tick",
+          "at": 0.0
+        }
+      ],
+      "hold": 0.1,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "night",
+      "place": [
+        {
+          "who": "rakesh",
+          "spot": "counter_mid",
+          "face": "left"
+        },
+        {
+          "who": "aman",
+          "spot": "counter_right",
+          "face": "left"
+        },
+        {
+          "who": "raju",
+          "spot": "cust_left",
+          "face": "right"
+        },
+        {
+          "who": "pooja",
+          "spot": "cust_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "two:raju,pooja",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "rakesh",
+          "hi": "किसी पे इल्ज़ाम नहीं — बस समझना है।",
+          "sub": "Kisi pe ilzaam nahi — bas samajhna hai.",
+          "emotion": "neutral",
+          "gesture": "idle"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "heartbeat",
+          "at": 0.0
+        }
+      ],
+      "hold": 0.2,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "night",
+      "place": [
+        {
+          "who": "rakesh",
+          "spot": "counter_mid",
+          "face": "left"
+        },
+        {
+          "who": "aman",
+          "spot": "counter_right",
+          "face": "left"
+        },
+        {
+          "who": "raju",
+          "spot": "cust_left",
+          "face": "right"
+        },
+        {
+          "who": "pooja",
+          "spot": "cust_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "close:pooja",
+        "move": "static"
+      },
+      "lines": [
+        {
+          "who": "pooja",
+          "hi": "भैया, छह पत्ते टूटे थे — मैंने स्टॉक से घटाए।",
+          "sub": "Bhaiya, chhe patte toote the — maine stock se ghataaye.",
+          "emotion": "neutral",
+          "gesture": "nod"
+        }
+      ],
+      "hold": 0.1,
+      "transition": "cut",
+      "sfx": [
+        {
+          "name": "heartbeat",
+          "at": 0.0
+        }
+      ]
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "night",
+      "place": [
+        {
+          "who": "rakesh",
+          "spot": "counter_mid",
+          "face": "left"
+        },
+        {
+          "who": "aman",
+          "spot": "counter_right",
+          "face": "left"
+        },
+        {
+          "who": "raju",
+          "spot": "cust_left",
+          "face": "right"
+        },
+        {
+          "who": "pooja",
+          "spot": "cust_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "close:raju",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "raju",
+          "hi": "डिस्काउंट मैंने दिया... आपने कहा था ना, दस कम।",
+          "sub": "Discount maine diya... aapne kaha tha na, das kam.",
+          "emotion": "worried",
+          "gesture": "idle"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "heartbeat",
+          "at": 0.0
+        }
+      ],
+      "hold": 0.1,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "night",
+      "place": [
+        {
+          "who": "rakesh",
+          "spot": "counter_mid",
+          "face": "left"
+        },
+        {
+          "who": "aman",
+          "spot": "counter_right",
+          "face": "left"
+        },
+        {
+          "who": "raju",
+          "spot": "cust_left",
+          "face": "right"
+        },
+        {
+          "who": "pooja",
+          "spot": "cust_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "two:rakesh,raju",
+        "move": "static"
+      },
+      "lines": [
+        {
+          "who": "rakesh",
+          "hi": "दस रुपये, राजू... दस परसेंट नहीं!",
+          "sub": "Das rupaye, Raju... das percent nahi!",
+          "emotion": "surprised",
+          "gesture": "facepalm"
+        },
+        {
+          "who": "raju",
+          "hi": "ओह!",
+          "sub": "Oh!",
+          "emotion": "surprised",
+          "gesture": "hands_on_head"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "gasp_hit",
+          "at": 2.5
+        }
+      ],
+      "hold": 0.1,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "night",
+      "place": [
+        {
+          "who": "rakesh",
+          "spot": "counter_mid",
+          "face": "left"
+        },
+        {
+          "who": "aman",
+          "spot": "counter_right",
+          "face": "left"
+        },
+        {
+          "who": "raju",
+          "spot": "cust_left",
+          "face": "right"
+        },
+        {
+          "who": "pooja",
+          "spot": "cust_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "close:aman",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "aman",
+          "hi": "गलती किसी की नहीं, पापा — एक ही पासवर्ड की है।",
+          "sub": "Galti kisi ki nahi, Papa — ek hi password ki hai.",
+          "emotion": "confident",
+          "gesture": "point"
+        }
+      ],
+      "hold": 0.2,
+      "transition": "cut"
+    },
+    {
+      "type": "screen",
+      "img": "staff-roles",
+      "zoom": [
+        "roles"
+      ],
+      "notes": [
+        {
+          "target": "make_bill",
+          "text": "Bill haan, discount nahi"
+        },
+        {
+          "target": "hide_cost",
+          "text": "Cost price nahi dikhega"
+        }
+      ],
+      "lines": [
+        {
+          "who": "aman",
+          "hi": "हर स्टाफ़ की अपनी लॉगिन। पचपन स्विच — कौन क्या करे।",
+          "sub": "Har staff ki apni login. 55 switch — kaun kya kare."
+        },
+        {
+          "who": "aman",
+          "hi": "और एक्टिविटी लॉग — किसने, कब, क्या।",
+          "sub": "Aur activity log — kisne, kab, kya."
+        }
+      ],
+      "hold": 0.2
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "day",
+      "title": "Agle din, subah 9 baje",
+      "place": [
+        {
+          "who": "raju",
+          "spot": "counter_left",
+          "face": "left"
+        },
+        {
+          "who": "rakesh",
+          "spot": "counter_mid",
+          "face": "left"
+        },
+        {
+          "who": "pooja",
+          "spot": "counter_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "wide",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "raju",
+          "hi": "अपनी लॉगिन, अपना नाम। डिस्काउंट? पूछ के!",
+          "sub": "Apni login, apna naam. Discount? Poochh ke!",
+          "emotion": "happy",
+          "gesture": "thumbs_up"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "keyboard",
+          "at": 0.3
+        },
+        {
+          "name": "cash_register",
+          "at": 3.9
+        }
+      ],
+      "hold": 0.3,
+      "transition": "cut"
+    },
+    {
+      "type": "endcard",
+      "lines": [
+        {
+          "who": "narrator",
+          "hi": "शक की जगह, सीधा हिसाब। नेक्सकॉड पीओएस।",
+          "sub": "Shak ki jagah, seedha hisaab. Nexcod POS."
+        }
+      ]
+    }
+  ],
+  "ads": {
+    "google_headlines": [
+      "Discount Kisne Diya?",
+      "Har Staff Ki Apni Login",
+      "55 Permission Switches",
+      "Cost Price Staff Se Chhupayein",
+      "Shak Nahi, Saaf Hisaab",
+      "Pharmacy Billing Software",
+      "7 Din Free Trial, Card Nahi",
+      "Made In India Pharmacy POS"
+    ],
+    "google_descriptions": [
+      "Staff logins, 55 permission switches: kaun bill banaye, kaun discount de, aap tay karein.",
+      "Cashier ko cost price na dikhe. Photo attendance aur salary bhi. 7 din free trial.",
+      "Medical store billing, stock aur staff ek jagah. Browser aur Android app. ₹1,299/saal."
+    ],
+    "meta_primary_text": "Discount badh raha tha, stock ghat raha tha, aur sab ek hi login se kaam kar rahe the. Galti kisi ki nahi thi, ek password ki thi. Nexcod POS mein har staff ki apni login aur 55 permission switches: kaun discount de, kaun cost dekhe, aap tay karein. 7 din free trial.",
+    "meta_headline": "Har Staff Ki Apni Login",
+    "cta": "Start Free Trial"
+  }
+}

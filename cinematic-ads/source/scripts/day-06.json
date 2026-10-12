@@ -1,0 +1,378 @@
+{
+  "id": "06",
+  "slug": "rush-hour-pehle-vs-ab",
+  "style": "split-screen before vs after",
+  "title": "Shaam 7 Baje: Pehle vs Ab",
+  "problem": "Shaam ke rush mein 'dawa hai ya nahi' dekhne ke liye rack khangaalna aur calculator pe total lagana billing slow karta hai; line lambi hoti hai aur grahak bina dawa liye laut jaata hai.",
+  "audience": "Busy medical store owners and counter staff in towns and cities with an evening rush; 22-55; Hindi-speaking north India.",
+  "store": "Sharma Medical Store",
+  "music": [
+    {
+      "at_shot": 0,
+      "mood": "tension"
+    },
+    {
+      "at_shot": 3,
+      "mood": "upbeat"
+    }
+  ],
+  "cast": [
+    "rakesh",
+    "raju",
+    "young_mom",
+    "uncle",
+    "narrator"
+  ],
+  "dramatization": true,
+  "shots": [
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "day",
+      "title": "PEHLE · Shaam 7 baje",
+      "place": [
+        {
+          "who": "rakesh",
+          "spot": "counter_mid",
+          "face": "left"
+        },
+        {
+          "who": "raju",
+          "spot": "counter_left",
+          "face": "left"
+        },
+        {
+          "who": "young_mom",
+          "spot": "cust_left",
+          "face": "right"
+        },
+        {
+          "who": "uncle",
+          "spot": "cust_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "wide",
+        "move": "handheld"
+      },
+      "actions": [
+        {
+          "who": "uncle",
+          "do": "exit_right",
+          "at": 1.6
+        }
+      ],
+      "lines": [
+        {
+          "who": "uncle",
+          "hi": "रहने दो! कहीं और से ले लूँगा।",
+          "sub": "Rehne do! Kahin aur se le loonga.",
+          "emotion": "angry",
+          "gesture": "shake_head"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "crowd",
+          "at": 0.0
+        },
+        {
+          "name": "door_bell",
+          "at": 2.6
+        }
+      ],
+      "hold": 0.1,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "day",
+      "place": [
+        {
+          "who": "rakesh",
+          "spot": "counter_mid",
+          "face": "left"
+        },
+        {
+          "who": "raju",
+          "spot": "counter_left",
+          "face": "right"
+        }
+      ],
+      "camera": {
+        "frame": "medium:raju",
+        "move": "handheld"
+      },
+      "lines": [
+        {
+          "who": "raju",
+          "hi": "है भी या ख़त्म? देखता हूँ...",
+          "sub": "Hai bhi ya khatam? Dekhta hoon...",
+          "emotion": "worried",
+          "gesture": "hands_on_head"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "crowd",
+          "at": 0.0
+        }
+      ],
+      "hold": 0.1,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "day",
+      "place": [
+        {
+          "who": "rakesh",
+          "spot": "counter_mid",
+          "face": "left"
+        },
+        {
+          "who": "young_mom",
+          "spot": "cust_left",
+          "face": "right"
+        }
+      ],
+      "camera": {
+        "frame": "two:young_mom,rakesh",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "young_mom",
+          "hi": "भैया, बच्चा ट्यूशन पे है...",
+          "sub": "Bhaiya, bachcha tuition pe hai...",
+          "emotion": "worried",
+          "gesture": "idle"
+        },
+        {
+          "who": "rakesh",
+          "hi": "जोड़ रहा हूँ...",
+          "sub": "Jod raha hoon...",
+          "emotion": "worried",
+          "gesture": "think"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "clock_tick",
+          "at": 0.0
+        }
+      ],
+      "hold": 0.1,
+      "transition": "whip"
+    },
+    {
+      "type": "card",
+      "card": "split",
+      "data": {
+        "left_title": "Pehle",
+        "left": [
+          "Dawa hai? Rack mein dhoondo",
+          "Calculator pe total, line lambi"
+        ],
+        "right_title": "Nexcod POS ke saath",
+        "right": [
+          "F2: naam likho, stock saamne",
+          "Total khud, F9 se bill print"
+        ]
+      },
+      "lines": [
+        {
+          "who": "narrator",
+          "hi": "वही भीड़... फ़र्क़ सिर्फ़ बिलिंग का।",
+          "sub": "Wahi bheed... farak sirf billing ka."
+        }
+      ],
+      "hold": 0.3,
+      "transition": "flash"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "day",
+      "title": "AB · Shaam 7 baje",
+      "place": [
+        {
+          "who": "rakesh",
+          "spot": "counter_mid",
+          "face": "left"
+        },
+        {
+          "who": "raju",
+          "spot": "counter_right",
+          "face": "left"
+        },
+        {
+          "who": "young_mom",
+          "spot": "cust_left",
+          "face": "right"
+        },
+        {
+          "who": "uncle",
+          "spot": "cust_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "wide",
+        "move": "static"
+      },
+      "lines": [
+        {
+          "who": "rakesh",
+          "hi": "अगला!",
+          "sub": "Agla!",
+          "emotion": "happy",
+          "gesture": "wave"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "keyboard",
+          "at": 0.2
+        },
+        {
+          "name": "cash_register",
+          "at": 1.0
+        }
+      ],
+      "hold": 0.3,
+      "transition": "cut"
+    },
+    {
+      "type": "screen",
+      "img": "billing-search",
+      "zoom": [
+        "search_list_r"
+      ],
+      "notes": [
+        {
+          "target": "batch_col",
+          "text": "Batch + expiry"
+        },
+        {
+          "target": "stock_col",
+          "text": "Stock turant"
+        }
+      ],
+      "lines": [
+        {
+          "who": "raju",
+          "hi": "नाम लिखो — स्टॉक सामने।",
+          "sub": "Naam likho — stock saamne.",
+          "emotion": "confident"
+        }
+      ],
+      "hold": 0.1
+    },
+    {
+      "type": "screen",
+      "img": "billing-items",
+      "zoom": [
+        "bill_lines",
+        "bill_total"
+      ],
+      "notes": [
+        {
+          "target": "batch",
+          "text": "Batch + expiry saath"
+        },
+        {
+          "target": "total",
+          "text": "Total khud juda"
+        }
+      ],
+      "lines": [
+        {
+          "who": "rakesh",
+          "hi": "बैच के साथ एक्सपायरी... और टोटल ख़ुद।",
+          "sub": "Batch ke saath expiry... aur total khud.",
+          "emotion": "confident"
+        }
+      ],
+      "hold": 0.1
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "day",
+      "place": [
+        {
+          "who": "rakesh",
+          "spot": "counter_mid",
+          "face": "left"
+        },
+        {
+          "who": "young_mom",
+          "spot": "cust_left",
+          "face": "right"
+        }
+      ],
+      "camera": {
+        "frame": "two:young_mom,rakesh",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "young_mom",
+          "hi": "हो भी गया?",
+          "sub": "Ho bhi gaya?",
+          "emotion": "surprised",
+          "gesture": "idle"
+        },
+        {
+          "who": "rakesh",
+          "hi": "एफ़-नाइन, और बिल हाथ में।",
+          "sub": "F9, aur bill haath mein.",
+          "emotion": "happy",
+          "gesture": "give"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "printer",
+          "at": 2.2
+        }
+      ],
+      "hold": 0.2,
+      "transition": "fade"
+    },
+    {
+      "type": "endcard",
+      "lines": [
+        {
+          "who": "narrator",
+          "hi": "नेक्सकॉड पीओएस — सात दिन फ़्री, कार्ड नहीं चाहिए।",
+          "sub": "Nexcod POS — 7 din free, card nahi chahiye."
+        }
+      ]
+    }
+  ],
+  "ads": {
+    "google_headlines": [
+      "Rush Hour? Billing Ready",
+      "F2 Se Dawa, F9 Se Bill",
+      "Medical Store Billing App",
+      "Stock Aur Batch Ek Nazar Mein",
+      "Total Khud Judta Hai",
+      "5 Bill Tak Ek Saath Open",
+      "7 Din Free Trial, No Card",
+      "₹1,299/Saal, No Auto-Renew"
+    ],
+    "google_descriptions": [
+      "F2 dabao, naam likho: dawa stock, batch aur expiry ke saath saamne. F9 se bill print.",
+      "Ek saath 5 bill tak open, phone camera se barcode scan. GST billing. Browser + Android.",
+      "Pharmacy billing aur stock ek jagah. Made in India. Plans ₹399 se, UPI se payment."
+    ],
+    "meta_primary_text": "Shaam 7 baje, wahi bheed. Pehle: dawa hai ya nahi, rack mein dhoondo, calculator pe total, aur grahak laut gaya. Ab: F2 dabao, naam likho, stock aur batch saamne. Total khud, F9 se bill print. Nexcod POS, medical store ke liye. 7 din free trial, card nahi chahiye.",
+    "meta_headline": "Shaam ki bheed? Counter ready.",
+    "cta": "Start Free Trial"
+  }
+}

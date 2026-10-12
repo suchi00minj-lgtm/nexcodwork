@@ -1,0 +1,445 @@
+{
+  "id": "04",
+  "slug": "jo-dawa-kabhi-biki-hi-nahi",
+  "style": "documentary / interview (dramatized)",
+  "title": "Jo Dawa Kabhi Biki Hi Nahi",
+  "problem": "Expired stock ka nuksaan chupchaap hota hai: kaunsa batch kab expire hoga kisi ko yaad nahi rehta, aur dawa bikne se pehle hi bekaar ho jaati hai.",
+  "audience": "Medical store owners and pharmacists (25-55) in Indian towns and cities with large shelf stock and regular near-expiry write-offs; single stores and small chains; Hindi-speaking.",
+  "store": "Sharma Medical Store",
+  "music": [
+    {
+      "at_shot": 0,
+      "mood": "suspense"
+    },
+    {
+      "at_shot": 3,
+      "mood": "emotional"
+    },
+    {
+      "at_shot": 7,
+      "mood": "inspiring"
+    }
+  ],
+  "cast": [
+    "pooja",
+    "raju",
+    "rakesh",
+    "narrator"
+  ],
+  "dramatization": true,
+  "shots": [
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "night",
+      "place": [
+        {
+          "who": "raju",
+          "spot": "counter_right",
+          "face": "left"
+        },
+        {
+          "who": "rakesh",
+          "spot": "counter_mid",
+          "face": "right"
+        }
+      ],
+      "camera": {
+        "frame": "medium:raju",
+        "move": "handheld"
+      },
+      "lines": [
+        {
+          "who": "raju",
+          "hi": "भैया, पूरा डिब्बा एक्सपायर!",
+          "sub": "Bhaiya, poora dabba expire!",
+          "emotion": "worried",
+          "gesture": "give"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "paper",
+          "at": 0.1
+        },
+        {
+          "name": "gasp_hit",
+          "at": 0.5
+        }
+      ],
+      "hold": 0.2,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "night",
+      "place": [
+        {
+          "who": "raju",
+          "spot": "counter_right",
+          "face": "left"
+        },
+        {
+          "who": "rakesh",
+          "spot": "counter_mid",
+          "face": "right"
+        }
+      ],
+      "camera": {
+        "frame": "close:rakesh",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "rakesh",
+          "hi": "फिर से?!",
+          "sub": "Phir se?!",
+          "emotion": "angry",
+          "gesture": "hands_on_head"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "heartbeat",
+          "at": 0.0
+        }
+      ],
+      "hold": 0.3,
+      "transition": "cut"
+    },
+    {
+      "type": "card",
+      "card": "title",
+      "data": {
+        "lines": [
+          "JO DAWA",
+          "KABHI BIKI HI NAHI"
+        ],
+        "sub": "Ek medical store ki kahani · dramatized"
+      },
+      "hold": 1.6,
+      "transition": "dip_black"
+    },
+    {
+      "type": "scene",
+      "set": "abstract_white",
+      "time": "day",
+      "title": "Pooja · Pharmacist · Dramatized",
+      "place": [
+        {
+          "who": "pooja",
+          "spot": "center",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "medium:pooja",
+        "move": "static"
+      },
+      "lines": [
+        {
+          "who": "narrator",
+          "hi": "सबसे बड़ा नुकसान?",
+          "sub": "Sabse bada nuksaan?"
+        },
+        {
+          "who": "pooja",
+          "hi": "चोरी नहीं... शेल्फ़ पर।",
+          "sub": "Chori nahi... shelf par.",
+          "emotion": "thinking",
+          "gesture": "think"
+        }
+      ],
+      "hold": 0.2,
+      "transition": "fade"
+    },
+    {
+      "type": "scene",
+      "set": "counter_closeup",
+      "time": "night",
+      "place": [],
+      "camera": {
+        "frame": "insert",
+        "move": "push_in"
+      },
+      "lines": [],
+      "sfx": [
+        {
+          "name": "paper",
+          "at": 0.1
+        },
+        {
+          "name": "clock_tick",
+          "at": 0.4
+        }
+      ],
+      "hold": 1.6,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "abstract_white",
+      "time": "day",
+      "place": [
+        {
+          "who": "pooja",
+          "spot": "center",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "close:pooja",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "pooja",
+          "hi": "दवा चुपचाप एक्सपायर होती रही।",
+          "sub": "Dawa chupchaap expire hoti rahi.",
+          "emotion": "sad",
+          "gesture": "shrug"
+        },
+        {
+          "who": "narrator",
+          "hi": "कितनी?",
+          "sub": "Kitni?"
+        },
+        {
+          "who": "pooja",
+          "hi": "कभी गिना ही नहीं।",
+          "sub": "Kabhi gina hi nahi.",
+          "emotion": "sad",
+          "gesture": "shake_head"
+        }
+      ],
+      "hold": 0.2,
+      "transition": "cut"
+    },
+    {
+      "type": "card",
+      "card": "stat",
+      "data": {
+        "small": "SOCHO ZARA",
+        "big": "₹6,000",
+        "label": "saal ka, agar har mahine sirf ₹500 ki dawa expire ho"
+      },
+      "lines": [
+        {
+          "who": "narrator",
+          "hi": "सोचिए... महीने के पाँच सौ, साल के छह हज़ार।",
+          "sub": "Sochiye... mahine ke ₹500, saal ke ₹6,000."
+        }
+      ],
+      "hold": 0.3,
+      "transition": "dip_black"
+    },
+    {
+      "type": "scene",
+      "set": "abstract_white",
+      "time": "day",
+      "place": [
+        {
+          "who": "pooja",
+          "spot": "center",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "medium:pooja",
+        "move": "pull_out"
+      },
+      "lines": [
+        {
+          "who": "pooja",
+          "hi": "अब सुबह सबसे पहले... ये।",
+          "sub": "Ab subah sabse pehle... ye.",
+          "emotion": "confident",
+          "gesture": "show_phone"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "notification",
+          "at": 1.2
+        }
+      ],
+      "hold": 0.2,
+      "transition": "cut"
+    },
+    {
+      "type": "screen",
+      "img": "dashboard",
+      "zoom": [
+        "dash_alert"
+      ],
+      "notes": [
+        {
+          "target": "expiry_tile",
+          "text": "90 din mein expiry"
+        },
+        {
+          "target": "lowstock_tile",
+          "text": "Low stock"
+        },
+        {
+          "target": "outofstock_tile",
+          "text": "Out of stock"
+        }
+      ],
+      "lines": [
+        {
+          "who": "pooja",
+          "hi": "एक्सपायरी, लो स्टॉक — पहली नज़र में।",
+          "sub": "Expiry, low stock — pehli nazar mein.",
+          "emotion": "confident"
+        }
+      ],
+      "hold": 0.3,
+      "transition": "whip"
+    },
+    {
+      "type": "screen",
+      "img": "near-expiry",
+      "zoom": [
+        "near"
+      ],
+      "head": "Near-Expiry Report",
+      "notes": [
+        {
+          "target": "batch",
+          "text": "Kaunsa batch"
+        },
+        {
+          "target": "days_left",
+          "text": "Kitne din baaki"
+        },
+        {
+          "target": "value_at_risk",
+          "text": "Kitna paisa daav pe"
+        }
+      ],
+      "lines": [
+        {
+          "who": "pooja",
+          "hi": "कौन-सा बैच, कितने दिन, कितना पैसा — सब सामने।",
+          "sub": "Kaunsa batch, kitne din, kitna paisa — sab saamne.",
+          "emotion": "confident"
+        }
+      ],
+      "hold": 0.3,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "day",
+      "place": [
+        {
+          "who": "pooja",
+          "spot": "counter_mid",
+          "face": "right"
+        },
+        {
+          "who": "raju",
+          "spot": "counter_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "two:pooja,raju",
+        "move": "static"
+      },
+      "lines": [
+        {
+          "who": "pooja",
+          "hi": "राजू, ये बैच आगे रखो।",
+          "sub": "Raju, ye batch aage rakho.",
+          "emotion": "confident",
+          "gesture": "point"
+        },
+        {
+          "who": "raju",
+          "hi": "जी, दीदी!",
+          "sub": "Ji, Didi!",
+          "emotion": "happy",
+          "gesture": "nod"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "door_bell",
+          "at": 0.1
+        },
+        {
+          "name": "paper",
+          "at": 2.6
+        }
+      ],
+      "hold": 0.2,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "abstract_white",
+      "time": "day",
+      "place": [
+        {
+          "who": "pooja",
+          "spot": "center",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "close:pooja",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "narrator",
+          "hi": "और अब?",
+          "sub": "Aur ab?"
+        },
+        {
+          "who": "pooja",
+          "hi": "अब डिब्बे खुलते हैं... बिकने के लिए।",
+          "sub": "Ab dabbe khulte hain... bikne ke liye.",
+          "emotion": "happy",
+          "gesture": "nod"
+        }
+      ],
+      "hold": 0.4,
+      "transition": "fade"
+    },
+    {
+      "type": "endcard",
+      "lines": [
+        {
+          "who": "narrator",
+          "hi": "एक्सपायरी से पहले अलर्ट। नेक्सकॉड पीओएस।",
+          "sub": "Expiry se pehle alert. Nexcod POS."
+        }
+      ]
+    }
+  ],
+  "ads": {
+    "google_headlines": [
+      "Expiry Se Pehle Alert Paao",
+      "Near-Expiry Report Batch-Wise",
+      "Dawa Shelf Pe Expire Na Ho",
+      "Expired Batch Bill Mein Band",
+      "Pharmacy Billing + Stock App",
+      "7 Din Free Trial, No Card",
+      "Made In India Pharmacy POS",
+      "₹1,299/Saal, No Auto-Renew"
+    ],
+    "google_descriptions": [
+      "Dashboard pe near-expiry, low stock aur out-of-stock alert. Sab pehli nazar mein.",
+      "Near-expiry report: kaunsa batch, kitne din baaki, kitna paisa daav pe. Ek jagah.",
+      "Expired batch ki billing block karo. Browser + Android app. 7 din free trial, no card."
+    ],
+    "meta_primary_text": "Kai baar sabse bada nuksaan chori se nahi, shelf pe hota hai: dawa padi-padi chupchaap expire ho jaati hai. Nexcod POS dashboard pe near-expiry alert deta hai, aur report mein dikhata hai kaunsa batch, kitne din baaki, kitna paisa daav pe. 7 din free trial, card nahi chahiye.",
+    "meta_headline": "Expiry ka nuksaan, ab pehle se dikhega",
+    "cta": "Start Free Trial"
+  }
+}

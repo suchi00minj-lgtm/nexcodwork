@@ -1,0 +1,249 @@
+{
+  "id": "11",
+  "slug": "quiz-ek-strip-ki-asli-cost",
+  "style": "quiz / challenge",
+  "title": "Quiz: Ek Strip Ki Asli Cost Kitni?",
+  "problem": "Scheme (free maal) aur discount ke baad ek strip ya bottle ki asli cost malik ko yaad nahi rehti, isliye thok ya regular grahak ko galat rate bol dete hain: zyada bolo to grahak jaata hai, kam bolo to munafa.",
+  "audience": "Medical store owners and pharmacists who buy on distributor schemes and give bulk or regular-customer rates; 25-60; Hindi-speaking north India.",
+  "store": "Sharma Medical Store",
+  "music": [
+    {
+      "at_shot": 0,
+      "mood": "comedy"
+    },
+    {
+      "at_shot": 2,
+      "mood": "suspense"
+    },
+    {
+      "at_shot": 4,
+      "mood": "upbeat"
+    }
+  ],
+  "cast": [
+    "sunita",
+    "uncle",
+    "narrator"
+  ],
+  "dramatization": true,
+  "shots": [
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "day",
+      "title": "MEDICAL STORE CHALLENGE",
+      "place": [
+        {
+          "who": "sunita",
+          "spot": "counter_mid",
+          "face": "left"
+        },
+        {
+          "who": "uncle",
+          "spot": "cust_left",
+          "face": "right"
+        }
+      ],
+      "camera": {
+        "frame": "medium:uncle",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "uncle",
+          "hi": "आश्रम के लिए दस बोतल। थोक का रेट?",
+          "sub": "Ashram ke liye das bottle. Thok ka rate?",
+          "emotion": "confident",
+          "gesture": "point"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "door_bell",
+          "at": 0.0
+        }
+      ],
+      "hold": 0.1,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "day",
+      "place": [
+        {
+          "who": "sunita",
+          "spot": "counter_mid",
+          "face": "left"
+        },
+        {
+          "who": "uncle",
+          "spot": "cust_left",
+          "face": "right"
+        }
+      ],
+      "camera": {
+        "frame": "close:sunita",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "sunita",
+          "hi": "एमआरपी एक सौ इक्कीस... पर स्कीम थी क्या?",
+          "sub": "MRP 121... par scheme thi kya?",
+          "emotion": "thinking",
+          "gesture": "think"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "clock_tick",
+          "at": 0.0
+        }
+      ],
+      "hold": 0.1,
+      "transition": "whip"
+    },
+    {
+      "type": "card",
+      "card": "quiz",
+      "data": {
+        "q": "Bill pe rate ₹100 ek strip. Scheme 10+1 free, upar se 2% discount. Ek strip ki asli cost?",
+        "options": [
+          "₹100",
+          "₹90.91",
+          "₹89.09"
+        ],
+        "answer": 2
+      },
+      "lines": [
+        {
+          "who": "narrator",
+          "hi": "रुकिए! पहले आप बताइए।",
+          "sub": "Rukiye! Pehle aap bataiye."
+        }
+      ],
+      "hold": 3.0,
+      "transition": "flash"
+    },
+    {
+      "type": "card",
+      "card": "stat",
+      "data": {
+        "big": "₹89.09",
+        "label": "(10 × ₹100 − 2%) ÷ 11 strip",
+        "small": "SAHI JAWAB"
+      },
+      "lines": [
+        {
+          "who": "narrator",
+          "hi": "ज़्यादा बोला तो ग्राहक गया, कम बोला तो मुनाफ़ा।",
+          "sub": "Zyada bola to grahak gaya, kam bola to munafa."
+        }
+      ],
+      "hold": 0.3,
+      "transition": "cut"
+    },
+    {
+      "type": "screen",
+      "img": "rate-desk",
+      "zoom": [
+        "rate_full"
+      ],
+      "notes": [
+        {
+          "target": "flat_rate",
+          "text": "Asli cost (flat rate)"
+        },
+        {
+          "target": "break_even",
+          "text": "Isse neeche = ghaata"
+        }
+      ],
+      "lines": [
+        {
+          "who": "sunita",
+          "hi": "एफ़-वन... असली कॉस्ट छियानवे।",
+          "sub": "F1... asli cost 96.",
+          "emotion": "confident"
+        }
+      ],
+      "hold": 0.3
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "day",
+      "place": [
+        {
+          "who": "sunita",
+          "spot": "counter_mid",
+          "face": "left"
+        },
+        {
+          "who": "uncle",
+          "spot": "cust_left",
+          "face": "right"
+        }
+      ],
+      "camera": {
+        "frame": "two:uncle,sunita",
+        "move": "static"
+      },
+      "lines": [
+        {
+          "who": "sunita",
+          "hi": "एक सौ दस की एक, अंकल जी।",
+          "sub": "110 ki ek, uncle ji.",
+          "emotion": "confident",
+          "gesture": "give"
+        },
+        {
+          "who": "uncle",
+          "hi": "बढ़िया! पैक कर दो।",
+          "sub": "Badhiya! Pack kar do.",
+          "emotion": "happy",
+          "gesture": "thumbs_up"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "cash_register",
+          "at": 5.3
+        }
+      ],
+      "hold": 0.2,
+      "transition": "fade"
+    },
+    {
+      "type": "endcard",
+      "lines": [
+        {
+          "who": "narrator",
+          "hi": "नेक्सकॉड पीओएस — रेट अंदाज़े से नहीं, हिसाब से।",
+          "sub": "Nexcod POS — rate andaaze se nahi, hisaab se."
+        }
+      ]
+    }
+  ],
+  "ads": {
+    "google_headlines": [
+      "Ek Strip Ki Asli Cost Kitni?",
+      "F1 Dabao, Asli Cost Dekho",
+      "Flat Rate Aur Break-Even",
+      "Scheme Ke Baad Ka Asli Rate",
+      "Thok Rate Ab Hisaab Se",
+      "Pharmacy Billing Software",
+      "7 Din Free Trial, No Card",
+      "₹1,299/Saal (≈₹108/Mahina)"
+    ],
+    "google_descriptions": [
+      "F1 rate desk: scheme aur discount ke baad flat rate aur break-even, counter pe hi.",
+      "Purchase mein scheme aur free goods entry. GST billing, batch aur expiry. 7 din free.",
+      "Browser + Android app. ₹1,299/saal (≈₹108/mahina). No auto-renew. UPI se payment."
+    ],
+    "meta_primary_text": "Medical store challenge: rate ₹100 ki strip, scheme 10+1 free, upar se 2% discount. Ek strip ki asli cost kitni? Jawab video mein. Counter pe har dawa ka yeh hisaab mushkil hai. Nexcod POS mein F1 dabao: flat rate aur break-even saamne. 7 din free trial, card nahi chahiye.",
+    "meta_headline": "Asli cost jaano, sahi rate bolo",
+    "cta": "Start Free Trial"
+  }
+}

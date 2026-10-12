@@ -1,0 +1,468 @@
+{
+  "id": "14",
+  "slug": "dhanteras-rush-paanch-bill-ek-saath",
+  "style": "festival rush musical montage",
+  "title": "Dhanteras Rush: Sabka Bill, Saath-Saath",
+  "problem": "Diwali/festival ki shaam ek saath bahut saare grahak counter pe aa jaate hain; ek bill atakta hai toh poori line ruk jaati hai aur grahak naraz hote hain.",
+  "audience": "Busy medical stores in markets and colonies that see festival-evening rushes (Dhanteras, Diwali, Chhath, Eid); owners 28-55 and counter staff; Hindi-speaking; Meta Reels and YouTube in the festive season.",
+  "store": "Sharma Medical Store",
+  "music": [
+    {
+      "at_shot": 0,
+      "mood": "festival"
+    }
+  ],
+  "cast": [
+    "raju",
+    "pooja",
+    "aunty",
+    "uncle",
+    "young_mom",
+    "narrator"
+  ],
+  "dramatization": true,
+  "shots": [
+    {
+      "type": "scene",
+      "set": "store_front",
+      "time": "night",
+      "title": "Dhanteras · Shaam 7 baje",
+      "place": [
+        {
+          "who": "young_mom",
+          "spot": "walk_left",
+          "face": "right"
+        },
+        {
+          "who": "raju",
+          "spot": "door",
+          "face": "right"
+        },
+        {
+          "who": "uncle",
+          "spot": "walk_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "wide",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "raju",
+          "hi": "दीदी! आधा मोहल्ला आ गया!",
+          "sub": "Didi! Aadha mohalla aa gaya!",
+          "emotion": "surprised",
+          "gesture": "hands_on_head"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "crowd",
+          "at": 0.0
+        },
+        {
+          "name": "bike_horn",
+          "at": 0.4
+        },
+        {
+          "name": "scooter",
+          "at": 1.0
+        }
+      ],
+      "hold": 0.1,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "night",
+      "place": [
+        {
+          "who": "pooja",
+          "spot": "counter_mid",
+          "face": "left"
+        },
+        {
+          "who": "raju",
+          "spot": "counter_right",
+          "face": "right"
+        },
+        {
+          "who": "aunty",
+          "spot": "cust_left",
+          "face": "right"
+        },
+        {
+          "who": "uncle",
+          "spot": "cust_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "wide",
+        "move": "handheld"
+      },
+      "lines": [
+        {
+          "who": "aunty",
+          "hi": "बेटा, जल्दी!",
+          "sub": "Beta, jaldi!",
+          "emotion": "worried",
+          "gesture": "point"
+        },
+        {
+          "who": "uncle",
+          "hi": "पहले मेरा!",
+          "sub": "Pehle mera!",
+          "emotion": "worried",
+          "gesture": "point"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "crowd",
+          "at": 0.0
+        },
+        {
+          "name": "door_bell",
+          "at": 0.2
+        }
+      ],
+      "hold": 0.1,
+      "transition": "whip"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "night",
+      "place": [
+        {
+          "who": "pooja",
+          "spot": "counter_mid",
+          "face": "left"
+        },
+        {
+          "who": "aunty",
+          "spot": "cust_left",
+          "face": "right"
+        }
+      ],
+      "camera": {
+        "frame": "close:pooja",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "pooja",
+          "hi": "सबका बिल, साथ-साथ!",
+          "sub": "Sabka bill, saath-saath!",
+          "emotion": "confident",
+          "gesture": "type"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "keyboard",
+          "at": 0.3
+        },
+        {
+          "name": "swoosh_up",
+          "at": 1.6
+        }
+      ],
+      "hold": 0.1,
+      "transition": "flash"
+    },
+    {
+      "type": "screen",
+      "img": "keys",
+      "zoom": [
+        "keys"
+      ],
+      "notes": [
+        {
+          "target": "f2",
+          "text": "F2: dawa dhoondo"
+        },
+        {
+          "target": "f9",
+          "text": "F9: bill print"
+        }
+      ],
+      "lines": [
+        {
+          "who": "pooja",
+          "hi": "एफ़-टू, दवा। एफ़-नाइन, बिल।",
+          "sub": "F2, dawa. F9, bill.",
+          "emotion": "confident"
+        }
+      ],
+      "hold": 0.2,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "night",
+      "place": [
+        {
+          "who": "pooja",
+          "spot": "counter_mid",
+          "face": "left"
+        },
+        {
+          "who": "aunty",
+          "spot": "cust_left",
+          "face": "right"
+        }
+      ],
+      "camera": {
+        "frame": "two:aunty,pooja",
+        "move": "static"
+      },
+      "lines": [
+        {
+          "who": "aunty",
+          "hi": "जीती रहो, बेटा!",
+          "sub": "Jeeti raho, beta!",
+          "emotion": "happy",
+          "gesture": "namaste"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "printer",
+          "at": 0.0
+        },
+        {
+          "name": "cash_register",
+          "at": 1.2
+        }
+      ],
+      "hold": 0.1,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "night",
+      "place": [
+        {
+          "who": "pooja",
+          "spot": "counter_mid",
+          "face": "right"
+        },
+        {
+          "who": "young_mom",
+          "spot": "cust_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "two:pooja,young_mom",
+        "move": "handheld"
+      },
+      "lines": [
+        {
+          "who": "young_mom",
+          "hi": "अरे! पर्स गाड़ी में!",
+          "sub": "Arre! Purse gaadi mein!",
+          "emotion": "surprised",
+          "gesture": "hands_on_head"
+        },
+        {
+          "who": "pooja",
+          "hi": "जाइए, बिल खुला है।",
+          "sub": "Jaaiye, bill khula hai.",
+          "emotion": "happy",
+          "gesture": "nod"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "crowd",
+          "at": 0.0
+        }
+      ],
+      "hold": 0.1,
+      "transition": "whip"
+    },
+    {
+      "type": "card",
+      "card": "kinetic",
+      "data": {
+        "lines": [
+          "Ek bill ruka?",
+          "Doosra kholo.",
+          "5 bill, ek saath."
+        ]
+      },
+      "hold": 1.5,
+      "transition": "whip"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "night",
+      "place": [
+        {
+          "who": "raju",
+          "spot": "counter_right",
+          "face": "right"
+        },
+        {
+          "who": "uncle",
+          "spot": "cust_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "two:raju,uncle",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "uncle",
+          "hi": "बिल फ़ोन पे भेज दो!",
+          "sub": "Bill phone pe bhej do!",
+          "emotion": "neutral",
+          "gesture": "hold_phone"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "keyboard",
+          "at": 0.4
+        },
+        {
+          "name": "phone_ding",
+          "at": 2.3
+        }
+      ],
+      "hold": 0.3,
+      "transition": "cut"
+    },
+    {
+      "type": "screen",
+      "img": "invoices",
+      "zoom": [
+        "inv_list_r"
+      ],
+      "notes": [
+        {
+          "target": "whatsapp_btn",
+          "text": "WhatsApp pe bill"
+        },
+        {
+          "target": "sent",
+          "text": "Bhej diya"
+        }
+      ],
+      "lines": [
+        {
+          "who": "raju",
+          "hi": "भेज दिया — दुकान के नंबर से!",
+          "sub": "Bhej diya — dukaan ke number se!",
+          "emotion": "happy"
+        }
+      ],
+      "hold": 0.2,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "night",
+      "place": [
+        {
+          "who": "pooja",
+          "spot": "counter_mid",
+          "face": "right"
+        },
+        {
+          "who": "raju",
+          "spot": "counter_right",
+          "face": "left"
+        },
+        {
+          "who": "aunty",
+          "spot": "cust_left",
+          "face": "right"
+        },
+        {
+          "who": "young_mom",
+          "spot": "cust_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "wide",
+        "move": "pull_out"
+      },
+      "lines": [
+        {
+          "who": "young_mom",
+          "hi": "आ गई!",
+          "sub": "Aa gayi!",
+          "emotion": "happy",
+          "gesture": "wave"
+        },
+        {
+          "who": "pooja",
+          "hi": "बिल तैयार — हैप्पी दिवाली!",
+          "sub": "Bill taiyaar — Happy Diwali!",
+          "emotion": "happy",
+          "gesture": "namaste"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "printer",
+          "at": 0.9
+        },
+        {
+          "name": "cash_register",
+          "at": 2.6
+        },
+        {
+          "name": "applause",
+          "at": 3.2
+        }
+      ],
+      "hold": 0.2,
+      "transition": "fade"
+    },
+    {
+      "type": "endcard",
+      "lines": [
+        {
+          "who": "narrator",
+          "hi": "रौनक आपकी, रफ़्तार हमारी। शुभ दीपावली!",
+          "sub": "Raunak aapki, raftaar hamari. Shubh Deepawali!"
+        }
+      ]
+    }
+  ],
+  "ads": {
+    "google_headlines": [
+      "Diwali Rush? Billing Tez!",
+      "F2 Se Dawa, F9 Se Bill",
+      "5 Bill Ek Saath Khule",
+      "WhatsApp Pe Seedha Bill",
+      "Festive Rush Ke Liye Taiyaar",
+      "Pharmacy POS, Made In India",
+      "7 Din Free Trial, No Card",
+      "₹1,299/Saal, No Auto-Renew"
+    ],
+    "google_descriptions": [
+      "Ek bill ruka? Doosra kholo. 5 bill tak ek saath. F2 se dawa, F9 se bill print.",
+      "Dukaan ke apne number se WhatsApp bill. GST billing, batch aur expiry ke saath.",
+      "Browser + Android app. 7 din free trial, card nahi chahiye. Platinum ₹1,299/saal."
+    ],
+    "meta_primary_text": "Dhanteras ki shaam, aadha mohalla ek saath counter pe! Nexcod POS mein F2 se dawa, F9 se bill, aur ek bill ruka toh doosra kholo: 5 bill tak ek saath. Bill seedha WhatsApp pe, dukaan ke apne number se. Shubh Deepawali! 7 din free trial, card nahi chahiye.",
+    "meta_headline": "Raunak aapki, raftaar Nexcod POS ki",
+    "cta": "Start Free Trial"
+  }
+}

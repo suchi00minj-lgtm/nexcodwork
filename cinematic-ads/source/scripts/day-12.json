@@ -1,0 +1,637 @@
+{
+  "id": "12",
+  "slug": "baarish-raat-stock-khatam",
+  "style": "night and rain cinematic drama",
+  "title": "Baarish ki woh raat",
+  "problem": "Roz bikne wali dawai ka stock chupchaap khatam ho gaya kyunki order yaad ke bharose hota tha; raat ko ek maa ko khaali haath lautna pada aur dukaan ka bharosa toota.",
+  "audience": "Medical store owners and pharmacists in India (28-60) who track stock by memory or a notebook and lose customers to stock-outs of fast-moving medicines",
+  "store": "Sharma Medical Store",
+  "music": [
+    {
+      "at_shot": 0,
+      "mood": "suspense"
+    },
+    {
+      "at_shot": 2,
+      "mood": "emotional"
+    },
+    {
+      "at_shot": 7,
+      "mood": "calm"
+    },
+    {
+      "at_shot": 9,
+      "mood": "inspiring"
+    },
+    {
+      "at_shot": 12,
+      "mood": "emotional"
+    }
+  ],
+  "cast": [
+    "young_mom",
+    "kid",
+    "sunita",
+    "rakesh",
+    "narrator"
+  ],
+  "dramatization": true,
+  "shots": [
+    {
+      "type": "scene",
+      "set": "store_front",
+      "time": "night",
+      "rain": true,
+      "place": [
+        {
+          "who": "kid",
+          "spot": "walk_left",
+          "face": "right"
+        },
+        {
+          "who": "young_mom",
+          "spot": "door",
+          "face": "right"
+        },
+        {
+          "who": "sunita",
+          "spot": "walk_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "wide",
+        "move": "push_in"
+      },
+      "actions": [
+        {
+          "who": "young_mom",
+          "do": "enter_left",
+          "at": 0.0
+        },
+        {
+          "who": "kid",
+          "do": "enter_left",
+          "at": 0.4
+        }
+      ],
+      "lines": [
+        {
+          "who": "young_mom",
+          "hi": "रुकिए! शटर मत गिराइए... प्लीज़!",
+          "sub": "Rukiye! Shutter mat giraiye... please!",
+          "emotion": "worried",
+          "gesture": "wave"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "thunder",
+          "at": 0.0
+        },
+        {
+          "name": "rain",
+          "at": 0.0
+        }
+      ],
+      "hold": 0.0,
+      "transition": "flash",
+      "title": "Raat 9:40 · Baarish"
+    },
+    {
+      "type": "scene",
+      "set": "store_front",
+      "time": "night",
+      "rain": true,
+      "place": [
+        {
+          "who": "kid",
+          "spot": "walk_left",
+          "face": "right"
+        },
+        {
+          "who": "young_mom",
+          "spot": "door",
+          "face": "right"
+        },
+        {
+          "who": "sunita",
+          "spot": "walk_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "two:young_mom,sunita",
+        "move": "handheld"
+      },
+      "lines": [
+        {
+          "who": "young_mom",
+          "hi": "बच्चे का सिरप... डॉक्टर ने लिखा है।",
+          "sub": "Bachche ka syrup... doctor ne likha hai.",
+          "emotion": "worried",
+          "gesture": "give"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "rain",
+          "at": 0.0
+        }
+      ],
+      "hold": 0.0,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_front",
+      "time": "night",
+      "rain": true,
+      "place": [
+        {
+          "who": "kid",
+          "spot": "walk_left",
+          "face": "right"
+        },
+        {
+          "who": "young_mom",
+          "spot": "door",
+          "face": "right"
+        },
+        {
+          "who": "sunita",
+          "spot": "walk_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "close:sunita",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "sunita",
+          "hi": "ये तो... ख़त्म है।",
+          "sub": "Yeh toh... khatam hai.",
+          "emotion": "sad",
+          "gesture": "idle"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "rain",
+          "at": 0.0
+        },
+        {
+          "name": "heartbeat",
+          "at": 0.2
+        }
+      ],
+      "hold": 0.5,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_front",
+      "time": "night",
+      "rain": true,
+      "place": [
+        {
+          "who": "kid",
+          "spot": "walk_left",
+          "face": "right"
+        },
+        {
+          "who": "young_mom",
+          "spot": "door",
+          "face": "right"
+        },
+        {
+          "who": "sunita",
+          "spot": "walk_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "medium:young_mom",
+        "move": "static"
+      },
+      "lines": [
+        {
+          "who": "young_mom",
+          "hi": "हमेशा तो यहीं मिलता था।",
+          "sub": "Hamesha toh yahin milta tha.",
+          "emotion": "sad",
+          "gesture": "shake_head"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "rain",
+          "at": 0.0
+        }
+      ],
+      "hold": 0.0,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_front",
+      "time": "night",
+      "rain": true,
+      "place": [
+        {
+          "who": "kid",
+          "spot": "walk_left",
+          "face": "right"
+        },
+        {
+          "who": "young_mom",
+          "spot": "door",
+          "face": "right"
+        },
+        {
+          "who": "sunita",
+          "spot": "walk_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "close:kid",
+        "move": "static"
+      },
+      "lines": [
+        {
+          "who": "kid",
+          "hi": "मम्मी, अब कहाँ जाएँगे?",
+          "sub": "Mummy, ab kahan jaayenge?",
+          "emotion": "sad",
+          "gesture": "idle"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "rain",
+          "at": 0.0
+        },
+        {
+          "name": "thunder",
+          "at": 1.4
+        }
+      ],
+      "hold": 0.0,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_front",
+      "time": "night",
+      "rain": true,
+      "place": [
+        {
+          "who": "kid",
+          "spot": "walk_left",
+          "face": "right"
+        },
+        {
+          "who": "young_mom",
+          "spot": "door",
+          "face": "right"
+        },
+        {
+          "who": "sunita",
+          "spot": "walk_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "wide",
+        "move": "pull_out"
+      },
+      "actions": [
+        {
+          "who": "young_mom",
+          "do": "exit_left",
+          "at": 0.6
+        },
+        {
+          "who": "kid",
+          "do": "exit_left",
+          "at": 0.8
+        }
+      ],
+      "lines": [
+        {
+          "who": "sunita",
+          "hi": "माफ़ कीजिए... कल तक मँगवा दूँगी!",
+          "sub": "Maaf kijiye... kal tak mangwa doongi!",
+          "emotion": "sad",
+          "gesture": "namaste"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "rain",
+          "at": 0.0
+        },
+        {
+          "name": "thunder",
+          "at": 2.6
+        }
+      ],
+      "hold": 0.6,
+      "transition": "cut"
+    },
+    {
+      "type": "card",
+      "card": "kinetic",
+      "data": {
+        "lines": [
+          "Ek dawai khatam.",
+          "Aur bharosa bhi?"
+        ]
+      },
+      "hold": 1.6,
+      "transition": "dip_black"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "day",
+      "rain": false,
+      "place": [
+        {
+          "who": "sunita",
+          "spot": "counter_mid",
+          "face": "right"
+        },
+        {
+          "who": "rakesh",
+          "spot": "counter_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "two:sunita,rakesh",
+        "move": "static"
+      },
+      "lines": [
+        {
+          "who": "rakesh",
+          "hi": "रात भर सोई नहीं?",
+          "sub": "Raat bhar soyi nahi?",
+          "emotion": "worried",
+          "gesture": "idle"
+        },
+        {
+          "who": "sunita",
+          "hi": "वो माँ ख़ाली हाथ लौट गई।",
+          "sub": "Woh maa khaali haath laut gayi.",
+          "emotion": "sad",
+          "gesture": "shake_head"
+        }
+      ],
+      "hold": 0.0,
+      "transition": "dip_black",
+      "title": "Agli subah"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "day",
+      "rain": false,
+      "place": [
+        {
+          "who": "sunita",
+          "spot": "counter_mid",
+          "face": "right"
+        },
+        {
+          "who": "rakesh",
+          "spot": "counter_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "medium:rakesh",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "rakesh",
+          "hi": "याद के भरोसे ऑर्डर? डैशबोर्ड देखो।",
+          "sub": "Yaad ke bharose order? Dashboard dekho.",
+          "emotion": "thinking",
+          "gesture": "point"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "keyboard",
+          "at": 2.6
+        }
+      ],
+      "hold": 0.0,
+      "transition": "cut"
+    },
+    {
+      "type": "screen",
+      "img": "dashboard",
+      "zoom": [
+        "dash_alert"
+      ],
+      "notes": [
+        {
+          "target": "outofstock_tile",
+          "text": "Khatam: 1"
+        },
+        {
+          "target": "lowstock_tile",
+          "text": "Kam stock: 29"
+        }
+      ],
+      "lines": [
+        {
+          "who": "sunita",
+          "hi": "ये तो पहले से बता रहा था!",
+          "sub": "Yeh toh pehle se bata raha tha!",
+          "emotion": "surprised"
+        }
+      ],
+      "hold": 0.1,
+      "transition": "whip"
+    },
+    {
+      "type": "screen",
+      "img": "po-new",
+      "zoom": [
+        "po_sugg"
+      ],
+      "notes": [
+        {
+          "target": "suggest",
+          "text": "Aapki bikri se"
+        },
+        {
+          "target": "why",
+          "text": "Kyun: Out of stock"
+        }
+      ],
+      "head": "Kya mangana hai, list taiyaar",
+      "lines": [
+        {
+          "who": "rakesh",
+          "hi": "बिक्री देखकर, ऑर्डर की लिस्ट तैयार।",
+          "sub": "Bikri dekhkar, order ki list taiyaar."
+        }
+      ],
+      "hold": 0.0,
+      "transition": "cut"
+    },
+    {
+      "type": "screen",
+      "img": "low-stock",
+      "zoom": [
+        "lowstock"
+      ],
+      "head": "Supplier-wise: kya mangana hai",
+      "lines": [
+        {
+          "who": "sunita",
+          "hi": "सप्लायर को अभी भेजती हूँ।",
+          "sub": "Supplier ko abhi bhejti hoon.",
+          "emotion": "confident"
+        }
+      ],
+      "hold": 0.0,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "day",
+      "rain": false,
+      "place": [
+        {
+          "who": "young_mom",
+          "spot": "cust_left",
+          "face": "right"
+        },
+        {
+          "who": "sunita",
+          "spot": "counter_mid",
+          "face": "left"
+        },
+        {
+          "who": "kid",
+          "spot": "cust_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "two:sunita,young_mom",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "young_mom",
+          "hi": "दीदी... आया?",
+          "sub": "Didi... aaya?",
+          "emotion": "worried",
+          "gesture": "idle"
+        },
+        {
+          "who": "sunita",
+          "hi": "आपके लिए अलग रखा था।",
+          "sub": "Aapke liye alag rakha tha.",
+          "emotion": "happy",
+          "gesture": "give"
+        },
+        {
+          "who": "young_mom",
+          "hi": "आपको याद था!",
+          "sub": "Aapko yaad tha!",
+          "emotion": "relieved",
+          "gesture": "namaste"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "door_bell",
+          "at": 0.0
+        }
+      ],
+      "hold": 0.0,
+      "transition": "dip_black",
+      "title": "Usi shaam, 6 baje"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "day",
+      "rain": false,
+      "place": [
+        {
+          "who": "young_mom",
+          "spot": "cust_left",
+          "face": "right"
+        },
+        {
+          "who": "sunita",
+          "spot": "counter_mid",
+          "face": "left"
+        },
+        {
+          "who": "kid",
+          "spot": "cust_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "medium:kid",
+        "move": "static"
+      },
+      "lines": [
+        {
+          "who": "kid",
+          "hi": "थैंक यू, आंटी!",
+          "sub": "Thank you, aunty!",
+          "emotion": "happy",
+          "gesture": "wave"
+        }
+      ],
+      "hold": 0.4,
+      "transition": "cut"
+    },
+    {
+      "type": "endcard",
+      "transition": "dip_black",
+      "lines": [
+        {
+          "who": "narrator",
+          "hi": "स्टॉक ख़त्म होने से पहले अलर्ट। नेक्सकोड पीओएस।",
+          "sub": "Stock khatam hone se pehle alert. Nexcod POS."
+        }
+      ]
+    }
+  ],
+  "ads": {
+    "google_headlines": [
+      "Stock Khatam? Pehle Hi Alert",
+      "Low Stock Alert Dashboard Pe",
+      "Out of Stock Ka Alert",
+      "Grahak Khaali Haath Na Jaaye",
+      "Nexcod POS Medical Store App",
+      "7 Din Free Trial, No Card",
+      "Browser + Android App"
+    ],
+    "google_descriptions": [
+      "Low stock aur out-of-stock alert seedha dashboard pe. Order yaad ke bharose nahi.",
+      "Pharmacy billing aur stock ek jagah. Browser aur Android app. Made in India.",
+      "7 din free trial, koi card nahi. ₹399/3 mahine se plans, UPI se payment."
+    ],
+    "meta_primary_text": "Raat 9:40, baarish, aur ek maa ke haath mein parchi... 'Yeh toh khatam hai.' Nexcod POS dashboard pe low stock aur out-of-stock alert pehle se dikhta hai, taaki order yaad ke bharose na ho aur grahak khaali haath na laute. 7 din free trial, koi card nahi. nexcodpos.in",
+    "meta_headline": "Stock khatam hone se pehle jaano",
+    "cta": "Start Free Trial"
+  }
+}

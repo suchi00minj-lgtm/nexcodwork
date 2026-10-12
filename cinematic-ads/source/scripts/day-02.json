@@ -1,0 +1,393 @@
+{
+  "id": "02",
+  "slug": "khuli-goli-chauntees-rupaye",
+  "style": "comedy sketch",
+  "title": "Chaar goli, chauntees rupaye?!",
+  "problem": "Patte se khuli goli bechte waqt counter staff per-goli daam galat jodta hai, har baar alag rate banta hai aur customer se bahas hoti hai.",
+  "audience": "Medical store owners and pharmacists in India (25-60) who sell loose tablets from strips and rely on staff doing mental maths or a calculator at the counter",
+  "store": "Sharma Medical Store",
+  "music": [
+    {
+      "at_shot": 0,
+      "mood": "comedy"
+    },
+    {
+      "at_shot": 5,
+      "mood": "upbeat"
+    },
+    {
+      "at_shot": 6,
+      "mood": "comedy"
+    }
+  ],
+  "cast": [
+    "raju",
+    "aunty",
+    "rakesh",
+    "narrator"
+  ],
+  "dramatization": true,
+  "shots": [
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "day",
+      "rain": false,
+      "place": [
+        {
+          "who": "raju",
+          "spot": "counter_mid",
+          "face": "left"
+        },
+        {
+          "who": "aunty",
+          "spot": "cust_left",
+          "face": "right"
+        }
+      ],
+      "camera": {
+        "frame": "close:raju",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "raju",
+          "hi": "पैंतीस का पत्ता, चार गोली... चौंतीस!",
+          "sub": "35 ka patta, 4 goli... 34!",
+          "emotion": "confident",
+          "gesture": "thumbs_up"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "keyboard",
+          "at": 0.1
+        }
+      ],
+      "hold": 0.1,
+      "transition": "whip"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "day",
+      "rain": false,
+      "place": [
+        {
+          "who": "raju",
+          "spot": "counter_mid",
+          "face": "left"
+        },
+        {
+          "who": "aunty",
+          "spot": "cust_left",
+          "face": "right"
+        }
+      ],
+      "camera": {
+        "frame": "wide",
+        "move": "static"
+      },
+      "lines": [
+        {
+          "who": "aunty",
+          "hi": "चौंतीस?! बाकी छह गोली एक रुपये में?",
+          "sub": "34?! Baaki 6 goli 1 rupaye mein?",
+          "emotion": "surprised",
+          "gesture": "hands_on_head"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "gasp_hit",
+          "at": 0.1
+        }
+      ],
+      "hold": 0.0,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "day",
+      "rain": false,
+      "place": [
+        {
+          "who": "raju",
+          "spot": "counter_mid",
+          "face": "left"
+        },
+        {
+          "who": "aunty",
+          "spot": "cust_left",
+          "face": "right"
+        }
+      ],
+      "camera": {
+        "frame": "close:raju",
+        "move": "handheld"
+      },
+      "lines": [
+        {
+          "who": "raju",
+          "hi": "साढ़े तीन गुणा चार... इकतालीस?",
+          "sub": "Saadhe teen guna chaar... 41?",
+          "emotion": "worried",
+          "gesture": "think"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "keyboard",
+          "at": 0.0
+        },
+        {
+          "name": "clock_tick",
+          "at": 1.4
+        }
+      ],
+      "hold": 0.1,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "day",
+      "rain": false,
+      "place": [
+        {
+          "who": "raju",
+          "spot": "counter_mid",
+          "face": "left"
+        },
+        {
+          "who": "aunty",
+          "spot": "cust_left",
+          "face": "right"
+        }
+      ],
+      "camera": {
+        "frame": "medium:aunty",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "aunty",
+          "hi": "हर बार नया रेट! शेयर बाज़ार है क्या?",
+          "sub": "Har baar naya rate! Share bazaar hai kya?",
+          "emotion": "angry",
+          "gesture": "arms_crossed"
+        }
+      ],
+      "hold": 0.0,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "day",
+      "rain": false,
+      "place": [
+        {
+          "who": "raju",
+          "spot": "counter_mid",
+          "face": "left"
+        },
+        {
+          "who": "aunty",
+          "spot": "cust_left",
+          "face": "right"
+        },
+        {
+          "who": "rakesh",
+          "spot": "counter_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "medium:rakesh",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "rakesh",
+          "hi": "राजू, गिनती डालो, हिसाब सिस्टम करेगा।",
+          "sub": "Raju, ginti daalo, hisaab system karega.",
+          "emotion": "confident",
+          "gesture": "point"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "whoosh",
+          "at": 0.0
+        }
+      ],
+      "hold": 0.1,
+      "transition": "whip"
+    },
+    {
+      "type": "screen",
+      "img": "billing-items",
+      "zoom": [
+        "bill_lines_r"
+      ],
+      "notes": [
+        {
+          "target": "qty_pack",
+          "text": "Patta"
+        },
+        {
+          "target": "qty_loose",
+          "text": "Khuli goli: sirf ginti"
+        }
+      ],
+      "head": "Khuli goli. Sahi daam. Har baar.",
+      "lines": [
+        {
+          "who": "rakesh",
+          "hi": "खुली गोली अलग, दाम पत्ते की एमआरपी से।",
+          "sub": "Khuli goli alag, daam patte ki MRP se."
+        }
+      ],
+      "hold": 0.2,
+      "transition": "whip"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "day",
+      "rain": false,
+      "place": [
+        {
+          "who": "raju",
+          "spot": "counter_mid",
+          "face": "left"
+        },
+        {
+          "who": "aunty",
+          "spot": "cust_left",
+          "face": "right"
+        },
+        {
+          "who": "rakesh",
+          "spot": "counter_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "two:raju,aunty",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "raju",
+          "hi": "चौदह रुपये, आंटी जी।",
+          "sub": "14 rupaye, aunty ji.",
+          "emotion": "happy",
+          "gesture": "give"
+        },
+        {
+          "who": "raju",
+          "hi": "हिसाब तो मैं भी कर लेता...",
+          "sub": "Hisaab toh main bhi kar leta...",
+          "emotion": "confident",
+          "gesture": "shrug"
+        },
+        {
+          "who": "aunty",
+          "hi": "हाँ बेटा, चौंतीस में!",
+          "sub": "Haan beta, chauntees mein!",
+          "emotion": "happy",
+          "gesture": "point"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "printer",
+          "at": 0.0
+        },
+        {
+          "name": "cash_register",
+          "at": 1.7
+        }
+      ],
+      "hold": 0.0,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "day",
+      "rain": false,
+      "place": [
+        {
+          "who": "raju",
+          "spot": "counter_mid",
+          "face": "left"
+        },
+        {
+          "who": "aunty",
+          "spot": "cust_left",
+          "face": "right"
+        },
+        {
+          "who": "rakesh",
+          "spot": "counter_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "close:raju",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "raju",
+          "hi": "...सिस्टम ज़िंदाबाद।",
+          "sub": "...System zindabad.",
+          "emotion": "happy",
+          "gesture": "facepalm"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "swoosh_up",
+          "at": 1.3
+        }
+      ],
+      "hold": 0.4,
+      "transition": "cut"
+    },
+    {
+      "type": "endcard",
+      "transition": "dip_black",
+      "lines": [
+        {
+          "who": "narrator",
+          "hi": "खुली गोली, सही दाम। नेक्सकोड पीओएस।",
+          "sub": "Khuli goli, sahi daam. Nexcod POS."
+        }
+      ]
+    }
+  ],
+  "ads": {
+    "google_headlines": [
+      "Khuli Goli Ka Sahi Daam",
+      "Loose Goli, Strip MRP Se",
+      "Counter Pe Hisaab Ki Bahas?",
+      "Nexcod POS Pharmacy Billing",
+      "Medical Store Billing App",
+      "7 Din Free Trial, No Card",
+      "Saal Ka Plan ₹1,299 Mein"
+    ],
+    "google_descriptions": [
+      "Patta aur khuli goli alag daalo, daam strip MRP se apne aap banta hai. Calculator nahi.",
+      "GST billing, batch-expiry aur loose goli billing ek jagah. 7 din free, card nahi chahiye.",
+      "Browser aur Android app. ₹399/3 mahine se plans, UPI se payment, koi auto-renew nahi."
+    ],
+    "meta_primary_text": "Chaar goli ka daam ₹34?! Patte se khuli goli bechte waqt galat hisaab matlab customer se bahas aur toota bharosa. Nexcod POS mein patta ek khaane mein, khuli goli doosre mein, daam strip MRP se apne aap. 7 din free trial, koi card nahi. nexcodpos.in",
+    "meta_headline": "Khuli goli, sahi daam. Har baar.",
+    "cta": "Start Free Trial"
+  }
+}

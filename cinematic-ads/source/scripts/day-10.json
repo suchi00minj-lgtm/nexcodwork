@@ -1,0 +1,375 @@
+{
+  "id": "10",
+  "slug": "chaar-panne-ka-bill-purchase-import-scheme",
+  "style": "whiteboard-style explainer with kinetic type",
+  "title": "Chaar Panne ka Bill: Purchase Entry, Samjhaayi Gayi",
+  "problem": "Distributor ke lambe bill ki har line (batch, expiry, MRP, rate) haath se type karne mein ghante lagte hain, aur 10+1 jaisi scheme ka free maal galat chadh jaaye to har item ki cost aur bechne ka rate galat ho jaata hai.",
+  "audience": "Medical store owners, pharmacists and staff who enter distributor purchase bills (weekly 20-100 line bills, scheme/free goods); small towns and cities of north India; Hindi-speaking; 22-55.",
+  "store": "Sharma Medical Store",
+  "music": [
+    {
+      "at_shot": 0,
+      "mood": "comedy"
+    },
+    {
+      "at_shot": 2,
+      "mood": "suspense"
+    },
+    {
+      "at_shot": 5,
+      "mood": "upbeat"
+    }
+  ],
+  "cast": [
+    "mr",
+    "pooja",
+    "narrator"
+  ],
+  "dramatization": true,
+  "shots": [
+    {
+      "type": "scene",
+      "set": "godown",
+      "time": "day",
+      "title": "Godown · Shaam 6 baje",
+      "place": [
+        {
+          "who": "pooja",
+          "spot": "desk",
+          "face": "right"
+        },
+        {
+          "who": "mr",
+          "spot": "right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "wide",
+        "move": "push_in"
+      },
+      "actions": [
+        {
+          "who": "mr",
+          "do": "enter_right",
+          "at": 0.0
+        }
+      ],
+      "lines": [
+        {
+          "who": "mr",
+          "hi": "पूजा जी, बिल... चार पन्ने का!",
+          "sub": "Pooja ji, bill... chaar panne ka!",
+          "emotion": "happy",
+          "gesture": "give"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "car_door",
+          "at": 0.0
+        },
+        {
+          "name": "paper",
+          "at": 1.9
+        }
+      ],
+      "hold": 0.1,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "godown",
+      "time": "day",
+      "place": [
+        {
+          "who": "pooja",
+          "spot": "desk",
+          "face": "right"
+        },
+        {
+          "who": "mr",
+          "spot": "right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "close:pooja",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "pooja",
+          "hi": "छियासी लाइनें... एक-एक टाइप?",
+          "sub": "86 lines... ek-ek type?",
+          "emotion": "worried",
+          "gesture": "hands_on_head"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "paper",
+          "at": 0.1
+        },
+        {
+          "name": "clock_tick",
+          "at": 0.4
+        }
+      ],
+      "hold": 0.1,
+      "transition": "whip"
+    },
+    {
+      "type": "card",
+      "card": "kinetic",
+      "data": {
+        "lines": [
+          "86 line.",
+          "Har line: 6 khaane.",
+          "Haath se."
+        ]
+      },
+      "hold": 2.2,
+      "transition": "whip"
+    },
+    {
+      "type": "scene",
+      "set": "godown",
+      "time": "day",
+      "place": [
+        {
+          "who": "pooja",
+          "spot": "desk",
+          "face": "right"
+        },
+        {
+          "who": "mr",
+          "spot": "right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "two:pooja,mr",
+        "move": "static"
+      },
+      "lines": [
+        {
+          "who": "mr",
+          "hi": "और हाँ, दस पे एक फ़्री स्कीम भी!",
+          "sub": "Aur haan, 10 pe 1 free scheme bhi!",
+          "emotion": "happy",
+          "gesture": "point"
+        }
+      ],
+      "hold": 0.1,
+      "transition": "whip"
+    },
+    {
+      "type": "card",
+      "card": "kinetic",
+      "data": {
+        "lines": [
+          "10 + 1 free",
+          "Galat chadha?",
+          "Cost galat. Rate galat."
+        ]
+      },
+      "lines": [
+        {
+          "who": "narrator",
+          "hi": "ग़लत चढ़ा, तो कॉस्ट ग़लत... रेट ग़लत।",
+          "sub": "Galat chadha, toh cost galat... rate galat."
+        }
+      ],
+      "hold": 0.2,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "godown",
+      "time": "day",
+      "place": [
+        {
+          "who": "pooja",
+          "spot": "desk",
+          "face": "right"
+        },
+        {
+          "who": "mr",
+          "spot": "right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "close:pooja",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "pooja",
+          "hi": "रुकिए — एक्सेल है?",
+          "sub": "Rukiye — Excel hai?",
+          "emotion": "confident",
+          "gesture": "point"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "phone_ding",
+          "at": 2.2
+        }
+      ],
+      "hold": 0.6,
+      "transition": "whip"
+    },
+    {
+      "type": "screen",
+      "img": "purchase-entry",
+      "zoom": [
+        "pe_import"
+      ],
+      "notes": [
+        {
+          "target": "import",
+          "text": "Excel ya bill ki photo"
+        }
+      ],
+      "head": "Import — type nahi",
+      "lines": [
+        {
+          "who": "narrator",
+          "hi": "इम्पोर्ट — एक्सेल से, या बिल की फ़ोटो से।",
+          "sub": "Import — Excel se, ya bill ki photo se."
+        }
+      ],
+      "hold": 0.3
+    },
+    {
+      "type": "screen",
+      "img": "purchase-entry",
+      "zoom": [
+        "pe_scheme"
+      ],
+      "notes": [
+        {
+          "target": "scheme",
+          "text": "10+1? Yahan chuno"
+        },
+        {
+          "target": "free_qty",
+          "text": "Free maal alag"
+        }
+      ],
+      "head": "Scheme ka hisaab",
+      "lines": [
+        {
+          "who": "pooja",
+          "hi": "स्कीम चुनी — फ़्री माल अलग, कॉस्ट साफ़।",
+          "sub": "Scheme chuni — free maal alag, cost saaf.",
+          "emotion": "confident"
+        }
+      ],
+      "hold": 0.3
+    },
+    {
+      "type": "card",
+      "card": "checklist",
+      "data": {
+        "title": "Distributor ka bill, ab aise",
+        "items": [
+          "Excel ya photo se import",
+          "Har line: batch, expiry, MRP",
+          "Scheme: free qty ya kam amount",
+          "Bill ka chhapa total bhi saath"
+        ]
+      },
+      "lines": [
+        {
+          "who": "narrator",
+          "hi": "टाइप कम। जाँच ज़्यादा।",
+          "sub": "Type kam. Jaanch zyada."
+        }
+      ],
+      "hold": 1.2
+    },
+    {
+      "type": "scene",
+      "set": "godown",
+      "time": "day",
+      "place": [
+        {
+          "who": "pooja",
+          "spot": "desk",
+          "face": "right"
+        },
+        {
+          "who": "mr",
+          "spot": "right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "wide",
+        "move": "pull_out"
+      },
+      "lines": [
+        {
+          "who": "pooja",
+          "hi": "हो गया।",
+          "sub": "Ho gaya.",
+          "emotion": "happy",
+          "gesture": "thumbs_up"
+        },
+        {
+          "who": "mr",
+          "hi": "इतनी जल्दी? अगला पाँच पन्ने का लाऊँ?",
+          "sub": "Itni jaldi? Agla paanch panne ka laaoon?",
+          "emotion": "surprised",
+          "gesture": "shrug"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "keyboard",
+          "at": 0.0
+        },
+        {
+          "name": "swoosh_up",
+          "at": 0.4
+        }
+      ],
+      "hold": 0.4,
+      "transition": "fade"
+    },
+    {
+      "type": "endcard",
+      "lines": [
+        {
+          "who": "narrator",
+          "hi": "लंबा बिल, छोटी एंट्री। नेक्सकॉड पीओएस।",
+          "sub": "Lamba bill, chhoti entry. Nexcod POS."
+        }
+      ]
+    }
+  ],
+  "ads": {
+    "google_headlines": [
+      "Lamba Bill, Chhoti Entry",
+      "Purchase Bill Excel Se Import",
+      "Bill Ki Photo Se Entry",
+      "10+1 Scheme Ka Sahi Hisaab",
+      "Free Maal Alag, Cost Saaf",
+      "Medical Store Stock Software",
+      "Type Kam, Jaanch Zyada",
+      "7 Din Free Trial, Card Nahi"
+    ],
+    "google_descriptions": [
+      "Distributor ka bill Excel se import karo ya bill ki photo se. Har line batch, expiry, MRP.",
+      "Scheme: free qty ya kam amount. Free maal alag khaane mein, cost ka hisaab saaf.",
+      "Pharmacy billing aur stock, browser + Android app. 7 din free trial, auto-renew nahi."
+    ],
+    "meta_primary_text": "Chaar panne ka distributor bill, 86 lines, upar se 10+1 scheme... aur dukaan bhi chalani hai. Nexcod POS mein purchase entry Excel se import karo ya bill ki photo se. Scheme chuno: free maal alag khaane mein, cost ka hisaab saaf. Type kam, jaanch zyada. 7 din free trial.",
+    "meta_headline": "Distributor bill: type nahi, import",
+    "cta": "Start Free Trial"
+  }
+}

@@ -1,0 +1,702 @@
+{
+  "id": "09",
+  "slug": "hisaab-machine-ka-waqt-pari-ka",
+  "style": "emotional family short film",
+  "title": "Hisaab Machine Ka, Waqt Pari Ka",
+  "problem": "Din band karne ka cash aur hisaab haath se milane mein ghante lagte hain; dukaan wala raat der tak counter pe atka rehta hai aur parivaar ke khaas pal chhoot jaate hain.",
+  "audience": "Medical store owners (35-55) with families, running the counter themselves and closing cash and accounts by hand every night; north Indian towns; Hindi-speaking; also their spouses who co-run the shop.",
+  "store": "Sharma Medical Store",
+  "music": [
+    {
+      "at_shot": 0,
+      "mood": "tension"
+    },
+    {
+      "at_shot": 3,
+      "mood": "emotional"
+    },
+    {
+      "at_shot": 7,
+      "mood": "calm"
+    },
+    {
+      "at_shot": 8,
+      "mood": "inspiring"
+    },
+    {
+      "at_shot": 13,
+      "mood": "emotional"
+    }
+  ],
+  "cast": [
+    "rakesh",
+    "raju",
+    "kid",
+    "sunita",
+    "narrator"
+  ],
+  "dramatization": true,
+  "shots": [
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "night",
+      "title": "Shukravaar · Raat 8:10",
+      "place": [
+        {
+          "who": "rakesh",
+          "spot": "counter_mid",
+          "face": "left"
+        },
+        {
+          "who": "raju",
+          "spot": "counter_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "close:rakesh",
+        "move": "handheld"
+      },
+      "lines": [
+        {
+          "who": "rakesh",
+          "hi": "अड़तीस सौ बीस... नहीं। फिर से।",
+          "sub": "3,820... nahi. Phir se.",
+          "emotion": "worried",
+          "gesture": "count_cash"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "clock_tick",
+          "at": 0.0
+        },
+        {
+          "name": "phone_ding",
+          "at": 0.8
+        },
+        {
+          "name": "phone_ding",
+          "at": 2.3
+        }
+      ],
+      "hold": 0.3,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "counter_closeup",
+      "time": "night",
+      "place": [],
+      "camera": {
+        "frame": "insert",
+        "move": "push_in"
+      },
+      "lines": [],
+      "sfx": [
+        {
+          "name": "phone_ding",
+          "at": 0.2
+        },
+        {
+          "name": "paper",
+          "at": 0.7
+        },
+        {
+          "name": "phone_ding",
+          "at": 1.5
+        }
+      ],
+      "hold": 1.6,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "night",
+      "place": [
+        {
+          "who": "rakesh",
+          "spot": "counter_mid",
+          "face": "right"
+        },
+        {
+          "who": "raju",
+          "spot": "counter_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "two:rakesh,raju",
+        "move": "static"
+      },
+      "lines": [
+        {
+          "who": "raju",
+          "hi": "भैया, फ़ोन... तीसरी बार!",
+          "sub": "Bhaiya, phone... teesri baar!",
+          "emotion": "worried",
+          "gesture": "point"
+        },
+        {
+          "who": "rakesh",
+          "hi": "बस, हिसाब मिल जाए।",
+          "sub": "Bas, hisaab mil jaaye.",
+          "emotion": "worried",
+          "gesture": "count_cash"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "phone_ding",
+          "at": 0.3
+        }
+      ],
+      "hold": 0.3,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "night",
+      "title": "Raat 10:20",
+      "place": [
+        {
+          "who": "rakesh",
+          "spot": "counter_mid",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "wide",
+        "move": "pull_out"
+      },
+      "lines": [],
+      "sfx": [
+        {
+          "name": "clock_tick",
+          "at": 0.0
+        },
+        {
+          "name": "paper",
+          "at": 0.9
+        }
+      ],
+      "hold": 1.8,
+      "transition": "dip_black"
+    },
+    {
+      "type": "scene",
+      "set": "home",
+      "time": "night",
+      "place": [
+        {
+          "who": "sunita",
+          "spot": "sofa_left",
+          "face": "right"
+        },
+        {
+          "who": "kid",
+          "spot": "sofa_right",
+          "face": "right"
+        },
+        {
+          "who": "rakesh",
+          "spot": "stand",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "wide",
+        "move": "static"
+      },
+      "actions": [
+        {
+          "who": "rakesh",
+          "do": "enter_right",
+          "at": 0.0
+        }
+      ],
+      "lines": [
+        {
+          "who": "rakesh",
+          "hi": "परी? बेटा... पापा आ गए।",
+          "sub": "Pari? Beta... Papa aa gaye.",
+          "emotion": "worried",
+          "gesture": "idle"
+        }
+      ],
+      "hold": 0.2,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "home",
+      "time": "night",
+      "place": [
+        {
+          "who": "sunita",
+          "spot": "sofa_left",
+          "face": "right"
+        },
+        {
+          "who": "kid",
+          "spot": "sofa_right",
+          "face": "right"
+        },
+        {
+          "who": "rakesh",
+          "spot": "stand",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "close:kid",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "kid",
+          "hi": "फ़ंक्शन खत्म, पापा।",
+          "sub": "Function khatam, Papa.",
+          "emotion": "sad",
+          "gesture": "idle"
+        },
+        {
+          "who": "kid",
+          "hi": "मैंने स्टेज से आपको बहुत ढूँढा।",
+          "sub": "Maine stage se aapko bahut dhoondha.",
+          "emotion": "sad",
+          "gesture": "shrug"
+        }
+      ],
+      "hold": 0.4,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "home",
+      "time": "night",
+      "place": [
+        {
+          "who": "sunita",
+          "spot": "sofa_left",
+          "face": "right"
+        },
+        {
+          "who": "rakesh",
+          "spot": "stand",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "two:sunita,rakesh",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "sunita",
+          "hi": "रोज़ का यही हिसाब है, जी।",
+          "sub": "Roz ka yahi hisaab hai, ji.",
+          "emotion": "sad",
+          "gesture": "idle"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "clock_tick",
+          "at": 0.2
+        }
+      ],
+      "hold": 1.2,
+      "transition": "dip_black"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "day",
+      "title": "Agli subah",
+      "place": [
+        {
+          "who": "sunita",
+          "spot": "counter_left",
+          "face": "right"
+        },
+        {
+          "who": "rakesh",
+          "spot": "counter_mid",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "two:sunita,rakesh",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "sunita",
+          "hi": "रात का हिसाब अब ये जोड़ेगा।",
+          "sub": "Raat ka hisaab ab ye jodega.",
+          "emotion": "confident",
+          "gesture": "type"
+        },
+        {
+          "who": "rakesh",
+          "hi": "और मैं?",
+          "sub": "Aur main?",
+          "emotion": "surprised",
+          "gesture": "shrug"
+        },
+        {
+          "who": "sunita",
+          "hi": "आप... टाइम पे घर आओगे।",
+          "sub": "Aap... time pe ghar aaoge.",
+          "emotion": "happy",
+          "gesture": "nod"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "keyboard",
+          "at": 0.5
+        }
+      ],
+      "hold": 0.4,
+      "transition": "fade"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "night",
+      "title": "Teen hafte baad · Raat 8:05",
+      "place": [
+        {
+          "who": "rakesh",
+          "spot": "counter_mid",
+          "face": "left"
+        },
+        {
+          "who": "raju",
+          "spot": "counter_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "medium:rakesh",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "rakesh",
+          "hi": "साढ़े आठ बजे, परी का एनुअल डे।",
+          "sub": "Saadhe aath baje, Pari ka Annual Day.",
+          "emotion": "confident",
+          "gesture": "type"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "clock_tick",
+          "at": 0.0
+        },
+        {
+          "name": "keyboard",
+          "at": 0.4
+        }
+      ],
+      "hold": 0.2,
+      "transition": "cut"
+    },
+    {
+      "type": "screen",
+      "img": "reports-sales",
+      "zoom": [
+        "zrep"
+      ],
+      "head": "Day-End Z-Report",
+      "notes": [
+        {
+          "target": "z_cash",
+          "text": "Cash kitna aaya"
+        },
+        {
+          "target": "z_credit",
+          "text": "Udhaar alag"
+        }
+      ],
+      "lines": [
+        {
+          "who": "rakesh",
+          "hi": "कैश, यूपीआई, उधार — अपने-आप अलग-अलग।",
+          "sub": "Cash, UPI, udhaar — apne-aap alag-alag.",
+          "emotion": "happy"
+        }
+      ],
+      "hold": 0.3,
+      "transition": "cut"
+    },
+    {
+      "type": "screen",
+      "img": "books-pl",
+      "zoom": [
+        "pl"
+      ],
+      "notes": [
+        {
+          "target": "net_profit",
+          "text": "Munafa, ek nazar mein"
+        }
+      ],
+      "lines": [
+        {
+          "who": "rakesh",
+          "hi": "और मुनाफ़ा भी... बिना कैलकुलेटर।",
+          "sub": "Aur munafa bhi... bina calculator.",
+          "emotion": "happy"
+        }
+      ],
+      "hold": 0.3,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "night",
+      "place": [
+        {
+          "who": "rakesh",
+          "spot": "counter_mid",
+          "face": "right"
+        },
+        {
+          "who": "raju",
+          "spot": "counter_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "two:rakesh,raju",
+        "move": "static"
+      },
+      "lines": [
+        {
+          "who": "rakesh",
+          "hi": "कैश भी मिल गया!",
+          "sub": "Cash bhi mil gaya!",
+          "emotion": "relieved",
+          "gesture": "count_cash"
+        },
+        {
+          "who": "raju",
+          "hi": "आठ बजकर बारह... भागो, भैया!",
+          "sub": "8:12... bhaago, Bhaiya!",
+          "emotion": "happy",
+          "gesture": "point"
+        },
+        {
+          "who": "rakesh",
+          "hi": "शटर तू गिरा देना!",
+          "sub": "Shutter tu gira dena!",
+          "emotion": "happy",
+          "gesture": "wave"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "cash_register",
+          "at": 0.3
+        }
+      ],
+      "hold": 0.2,
+      "transition": "whip"
+    },
+    {
+      "type": "scene",
+      "set": "store_front",
+      "time": "night",
+      "place": [
+        {
+          "who": "rakesh",
+          "spot": "door",
+          "face": "right"
+        }
+      ],
+      "camera": {
+        "frame": "wide",
+        "move": "pan_right"
+      },
+      "actions": [
+        {
+          "who": "rakesh",
+          "do": "exit_right",
+          "at": 0.3
+        }
+      ],
+      "lines": [],
+      "sfx": [
+        {
+          "name": "scooter",
+          "at": 0.7
+        },
+        {
+          "name": "bike_horn",
+          "at": 1.5
+        }
+      ],
+      "hold": 1.6,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "home",
+      "time": "night",
+      "title": "Raat 8:24",
+      "place": [
+        {
+          "who": "sunita",
+          "spot": "sofa_left",
+          "face": "right"
+        },
+        {
+          "who": "kid",
+          "spot": "sofa_right",
+          "face": "right"
+        },
+        {
+          "who": "rakesh",
+          "spot": "stand",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "wide",
+        "move": "static"
+      },
+      "actions": [
+        {
+          "who": "rakesh",
+          "do": "enter_right",
+          "at": 0.0
+        }
+      ],
+      "lines": [
+        {
+          "who": "rakesh",
+          "hi": "परी! चलो... आगे वाली सीट हमारी!",
+          "sub": "Pari! Chalo... aage wali seat hamari!",
+          "emotion": "happy",
+          "gesture": "wave"
+        }
+      ],
+      "hold": 0.2,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "home",
+      "time": "night",
+      "place": [
+        {
+          "who": "sunita",
+          "spot": "sofa_left",
+          "face": "right"
+        },
+        {
+          "who": "kid",
+          "spot": "sofa_right",
+          "face": "right"
+        },
+        {
+          "who": "rakesh",
+          "spot": "stand",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "close:kid",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "kid",
+          "hi": "पापा! आप टाइम पे आ गए!",
+          "sub": "Papa! Aap time pe aa gaye!",
+          "emotion": "happy",
+          "gesture": "clap"
+        }
+      ],
+      "hold": 0.4,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "home",
+      "time": "night",
+      "place": [
+        {
+          "who": "sunita",
+          "spot": "sofa_left",
+          "face": "right"
+        },
+        {
+          "who": "rakesh",
+          "spot": "stand",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "two:sunita,rakesh",
+        "move": "static"
+      },
+      "lines": [
+        {
+          "who": "sunita",
+          "hi": "आज इतनी जल्दी?",
+          "sub": "Aaj itni jaldi?",
+          "emotion": "happy",
+          "gesture": "idle"
+        },
+        {
+          "who": "rakesh",
+          "hi": "हिसाब मशीन का... वक़्त परी का।",
+          "sub": "Hisaab machine ka... waqt Pari ka.",
+          "emotion": "happy",
+          "gesture": "nod"
+        }
+      ],
+      "hold": 0.6,
+      "transition": "fade"
+    },
+    {
+      "type": "endcard",
+      "lines": [
+        {
+          "who": "narrator",
+          "hi": "दिन का हिसाब, मिनटों में। नेक्सकॉड पीओएस।",
+          "sub": "Din ka hisaab, minuton mein. Nexcod POS."
+        }
+      ]
+    }
+  ],
+  "ads": {
+    "google_headlines": [
+      "Day-End Hisaab, Minuton Mein",
+      "Z-Report: Cash, UPI, Udhaar",
+      "Raat Ka Hisaab, Jaldi Khatam",
+      "P&L Ek Nazar Mein",
+      "Medical Store Billing App",
+      "Ghar Time Pe Pahuncho",
+      "7 Din Free Trial, No Card",
+      "Made In India Pharmacy POS"
+    ],
+    "google_descriptions": [
+      "Day-End Z-report mein cash, UPI aur udhaar alag-alag. P&L aur Tally export bhi.",
+      "Din bhar ke bill Nexcod POS mein, toh raat ka hisaab bhi wahi. Browser + Android app.",
+      "Plans ₹1,299/saal (≈₹108/mahina). No auto-renew, UPI se payment. 7 din free trial."
+    ],
+    "meta_primary_text": "Har raat ghanto ka hisaab, aur ghar pe koi intezaar karta reh jaata hai. Nexcod POS mein din bhar ke bill bante hain, toh Day-End Z-report cash, UPI aur udhaar alag-alag dikha deta hai, aur P&L ek nazar mein. Hisaab machine ka, waqt apnon ka. 7 din free trial, card nahi chahiye.",
+    "meta_headline": "Hisaab machine ka, waqt apnon ka",
+    "cta": "Start Free Trial"
+  }
+}

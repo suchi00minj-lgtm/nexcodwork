@@ -1,0 +1,498 @@
+{
+  "id": "15",
+  "slug": "ek-counter-se-manifesto-aur-offer",
+  "style": "brand manifesto film + offer",
+  "title": "Ek Counter Se: Chhoti Dukaan ka Software",
+  "problem": "Chhoti medical store ko lagta raha ki achha pharmacy software ya toh bahut mehenga hai ya itna mushkil ki chalaya hi na jaaye; isliye dukaan bahi, calculator aur yaaddaasht ke bharose chalti rahi.",
+  "audience": "Small and family-run medical stores across India (single counter, 1-4 staff) that have not adopted software because of cost or complexity; owners 30-65 and their family; Hindi-speaking; retarget viewers of the earlier campaign films.",
+  "store": "Sharma Medical Store",
+  "music": [
+    {
+      "at_shot": 0,
+      "mood": "emotional"
+    },
+    {
+      "at_shot": 5,
+      "mood": "suspense"
+    },
+    {
+      "at_shot": 7,
+      "mood": "inspiring"
+    },
+    {
+      "at_shot": 11,
+      "mood": "upbeat"
+    },
+    {
+      "at_shot": 12,
+      "mood": "inspiring"
+    }
+  ],
+  "cast": [
+    "rakesh",
+    "papa",
+    "aman",
+    "sunita",
+    "raju",
+    "pooja",
+    "aunty",
+    "uncle",
+    "young_mom",
+    "kid",
+    "narrator"
+  ],
+  "dramatization": true,
+  "shots": [
+    {
+      "type": "scene",
+      "set": "store_front",
+      "time": "day",
+      "title": "Subah 8:05",
+      "place": [
+        {
+          "who": "rakesh",
+          "spot": "door",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "wide",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "narrator",
+          "hi": "कहते हैं — छोटी दुकान को सॉफ़्टवेयर की क्या ज़रूरत?",
+          "sub": "Kehte hain — chhoti dukaan ko software ki kya zaroorat?"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "scooter",
+          "at": 0.0
+        },
+        {
+          "name": "bike_horn",
+          "at": 1.6
+        }
+      ],
+      "hold": 0.2,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "day",
+      "place": [
+        {
+          "who": "papa",
+          "spot": "counter_mid",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "close:papa",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "narrator",
+          "hi": "जिसने चालीस साल, बही में पाई-पाई जोड़ी...",
+          "sub": "Jisne chaalis saal, bahi mein paai-paai jodi..."
+        }
+      ],
+      "sfx": [
+        {
+          "name": "paper",
+          "at": 0.3
+        }
+      ],
+      "hold": 0.2,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "day",
+      "place": [
+        {
+          "who": "raju",
+          "spot": "counter_left",
+          "face": "left"
+        },
+        {
+          "who": "aunty",
+          "spot": "cust_left",
+          "face": "right"
+        }
+      ],
+      "camera": {
+        "frame": "two:aunty,raju",
+        "move": "static"
+      },
+      "lines": [
+        {
+          "who": "narrator",
+          "hi": "जो खुली गोली का दाम भी ईमानदारी से गिने...",
+          "sub": "Jo khuli goli ka daam bhi imaandaari se gine..."
+        }
+      ],
+      "sfx": [
+        {
+          "name": "crowd",
+          "at": 0.0
+        }
+      ],
+      "hold": 0.2,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_front",
+      "time": "night",
+      "rain": true,
+      "place": [
+        {
+          "who": "kid",
+          "spot": "walk_left",
+          "face": "right"
+        },
+        {
+          "who": "young_mom",
+          "spot": "door",
+          "face": "right"
+        },
+        {
+          "who": "sunita",
+          "spot": "walk_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "two:young_mom,sunita",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "narrator",
+          "hi": "जो शटर गिराते हुए भी, एक माँ के लिए रुक जाए...",
+          "sub": "Jo shutter giraate hue bhi, ek maa ke liye ruk jaaye..."
+        }
+      ],
+      "sfx": [
+        {
+          "name": "rain",
+          "at": 0.0
+        },
+        {
+          "name": "thunder",
+          "at": 1.4
+        }
+      ],
+      "hold": 0.2,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "day",
+      "place": [
+        {
+          "who": "rakesh",
+          "spot": "counter_mid",
+          "face": "right"
+        },
+        {
+          "who": "uncle",
+          "spot": "cust_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "two:rakesh,uncle",
+        "move": "static"
+      },
+      "lines": [
+        {
+          "who": "narrator",
+          "hi": "जो उधार भी दे... और रिश्ता भी निभाए...",
+          "sub": "Jo udhaar bhi de... aur rishta bhi nibhaaye..."
+        }
+      ],
+      "hold": 0.2,
+      "transition": "dip_black"
+    },
+    {
+      "type": "card",
+      "card": "kinetic",
+      "data": {
+        "lines": [
+          "Bahut mehenga.",
+          "Bahut mushkil.",
+          "Humare liye nahi?"
+        ]
+      },
+      "lines": [
+        {
+          "who": "narrator",
+          "hi": "उसके लिए सॉफ़्टवेयर... महँगा था, या उलझा।",
+          "sub": "Uske liye software... mehenga tha, ya uljha."
+        }
+      ],
+      "hold": 0.3,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "night",
+      "place": [
+        {
+          "who": "rakesh",
+          "spot": "counter_mid",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "close:rakesh",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "rakesh",
+          "hi": "हमारे जैसी दुकान के लिए... कोई बनाता भी है?",
+          "sub": "Humare jaisi dukaan ke liye... koi banata bhi hai?",
+          "emotion": "thinking",
+          "gesture": "think"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "clock_tick",
+          "at": 0.0
+        }
+      ],
+      "hold": 0.3,
+      "transition": "fade"
+    },
+    {
+      "type": "card",
+      "card": "title",
+      "data": {
+        "lines": [
+          "Ek counter se",
+          "shuru hua."
+        ],
+        "sub": "NEXCOD POS · MADE IN INDIA"
+      },
+      "lines": [
+        {
+          "who": "narrator",
+          "hi": "नेक्सकॉड पीओएस — एक फ़ार्मेसी काउंटर से शुरू हुआ।",
+          "sub": "Nexcod POS — ek pharmacy counter se shuru hua."
+        },
+        {
+          "who": "narrator",
+          "hi": "इसलिए ये काउंटर की ज़ुबान बोलता है।",
+          "sub": "Isliye ye counter ki zubaan bolta hai."
+        }
+      ],
+      "hold": 0.2,
+      "transition": "cut"
+    },
+    {
+      "type": "screen",
+      "img": "dashboard",
+      "zoom": [
+        "dash_alert"
+      ],
+      "notes": [
+        {
+          "target": "expiry_tile",
+          "text": "Expiry pehle se"
+        },
+        {
+          "target": "lowstock_tile",
+          "text": "Stock kam? Alert"
+        }
+      ],
+      "lines": [
+        {
+          "who": "narrator",
+          "hi": "एक्सपायरी, स्टॉक, उधार — रोज़ का झंझट, एक जगह।",
+          "sub": "Expiry, stock, udhaar — roz ka jhanjhat, ek jagah."
+        }
+      ],
+      "hold": 0.3
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "day",
+      "place": [
+        {
+          "who": "papa",
+          "spot": "counter_mid",
+          "face": "left"
+        },
+        {
+          "who": "aman",
+          "spot": "counter_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "two:papa,aman",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "papa",
+          "hi": "अरे! ये तो अपने बस का निकला।",
+          "sub": "Arre! Ye toh apne bas ka nikla.",
+          "emotion": "happy",
+          "gesture": "type"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "keyboard",
+          "at": 0.0
+        },
+        {
+          "name": "printer",
+          "at": 2.4
+        }
+      ],
+      "hold": 0.3,
+      "transition": "cut"
+    },
+    {
+      "type": "card",
+      "card": "stat",
+      "data": {
+        "big": "24",
+        "label": "rajyon aur UT mein, counters par",
+        "small": "MADE IN INDIA"
+      },
+      "lines": [
+        {
+          "who": "narrator",
+          "hi": "भारत में बना। आज चौबीस राज्यों और यूटी में।",
+          "sub": "Bharat mein bana. Aaj 24 rajyon aur UT mein."
+        }
+      ],
+      "hold": 0.3,
+      "transition": "cut"
+    },
+    {
+      "type": "card",
+      "card": "price",
+      "data": {},
+      "lines": [
+        {
+          "who": "narrator",
+          "hi": "बारह सौ निन्यानवे साल का — लगभग एक सौ आठ महीना।",
+          "sub": "₹1,299 saal ka — lagbhag ₹108 mahina."
+        },
+        {
+          "who": "narrator",
+          "hi": "सात दिन फ़्री ट्रायल। कार्ड नहीं, ऑटो-रिन्यू नहीं।",
+          "sub": "7 din free trial. Card nahi, auto-renew nahi."
+        }
+      ],
+      "hold": 0.3,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "day",
+      "place": [
+        {
+          "who": "raju",
+          "spot": "counter_left",
+          "face": "right"
+        },
+        {
+          "who": "rakesh",
+          "spot": "counter_mid",
+          "face": "left"
+        },
+        {
+          "who": "pooja",
+          "spot": "counter_right",
+          "face": "left"
+        },
+        {
+          "who": "aunty",
+          "spot": "cust_left",
+          "face": "right"
+        },
+        {
+          "who": "sunita",
+          "spot": "cust_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "wide",
+        "move": "pull_out"
+      },
+      "lines": [
+        {
+          "who": "narrator",
+          "hi": "दावे हम नहीं करेंगे।",
+          "sub": "Daave hum nahi karenge."
+        },
+        {
+          "who": "narrator",
+          "hi": "चलाकर ख़ुद देखिए।",
+          "sub": "Chala kar khud dekhiye."
+        }
+      ],
+      "sfx": [
+        {
+          "name": "door_bell",
+          "at": 0.1
+        },
+        {
+          "name": "camera_click",
+          "at": 3.9
+        }
+      ],
+      "hold": 0.6,
+      "transition": "dip_black"
+    },
+    {
+      "type": "endcard",
+      "lines": [
+        {
+          "who": "narrator",
+          "hi": "नेक्सकॉड पीओएस — आपके काउंटर के नाप का।",
+          "sub": "Nexcod POS — aapke counter ke naap ka."
+        }
+      ]
+    }
+  ],
+  "ads": {
+    "google_headlines": [
+      "Chhoti Dukaan, Poora Software",
+      "Ek Counter Se Shuru Hua",
+      "Platinum ₹1,299/Saal",
+      "Lagbhag ₹108 Mahina",
+      "7 Din Free. Auto-Renew Nahi",
+      "Made In India Pharmacy POS",
+      "24 Rajya Aur UT Mein",
+      "Pehle Chalao, Phir Lo"
+    ],
+    "google_descriptions": [
+      "Pharmacy billing aur stock software. Platinum ₹1,299/saal. 7 din free trial, card nahi.",
+      "Batch, expiry, udhaar, GST — ek jagah. Browser aur Android app. Made in India.",
+      "Auto-renew nahi, UPI se payment. 24 rajyon aur UT mein istemaal. nexcodpos.in"
+    ],
+    "meta_primary_text": "Kehte the chhoti dukaan ko software ki kya zaroorat. Software ya toh mehenga tha, ya uljha hua. Nexcod POS ek pharmacy ke counter se shuru hua: batch, expiry, udhaar, GST, sab counter ki zubaan mein. Made in India, 24 rajyon aur UT mein. ₹1,299/saal. 7 din free, auto-renew nahi.",
+    "meta_headline": "Aapke counter ke naap ka software",
+    "cta": "Start Free Trial"
+  }
+}

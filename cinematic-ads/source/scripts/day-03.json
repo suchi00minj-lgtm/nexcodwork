@@ -1,0 +1,547 @@
+{
+  "id": "03",
+  "slug": "das-minute-inspector-h1-register",
+  "style": "thriller with countdown",
+  "title": "Das Minute: Inspector Aa Rahe Hain",
+  "problem": "Drug inspector achanak aate hain, aur rush ke dino mein haath ka Schedule H1 register adhoora reh jaata hai: kaunsi H1 dawa, kis mareez ko, kis doctor ki parchi pe.",
+  "audience": "Medical store owners, licence holders and pharmacists in Indian towns (30-60) who still keep Schedule H/H1 registers by hand and worry about inspections; Hindi-speaking.",
+  "store": "Sharma Medical Store",
+  "music": [
+    {
+      "at_shot": 0,
+      "mood": "tension"
+    },
+    {
+      "at_shot": 5,
+      "mood": "suspense"
+    },
+    {
+      "at_shot": 7,
+      "mood": "inspiring"
+    },
+    {
+      "at_shot": 12,
+      "mood": "upbeat"
+    }
+  ],
+  "cast": [
+    "raju",
+    "rakesh",
+    "sunita",
+    "inspector",
+    "narrator"
+  ],
+  "dramatization": true,
+  "shots": [
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "day",
+      "title": "Somvaar, 11:50 subah",
+      "place": [
+        {
+          "who": "raju",
+          "spot": "cust_right",
+          "face": "left"
+        },
+        {
+          "who": "rakesh",
+          "spot": "counter_left",
+          "face": "right"
+        },
+        {
+          "who": "sunita",
+          "spot": "counter_mid",
+          "face": "right"
+        }
+      ],
+      "camera": {
+        "frame": "close:raju",
+        "move": "handheld"
+      },
+      "lines": [
+        {
+          "who": "raju",
+          "hi": "भैया! ड्रग इंस्पेक्टर — बगल वाली दुकान में!",
+          "sub": "Bhaiya! Drug inspector — bagal wali dukaan mein!",
+          "emotion": "surprised",
+          "gesture": "point"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "door_bell",
+          "at": 0.0
+        },
+        {
+          "name": "heartbeat",
+          "at": 0.3
+        }
+      ],
+      "hold": 0.1,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "day",
+      "place": [
+        {
+          "who": "rakesh",
+          "spot": "counter_left",
+          "face": "right"
+        },
+        {
+          "who": "sunita",
+          "spot": "counter_mid",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "close:rakesh",
+        "move": "handheld"
+      },
+      "lines": [
+        {
+          "who": "rakesh",
+          "hi": "एच-वन रजिस्टर! मंगलवार से पन्ने खाली!",
+          "sub": "H1 register! Mangalvaar se panne khaali!",
+          "emotion": "worried",
+          "gesture": "hands_on_head"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "heartbeat",
+          "at": 0.0
+        },
+        {
+          "name": "paper",
+          "at": 1.8
+        }
+      ],
+      "hold": 0.1,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "counter_closeup",
+      "time": "day",
+      "place": [],
+      "camera": {
+        "frame": "insert",
+        "move": "push_in"
+      },
+      "lines": [],
+      "sfx": [
+        {
+          "name": "paper",
+          "at": 0.1
+        },
+        {
+          "name": "clock_tick",
+          "at": 0.4
+        },
+        {
+          "name": "heartbeat",
+          "at": 0.9
+        }
+      ],
+      "hold": 1.5,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "day",
+      "title": "11:51",
+      "place": [
+        {
+          "who": "rakesh",
+          "spot": "counter_left",
+          "face": "right"
+        },
+        {
+          "who": "sunita",
+          "spot": "counter_mid",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "two:rakesh,sunita",
+        "move": "handheld"
+      },
+      "lines": [
+        {
+          "who": "rakesh",
+          "hi": "दस मिनट हैं, सुनीता!",
+          "sub": "Das minute hain, Sunita!",
+          "emotion": "worried",
+          "gesture": "point"
+        },
+        {
+          "who": "sunita",
+          "hi": "घबराइए मत।",
+          "sub": "Ghabraiye mat.",
+          "emotion": "confident",
+          "gesture": "type"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "heartbeat",
+          "at": 0.0
+        },
+        {
+          "name": "keyboard",
+          "at": 3.5
+        }
+      ],
+      "hold": 0.4,
+      "transition": "cut"
+    },
+    {
+      "type": "card",
+      "card": "countdown",
+      "data": {
+        "from": 10,
+        "label": "Inspector pahunchne mein"
+      },
+      "lines": [],
+      "hold": 1.6,
+      "transition": "flash"
+    },
+    {
+      "type": "scene",
+      "set": "store_front",
+      "time": "day",
+      "rain": false,
+      "title": "12:00",
+      "place": [
+        {
+          "who": "inspector",
+          "spot": "walk_left",
+          "face": "right"
+        }
+      ],
+      "camera": {
+        "frame": "wide",
+        "move": "push_in"
+      },
+      "actions": [
+        {
+          "who": "inspector",
+          "do": "walk_to:door",
+          "at": 0.3
+        }
+      ],
+      "lines": [],
+      "sfx": [
+        {
+          "name": "car_door",
+          "at": 0.0
+        },
+        {
+          "name": "heartbeat",
+          "at": 0.8
+        },
+        {
+          "name": "clock_tick",
+          "at": 1.4
+        }
+      ],
+      "hold": 1.8,
+      "transition": "dip_black"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "day",
+      "place": [
+        {
+          "who": "inspector",
+          "spot": "cust_left",
+          "face": "right"
+        },
+        {
+          "who": "rakesh",
+          "spot": "counter_left",
+          "face": "left"
+        },
+        {
+          "who": "sunita",
+          "spot": "counter_mid",
+          "face": "left"
+        },
+        {
+          "who": "raju",
+          "spot": "cust_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "medium:inspector",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "inspector",
+          "hi": "नमस्ते। एच-वन रजिस्टर दिखाइए।",
+          "sub": "Namaste. H1 register dikhaiye.",
+          "emotion": "neutral",
+          "gesture": "namaste"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "door_bell",
+          "at": 0.0
+        },
+        {
+          "name": "heartbeat",
+          "at": 1.0
+        }
+      ],
+      "hold": 0.1,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "day",
+      "place": [
+        {
+          "who": "inspector",
+          "spot": "cust_left",
+          "face": "right"
+        },
+        {
+          "who": "rakesh",
+          "spot": "counter_left",
+          "face": "left"
+        },
+        {
+          "who": "sunita",
+          "spot": "counter_mid",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "close:rakesh",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "sunita",
+          "hi": "जी सर, ये रहा।",
+          "sub": "Ji sir, ye raha.",
+          "emotion": "confident",
+          "gesture": "point"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "heartbeat",
+          "at": 0.0
+        },
+        {
+          "name": "keyboard",
+          "at": 0.6
+        }
+      ],
+      "hold": 0.3,
+      "transition": "cut"
+    },
+    {
+      "type": "screen",
+      "img": "reports-registers",
+      "zoom": [
+        "registers"
+      ],
+      "head": "Schedule H / H1 / X Register",
+      "lines": [
+        {
+          "who": "sunita",
+          "hi": "हर एच-वन बिल से भरता है — मरीज़, डॉक्टर, दवा।",
+          "sub": "Har H1 bill se bharta hai — mareez, doctor, dawa."
+        }
+      ],
+      "hold": 0.2
+    },
+    {
+      "type": "screen",
+      "img": "schedule-check",
+      "zoom": [
+        "sched"
+      ],
+      "notes": [
+        {
+          "target": "untagged",
+          "text": "Tag se chhooti dawa"
+        },
+        {
+          "target": "apply",
+          "text": "Ek click mein tag"
+        }
+      ],
+      "lines": [
+        {
+          "who": "sunita",
+          "hi": "शेड्यूल वाली हर दवा पे पहले से टैग।",
+          "sub": "Schedule wali har dawa pe pehle se tag."
+        }
+      ],
+      "hold": 0.2
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "day",
+      "place": [
+        {
+          "who": "inspector",
+          "spot": "cust_left",
+          "face": "right"
+        },
+        {
+          "who": "sunita",
+          "spot": "counter_mid",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "two:inspector,sunita",
+        "move": "static"
+      },
+      "lines": [
+        {
+          "who": "inspector",
+          "hi": "पर्चियों की कॉपी?",
+          "sub": "Parchiyon ki copy?",
+          "emotion": "thinking",
+          "gesture": "think"
+        },
+        {
+          "who": "sunita",
+          "hi": "इस फ़ाइल में, बिल नंबर के साथ।",
+          "sub": "Is file mein, bill number ke saath.",
+          "emotion": "confident",
+          "gesture": "give"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "paper",
+          "at": 2.0
+        }
+      ],
+      "hold": 0.2,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "day",
+      "place": [
+        {
+          "who": "inspector",
+          "spot": "cust_left",
+          "face": "right"
+        },
+        {
+          "who": "sunita",
+          "spot": "counter_mid",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "close:inspector",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "inspector",
+          "hi": "रिकॉर्ड साफ़ है। ऐसे ही रखिए।",
+          "sub": "Record saaf hai. Aise hi rakhiye.",
+          "emotion": "happy",
+          "gesture": "nod"
+        }
+      ],
+      "hold": 0.3,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "day",
+      "place": [
+        {
+          "who": "rakesh",
+          "spot": "counter_left",
+          "face": "right"
+        },
+        {
+          "who": "sunita",
+          "spot": "counter_mid",
+          "face": "left"
+        },
+        {
+          "who": "raju",
+          "spot": "cust_right",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "two:rakesh,sunita",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "rakesh",
+          "hi": "उफ़्फ़... दस मिनट थे या दस साल!",
+          "sub": "Uff... das minute the ya das saal!",
+          "emotion": "relieved",
+          "gesture": "hands_on_head"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "cash_register",
+          "at": 2.6
+        }
+      ],
+      "hold": 0.5,
+      "transition": "fade"
+    },
+    {
+      "type": "endcard",
+      "lines": [
+        {
+          "who": "narrator",
+          "hi": "शेड्यूल रजिस्टर, हर बिल से। नेक्सकॉड पीओएस।",
+          "sub": "Schedule register, har bill se. Nexcod POS."
+        }
+      ]
+    }
+  ],
+  "ads": {
+    "google_headlines": [
+      "H1 Register Ab Bill Se",
+      "Schedule H/H1/X Register",
+      "Drug Register Har Bill Se",
+      "Register Haath Se Kyun Likhein",
+      "Pharmacy Billing Software",
+      "7 Din Free Trial, Card Nahi",
+      "Made In India Pharmacy POS",
+      "₹1,299/Saal, No Auto-Renew"
+    ],
+    "google_descriptions": [
+      "Schedule H, H1 aur X register har bill se bharta hai. Panne dhoondhne ki zaroorat nahi.",
+      "Schedule check se dawaon par H/H1/X tag. GST billing, batch aur expiry. 7 din free.",
+      "Medical store billing aur stock ek jagah. Browser aur Android app. UPI se payment."
+    ],
+    "meta_primary_text": "Inspector das minute door, aur H1 register ke panne khaali? Nexcod POS mein Schedule H/H1/X register har bill se bharta hai: mareez, doctor, dawa, taareekh-waar. Billing, stock aur drug registers ek jagah. 7 din free trial, card nahi chahiye.",
+    "meta_headline": "H1 Register, Har Bill Se",
+    "cta": "Start Free Trial"
+  }
+}

@@ -1,0 +1,67 @@
+1
+00:00:00,540 --> 00:00:03,851
+Kehte hain — chhoti dukaan ko software ki kya zaroorat?
+
+2
+00:00:04,989 --> 00:00:08,115
+Jisne chaalis saal, bahi mein paai-paai jodi...
+
+3
+00:00:09,253 --> 00:00:12,405
+Jo khuli goli ka daam bhi imaandaari se gine...
+
+4
+00:00:13,538 --> 00:00:17,108
+Jo shutter giraate hue bhi, ek maa ke liye ruk jaaye...
+
+5
+00:00:18,240 --> 00:00:22,009
+Jo udhaar bhi de... aur rishta bhi nibhaaye...
+
+6
+00:00:23,348 --> 00:00:27,630
+Uske liye software... mehenga tha, ya uljha.
+
+7
+00:00:28,889 --> 00:00:32,771
+Humare jaisi dukaan ke liye... koi banata bhi hai?
+
+8
+00:00:34,246 --> 00:00:38,014
+Nexcod POS — ek pharmacy counter se shuru hua.
+
+9
+00:00:38,347 --> 00:00:41,094
+Isliye ye counter ki zubaan bolta hai.
+
+10
+00:00:43,779 --> 00:00:47,615
+Expiry, stock, udhaar — roz ka jhanjhat, ek jagah.
+
+11
+00:00:48,871 --> 00:00:52,299
+Arre! Ye toh apne bas ka nikla.
+
+12
+00:00:53,728 --> 00:00:58,027
+Bharat mein bana. Aaj 24 rajyon aur UT mein.
+
+13
+00:00:59,462 --> 00:01:03,646
+₹1,299 saal ka — lagbhag ₹108 mahina.
+
+14
+00:01:03,988 --> 00:01:08,473
+7 din free trial. Card nahi, auto-renew nahi.
+
+15
+00:01:09,706 --> 00:01:11,367
+Daave hum nahi karenge.
+
+16
+00:01:11,690 --> 00:01:13,260
+Chala kar khud dekhiye.
+
+17
+00:01:15,338 --> 00:01:18,470
+Nexcod POS — aapke counter ke naap ka.

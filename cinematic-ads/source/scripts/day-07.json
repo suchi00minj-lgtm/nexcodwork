@@ -1,0 +1,329 @@
+{
+  "id": "07",
+  "slug": "bill-ki-naav-whatsapp-pdf",
+  "style": "phone/chat POV story",
+  "title": "Bill ki naav ban gayi!",
+  "problem": "Customer ka kaagaz ka bill kho gaya jo office reimbursement claim ke liye chahiye; dukaan ko bill-book palatne aur duplicate chhaapne mein waqt aur kaagaz dono barbaad hote hain.",
+  "audience": "Medical store owners and pharmacists in India who still use carbon bill books or reprint duplicate bills, and want to send bills on WhatsApp; ages 25-55",
+  "store": "Sharma Medical Store",
+  "music": [
+    {
+      "at_shot": 0,
+      "mood": "comedy"
+    },
+    {
+      "at_shot": 1,
+      "mood": "suspense"
+    },
+    {
+      "at_shot": 3,
+      "mood": "upbeat"
+    }
+  ],
+  "cast": [
+    "young_mom",
+    "kid",
+    "rakesh",
+    "aman",
+    "narrator"
+  ],
+  "dramatization": true,
+  "shots": [
+    {
+      "type": "scene",
+      "set": "home",
+      "time": "night",
+      "rain": false,
+      "place": [
+        {
+          "who": "young_mom",
+          "spot": "stand",
+          "face": "left"
+        },
+        {
+          "who": "kid",
+          "spot": "sofa_left",
+          "face": "right"
+        }
+      ],
+      "camera": {
+        "frame": "two:young_mom,kid",
+        "move": "handheld"
+      },
+      "lines": [
+        {
+          "who": "young_mom",
+          "hi": "मेरा दवाई का बिल... नाव बन गया?!",
+          "sub": "Mera dawai ka bill... naav ban gaya?!",
+          "emotion": "surprised",
+          "gesture": "hands_on_head"
+        },
+        {
+          "who": "kid",
+          "hi": "और डूब भी गई, मम्मी।",
+          "sub": "Aur doob bhi gayi, mummy.",
+          "emotion": "sad",
+          "gesture": "give"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "gasp_hit",
+          "at": 0.2
+        },
+        {
+          "name": "paper",
+          "at": 3.0
+        }
+      ],
+      "hold": 0.0,
+      "transition": "cut",
+      "title": "Raat 9 baje"
+    },
+    {
+      "type": "scene",
+      "set": "home",
+      "time": "night",
+      "rain": false,
+      "place": [
+        {
+          "who": "young_mom",
+          "spot": "stand",
+          "face": "left"
+        },
+        {
+          "who": "kid",
+          "spot": "sofa_left",
+          "face": "right"
+        }
+      ],
+      "camera": {
+        "frame": "close:young_mom",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "young_mom",
+          "hi": "कल ऑफ़िस में क्लेम जमा करना है!",
+          "sub": "Kal office mein claim jama karna hai!",
+          "emotion": "worried",
+          "gesture": "hold_phone"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "clock_tick",
+          "at": 0.0
+        }
+      ],
+      "hold": 0.0,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "store_interior",
+      "time": "night",
+      "rain": false,
+      "place": [
+        {
+          "who": "rakesh",
+          "spot": "counter_left",
+          "face": "right"
+        },
+        {
+          "who": "aman",
+          "spot": "counter_mid",
+          "face": "left"
+        }
+      ],
+      "camera": {
+        "frame": "two:rakesh,aman",
+        "move": "static"
+      },
+      "lines": [
+        {
+          "who": "rakesh",
+          "hi": "पुराना बिल? बिल-बुक पलटो, फ़ोटोकॉपी...",
+          "sub": "Purana bill? Bill-book palto, photocopy...",
+          "emotion": "worried",
+          "gesture": "shake_head"
+        },
+        {
+          "who": "aman",
+          "hi": "पापा, बस नाम डालो।",
+          "sub": "Papa, bas naam daalo.",
+          "emotion": "confident",
+          "gesture": "type"
+        }
+      ],
+      "sfx": [
+        {
+          "name": "phone_ding",
+          "at": 0.1
+        },
+        {
+          "name": "paper",
+          "at": 1.2
+        },
+        {
+          "name": "keyboard",
+          "at": 4.2
+        }
+      ],
+      "hold": 0.0,
+      "transition": "whip"
+    },
+    {
+      "type": "screen",
+      "img": "invoices",
+      "zoom": [
+        "inv_list_r"
+      ],
+      "notes": [
+        {
+          "target": "whatsapp_btn",
+          "text": "Ek click: WhatsApp"
+        },
+        {
+          "target": "sent",
+          "text": "Bhej diya"
+        }
+      ],
+      "head": "Purana bill, invoice list mein",
+      "lines": [
+        {
+          "who": "aman",
+          "hi": "एक क्लिक... सीधा व्हाट्सऐप।",
+          "sub": "Ek click... seedha WhatsApp."
+        }
+      ],
+      "hold": 0.0,
+      "transition": "whip"
+    },
+    {
+      "type": "card",
+      "card": "chat",
+      "data": {
+        "contact": "Sharma Medical Store",
+        "messages": [
+          {
+            "from": "me",
+            "text": "Bhaiya, pichhle hafte ka dawai ka bill kho gaya. Office claim ke liye chahiye.",
+            "attach": "none"
+          },
+          {
+            "from": "shop",
+            "text": "Namaste ji! Aapka bill yeh raha.",
+            "attach": "pdf_bill"
+          },
+          {
+            "from": "me",
+            "text": "Itni jaldi? Thank you bhaiya!",
+            "attach": "none"
+          }
+        ]
+      },
+      "lines": [
+        {
+          "who": "young_mom",
+          "hi": "अरे वाह! बिल की पीडीएफ़ आ गई!",
+          "sub": "Arre waah! Bill ki PDF aa gayi!",
+          "emotion": "happy"
+        }
+      ],
+      "hold": 0.5,
+      "transition": "cut"
+    },
+    {
+      "type": "scene",
+      "set": "home",
+      "time": "night",
+      "rain": false,
+      "place": [
+        {
+          "who": "young_mom",
+          "spot": "stand",
+          "face": "left"
+        },
+        {
+          "who": "kid",
+          "spot": "sofa_left",
+          "face": "right"
+        }
+      ],
+      "camera": {
+        "frame": "two:young_mom,kid",
+        "move": "push_in"
+      },
+      "lines": [
+        {
+          "who": "kid",
+          "hi": "तो नई नाव बना लूँ?",
+          "sub": "Toh nayi naav bana loon?",
+          "emotion": "happy",
+          "gesture": "point"
+        },
+        {
+          "who": "young_mom",
+          "hi": "हाँ... अख़बार से!",
+          "sub": "Haan... akhbaar se!",
+          "emotion": "happy",
+          "gesture": "show_phone"
+        }
+      ],
+      "hold": 0.0,
+      "transition": "cut"
+    },
+    {
+      "type": "screen",
+      "img": "find-my-bills",
+      "zoom": [
+        "fmb"
+      ],
+      "notes": [
+        {
+          "target": "email_code",
+          "text": "Email pe code"
+        }
+      ],
+      "head": "nexcodpos.in/find-my-bills",
+      "lines": [
+        {
+          "who": "narrator",
+          "hi": "ग्राहक अपने बिल ख़ुद भी देखें।",
+          "sub": "Grahak apne bill khud bhi dekhein."
+        }
+      ],
+      "hold": 0.0,
+      "transition": "dip_black"
+    },
+    {
+      "type": "endcard",
+      "lines": [
+        {
+          "who": "narrator",
+          "hi": "बिल ढूँढो नहीं, भेजो। नेक्सकोड पीओएस।",
+          "sub": "Bill dhoondho nahi, bhejo. Nexcod POS."
+        }
+      ]
+    }
+  ],
+  "ads": {
+    "google_headlines": [
+      "Bill Kho Gaya? WhatsApp Karo",
+      "Bill PDF Grahak Ke WhatsApp Pe",
+      "Na Bill-Book, Na Photocopy",
+      "WhatsApp Bill Apne Number Se",
+      "Nexcod POS Pharmacy Software",
+      "7 Din Free Trial, No Card"
+    ],
+    "google_descriptions": [
+      "Grahak ka purana bill invoice list se seedha uske WhatsApp pe bhejo, dukaan ke number se.",
+      "Na bill-book palatna, na duplicate chhaapna. Bill WhatsApp ya e-mail pe.",
+      "Grahak nexcodpos.in/find-my-bills pe apne bill khud dekh sakte hain. 7 din free trial."
+    ],
+    "meta_primary_text": "Bachche ne dawai ke bill ki naav bana di... aur kal office claim! Nexcod POS mein purana bill invoice list mein rehta hai. WhatsApp button dabao, PDF seedha grahak ke phone pe, dukaan ke apne number se. Na bill-book palatna, na photocopy. 7 din free trial. nexcodpos.in",
+    "meta_headline": "Purana bill? Dhoondho nahi, bhejo.",
+    "cta": "Start Free Trial"
+  }
+}
